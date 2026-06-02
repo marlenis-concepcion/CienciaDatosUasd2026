@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Datos y salidas generadas
+caso_practico_3_oulad_etl_eda/data/raw/*
+caso_practico_3_oulad_etl_eda/data/processed/*
+caso_practico_3_oulad_etl_eda/data/audit/*
+caso_practico_3_oulad_etl_eda/outputs/figures/*
+caso_practico_3_oulad_etl_eda/outputs/tables/*
+caso_practico_3_oulad_etl_eda/outputs/reports/*
+
+!**/.gitkeep
+!**/README.md
+
