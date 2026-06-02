@@ -1,12 +1,6 @@
-from src.db import DatabaseConnection
-from src.services import ActorService
-
-
-def show_actor(actor):
-    if actor is None:
-        print("No se encontro el actor.")
-        return
-    print(f"{actor.actor_id}: {actor.first_name} {actor.last_name} | {actor.last_update}")
+from src.db import DatabaseConnectionError
+from src.reports import film_metric_report
+from src.services import SakilaService
 
 
 def read_int(prompt, default=None, minimum=None):
@@ -22,39 +16,127 @@ def read_int(prompt, default=None, minimum=None):
     return number
 
 
-def main():
-    db = DatabaseConnection()
-    service = ActorService(db)
+def print_entity(entity):
+    if entity is None:
+        print("No se encontro el registro.")
+    elif hasattr(entity, "to_dict"):
+        print(entity.to_dict())
+    else:
+        print(entity)
 
+
+def country_menu(service):
+    print("\nPaises")
+    print("1. Crear pais")
+    print("2. Buscar pais por ID")
+    print("3. Listar paises")
+    print("4. Actualizar pais")
+    print("5. Eliminar pais de prueba")
+    option = input("Opcion: ").strip()
+
+    if option == "1":
+        print_entity(service.countries.create({"country": input("Pais: ").strip()}))
+    elif option == "2":
+        print_entity(service.countries.read(read_int("ID: ")))
+    elif option == "3":
+        for item in service.countries.list(read_int("Limite: ", default=10, minimum=1)):
+            print_entity(item)
+    elif option == "4":
+        print_entity(service.countries.update(read_int("ID: "), {"country": input("Pais: ").strip()}))
+    elif option == "5":
+        print("Eliminado." if service.countries.delete(read_int("ID: ")) else "No eliminado.")
+
+
+def city_menu(service):
+    print("\nCiudades")
+    print("1. Crear ciudad")
+    print("2. Buscar ciudad por ID")
+    print("3. Listar ciudades")
+    print("4. Actualizar ciudad")
+    option = input("Opcion: ").strip()
+
+    if option == "1":
+        data = {"city": input("Ciudad: ").strip(), "country_id": read_int("country_id: ")}
+        print_entity(service.cities.create(data))
+    elif option == "2":
+        print_entity(service.cities.read(read_int("ID: ")))
+    elif option == "3":
+        for item in service.cities.list(read_int("Limite: ", default=10, minimum=1)):
+            print_entity(item)
+    elif option == "4":
+        data = {"city": input("Ciudad: ").strip(), "country_id": read_int("country_id: ")}
+        print_entity(service.cities.update(read_int("ID: "), data))
+
+
+def film_menu(service):
+    print("\nPeliculas")
+    print("1. Crear pelicula de prueba")
+    print("2. Buscar pelicula por ID")
+    print("3. Listar peliculas")
+    print("4. Actualizar pelicula")
+    option = input("Opcion: ").strip()
+
+    if option == "1":
+        data = {
+            "title": input("Titulo: ").strip().upper(),
+            "description": input("Descripcion: ").strip(),
+            "release_year": read_int("Anio: ", default=2026, minimum=1900),
+            "language_id": read_int("language_id: ", default=1, minimum=1),
+        }
+        print_entity(service.films.create(data))
+    elif option == "2":
+        print_entity(service.films.read(read_int("ID: ")))
+    elif option == "3":
+        for item in service.films.list(read_int("Limite: ", default=10, minimum=1)):
+            print_entity(item)
+    elif option == "4":
+        data = {"title": input("Titulo: ").strip().upper(), "description": input("Descripcion: ").strip()}
+        print_entity(service.films.update(read_int("ID: "), data))
+
+
+def inventory_menu(service):
+    print("\nInventario")
+    print("1. Crear inventario")
+    print("2. Buscar inventario por ID")
+    print("3. Listar inventario")
+    option = input("Opcion: ").strip()
+
+    if option == "1":
+        data = {"film_id": read_int("film_id: "), "store_id": read_int("store_id: ")}
+        print_entity(service.inventory.create(data))
+    elif option == "2":
+        print_entity(service.inventory.read(read_int("ID: ")))
+    elif option == "3":
+        for item in service.inventory.list(read_int("Limite: ", default=10, minimum=1)):
+            print_entity(item)
+
+
+def main():
+    service = SakilaService()
     try:
         while True:
-            print("\nCRUD/ORM Nativo Sakila - Actores")
-            print("1. Crear actor")
-            print("2. Buscar actor por ID")
-            print("3. Listar actores")
-            print("4. Actualizar actor")
-            print("5. Eliminar actor")
-            print("6. Ver historial de consultas")
+            print("\nCRUD/ORM Nativo Sakila - UASDVirtual")
+            print("1. Paises")
+            print("2. Ciudades")
+            print("3. Peliculas")
+            print("4. Inventario")
+            print("5. Metricas descriptivas de peliculas")
+            print("6. Historial de operaciones")
             print("0. Salir")
             option = input("Opcion: ").strip()
 
             if option == "1":
-                actor = service.create_actor(input("Nombre: "), input("Apellido: "))
-                show_actor(actor)
+                country_menu(service)
             elif option == "2":
-                show_actor(service.find_actor(read_int("ID: ")))
+                city_menu(service)
             elif option == "3":
-                for actor in service.list_actors(read_int("Limite: ", default=10, minimum=1)):
-                    show_actor(actor)
+                film_menu(service)
             elif option == "4":
-                actor_id = read_int("ID: ")
-                actor = service.update_actor(actor_id, input("Nombre: "), input("Apellido: "))
-                show_actor(actor)
+                inventory_menu(service)
             elif option == "5":
-                deleted = service.delete_actor(read_int("ID: "))
-                print("Registro eliminado." if deleted else "No se elimino ningun registro.")
+                print(film_metric_report(service.context.db))
             elif option == "6":
-                for item in service.repository.history.list_recent():
+                for item in service.context.history.list_recent():
                     print(item)
             elif option == "0":
                 break
@@ -62,8 +144,10 @@ def main():
                 print("Opcion no valida.")
     except ValueError as exc:
         print(f"Entrada invalida: {exc}")
+    except DatabaseConnectionError as exc:
+        print(f"Error de conexion: {exc}")
     finally:
-        db.close()
+        service.close()
 
 
 if __name__ == "__main__":

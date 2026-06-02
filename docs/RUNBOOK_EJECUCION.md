@@ -12,9 +12,20 @@ Copiar `.env.example` a `.env` y completar credenciales locales. No subir `.env`
 
 ## Caso 2: Sakila CRUD/ORM
 
+Quick start:
+
+```bash
+cd caso_practico_2_sakila_crud_orm
+chmod +x quick_start.sh
+./quick_start.sh
+```
+
+Ejecucion manual:
+
 ```bash
 cd caso_practico_2_sakila_crud_orm
 pip install -r requirements.txt
+python -m src.check_connection
 python -m src.main
 ```
 
@@ -48,4 +59,3 @@ python -m pytest
 ```
 
 Las pruebas de integracion con bases de datos reales deben marcarse como `integration`.
-

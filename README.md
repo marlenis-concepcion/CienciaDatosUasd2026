@@ -67,6 +67,14 @@ pip install -r requirements.txt
 python -m src.main
 ```
 
+Quick start del Caso 2:
+
+```bash
+cd caso_practico_2_sakila_crud_orm
+chmod +x quick_start.sh
+./quick_start.sh
+```
+
 Caso 3:
 
 ```bash

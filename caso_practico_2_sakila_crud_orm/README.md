@@ -70,6 +70,37 @@ python -m src.main
 
 Tambien puede copiarse `../.env.example` a `../.env` y completar credenciales. No subir archivos `.env`.
 
+## Quick start
+
+Para ejecutar instalacion, compilacion, pruebas, verificacion de conexion y menu CRUD en un solo flujo:
+
+```bash
+cd caso_practico_2_sakila_crud_orm
+chmod +x quick_start.sh
+./quick_start.sh
+```
+
+El script usa rutas relativas y no contiene rutas internas de ninguna computadora.
+
+## Verificacion de conexion
+
+Antes de correr el menu CRUD, verificar que MySQL este activo y que Sakila exista:
+
+```bash
+python -m src.check_connection
+```
+
+Si aparece `Can't connect to MySQL server on 'localhost:3306'`, el problema no es el codigo Python. Significa que MySQL no esta encendido, no esta usando el puerto 3306, o Sakila/credenciales no estan configuradas.
+
+Checklist:
+
+- MySQL Community Server instalado.
+- MySQL Workbench instalado.
+- Servicio MySQL iniciado.
+- Base de datos `sakila` importada.
+- Variables de entorno `SAKILA_DB_USER` y `SAKILA_DB_PASSWORD` configuradas.
+- Usuario con permisos sobre `sakila`.
+
 ## Pruebas
 
 Desde `Unidad_2_UASDVirtual/`:

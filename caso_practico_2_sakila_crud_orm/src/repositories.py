@@ -1,4 +1,4 @@
-from src.models import Actor, Customer
+from src.models import City, Country, Film, Inventory, ModelCollection
 from src.structures import EntityCache, QueryHistory
 
 
@@ -56,6 +56,9 @@ class BaseRepository:
         self.history.push("find_all", self.table, {"limit": limit})
         return [self.model_cls.from_dict(row) for row in rows]
 
+    def find_all_model(self, limit=10):
+        return ModelCollection(self.model_cls, self.find_all(limit))
+
     def update(self, entity_id, data):
         payload = self._filter_writable_fields(data)
         if not payload:
@@ -90,11 +93,21 @@ class BaseRepository:
         }
 
 
-class ActorRepository(BaseRepository):
+class CountryRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
-        super().__init__(db, Actor, history, cache)
+        super().__init__(db, Country, history, cache)
 
 
-class CustomerRepository(BaseRepository):
+class CityRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
-        super().__init__(db, Customer, history, cache)
+        super().__init__(db, City, history, cache)
+
+
+class FilmRepository(BaseRepository):
+    def __init__(self, db, history=None, cache=None):
+        super().__init__(db, Film, history, cache)
+
+
+class InventoryRepository(BaseRepository):
+    def __init__(self, db, history=None, cache=None):
+        super().__init__(db, Inventory, history, cache)
