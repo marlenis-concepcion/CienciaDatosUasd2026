@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Usar agentes especializados para apoyar el trabajo colaborativo de UASDVirtual en analisis tecnico, programacion, validacion, documentacion e informe APA/UASD.
+Usar agentes especializados para apoyar el trabajo colaborativo de Mccarthy Team en analisis tecnico, programacion, validacion, documentacion e informe APA/UASD.
 
 ## Principios
 

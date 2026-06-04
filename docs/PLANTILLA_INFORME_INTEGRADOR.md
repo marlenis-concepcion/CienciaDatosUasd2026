@@ -7,7 +7,7 @@ Facultad: [Completar]
 Escuela: [Completar]  
 Asignatura: INF-8237 Ciencia de Datos I  
 Unidad 2: Manipulacion y Procesamiento de Datos  
-Equipo: UASDVirtual  
+Equipo: Mccarthy Team  
 Integrantes: [Completar]  
 Facilitador: [Completar]  
 Fecha: [Completar]  

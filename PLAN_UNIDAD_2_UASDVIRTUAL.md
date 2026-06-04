@@ -1,8 +1,8 @@
-# Plan de trabajo Unidad 2 - UASDVirtual
+# Plan de trabajo Unidad 2 - Mccarthy Team
 
 Asignatura: INF-8237-C2 Ciencia de Datos I
 
-Equipo: UASDVirtual
+Equipo: Mccarthy Team
 
 ## Tareas
 

@@ -1,10 +1,8 @@
 # Unidad 2 - Manipulacion y Procesamiento de Datos
 
-Equipo: UASDVirtual
+Equipo: Mccarthy Team
 
 Asignatura: INF-8237-C2 Ciencia de Datos I
-
-Estudiante visible en plataforma: Marlenis Judith Concepcion Cuevas
 
 ## Proposito del paquete
 

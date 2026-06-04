@@ -125,7 +125,7 @@ def main():
     service = SakilaService()
     try:
         while True:
-            print("\nCRUD/ORM Nativo Sakila - UASDVirtual")
+            print("\nCRUD/ORM Nativo Sakila - Mccarthy Team")
             print("1. Paises")
             print("2. Ciudades")
             print("3. Peliculas")

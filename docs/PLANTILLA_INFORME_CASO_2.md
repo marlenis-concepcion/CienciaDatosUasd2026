@@ -7,7 +7,7 @@ Facultad: [Completar]
 Asignatura: INF-8237 Ciencia de Datos I  
 Unidad 2: Manipulacion y Procesamiento de Datos  
 Tema: CRUD/ORM nativo basado en POO y estructuras de datos en MySQL Sakila  
-Equipo: UASDVirtual  
+Equipo: Mccarthy Team  
 Integrantes: [Completar]  
 Facilitador: [Completar]  
 Fecha: [Completar]  

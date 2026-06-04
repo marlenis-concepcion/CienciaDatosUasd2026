@@ -1,6 +1,6 @@
 # Caso practico 2: CRUD/ORM nativo con Sakila
 
-Equipo: UASDVirtual
+Equipo: Mccarthy Team
 
 Asignatura: INF-8237-C2 Ciencia de Datos I
 

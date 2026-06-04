@@ -182,8 +182,7 @@ def cover(doc):
     doc.rule(GREEN)
     doc.y += 230
     rows = [
-        ("Equipo:", "UASDVirtual"),
-        ("Integrante:", "Marlenis Judith Concepción Cuevas"),
+        ("Equipo:", "Mccarthy Team"),
         ("Facilitador:", "Dr. Silverio del Orbe"),
         ("Fecha:", "4 de junio de 2026"),
     ]
