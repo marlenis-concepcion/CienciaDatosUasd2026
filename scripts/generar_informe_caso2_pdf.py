@@ -62,6 +62,10 @@ def text_height(draw, text, face):
     return box[3] - box[1]
 
 
+# /****
+# Generador de paginas del informe PDF.
+# Controla margenes, encabezados, parrafos, bullets, referencias y paginacion.
+# ****/
 class Document:
     def __init__(self):
         self.pages = []

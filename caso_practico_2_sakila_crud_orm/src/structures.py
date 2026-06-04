@@ -1,6 +1,10 @@
 from collections import deque
 
 
+# /****
+# Historial de operaciones ejecutadas en el CRUD.
+# Usa una cola limitada para conservar las acciones mas recientes.
+# ****/
 class QueryHistory:
     def __init__(self, max_items=20):
         self.items = deque(maxlen=max_items)
@@ -12,6 +16,10 @@ class QueryHistory:
         return list(self.items)
 
 
+# /****
+# Cache simple de entidades consultadas por tabla e ID.
+# Reduce consultas repetidas durante la ejecucion del menu.
+# ****/
 class EntityCache:
     def __init__(self):
         self.items = {}
@@ -24,4 +32,3 @@ class EntityCache:
 
     def remove(self, table, entity_id):
         self.items.pop((table, entity_id), None)
-

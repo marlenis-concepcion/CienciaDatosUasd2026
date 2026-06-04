@@ -2,6 +2,10 @@ from src.models import City, Country, Film, Inventory, ModelCollection
 from src.structures import EntityCache, QueryHistory
 
 
+# /****
+# Repositorio base del ORM nativo.
+# Encapsula las operaciones CRUD genericas y evita repetir SQL por entidad.
+# ****/
 class BaseRepository:
     def __init__(self, db, model_cls, history=None, cache=None):
         self.db = db
@@ -93,21 +97,37 @@ class BaseRepository:
         }
 
 
+# /****
+# Repositorio concreto para la entidad Country.
+# Usa BaseRepository para operar sobre la tabla `country`.
+# ****/
 class CountryRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
         super().__init__(db, Country, history, cache)
 
 
+# /****
+# Repositorio concreto para la entidad City.
+# Usa BaseRepository para operar sobre la tabla `city`.
+# ****/
 class CityRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
         super().__init__(db, City, history, cache)
 
 
+# /****
+# Repositorio concreto para la entidad Film.
+# Usa BaseRepository para operar sobre la tabla `film`.
+# ****/
 class FilmRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
         super().__init__(db, Film, history, cache)
 
 
+# /****
+# Repositorio concreto para la entidad Inventory.
+# Usa BaseRepository para operar sobre la tabla `inventory`.
+# ****/
 class InventoryRepository(BaseRepository):
     def __init__(self, db, history=None, cache=None):
         super().__init__(db, Inventory, history, cache)

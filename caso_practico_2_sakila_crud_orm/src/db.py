@@ -6,10 +6,18 @@ from mysql.connector import Error
 from src.config import DB_CONFIG
 
 
+# /****
+# Excepcion personalizada para errores de conexion a MySQL/Sakila.
+# Permite mostrar mensajes claros en el menu y en el check de conexion.
+# ****/
 class DatabaseConnectionError(RuntimeError):
     pass
 
 
+# /****
+# Administrador de conexion a la base de datos.
+# Centraliza la apertura de conexion, cursores, commit, rollback y cierre.
+# ****/
 class DatabaseConnection:
     def __init__(self, config=DB_CONFIG):
         self.config = config

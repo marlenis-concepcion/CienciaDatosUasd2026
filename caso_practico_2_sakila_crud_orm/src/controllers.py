@@ -1,3 +1,7 @@
+# /****
+# Controlador base del flujo CRUD.
+# Expone metodos estandar para que la capa de menu no dependa del repositorio.
+# ****/
 class BaseController:
     def __init__(self, repository):
         self.repository = repository
@@ -18,18 +22,33 @@ class BaseController:
         return self.repository.delete(entity_id)
 
 
+# /****
+# Controlador de paises.
+# Delega las acciones CRUD al repositorio de Country.
+# ****/
 class CountryController(BaseController):
     pass
 
 
+# /****
+# Controlador de ciudades.
+# Delega las acciones CRUD al repositorio de City.
+# ****/
 class CityController(BaseController):
     pass
 
 
+# /****
+# Controlador de peliculas.
+# Delega las acciones CRUD al repositorio de Film.
+# ****/
 class FilmController(BaseController):
     pass
 
 
+# /****
+# Controlador de inventario.
+# Delega las acciones CRUD al repositorio de Inventory.
+# ****/
 class InventoryController(BaseController):
     pass
-

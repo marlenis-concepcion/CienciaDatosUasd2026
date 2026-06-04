@@ -2,6 +2,10 @@ from src.controllers import CityController, CountryController, FilmController, I
 from src.dbcontext import SakilaDbContext
 
 
+# /****
+# Servicio de aplicacion para Sakila.
+# Conecta el DbContext con los controladores usados por el menu principal.
+# ****/
 class SakilaService:
     def __init__(self, context=None):
         self.context = context or SakilaDbContext()
@@ -12,4 +16,3 @@ class SakilaService:
 
     def close(self):
         self.context.close()
-

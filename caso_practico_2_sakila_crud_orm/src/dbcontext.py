@@ -3,6 +3,10 @@ from src.repositories import CityRepository, CountryRepository, FilmRepository, 
 from src.structures import EntityCache, QueryHistory
 
 
+# /****
+# Contexto principal del ORM nativo.
+# Agrupa conexion, repositorios, cache e historial en un solo punto de acceso.
+# ****/
 class SakilaDbContext:
     def __init__(self, db=None):
         self.db = db or DatabaseConnection()
@@ -15,4 +19,3 @@ class SakilaDbContext:
 
     def close(self):
         self.db.close()
-

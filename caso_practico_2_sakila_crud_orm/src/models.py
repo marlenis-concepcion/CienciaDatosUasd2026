@@ -2,6 +2,11 @@ from dataclasses import dataclass, fields
 from datetime import datetime
 
 
+# /****
+# Clase base de todas las entidades del ORM nativo.
+# Define metadatos comunes de tabla, llave primaria y campos escribibles,
+# ademas de conversiones entre objetos Python y diccionarios.
+# ****/
 class BaseModel:
     table_name = ""
     primary_key = ""
@@ -17,6 +22,10 @@ class BaseModel:
 
 
 @dataclass
+# /****
+# Entidad que representa la tabla `country` de Sakila.
+# Se usa para crear, consultar, actualizar y eliminar paises desde el CRUD.
+# ****/
 class Country(BaseModel):
     table_name = "country"
     primary_key = "country_id"
@@ -28,6 +37,10 @@ class Country(BaseModel):
 
 
 @dataclass
+# /****
+# Entidad que representa la tabla `city` de Sakila.
+# Relaciona cada ciudad con un pais mediante `country_id`.
+# ****/
 class City(BaseModel):
     table_name = "city"
     primary_key = "city_id"
@@ -40,6 +53,10 @@ class City(BaseModel):
 
 
 @dataclass
+# /****
+# Entidad que representa la tabla `film` de Sakila.
+# Contiene los campos principales usados para gestionar peliculas de prueba.
+# ****/
 class Film(BaseModel):
     table_name = "film"
     primary_key = "film_id"
@@ -69,6 +86,10 @@ class Film(BaseModel):
 
 
 @dataclass
+# /****
+# Entidad que representa la tabla `inventory` de Sakila.
+# Vincula peliculas con tiendas para controlar copias disponibles.
+# ****/
 class Inventory(BaseModel):
     table_name = "inventory"
     primary_key = "inventory_id"
@@ -80,6 +101,10 @@ class Inventory(BaseModel):
     last_update: datetime | None = None
 
 
+# /****
+# Coleccion tipada de entidades del ORM nativo.
+# Funciona como equivalente practico de `list<entity>` para la rubrica.
+# ****/
 class ModelCollection:
     def __init__(self, entity_type, items=None):
         self.entity_type = entity_type

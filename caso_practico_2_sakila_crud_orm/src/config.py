@@ -3,6 +3,10 @@ import os
 
 
 @dataclass(frozen=True)
+# /****
+# Configuracion inmutable para conectar con MySQL/Sakila.
+# Lee variables de entorno para evitar contrasenas escritas en el codigo.
+# ****/
 class DatabaseConfig:
     host: str = os.getenv("SAKILA_DB_HOST", "localhost")
     user: str = os.getenv("SAKILA_DB_USER", "sakila_app")
