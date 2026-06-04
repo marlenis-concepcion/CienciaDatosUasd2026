@@ -15,11 +15,22 @@ Este folder organiza las dos actividades colaborativas de la Unidad 2:
 
 La entrega combina codigo, SQL, documentacion tecnica, evidencias y plantillas de informe bajo el criterio APA 7/UASD indicado para INF-8237.
 
+## Vista HTML del proyecto
+
+Se agrego una pagina de presentacion para explicar los casos de forma visual:
+
+```bash
+open index.html
+```
+
+Si se prefiere no abrirla desde terminal, basta con hacer doble clic sobre `index.html`.
+
 ## Estructura
 
 ```text
 Unidad_2_UASDVirtual/
   README.md
+  index.html
   PLAN_UNIDAD_2_UASDVIRTUAL.md
   .agents/
   docs/
@@ -42,8 +53,8 @@ Toda salida generada por IA debe validarse con datos reales, evidencias de ejecu
 ## Guia rapida
 
 1. Leer `PLAN_UNIDAD_2_UASDVIRTUAL.md`.
-2. Copiar `.env.example` a `.env` y completar credenciales locales.
-3. Configurar Sakila y ejecutar el Caso 2.
+2. Abrir `index.html` para revisar el mapa visual de los casos.
+3. Configurar Sakila y ejecutar el Caso 2 con Docker o variables locales.
 4. Colocar los CSV de OULAD en `caso_practico_3_oulad_etl_eda/data/raw/`.
 5. Ejecutar validaciones, ETL y EDA del Caso 3.
 6. Generar capturas, tablas y graficas.
@@ -56,37 +67,41 @@ Toda salida generada por IA debe validarse con datos reales, evidencias de ejecu
 cd Unidad_2_UASDVirtual
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pytest
+python3 -m pytest
 ```
 
 Caso 2:
 
 ```bash
 cd caso_practico_2_sakila_crud_orm
-pip install -r requirements.txt
-python -m src.main
+python3 -m pip install -r requirements.txt
+./setup_run_sakila_docker.sh
 ```
 
-Quick start del Caso 2:
+Si Sakila ya esta configurada fuera de Docker:
 
 ```bash
 cd caso_practico_2_sakila_crud_orm
-chmod +x quick_start.sh
-./quick_start.sh
+export SAKILA_DB_HOST=127.0.0.1
+export SAKILA_DB_PORT=3307
+export SAKILA_DB_USER=root
+export SAKILA_DB_PASSWORD=sakila123
+export SAKILA_DB_NAME=sakila
+python3 -m src.check_connection
+python3 -m src.main
 ```
 
 Caso 3:
 
 ```bash
 cd caso_practico_3_oulad_etl_eda
-pip install -r requirements.txt
-python -m src.main
-python -m src.eda
+python3 -m pip install -r requirements.txt
+python3 -m src.main
+python3 -m src.eda
 ```
 
 ## Insumos pendientes
 
-- Credenciales locales de MySQL para Sakila.
 - Dataset OULAD en CSV.
 - Motor final para OULAD si no se usa PostgreSQL.
 - Nombres, matriculas, facilitador y fecha de entrega.

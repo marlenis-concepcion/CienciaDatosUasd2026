@@ -17,12 +17,20 @@
 ## Caso practico 2
 
 - [ ] El CRUD/ORM nativo conecta a MySQL Sakila.
+- [ ] La conexion Docker fue probada con `python3 -m src.check_connection`.
+- [ ] `setup_run_sakila_docker.sh` crea o inicia el contenedor correctamente.
 - [ ] Permite crear registros.
 - [ ] Permite consultar por ID.
 - [ ] Permite listar registros.
 - [ ] Permite actualizar registros.
 - [ ] Permite eliminar registros de prueba.
+- [ ] Gestiona `country`, `city`, `film` e `inventory`.
 - [ ] Evidencia POO y estructuras de datos.
+- [ ] Incluye DbContext, entidades, ModelCollection, repositorios y controladores.
+- [ ] Incluye importacion/exportacion CSV.
+- [ ] Incluye importacion/exportacion JSON.
+- [ ] Incluye media, rango, desviacion, varianza y covarianza.
+- [ ] Incluye script de unique constraints.
 - [ ] Hay capturas o logs de ejecucion.
 
 ## Caso practico 3
@@ -42,7 +50,7 @@
 - [ ] Las credenciales se pasan por variables de entorno.
 - [ ] El proyecto tiene README general.
 - [ ] Cada caso tiene README propio.
+- [ ] `index.html` explica visualmente los casos y comandos principales.
 - [ ] Las carpetas vacias tienen README o `.gitkeep`.
 - [ ] Se declara el uso de agentes IA.
 - [ ] Se reviso ortografia y consistencia.
-

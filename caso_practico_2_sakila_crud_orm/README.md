@@ -26,17 +26,28 @@ Crear un CRUD/ORM nativo en Python, basado en programacion orientada a objetos y
 
 ## Decision de implementacion inicial
 
-La primera version incluida en `src/` implementa el CRUD de `actor`, porque es una tabla adecuada para demostrar insercion, consulta, actualizacion y eliminacion sin depender de relaciones complejas. La clase `Customer` queda preparada como segunda entidad para extender la entrega.
+La version actual implementa un CRUD/ORM nativo sobre las entidades `country`, `city`, `film` e `inventory`, que coinciden con el enunciado de la practica: ciudades, paises, peliculas e inventario. La arquitectura separa conexion, entidades, repositorios, controladores, servicios, estructuras de datos y menu de consola.
 
-## Tablas sugeridas
+## Tablas implementadas
 
-- `actor`
+- `country`
+- `city`
 - `film`
-- `category`
-- `customer`
-- `rental`
+- `inventory`
 
-La seleccion final puede ajustarse segun tiempo, acceso a MySQL y requisitos del profesor.
+Tambien se incluyen consultas SQL sobre tablas complementarias de Sakila como `category`, `rental`, `customer`, `store` y `language` para cubrir analisis y evidencias.
+
+## Arquitectura aplicada
+
+- `dbcontext.py`: punto central de acceso a repositorios y estructuras compartidas.
+- `models.py`: entidades tipo dataclass y `ModelCollection` como lista de entidades.
+- `repositories.py`: operaciones CRUD genericas y repositorios concretos.
+- `controllers.py`: capa de controladores para el flujo tipo MVC.
+- `services.py`: servicio de aplicacion que conecta contexto y controladores.
+- `structures.py`: cache por entidad e historial de operaciones.
+- `metrics.py` y `reports.py`: metricas descriptivas y covarianza sobre peliculas.
+- `import_export.py`: importacion y exportacion CSV/JSON.
+- `main.py`: menu de consola para ejecutar la demostracion.
 
 ## Estructura sugerida
 
@@ -46,33 +57,62 @@ caso_practico_2_sakila_crud_orm/
   src/
     config.py
     db.py
+    dbcontext.py
     models.py
     repositories.py
+    controllers.py
+    services.py
     structures.py
+    metrics.py
+    reports.py
+    import_export.py
     main.py
+  sql/
   tests/
   docs/
     informe/
     evidencias/
 ```
 
-## Ejecucion sugerida
+## Ejecucion recomendada con Docker
 
 ```bash
 cd caso_practico_2_sakila_crud_orm
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-export SAKILA_DB_USER=sakila_app
-export SAKILA_DB_PASSWORD=tu_password
-python -m src.main
+python3 -m pip install -r requirements.txt
+chmod +x setup_run_sakila_docker.sh
+./setup_run_sakila_docker.sh
 ```
 
-Tambien puede copiarse `../.env.example` a `../.env` y completar credenciales. No subir archivos `.env`.
+El script crea o inicia un contenedor `sakila-mysql`, importa Sakila si hace falta, configura variables de entorno y abre el menu CRUD/ORM.
 
-## Quick start
+Credenciales por defecto del entorno Docker:
 
-Para ejecutar instalacion, compilacion, pruebas, verificacion de conexion y menu CRUD en un solo flujo:
+```text
+Host: 127.0.0.1
+Puerto: 3307
+Usuario: root
+Password: sakila123
+Base de datos: sakila
+```
+
+## Ejecucion manual
+
+Si el contenedor ya existe o se usa otro MySQL compatible:
+
+```bash
+export SAKILA_DB_HOST=127.0.0.1
+export SAKILA_DB_PORT=3307
+export SAKILA_DB_USER=root
+export SAKILA_DB_PASSWORD=sakila123
+export SAKILA_DB_NAME=sakila
+
+python3 -m src.check_connection
+python3 -m src.main
+```
+
+## Quick start clasico
+
+Para ejecutar instalacion, compilacion, pruebas, verificacion de conexion y menu CRUD en un solo flujo con credenciales ya configuradas:
 
 ```bash
 cd caso_practico_2_sakila_crud_orm
@@ -87,7 +127,7 @@ El script usa rutas relativas y no contiene rutas internas de ninguna computador
 Antes de correr el menu CRUD, verificar que MySQL este activo y que Sakila exista:
 
 ```bash
-python -m src.check_connection
+python3 -m src.check_connection
 ```
 
 Si aparece `Can't connect to MySQL server on 'localhost:3306'`, el problema no es el codigo Python. Significa que MySQL no esta encendido, no esta usando el puerto 3306, o Sakila/credenciales no estan configuradas.
@@ -106,10 +146,21 @@ Checklist:
 Desde `Unidad_2_UASDVirtual/`:
 
 ```bash
-python -m pytest caso_practico_2_sakila_crud_orm/tests
+python3 -m pytest caso_practico_2_sakila_crud_orm/tests
 ```
 
 Las pruebas actuales cubren estructuras de datos. Las pruebas de integracion con MySQL deben ejecutarse cuando Sakila este disponible.
+
+## Evidencias sugeridas
+
+Tomar capturas de:
+
+- Conexion exitosa con `python3 -m src.check_connection`.
+- Creacion de pais, ciudad, pelicula e inventario desde `python3 -m src.main`.
+- Listado y busqueda por ID.
+- Actualizacion y eliminacion de registros de prueba.
+- Metricas descriptivas de peliculas.
+- Ejecucion de los scripts SQL en MySQL Workbench.
 
 ## Checklist APA/UASD
 

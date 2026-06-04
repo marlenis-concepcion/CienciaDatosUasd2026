@@ -14,7 +14,7 @@ Fecha: [Completar]
 
 ## Resumen
 
-[Redactar 120-180 palabras. Debe mencionar los dos casos: CRUD/ORM con Sakila y ETL/EDA con OULAD.]
+[Redactar 250 palabras. Debe mencionar los dos casos: CRUD/ORM con Sakila y ETL/EDA con OULAD.]
 
 ## Abstract
 
@@ -44,7 +44,7 @@ Desarrollar brevemente:
 
 ### Descripcion del problema
 
-Explicar que se desarrollo una capa propia de mapeo objeto-relacional para operar sobre MySQL Sakila.
+Explicar que se desarrollo una capa propia de mapeo objeto-relacional para operar sobre MySQL Sakila, usando las entidades `country`, `city`, `film` e `inventory`.
 
 ### Objetivo del caso
 
@@ -52,7 +52,7 @@ Crear, consultar, actualizar y eliminar registros mediante clases, repositorios,
 
 ### Diseno de la solucion
 
-Describir la arquitectura del codigo y justificar el uso de POO.
+Describir la arquitectura del codigo: DbContext, entidades, ModelCollection, repositorios, controladores, servicios, estructuras de datos, import/export y menu de consola.
 
 ### Estructuras de datos utilizadas
 
@@ -60,7 +60,7 @@ Documentar listas, diccionarios, tuplas, objetos, cache y cola/historial de cons
 
 ### Resultados y evidencias
 
-Mencionar capturas, logs y pruebas. Referir anexos.
+Mencionar capturas, logs, pruebas, conexion Docker, operaciones CRUD, metricas y consultas SQL. Referir anexos.
 
 ## Caso practico 3: OULAD ETL, EDA y modelo relacional
 
@@ -105,4 +105,3 @@ Sintetizar los logros de ambos casos, principales aprendizajes, limitaciones y m
 - Anexo E. Evidencias del EDA.
 - Anexo F. Pruebas y validacion.
 - Anexo G. Declaracion de uso de agentes IA.
-

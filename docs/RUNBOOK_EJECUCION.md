@@ -1,61 +1,116 @@
-# Runbook de ejecucion
+# Runbook de ejecucion - Unidad 2
 
-## Preparacion
+Este runbook resume los pasos operativos para correr los casos practicos y generar evidencias.
+
+## Vista general
+
+Abrir la pagina visual del proyecto:
+
+```bash
+cd Unidad_2_UASDVirtual
+open index.html
+```
+
+## Preparacion general
 
 ```bash
 cd Unidad_2_UASDVirtual
 python3 -m venv .venv
 source .venv/bin/activate
+python3 -m pip install -U pip
 ```
 
-Copiar `.env.example` a `.env` y completar credenciales locales. No subir `.env`.
+## Caso practico 2: Sakila CRUD/ORM
 
-## Caso 2: Sakila CRUD/ORM
-
-Quick start:
+Desde la carpeta del caso:
 
 ```bash
-cd caso_practico_2_sakila_crud_orm
-chmod +x quick_start.sh
-./quick_start.sh
+cd Unidad_2_UASDVirtual/caso_practico_2_sakila_crud_orm
+python3 -m pip install -r requirements.txt
+chmod +x setup_run_sakila_docker.sh
+./setup_run_sakila_docker.sh
 ```
 
-Ejecucion manual:
+El script realiza:
+
+- Verificacion de Docker.
+- Creacion o inicio del contenedor `sakila-mysql`.
+- Importacion de Sakila cuando la base no tiene tablas.
+- Exportacion de variables `SAKILA_DB_*`.
+- Prueba de conexion.
+- Apertura del menu CRUD/ORM.
+
+Credenciales por defecto:
+
+```text
+Host: 127.0.0.1
+Puerto: 3307
+Usuario: root
+Password: sakila123
+Base: sakila
+```
+
+Comprobacion manual:
 
 ```bash
-cd caso_practico_2_sakila_crud_orm
-pip install -r requirements.txt
-python -m src.check_connection
-python -m src.main
+export SAKILA_DB_HOST=127.0.0.1
+export SAKILA_DB_PORT=3307
+export SAKILA_DB_USER=root
+export SAKILA_DB_PASSWORD=sakila123
+export SAKILA_DB_NAME=sakila
+python3 -m src.check_connection
+python3 -m src.main
 ```
 
-Requisitos:
+Evidencias minimas:
 
-- MySQL activo.
-- Base de datos `sakila` instalada.
-- Usuario con permisos sobre las tablas usadas.
+- Conexion exitosa.
+- Crear, buscar, listar, actualizar y eliminar registros de prueba.
+- Metricas descriptivas de peliculas.
+- Consultas SQL de `sql/01_fase_i_10_consultas.sql`.
+- Restricciones de integridad de `sql/02_integridad_unique_constraints.sql`.
 
-## Caso 3: OULAD ETL/EDA
+## Caso practico 3: OULAD ETL/EDA
+
+Colocar los siete CSV en:
+
+```text
+caso_practico_3_oulad_etl_eda/data/raw/
+```
+
+Archivos esperados:
+
+```text
+courses.csv
+assessments.csv
+studentInfo.csv
+studentRegistration.csv
+studentAssessment.csv
+studentVle.csv
+vle.csv
+```
+
+Ejecutar:
 
 ```bash
-cd caso_practico_3_oulad_etl_eda
-pip install -r requirements.txt
-python -m src.main
-python -m src.eda
+cd Unidad_2_UASDVirtual/caso_practico_3_oulad_etl_eda
+python3 -m pip install -r requirements.txt
+python3 -m src.main
+python3 -m src.eda
 ```
 
-Requisitos:
-
-- Colocar los siete CSV de OULAD en `data/raw/`.
-- PostgreSQL activo si se ejecuta la carga real.
-- Esquema creado con `sql/01_schema.sql`.
-
-## Pruebas
-
-Desde `Unidad_2_UASDVirtual/`:
+Pruebas:
 
 ```bash
-python -m pytest
+cd Unidad_2_UASDVirtual
+python3 -m pytest caso_practico_2_sakila_crud_orm/tests
+python3 -m pytest caso_practico_3_oulad_etl_eda/tests
 ```
 
-Las pruebas de integracion con bases de datos reales deben marcarse como `integration`.
+Evidencias minimas:
+
+- CSV cargados en `data/raw/`.
+- Salidas procesadas en `data/processed/`.
+- Reportes o tablas de calidad.
+- Consultas SQL de validacion.
+- Graficas o tablas del EDA.

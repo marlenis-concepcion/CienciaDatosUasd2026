@@ -53,9 +53,13 @@ def city_menu(service):
     print("2. Buscar ciudad por ID")
     print("3. Listar ciudades")
     print("4. Actualizar ciudad")
+    print("5. Ver paises con ID")
     option = input("Opcion: ").strip()
 
     if option == "1":
+        print("\nPaises disponibles:")
+        for country in service.countries.list(30):
+            print_entity(country)
         data = {"city": input("Ciudad: ").strip(), "country_id": read_int("country_id: ")}
         print_entity(service.cities.create(data))
     elif option == "2":
@@ -64,8 +68,14 @@ def city_menu(service):
         for item in service.cities.list(read_int("Limite: ", default=10, minimum=1)):
             print_entity(item)
     elif option == "4":
+        print("\nPaises disponibles:")
+        for country in service.countries.list(30):
+            print_entity(country)
         data = {"city": input("Ciudad: ").strip(), "country_id": read_int("country_id: ")}
         print_entity(service.cities.update(read_int("ID: "), data))
+    elif option == "5":
+        for country in service.countries.list(read_int("Limite: ", default=30, minimum=1)):
+            print_entity(country)
 
 
 def film_menu(service):

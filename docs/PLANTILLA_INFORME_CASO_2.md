@@ -14,7 +14,7 @@ Fecha: [Completar]
 
 ## Resumen
 
-[Redactar 120-180 palabras sobre objetivo, tecnologia usada, alcance del CRUD, resultados y aprendizaje.]
+[Redactar 250 palabras sobre objetivo, tecnologia usada, alcance del CRUD/ORM, resultados, evidencias y aprendizaje.]
 
 ## Abstract
 
@@ -40,17 +40,21 @@ Ejemplos de citas a completar:
 
 ## Descripcion del caso practico
 
-Explicar el alcance: tabla `actor`, extension posible a `customer`, conexion a MySQL y operaciones implementadas.
+Explicar el alcance: entidades `country`, `city`, `film` e `inventory`, conexion a MySQL Sakila mediante Docker o variables de entorno, operaciones CRUD, importacion/exportacion y metricas descriptivas.
 
 ## Arquitectura del sistema
 
 Describir:
 
 - `db.py`: conexion.
+- `dbcontext.py`: contexto central de acceso a repositorios.
 - `models.py`: entidades.
 - `repositories.py`: CRUD generico.
+- `controllers.py`: flujo tipo MVC.
 - `services.py`: reglas de negocio.
 - `structures.py`: cache e historial.
+- `metrics.py` y `reports.py`: metricas descriptivas.
+- `import_export.py`: CSV y JSON.
 - `main.py`: menu de consola.
 
 ## Implementacion del CRUD
@@ -62,10 +66,12 @@ Documentar crear, leer, listar, actualizar y eliminar.
 Agregar capturas o salidas de:
 
 - Conexion exitosa.
-- Creacion de actor.
+- Creacion de pais, ciudad, pelicula o inventario.
 - Consulta por ID.
 - Actualizacion.
 - Eliminacion.
+- Metricas descriptivas.
+- Consultas SQL y unique constraints.
 
 ## Conclusiones
 
@@ -80,4 +86,3 @@ Resumir logros, limitaciones y aprendizajes.
 - Anexo A. Codigo fuente relevante.
 - Anexo B. Evidencias de ejecucion.
 - Anexo C. Uso de agentes IA.
-

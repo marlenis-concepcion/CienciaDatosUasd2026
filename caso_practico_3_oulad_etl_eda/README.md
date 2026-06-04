@@ -60,15 +60,26 @@ caso_practico_3_oulad_etl_eda/
     evidencias/
 ```
 
+## Arquitectura aplicada
+
+- `extract.py`: lectura controlada de los CSV fuente.
+- `transform.py`: normalizacion de nombres, conversion de tipos y reglas de limpieza.
+- `quality.py`: validaciones de duplicados, nulos, dominios y consistencia.
+- `load.py`: preparacion de carga hacia base relacional.
+- `eda.py`: analisis exploratorio con salidas para tablas y figuras.
+- `sql/01_schema.sql`: creacion del modelo relacional.
+- `sql/02_indexes_views.sql`: indices y vistas analiticas.
+- `sql/03_quality_checks.sql`: consultas de control de calidad.
+
 ## Ejecucion sugerida
 
 ```bash
 cd caso_practico_3_oulad_etl_eda
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-python -m src.main
-python -m src.eda
+python3 -m pip install -r requirements.txt
+python3 -m src.main
+python3 -m src.eda
 ```
 
 Antes de ejecutar, colocar los archivos `courses.csv`, `assessments.csv`, `studentInfo.csv`, `studentRegistration.csv`, `studentAssessment.csv`, `studentVle.csv` y `vle.csv` en `data/raw/`.
@@ -78,7 +89,7 @@ Antes de ejecutar, colocar los archivos `courses.csv`, `assessments.csv`, `stude
 Desde `Unidad_2_UASDVirtual/`:
 
 ```bash
-python -m pytest caso_practico_3_oulad_etl_eda/tests
+python3 -m pytest caso_practico_3_oulad_etl_eda/tests
 ```
 
 Las pruebas actuales validan conversion de nombres, limpieza, duplicados y dominios invalidos. Las pruebas de carga requieren PostgreSQL y datos reales.
@@ -98,6 +109,17 @@ Las pruebas actuales validan conversion de nombres, limpieza, duplicados y domin
 - Analisis por curso, modulo, genero, region y nivel educativo.
 - Comparacion de estudiantes retirados, aprobados y reprobados.
 - Correlaciones entre evaluaciones, actividad y resultado final.
+
+## Evidencias sugeridas
+
+Tomar capturas o guardar salidas de:
+
+- Archivos CSV presentes en `data/raw/`.
+- Pruebas unitarias del caso.
+- Reporte de calidad generado por el pipeline.
+- Tablas procesadas en `data/processed/`.
+- Consultas SQL de llaves, dominios, conteos y vistas.
+- Graficas o tablas del EDA extendido.
 
 ## Checklist APA/UASD
 

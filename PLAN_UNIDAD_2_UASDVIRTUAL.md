@@ -17,8 +17,8 @@ Equipo: UASDVirtual
 
 ## Decisiones tecnicas
 
-- Caso 2 usara MySQL con la base Sakila.
-- Caso 2 tendra un ORM nativo simple: modelos, repositorios, servicios, cache y menu de consola.
+- Caso 2 usa MySQL con la base Sakila importada en Docker para facilitar la ejecucion local.
+- Caso 2 tiene un ORM nativo simple: DbContext, entidades, modelos, repositorios, controladores, servicios, cache, historial y menu de consola.
 - Caso 3 usara PostgreSQL como recomendacion principal por su soporte para `CHECK`, PK, FK, vistas e indices.
 - Caso 3 conservara las fechas negativas validas de OULAD, porque representan dias antes del inicio del curso.
 - Ambos informes seguiran la estructura APA/UASD: presentacion, resumen, abstract, tabla de contenido, desarrollo, referencias y anexos.
@@ -26,9 +26,11 @@ Equipo: UASDVirtual
 ## Archivos creados
 
 - `caso_practico_2_sakila_crud_orm/src/`: base del CRUD/ORM nativo para Sakila.
+- `caso_practico_2_sakila_crud_orm/setup_run_sakila_docker.sh`: arranque automatico de MySQL/Sakila en Docker.
 - `caso_practico_2_sakila_crud_orm/tests/`: pruebas iniciales de estructuras de datos.
 - `caso_practico_3_oulad_etl_eda/sql/`: esquema, indices, vistas y consultas de calidad para OULAD.
 - `caso_practico_3_oulad_etl_eda/src/`: extraccion, limpieza, calidad, transformacion y carga.
+- `index.html`: pagina visual de presentacion de los casos de la Unidad 2.
 
 ## Flujo recomendado
 
@@ -41,7 +43,6 @@ Equipo: UASDVirtual
 ## Insumos pendientes
 
 - Dataset OULAD en formato CSV o ZIP.
-- Acceso o dump de la base de datos Sakila.
 - Preferencia de motor para OULAD: PostgreSQL, MySQL o MS SQL Server.
 - Nombres y matriculas de los integrantes, si deben aparecer en la portada.
 - Nombre del facilitador y fecha exacta de entrega.
