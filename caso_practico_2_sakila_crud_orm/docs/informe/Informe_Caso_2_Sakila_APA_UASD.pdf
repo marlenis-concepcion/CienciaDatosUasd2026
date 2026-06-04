@@ -1,0 +1,187 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+3 0 obj
+<< /Length 772 >>
+stream
+BT /Times-Bold 12 Tf 250.5 720.00 Td (Universidad Autonoma de Santo Domingo) Tj ET
+BT /Times-Roman 12 Tf 250.5 696.00 Td (Facultad de Ingenieria y Arquitectura) Tj ET
+BT /Times-Roman 12 Tf 247.5 672.00 Td (Asignatura: INF-8237 Ciencia de Datos I) Tj ET
+BT /Times-Bold 14 Tf 279.75 552.00 Td (Caso practico 2) Tj ET
+BT /Times-Bold 12 Tf 204.0 528.00 Td (CRUD/ORM nativo basado en POO y estructuras de datos en MySQL Sakila) Tj ET
+BT /Times-Roman 12 Tf 277.5 432.00 Td (Equipo: UASDVirtual) Tj ET
+BT /Times-Roman 12 Tf 238.5 408.00 Td (Integrante: Marlenis Judith Concepcion Cuevas) Tj ET
+BT /Times-Roman 12 Tf 270.0 384.00 Td (Facilitador: [Completar]) Tj ET
+BT /Times-Roman 12 Tf 268.5 360.00 Td (Fecha: 4 de junio de 2026) Tj ET
+BT /Times-Roman 12 Tf 540 750 Td (1) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 612 792] /Resources << /Font << /Times-Roman 1 0 R /Times-Bold 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 3114 >>
+stream
+BT /Times-Bold 12 Tf 72 720.00 Td (Resumen) Tj ET
+BT /Times-Roman 12 Tf 108 696.00 Td (Este informe presenta el desarrollo del Caso practico 2 de la Unidad 2 de Ciencia de) Tj ET
+BT /Times-Roman 12 Tf 72 672.00 Td (Datos I, consistente en la creacion de un CRUD/ORM nativo en Python para operar sobre) Tj ET
+BT /Times-Roman 12 Tf 72 648.00 Td (la base de datos Sakila de MySQL. La solucion utiliza programacion orientada a objetos) Tj ET
+BT /Times-Roman 12 Tf 72 624.00 Td (para representar entidades relacionales como paises, ciudades, peliculas e inventario) Tj ET
+BT /Times-Roman 12 Tf 72 600.00 Td (mediante clases de dominio, repositorios, controladores, servicios y un contexto de) Tj ET
+BT /Times-Roman 12 Tf 72 576.00 Td (base de datos. El proyecto incorpora estructuras de datos como listas de entidades,) Tj ET
+BT /Times-Roman 12 Tf 72 552.00 Td (diccionarios para cache y un historial de operaciones para evidenciar el uso de) Tj ET
+BT /Times-Roman 12 Tf 72 528.00 Td (abstracciones propias de Python. Para facilitar la ejecucion por los integrantes del) Tj ET
+BT /Times-Roman 12 Tf 72 504.00 Td (equipo, se prepararon scripts de inicio para Mac, Linux y Windows que levantan MySQL) Tj ET
+BT /Times-Roman 12 Tf 72 480.00 Td (en Docker, importan Sakila, verifican la conexion y abren el menu interactivo del) Tj ET
+BT /Times-Roman 12 Tf 72 456.00 Td (CRUD. Ademas del flujo crear, leer, actualizar y eliminar, el trabajo incluye) Tj ET
+BT /Times-Roman 12 Tf 72 432.00 Td (importacion y exportacion en CSV y JSON, diez consultas SQL, restricciones de) Tj ET
+BT /Times-Roman 12 Tf 72 408.00 Td (integridad mediante unique constraints y metricas descriptivas fundamentales como) Tj ET
+BT /Times-Roman 12 Tf 72 384.00 Td (media, rango, desviacion estandar, varianza y covarianza. Los resultados demuestran) Tj ET
+BT /Times-Roman 12 Tf 72 360.00 Td (una arquitectura modular y escalable, cercana al patron ORM, donde los cambios del) Tj ET
+BT /Times-Roman 12 Tf 72 336.00 Td (modelo pueden mantenerse separados de la conexion, la logica de aplicacion y la) Tj ET
+BT /Times-Roman 12 Tf 72 312.00 Td (interfaz de consola. La propuesta fortalece la comprension practica de bases de datos) Tj ET
+BT /Times-Roman 12 Tf 72 288.00 Td (relacionales, consumo programatico de datos y organizacion de codigo reutilizable para) Tj ET
+BT /Times-Roman 12 Tf 72 264.00 Td (proyectos de ciencia de datos.) Tj ET
+BT /Times-Bold 12 Tf 72 228.00 Td (Introduccion) Tj ET
+BT /Times-Roman 12 Tf 108 204.00 Td (La manipulacion de datos en ciencia de datos requiere comprender tanto la estructura) Tj ET
+BT /Times-Roman 12 Tf 72 180.00 Td (de los datos como los mecanismos usados para consultarlos, transformarlos y) Tj ET
+BT /Times-Roman 12 Tf 72 156.00 Td (validarlos. En este caso practico se utiliza Sakila, una base de datos de ejemplo de) Tj ET
+BT /Times-Roman 12 Tf 72 132.00 Td (MySQL, para construir una solucion que conecta Python con un sistema gestor relacional) Tj ET
+BT /Times-Roman 12 Tf 72 108.00 Td (y permite ejecutar operaciones CRUD desde una interfaz de consola.) Tj ET
+BT /Times-Roman 12 Tf 540 750 Td (2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 612 792] /Resources << /Font << /Times-Roman 1 0 R /Times-Bold 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 2887 >>
+stream
+BT /Times-Roman 12 Tf 108 720.00 Td (La actividad responde al objetivo de crear un CRUD/ORM nativo basado en programacion) Tj ET
+BT /Times-Roman 12 Tf 72 696.00 Td (orientada a objetos y estructuras de datos. El enfoque ORM permite representar tablas) Tj ET
+BT /Times-Roman 12 Tf 72 672.00 Td (como objetos de dominio y encapsular las operaciones SQL en repositorios y servicios,) Tj ET
+BT /Times-Roman 12 Tf 72 648.00 Td (reduciendo la dependencia directa entre la interfaz de usuario y las consultas de base) Tj ET
+BT /Times-Roman 12 Tf 72 624.00 Td (de datos \(Fowler, 2002\).) Tj ET
+BT /Times-Bold 12 Tf 72 588.00 Td (Marco de referencia) Tj ET
+BT /Times-Roman 12 Tf 108 564.00 Td (Un CRUD agrupa las operaciones create, read, update y delete, necesarias para) Tj ET
+BT /Times-Roman 12 Tf 72 540.00 Td (administrar registros persistentes. En bases de datos relacionales, estas acciones se) Tj ET
+BT /Times-Roman 12 Tf 72 516.00 Td (implementan mediante instrucciones SQL como INSERT, SELECT, UPDATE y DELETE. MySQL) Tj ET
+BT /Times-Roman 12 Tf 72 492.00 Td (documenta Sakila como una base de datos de ejemplo util para practicar relaciones) Tj ET
+BT /Times-Roman 12 Tf 72 468.00 Td (entre tablas de un sistema de alquiler de peliculas \(Oracle, s.f.\).) Tj ET
+BT /Times-Roman 12 Tf 108 432.00 Td (Python facilita este tipo de solucion por su soporte para clases, dataclasses, listas,) Tj ET
+BT /Times-Roman 12 Tf 72 408.00 Td (diccionarios y modulos reutilizables. La documentacion oficial de Python describe las) Tj ET
+BT /Times-Roman 12 Tf 72 384.00 Td (clases como un mecanismo para combinar datos y comportamiento dentro de una misma) Tj ET
+BT /Times-Roman 12 Tf 72 360.00 Td (estructura \(Python Software Foundation, s.f.\). Docker, por su parte, permite ejecutar) Tj ET
+BT /Times-Roman 12 Tf 72 336.00 Td (servicios como MySQL en contenedores reproducibles, lo que reduce diferencias entre) Tj ET
+BT /Times-Roman 12 Tf 72 312.00 Td (equipos de trabajo \(Docker, s.f.\).) Tj ET
+BT /Times-Bold 12 Tf 72 276.00 Td (Descripcion del caso practico) Tj ET
+BT /Times-Roman 12 Tf 108 252.00 Td (El proyecto gestiona las entidades country, city, film e inventory de Sakila. Estas) Tj ET
+BT /Times-Roman 12 Tf 72 228.00 Td (entidades cubren los requisitos de paises, ciudades, peliculas e inventario planteados) Tj ET
+BT /Times-Roman 12 Tf 72 204.00 Td (en la asignacion. La conexion se configura mediante variables de entorno y puede) Tj ET
+BT /Times-Roman 12 Tf 72 180.00 Td (ejecutarse con MySQL local o con el contenedor Docker preparado para el proyecto.) Tj ET
+BT /Times-Bold 12 Tf 72 144.00 Td (Arquitectura del sistema) Tj ET
+BT /Times-Roman 12 Tf 90 120.00 Td (- db.py: administra la conexion a MySQL y el manejo transaccional.) Tj ET
+BT /Times-Roman 12 Tf 90 96.00 Td (- dbcontext.py: centraliza repositorios, cache e historial.) Tj ET
+BT /Times-Roman 12 Tf 540 750 Td (3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 612 792] /Resources << /Font << /Times-Roman 1 0 R /Times-Bold 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 2749 >>
+stream
+BT /Times-Roman 12 Tf 90 720.00 Td (- models.py: define entidades y ModelCollection como lista de objetos.) Tj ET
+BT /Times-Roman 12 Tf 90 696.00 Td (- repositories.py: implementa CRUD generico y repositorios concretos.) Tj ET
+BT /Times-Roman 12 Tf 90 672.00 Td (- controllers.py y services.py: separan el flujo de aplicacion de la persistencia.) Tj ET
+BT /Times-Roman 12 Tf 90 648.00 Td (- structures.py: contiene cache de entidades e historial de consultas.) Tj ET
+BT /Times-Roman 12 Tf 90 624.00 Td (- metrics.py y reports.py: calculan media, rango, varianza, desviacion y) Tj ET
+BT /Times-Roman 12 Tf 90 600.00 Td (  covarianza.) Tj ET
+BT /Times-Roman 12 Tf 90 576.00 Td (- import_export.py: permite importar y exportar datos CSV y JSON.) Tj ET
+BT /Times-Roman 12 Tf 90 552.00 Td (- main.py: ofrece el menu de consola para ejecutar la demostracion.) Tj ET
+BT /Times-Bold 12 Tf 72 516.00 Td (Implementacion del CRUD) Tj ET
+BT /Times-Roman 12 Tf 108 492.00 Td (La capa BaseRepository recibe una clase de modelo y construye consultas parametrizadas) Tj ET
+BT /Times-Roman 12 Tf 72 468.00 Td (para crear, buscar por identificador, listar, actualizar y eliminar registros. Cada) Tj ET
+BT /Times-Roman 12 Tf 72 444.00 Td (repositorio concreto hereda esa funcionalidad para una entidad especifica. La interfaz) Tj ET
+BT /Times-Roman 12 Tf 72 420.00 Td (de consola permite seleccionar paises, ciudades, peliculas e inventario, introducir) Tj ET
+BT /Times-Roman 12 Tf 72 396.00 Td (datos y observar el resultado devuelto como objeto.) Tj ET
+BT /Times-Bold 12 Tf 72 360.00 Td (Pruebas y resultados) Tj ET
+BT /Times-Roman 12 Tf 108 336.00 Td (Las pruebas unitarias disponibles validan estructuras de datos usadas por el proyecto.) Tj ET
+BT /Times-Roman 12 Tf 72 312.00 Td (En la verificacion local se ejecuto pytest sobre el Caso 2 y el resultado fue de dos) Tj ET
+BT /Times-Roman 12 Tf 72 288.00 Td (pruebas aprobadas. Tambien se comprobo la conexion a MySQL Sakila por Docker,) Tj ET
+BT /Times-Roman 12 Tf 72 264.00 Td (obteniendo conexion exitosa, nombre de base de datos sakila y version MySQL 8.0.46.) Tj ET
+BT /Times-Roman 12 Tf 90 228.00 Td (- Create: creacion de paises de prueba desde el menu.) Tj ET
+BT /Times-Roman 12 Tf 90 204.00 Td (- Read: busqueda por ID y listado de entidades.) Tj ET
+BT /Times-Roman 12 Tf 90 180.00 Td (- Update: modificacion de registros seleccionados.) Tj ET
+BT /Times-Roman 12 Tf 90 156.00 Td (- Delete: eliminacion de registros de prueba.) Tj ET
+BT /Times-Roman 12 Tf 90 132.00 Td (- Metricas: calculo descriptivo sobre longitud, tarifa y costo de peliculas.) Tj ET
+BT /Times-Roman 12 Tf 90 108.00 Td (- SQL: ejecucion de diez consultas y script de unique constraints.) Tj ET
+BT /Times-Roman 12 Tf 540 750 Td (4) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 612 792] /Resources << /Font << /Times-Roman 1 0 R /Times-Bold 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 2263 >>
+stream
+BT /Times-Bold 12 Tf 72 720.00 Td (Conclusiones) Tj ET
+BT /Times-Roman 12 Tf 108 696.00 Td (La solucion cumple el objetivo principal de implementar un CRUD/ORM nativo sobre) Tj ET
+BT /Times-Roman 12 Tf 72 672.00 Td (Sakila usando POO y estructuras de datos. La separacion entre contexto, modelos,) Tj ET
+BT /Times-Roman 12 Tf 72 648.00 Td (repositorios, controladores y servicios facilita ampliar el sistema a nuevas tablas) Tj ET
+BT /Times-Roman 12 Tf 72 624.00 Td (sin reescribir toda la aplicacion. La automatizacion con Docker mejora la) Tj ET
+BT /Times-Roman 12 Tf 72 600.00 Td (reproducibilidad para los integrantes del equipo y permite generar evidencias reales) Tj ET
+BT /Times-Roman 12 Tf 72 576.00 Td (de ejecucion. Como mejora futura, se recomienda ampliar las pruebas de integracion y) Tj ET
+BT /Times-Roman 12 Tf 72 552.00 Td (agregar validaciones de negocio mas detalladas antes de insertar o actualizar datos.) Tj ET
+BT /Times-Bold 12 Tf 72 516.00 Td (Referencias) Tj ET
+BT /Times-Roman 12 Tf 72 492.00 Td (Docker. \(s.f.\). Docker documentation. https://docs.docker.com/) Tj ET
+BT /Times-Roman 12 Tf 72 456.00 Td (Fowler, M. \(2002\). Patterns of enterprise application architecture. Addison-Wesley.) Tj ET
+BT /Times-Roman 12 Tf 72 420.00 Td (Oracle. \(s.f.\). Sakila sample database. MySQL documentation.) Tj ET
+BT /Times-Roman 12 Tf 72 396.00 Td (https://dev.mysql.com/doc/sakila/en/) Tj ET
+BT /Times-Roman 12 Tf 72 360.00 Td (Python Software Foundation. \(s.f.\). The Python tutorial.) Tj ET
+BT /Times-Roman 12 Tf 72 336.00 Td (https://docs.python.org/3/tutorial/) Tj ET
+BT /Times-Bold 12 Tf 72 300.00 Td (Anexos) Tj ET
+BT /Times-Roman 12 Tf 90 276.00 Td (- Anexo A. Codigo fuente relevante: carpeta src/ del Caso practico 2.) Tj ET
+BT /Times-Roman 12 Tf 90 252.00 Td (- Anexo B. Evidencias de ejecucion: capturas de conexion, CRUD, metricas y) Tj ET
+BT /Times-Roman 12 Tf 90 228.00 Td (  pruebas.) Tj ET
+BT /Times-Roman 12 Tf 90 204.00 Td (- Anexo C. Scripts SQL: consultas y unique constraints incluidos en la carpeta) Tj ET
+BT /Times-Roman 12 Tf 90 180.00 Td (  sql/.) Tj ET
+BT /Times-Roman 12 Tf 90 156.00 Td (- Anexo D. Uso de agentes IA: apoyo en documentacion, automatizacion y revision.) Tj ET
+BT /Times-Roman 12 Tf 540 750 Td (5) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 13 0 R /MediaBox [0 0 612 792] /Resources << /Font << /Times-Roman 1 0 R /Times-Bold 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R] /Count 5 >>
+endobj
+14 0 obj
+<< /Type /Catalog /Pages 13 0 R >>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000009 00000 n 
+0000000081 00000 n 
+0000000152 00000 n 
+0000000975 00000 n 
+0000001129 00000 n 
+0000004295 00000 n 
+0000004449 00000 n 
+0000007388 00000 n 
+0000007542 00000 n 
+0000010343 00000 n 
+0000010498 00000 n 
+0000012814 00000 n 
+0000012970 00000 n 
+0000013054 00000 n 
+trailer
+<< /Size 15 /Root 14 0 R >>
+startxref
+13105
+%%EOF

@@ -39,7 +39,6 @@
 - [ ] Las credenciales se pasan por variables de entorno.
 - [ ] El proyecto tiene README general.
 - [ ] Cada caso tiene README propio.
-- [ ] `index.html` explica visualmente los casos y comandos principales.
 - [ ] Las carpetas vacias tienen README o `.gitkeep`.
 - [ ] Se declara el uso de agentes IA.
 - [ ] Se reviso ortografia y consistencia.

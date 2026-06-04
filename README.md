@@ -12,22 +12,11 @@ Este folder organiza el Caso practico 2 de la Unidad 2: un CRUD/ORM nativo con M
 
 La entrega combina codigo, SQL, documentacion tecnica, evidencias y plantillas de informe bajo el criterio APA 7/UASD indicado para INF-8237.
 
-## Vista HTML del proyecto
-
-Se agrego una pagina de presentacion para explicar los casos de forma visual:
-
-```bash
-open index.html
-```
-
-Si se prefiere no abrirla desde terminal, basta con hacer doble clic sobre `index.html`.
-
 ## Estructura
 
 ```text
 Unidad_2_UASDVirtual/
   README.md
-  index.html
   PLAN_UNIDAD_2_UASDVIRTUAL.md
   .agents/
   docs/
@@ -48,11 +37,10 @@ Toda salida generada por IA debe validarse con datos reales, evidencias de ejecu
 ## Guia rapida
 
 1. Leer `PLAN_UNIDAD_2_UASDVIRTUAL.md`.
-2. Abrir `index.html` para revisar el mapa visual del Caso 2.
-3. Configurar Sakila y ejecutar el Caso 2 con Docker o variables locales.
-4. Generar capturas, logs y consultas SQL.
-5. Completar el informe desde `docs/PLANTILLA_INFORME_CASO_2.md`.
-6. Revisar `docs/CHECKLIST_ENTREGA.md` antes de entregar.
+2. Configurar Sakila y ejecutar el Caso 2 con Docker o variables locales.
+3. Generar capturas, logs y consultas SQL.
+4. Completar el informe desde `docs/PLANTILLA_INFORME_CASO_2.md`.
+5. Revisar `docs/CHECKLIST_ENTREGA.md` antes de entregar.
 
 ## Comandos principales
 
@@ -82,6 +70,20 @@ export SAKILA_DB_PASSWORD=sakila123
 export SAKILA_DB_NAME=sakila
 python3 -m src.check_connection
 python3 -m src.main
+```
+
+## Informe APA en PDF
+
+El informe final en PDF esta en:
+
+```text
+caso_practico_2_sakila_crud_orm/docs/informe/Informe_Caso_2_Sakila_APA_UASD.pdf
+```
+
+Para regenerarlo:
+
+```bash
+python3 scripts/generar_informe_caso2_pdf.py
 ```
 
 ## Insumos pendientes

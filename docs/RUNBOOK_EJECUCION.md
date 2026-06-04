@@ -2,15 +2,6 @@
 
 Este runbook resume los pasos operativos para correr el CRUD/ORM nativo con MySQL Sakila y generar evidencias.
 
-## Vista general
-
-Abrir la pagina visual del proyecto:
-
-```bash
-cd Unidad_2_UASDVirtual
-open index.html
-```
-
 ## Preparacion general
 
 ```bash
