@@ -15,10 +15,9 @@ Usar agentes especializados para apoyar el trabajo colaborativo de UASDVirtual e
 ## Flujo recomendado
 
 1. El agente tecnico propone o revisa codigo.
-2. El agente de datos valida limpieza, PK, FK, dominios y EDA.
-3. El agente APA revisa estructura, citas, referencias y anexos.
-4. El agente QA revisa ejecucion, pruebas, riesgos y evidencias.
-5. El equipo humano aprueba la version final.
+2. El agente APA revisa estructura, citas, referencias y anexos.
+3. El agente QA revisa ejecucion, pruebas, riesgos y evidencias.
+4. El equipo humano aprueba la version final.
 
 ## Evidencia sugerida
 
@@ -27,7 +26,5 @@ En anexos puede incluirse una tabla breve:
 | Agente | Funcion | Resultado revisado |
 | --- | --- | --- |
 | sakila_backend_agent | CRUD/ORM nativo | Arquitectura, repositorios, menu |
-| oulad_data_agent | ETL/EDA | SQL, limpieza, dominios, graficas |
 | apa_uasd_agent | Informe | Estructura APA, citas, anexos |
 | qa_reviewer_agent | Calidad | Pruebas, riesgos, checklist |
-

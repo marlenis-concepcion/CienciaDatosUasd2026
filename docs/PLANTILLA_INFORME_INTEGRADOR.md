@@ -1,4 +1,4 @@
-# Unidad 2: Aplicacion de bases de datos, ORM, ETL y EDA en Ciencia de Datos
+# Caso practico 2: CRUD/ORM nativo con MySQL Sakila
 
 ## Presentacion
 
@@ -14,7 +14,7 @@ Fecha: [Completar]
 
 ## Resumen
 
-[Redactar 250 palabras. Debe mencionar los dos casos: CRUD/ORM con Sakila y ETL/EDA con OULAD.]
+[Redactar 250 palabras. Debe mencionar el objetivo, tecnologia usada, entidades gestionadas, arquitectura CRUD/ORM, metricas, resultados y evidencias.]
 
 ## Abstract
 
@@ -26,7 +26,7 @@ Fecha: [Completar]
 
 ## Introduccion
 
-Presentar el objetivo general de la Unidad 2 y la relacion entre manipulacion de datos, estructuras de datos, bases de datos relacionales, ETL y EDA.
+Presentar el objetivo del Caso practico 2 y la relacion entre manipulacion de datos, estructuras de datos, bases de datos relacionales, CRUD y ORM.
 
 ## Marco de referencia
 
@@ -35,12 +35,11 @@ Desarrollar brevemente:
 - Bases de datos relacionales.
 - Programacion orientada a objetos.
 - CRUD y ORM.
-- ETL.
-- Limpieza de datos.
-- Analisis exploratorio de datos.
-- Learning analytics.
+- Estructuras de datos.
+- Integridad de datos.
+- Metricas descriptivas.
 
-## Caso practico 2: CRUD/ORM nativo con Sakila
+## CRUD/ORM nativo con Sakila
 
 ### Descripcion del problema
 
@@ -62,35 +61,13 @@ Documentar listas, diccionarios, tuplas, objetos, cache y cola/historial de cons
 
 Mencionar capturas, logs, pruebas, conexion Docker, operaciones CRUD, metricas y consultas SQL. Referir anexos.
 
-## Caso practico 3: OULAD ETL, EDA y modelo relacional
-
-### Descripcion del dataset
-
-Explicar OULAD y sus tablas principales.
-
-### Diseno del modelo relacional
-
-Describir tablas, PK, FK, restricciones de dominio, indices y vistas.
-
-### Limpieza y transformacion de datos
-
-Documentar nulos, dominios, duplicados, fechas relativas y variables derivadas.
-
-### Analisis exploratorio de datos
-
-Incluir hallazgos sobre resultados finales, interaccion VLE, rendimiento y abandono.
-
-### Resultados y evidencias
-
-Mencionar graficas, consultas SQL, tablas resumen y anexos.
-
 ## Uso de agentes IA en el proyecto
 
 Durante el desarrollo del proyecto se utilizaron agentes de inteligencia artificial como apoyo para la planificacion tecnica, organizacion documental, revision de estilo academico y generacion de recomendaciones de implementacion. Las decisiones finales, validaciones, ejecucion del codigo, seleccion de evidencias y redaccion definitiva deben ser revisadas por el equipo responsable.
 
 ## Conclusiones
 
-Sintetizar los logros de ambos casos, principales aprendizajes, limitaciones y mejoras futuras.
+Sintetizar los logros del CRUD/ORM, principales aprendizajes, limitaciones y mejoras futuras.
 
 ## Referencias
 
@@ -100,8 +77,6 @@ Sintetizar los logros de ambos casos, principales aprendizajes, limitaciones y m
 
 - Anexo A. Evidencias de ejecucion del CRUD/ORM Sakila.
 - Anexo B. Fragmentos relevantes del codigo Sakila.
-- Anexo C. Modelo relacional OULAD.
-- Anexo D. Evidencias del ETL OULAD.
-- Anexo E. Evidencias del EDA.
-- Anexo F. Pruebas y validacion.
-- Anexo G. Declaracion de uso de agentes IA.
+- Anexo C. Scripts SQL y consultas.
+- Anexo D. Pruebas y validacion.
+- Anexo E. Declaracion de uso de agentes IA.

@@ -33,17 +33,6 @@
 - [ ] Incluye script de unique constraints.
 - [ ] Hay capturas o logs de ejecucion.
 
-## Caso practico 3
-
-- [ ] Los siete CSV de OULAD estan en `data/raw/`.
-- [ ] El esquema SQL tiene PK.
-- [ ] El esquema SQL tiene FK.
-- [ ] El esquema SQL tiene restricciones de dominio.
-- [ ] El ETL genera validaciones de calidad.
-- [ ] Hay evidencias de limpieza.
-- [ ] Hay EDA extendido con tablas y graficas.
-- [ ] Hay consultas de validacion.
-
 ## Calidad y seguridad
 
 - [ ] No hay contrasenas en el codigo.

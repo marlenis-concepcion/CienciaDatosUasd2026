@@ -1,6 +1,6 @@
-# Runbook de ejecucion - Unidad 2
+# Runbook de ejecucion - Caso practico 2
 
-Este runbook resume los pasos operativos para correr los casos practicos y generar evidencias.
+Este runbook resume los pasos operativos para correr el CRUD/ORM nativo con MySQL Sakila y generar evidencias.
 
 ## Vista general
 
@@ -20,7 +20,7 @@ source .venv/bin/activate
 python3 -m pip install -U pip
 ```
 
-## Caso practico 2: Sakila CRUD/ORM
+## Sakila CRUD/ORM
 
 Desde la carpeta del caso:
 
@@ -87,7 +87,7 @@ python3 -m src.check_connection
 python3 -m src.main
 ```
 
-Evidencias minimas:
+## Evidencias minimas
 
 - Conexion exitosa.
 - Crear, buscar, listar, actualizar y eliminar registros de prueba.
@@ -95,47 +95,9 @@ Evidencias minimas:
 - Consultas SQL de `sql/01_fase_i_10_consultas.sql`.
 - Restricciones de integridad de `sql/02_integridad_unique_constraints.sql`.
 
-## Caso practico 3: OULAD ETL/EDA
-
-Colocar los siete CSV en:
-
-```text
-caso_practico_3_oulad_etl_eda/data/raw/
-```
-
-Archivos esperados:
-
-```text
-courses.csv
-assessments.csv
-studentInfo.csv
-studentRegistration.csv
-studentAssessment.csv
-studentVle.csv
-vle.csv
-```
-
-Ejecutar:
-
-```bash
-cd Unidad_2_UASDVirtual/caso_practico_3_oulad_etl_eda
-python3 -m pip install -r requirements.txt
-python3 -m src.main
-python3 -m src.eda
-```
-
 Pruebas:
 
 ```bash
 cd Unidad_2_UASDVirtual
 python3 -m pytest caso_practico_2_sakila_crud_orm/tests
-python3 -m pytest caso_practico_3_oulad_etl_eda/tests
 ```
-
-Evidencias minimas:
-
-- CSV cargados en `data/raw/`.
-- Salidas procesadas en `data/processed/`.
-- Reportes o tablas de calidad.
-- Consultas SQL de validacion.
-- Graficas o tablas del EDA.

@@ -51,9 +51,8 @@ Los anexos deben estar despues de las referencias y ser citados en el cuerpo del
 Ejemplos:
 
 - Anexo A. Capturas de ejecucion del CRUD.
-- Anexo B. Script SQL del modelo relacional.
-- Anexo C. Graficas del EDA.
-- Anexo D. Evidencia del uso de agentes IA.
+- Anexo B. Scripts SQL y consultas de Sakila.
+- Anexo C. Evidencia del uso de agentes IA.
 
 ## Checklist final
 
@@ -63,4 +62,3 @@ Ejemplos:
 - Los anexos estan nombrados y mencionados.
 - El codigo se ejecuta o se documenta claramente la dependencia faltante.
 - Las evidencias muestran resultados reales, no solo intencion.
-

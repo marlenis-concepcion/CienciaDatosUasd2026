@@ -224,12 +224,11 @@
       <div class="eyebrow">INF-8237-C2 | Ciencia de Datos I | UASDVirtual</div>
       <h1>Unidad 2: Manipulacion y Procesamiento de Datos</h1>
       <p class="lead">
-        Paquete colaborativo con dos casos practicos: un CRUD/ORM nativo para Sakila en MySQL
-        y un flujo ETL/EDA para OULAD con modelo relacional, calidad de datos y evidencias.
+        Caso practico 2: un CRUD/ORM nativo para Sakila en MySQL, basado en POO,
+        estructuras de datos, consultas SQL, metricas descriptivas y evidencias.
       </p>
       <div class="hero-actions">
         <a class="button" href="caso_practico_2_sakila_crud_orm/README.md">Caso 2 Sakila</a>
-        <a class="button" href="caso_practico_3_oulad_etl_eda/README.md">Caso 3 OULAD</a>
         <a class="button" href="docs/CHECKLIST_ENTREGA.md">Checklist</a>
       </div>
     </div>
@@ -245,11 +244,11 @@
       <div class="flow">
         <div class="step">
           <strong>1. Preparar</strong>
-          Docker, Python, Sakila y CSV de OULAD.
+          Docker, Python, MySQL y Sakila.
         </div>
         <div class="step">
           <strong>2. Ejecutar</strong>
-          CRUD/ORM, ETL, EDA y consultas SQL.
+          CRUD/ORM, consultas SQL y metricas.
         </div>
         <div class="step">
           <strong>3. Evidenciar</strong>
@@ -287,26 +286,24 @@
       </article>
 
       <article class="card">
-        <span class="tag blue">Caso practico 3</span>
-        <h2>OULAD ETL, EDA y modelo relacional</h2>
+        <span class="tag blue">Quickstart</span>
+        <h2>Un setup por sistema</h2>
         <p>
-          Organiza los siete CSV de OULAD, aplica limpieza y validaciones de calidad,
-          transforma los datos y prepara un modelo relacional con PK, FK, dominios,
-          indices, vistas y consultas de control.
+          El proyecto incluye scripts separados para que cada integrante pueda levantar
+          MySQL/Sakila en Docker, verificar la conexion y abrir el menu CRUD/ORM sin
+          configurar manualmente las variables de entorno.
         </p>
-        <h3>Componentes clave</h3>
+        <h3>Archivos disponibles</h3>
         <ul>
-          <li>Lectura de CSV en data/raw.</li>
-          <li>Normalizacion y transformacion reproducible.</li>
-          <li>Validaciones de duplicados, dominios y consistencia.</li>
-          <li>Esquema SQL relacional con restricciones.</li>
-          <li>EDA por curso, modulo, region, desempeno y actividad.</li>
-          <li>Salidas para tablas, figuras y anexos.</li>
+          <li>Mac: `MAC_SH_QUICKSTART.sh`.</li>
+          <li>Linux: `LINUX_SH_QUICKSTART.sh`.</li>
+          <li>Windows PowerShell: `WINDOWS_QUICKSTART.ps1`.</li>
+          <li>Base compartida: `setup_run_sakila_docker.sh`.</li>
         </ul>
-        <pre>cd caso_practico_3_oulad_etl_eda
-python3 -m pip install -r requirements.txt
-python3 -m src.main
-python3 -m src.eda</pre>
+        <pre>cd caso_practico_2_sakila_crud_orm
+./MAC_SH_QUICKSTART.sh
+./LINUX_SH_QUICKSTART.sh
+.\WINDOWS_QUICKSTART.ps1</pre>
       </article>
     </section>
 
@@ -319,8 +316,8 @@ python3 -m src.eda</pre>
           <li>Creacion, lectura, actualizacion y eliminacion de datos.</li>
           <li>Resultados de las 10 consultas SQL.</li>
           <li>Metricas descriptivas de peliculas.</li>
-          <li>CSV de OULAD cargados y salidas procesadas.</li>
-          <li>Consultas de calidad, tablas y graficas del EDA.</li>
+          <li>Restricciones unique constraint aplicadas o documentadas.</li>
+          <li>Pruebas unitarias del proyecto.</li>
         </ul>
       </article>
 
