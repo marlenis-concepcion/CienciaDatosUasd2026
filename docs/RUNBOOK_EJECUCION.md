@@ -24,6 +24,31 @@ python3 -m pip install -U pip
 
 Desde la carpeta del caso:
 
+Mac:
+
+```bash
+cd Unidad_2_UASDVirtual/caso_practico_2_sakila_crud_orm
+chmod +x MAC_SH_QUICKSTART.sh
+./MAC_SH_QUICKSTART.sh
+```
+
+Linux:
+
+```bash
+cd Unidad_2_UASDVirtual/caso_practico_2_sakila_crud_orm
+chmod +x LINUX_SH_QUICKSTART.sh
+./LINUX_SH_QUICKSTART.sh
+```
+
+Windows PowerShell:
+
+```powershell
+cd Unidad_2_UASDVirtual\caso_practico_2_sakila_crud_orm
+.\WINDOWS_QUICKSTART.ps1
+```
+
+Script base:
+
 ```bash
 cd Unidad_2_UASDVirtual/caso_practico_2_sakila_crud_orm
 python3 -m pip install -r requirements.txt

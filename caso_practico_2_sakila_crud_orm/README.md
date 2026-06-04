@@ -76,6 +76,32 @@ caso_practico_2_sakila_crud_orm/
 
 ## Ejecucion recomendada con Docker
 
+Usar el archivo correspondiente al sistema operativo:
+
+Mac:
+
+```bash
+chmod +x MAC_SH_QUICKSTART.sh
+./MAC_SH_QUICKSTART.sh
+```
+
+Linux:
+
+```bash
+chmod +x LINUX_SH_QUICKSTART.sh
+./LINUX_SH_QUICKSTART.sh
+```
+
+Windows PowerShell:
+
+```powershell
+.\WINDOWS_QUICKSTART.ps1
+```
+
+Todos estos archivos preparan MySQL/Sakila con Docker, prueban la conexion y abren el menu CRUD/ORM.
+
+Archivo base compartido por Mac y Linux:
+
 ```bash
 cd caso_practico_2_sakila_crud_orm
 python3 -m pip install -r requirements.txt
