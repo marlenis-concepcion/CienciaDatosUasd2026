@@ -24,6 +24,7 @@ Equipo: UASDVirtual
 - `caso_practico_2_sakila_crud_orm/src/`: base del CRUD/ORM nativo para Sakila.
 - `caso_practico_2_sakila_crud_orm/setup_run_sakila_docker.sh`: arranque automatico de MySQL/Sakila en Docker.
 - `caso_practico_2_sakila_crud_orm/tests/`: pruebas iniciales de estructuras de datos.
+- `index.html`: pagina visual de presentacion del Caso 2.
 
 ## Flujo recomendado
 

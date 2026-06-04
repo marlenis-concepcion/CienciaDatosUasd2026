@@ -17,6 +17,7 @@ La entrega combina codigo, SQL, documentacion tecnica, evidencias y plantillas d
 ```text
 Unidad_2_UASDVirtual/
   README.md
+  index.html
   PLAN_UNIDAD_2_UASDVIRTUAL.md
   .agents/
   docs/
@@ -37,10 +38,11 @@ Toda salida generada por IA debe validarse con datos reales, evidencias de ejecu
 ## Guia rapida
 
 1. Leer `PLAN_UNIDAD_2_UASDVIRTUAL.md`.
-2. Configurar Sakila y ejecutar el Caso 2 con Docker o variables locales.
-3. Generar capturas, logs y consultas SQL.
-4. Completar el informe desde `docs/PLANTILLA_INFORME_CASO_2.md`.
-5. Revisar `docs/CHECKLIST_ENTREGA.md` antes de entregar.
+2. Abrir `index.html` para ver el resumen visual del Caso 2.
+3. Configurar Sakila y ejecutar el Caso 2 con Docker o variables locales.
+4. Generar capturas, logs y consultas SQL.
+5. Completar el informe desde `docs/PLANTILLA_INFORME_CASO_2.md`.
+6. Revisar `docs/CHECKLIST_ENTREGA.md` antes de entregar.
 
 ## Comandos principales
 
@@ -85,6 +87,10 @@ Para regenerarlo:
 ```bash
 python3 scripts/generar_informe_caso2_pdf.py
 ```
+
+## Vista HTML
+
+La pagina `index.html` presenta el Caso 2, los quickstarts, entregables, evidencias y enlace al PDF.
 
 ## Insumos pendientes
 
