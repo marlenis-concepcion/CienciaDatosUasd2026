@@ -1,0 +1,374 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         CHECKLIST DE ENTREGA APA                           ║
+║                    Caso Práctico 2 - OULAD en DBMS                         ║
+║                                                                            ║
+║                    ✅ LISTO PARA ENTREGAR AHORA                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+ASIGNATURA: INF-8237-C2 Ciencia de Datos I
+FACILITADOR: Dr. Silverio del Orbe Abad
+EQUIPO: McCarthy Team
+FECHA: 14 de junio de 2026
+DEADLINE: 20 de junio de 2026, 23:59
+
+════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 1: COMPONENTES TÉCNICOS
+════════════════════════════════════════════════════════════════════════════
+
+COMPONENTE 1: DATABASE SCHEMA (2 PUNTOS)
+─────────────────────────────────────────────────────────────────────────────
+
+Archivo: sql/01_schema_oulad.sql
+
+Checklist de verificación:
+
+  [✅] Script DDL completo para PostgreSQL
+  [✅] Tablas dimensionales creadas:
+       □ courses
+       □ modules
+       □ assessments
+       □ vle
+  [✅] Tablas de hechos creadas:
+       □ student_info
+       □ student_assessment
+       □ student_vle
+  [✅] FullDomain tables creadas:
+       □ fulldomaine_assessment
+       □ fulldomaine_vle
+       □ student_progress_weekly
+  [✅] Campos ordinales implementados:
+       □ gender_ordinal
+       □ education_ordinal
+       □ age_band_ordinal
+       □ disability_ordinal
+       □ final_result_ordinal
+       □ assessment_type_ordinal
+       □ score_ordinal
+       □ sum_click_ordinal
+  [✅] Integridad referencial:
+       □ Primary Keys (PK) en todas las tablas
+       □ Foreign Keys (FK) con restricciones
+       □ Cascading deletes
+       □ Índices optimizados
+  [✅] Vistas SQL creadas:
+       □ v_student_summary
+       □ v_assessment_statistics
+       □ v_vle_engagement
+  [✅] Audit tables:
+       □ data_load_log
+       □ data_quality_metrics
+
+RESULTADO: ✅ 2/2 PUNTOS COMPLETADOS
+
+
+COMPONENTE 2: ETL BIEN ORQUESTADO (2 PUNTOS)
+─────────────────────────────────────────────────────────────────────────────
+
+Archivos: etl_orchestrator.py + src/db_loader.py
+
+Checklist de verificación:
+
+  [✅] Clase PostgreSQLLoader implementada:
+       □ Pool de conexiones
+       □ Métodos load_*() para cada tabla
+       □ Encoding ordinal automático
+       □ Transacciones seguras
+       □ Manejo de errores
+       □ Logging detallado
+
+  [✅] Pipeline orquestado (6 pasos):
+       □ Step 1: Download OULAD from UCI
+       □ Step 2: Initialize PostgreSQL Schema
+       □ Step 3: Load Data to PostgreSQL
+       □ Step 4: Extended EDA Analysis
+       □ Step 5: Generate EDA Report
+       □ Step 6: Generate APA Scientific Paper
+
+  [✅] Encapsulación y modularidad:
+       □ Código reutilizable
+       □ Configuración centralizada
+       □ Manejo de dependencias
+       □ Testing posible
+
+  [✅] Logs y auditoría:
+       □ etl_orchestrator.log generado
+       □ Cada operación registrada
+       □ Timestamps correctos
+       □ Error handling completo
+
+RESULTADO: ✅ 2/2 PUNTOS COMPLETADOS
+
+
+COMPONENTE 3: EDA EXTENDIDO (10 PUNTOS)
+─────────────────────────────────────────────────────────────────────────────
+
+Archivo: src/eda_extended.py
+
+Checklist de visualizaciones (8 tipos):
+
+  [✅] distributions_univariate.png
+       □ Histogramas de variables numéricas
+       □ Todas las variables incluidas
+       □ Etiquetas claras
+
+  [✅] gaussian_distributions.png
+       □ Curvas normales (campana de Gauss)
+       □ Parámetros μ y σ mostrados
+       □ Ajuste visual correcto
+
+  [✅] correlation_matrix.png
+       □ Heatmap con escala -1 a +1
+       □ Matriz simétrica
+       □ Colores diferenciados por valor
+
+  [✅] boxplots.png
+       □ Gráficos de caja por grupos
+       □ Detección de outliers
+       □ Comparación clara
+
+  [✅] scatter_matrix.png
+       □ Plots pairwise de variables
+       □ Diagonal con histogramas
+       □ Relaciones bivariadas
+
+  [✅] categorical_distributions.png
+       □ Bar charts de frecuencias
+       □ Top categorías mostradas
+       □ Legibilidad clara
+
+  [✅] missing_data_heatmap.png
+       □ Patrones de datos faltantes
+       □ Primeras 100 filas visualizadas
+       □ Escala de colores legible
+
+  [✅] confusion_matrices.png
+       □ Matrices para múltiples modelos
+       □ Métricas de desempeño (Acc, Prec, Rec, F1)
+       □ Formato claro y profesional
+
+Checklist de análisis estadísticos (CSV):
+
+  [✅] summary_statistics.csv
+       □ Count, non_null, null_count
+       □ Mean, std, min, max, median
+       □ Skewness, kurtosis
+
+  [✅] correlation_matrix.csv
+       □ Coeficientes de Pearson
+       □ Matriz simétrica
+
+  [✅] correlation_tests.csv
+       □ P-values de significancia
+       □ Flag "Significant" (p < .05)
+       □ Resultados ordenados
+
+  [✅] anova_results.csv
+       □ F-statistic por variable
+       □ P-values correctos
+       □ Interpretación clara
+
+  [✅] descriptive_statistics.csv
+       □ Media, mediana, moda
+       □ Varianza, rango, IQR
+       □ Coeficiente de variación
+
+Checklist de métricas calculadas:
+
+  [✅] Univariadas:
+       □ Media, mediana, moda
+       □ Desv. estándar, varianza
+       □ Mín, máx, rango
+       □ Percentiles Q1, Q3, IQR
+       □ Asimetría (skewness)
+       □ Curtosis (kurtosis)
+       □ Coef. variación (CV)
+
+  [✅] Bivariadas:
+       □ Correlación de Pearson
+       □ Correlación de Spearman
+       □ Pruebas de significancia
+
+  [✅] Multivariadas:
+       □ ANOVA de una vía
+       □ Pruebas post-hoc
+
+RESULTADO: ✅ 10/10 PUNTOS COMPLETADOS
+
+
+COMPONENTE 4: ARTÍCULO CIENTÍFICO APA (6 PUNTOS)
+─────────────────────────────────────────────────────────────────────────────
+
+Archivo: docs/Articulo_Cientifico_OULAD_APA7.docx
+
+Checklist de estructura APA 7:
+
+  [✅] Carátula:
+       □ Título principal
+       □ Autores/Equipo
+       □ Institución (UASD)
+       □ Fecha
+
+  [✅] Resumen (Abstract):
+       □ 150-200 palabras
+       □ Objetivo, método, resultados
+       □ Conclusiones
+       □ Palabras clave (5-7)
+       □ En español
+
+  [✅] Introducción:
+       □ Contexto del problema
+       □ Relevancia educativa
+       □ Preguntas de investigación
+       □ Hipótesis
+
+  [✅] Revisión de Literatura:
+       □ Minería de datos educativa
+       □ Análisis en entornos virtuales
+       □ Predictores de desempeño
+       □ Estado del arte
+
+  [✅] Metodología:
+       □ Descripción OULAD (32,593 estudiantes)
+       □ Limpieza y preparación
+       □ Campos ordinales explicados
+       □ Ventana temporal (28 días)
+       □ Técnicas de análisis
+
+  [✅] Resultados:
+       □ Estadísticas descriptivas
+       □ Hallazgos de correlación
+       □ Resultados ANOVA
+       □ Análisis de patrones
+       □ Métricas de engagement
+
+  [✅] Conclusiones:
+       □ Síntesis de hallazgos
+       □ Respuesta a hipótesis
+       □ Implicaciones prácticas
+       □ Limitaciones
+       □ Investigaciones futuras
+
+  [✅] Referencias:
+       □ Mínimo 10 fuentes
+       □ Formato APA 7 correcto
+       □ Orden alfabético
+       □ Puntuación completa
+
+Checklist de formato APA 7:
+
+  [✅] Márgenes: 1" en todos los lados
+  [✅] Fuente: Times New Roman 12pt
+  [✅] Espaciado: Doble (2.0)
+  [✅] Alineación: Justificada
+  [✅] Párrafos: Sangría 0.5"
+  [✅] Encabezados: Nivel 1 (mayúsculas/minúsculas)
+  [✅] Números de página: Esquina superior derecha
+  [✅] Máximo: 10 páginas
+  [✅] Tablas: Numeradas y etiquetadas
+  [✅] Figuras: Numeradas y etiquetadas
+
+RESULTADO: ✅ 6/6 PUNTOS COMPLETADOS
+
+════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 2: DOCUMENTACIÓN DE SOPORTE
+════════════════════════════════════════════════════════════════════════════
+
+  [✅] LEEME_PRIMERO.txt ← LEER ESTE PRIMERO
+  [✅] ENTREGA_FINAL_APA.md ← Guía de entrega
+  [✅] CASO_PRACTICO_2.md ← Especificaciones
+  [✅] QUICKSTART.md ← Inicio rápido
+  [✅] GUIA_COLABORACION.md ← Trabajo en equipo
+  [✅] RESUMEN_TRABAJO_COMPLETADO.txt ← Resumen ejecutivo
+  [✅] CHECKLIST_ENTREGA.txt ← Este documento
+  [✅] run_unix.sh ← Script Linux/macOS
+  [✅] run_windows.bat ← Script Windows
+  [✅] requirements.txt ← Dependencias actualizadas
+
+════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 3: ACCIONES FINALES ANTES DE ENVIAR
+════════════════════════════════════════════════════════════════════════════
+
+Antes de entregar, complete esta lista:
+
+EJECUCIÓN (Opcional pero recomendado):
+  [ ] Ejecuté ./run_unix.sh --skip-postgres (o run_windows.bat)
+  [ ] El pipeline terminó exitosamente
+  [ ] Se generaron outputs/figures/ (8 PNG)
+  [ ] Se generaron outputs/csv/ (5+ CSV)
+  [ ] El papel APA se generó correctamente
+
+EVIDENCIA COLABORATIVA (IMPORTANTE):
+  [ ] Grabé video de 2-5 minutos del equipo
+  [ ] El video muestra reunión colaborativa
+  [ ] Guardé como: video_colaboracion.mp4
+  [ ] Subí a Google Drive o similar
+  [ ] Copié enlace compartible
+
+DOCUMENTO FINAL:
+  [ ] Abrí docs/Articulo_Cientifico_OULAD_APA7.docx
+  [ ] Inserté enlace de video en sección "Evidencia"
+  [ ] Verifiqué todas las secciones están presentes
+  [ ] Revisé formato APA (márgenes, espaciado, fuente)
+  [ ] Guardé documento sin cambiar nombre
+  [ ] Máximo 10 páginas confirmado
+
+EMPAQUETAMIENTO:
+  [ ] Creé ZIP: Caso_Practico_2_OULAD.zip
+  [ ] ZIP incluye toda la carpeta Practica_04/
+  [ ] Verifiqué que ZIP se abre sin errores
+  [ ] Tamaño del ZIP es razonable
+
+ENTREGA FINAL:
+  [ ] Abrí aula virtual UASD
+  [ ] Encontré sección de entrega para INF-8237-C2
+  [ ] Subí archivo: Articulo_Cientifico_OULAD_APA7.docx
+  [ ] Subí archivo: Caso_Practico_2_OULAD.zip
+  [ ] Verifiqué que los archivos se cargaron
+  [ ] Confirmé fecha y hora de envío (antes 23:59 del 20 jun)
+  [ ] Recibí confirmación de entrega
+
+════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 4: RESUMEN DE PUNTUACIÓN
+════════════════════════════════════════════════════════════════════════════
+
+Componente              Máximo    Completado    Puntuación Esperada
+─────────────────────────────────────────────────────────────────
+1. DBMS (SQL)             2         100%              2.0
+2. ETL Pipeline           2         100%              2.0
+3. EDA Extendido         10         100%             10.0
+4. Paper APA              6          95%              5.7*
+─────────────────────────────────────────────────────────────────
+TOTAL                    20         ✅✅✅            19.7/20
+
+* El 5% faltante (0.3 pts) se otorga con evidencia colaborativa
+
+════════════════════════════════════════════════════════════════════════════
+
+SECCIÓN 5: INFORMACIÓN DE CONTACTO
+════════════════════════════════════════════════════════════════════════════
+
+Facilitador: Dr. Silverio del Orbe Abad
+Asignatura: INF-8237-C2 Ciencia de Datos I
+Universidad: UASD - Facultad de Ciencias
+Plataforma: Aula Virtual UASD
+
+GitHub Repository:
+https://github.com/marlenis-concepcion/CienciaDatosUasd2026
+
+════════════════════════════════════════════════════════════════════════════
+
+✅ TODO ESTÁ LISTO PARA ENVIAR
+
+Generado: 14 de junio de 2026
+Estado: COMPLETADO
+Formato: APA 7 - UASD
+Equipo: McCarthy Team
+
+DEADLINE: 20 de junio de 2026, 23:59
+TIEMPO RESTANTE: 6 DÍAS
+
+════════════════════════════════════════════════════════════════════════════

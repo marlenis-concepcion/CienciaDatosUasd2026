@@ -1,26 +1,102 @@
-.DS_Store
-**/.DS_Store
-.env
-.venv/
-**/.venv/
-**/.matplotlib-cache/
+# OUTPUTS & RESULTS (RANDOM - DO NOT COMMIT)
+outputs/
+results/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.gif
+*.mp4
+
+# DATA FILES
+*.csv
+*.xlsx
+*.xls
+*.tsv
+*.json
+*.parquet
+*.pickle
+*.pkl
+data/
+datasets/
+
+# PYTHON
 __pycache__/
-**/__pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# VIRTUALENV
+.venv
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# BACKUPS
+*.docx~
 ~$*.docx
+.~lock.*
+*.bak
+
+# DATABASE
+*.sql.bak
+postgres_*
+pgpass
+
+# CACHE
 .pytest_cache/
-**/.pytest_cache/
-.ipynb_checkpoints/
-**/.ipynb_checkpoints/
-**/data/oulad.zip
-**/data/*.zip.part
+.coverage
+htmlcov/
+
+# CREDENTIALS (NEVER COMMIT)
+credentials.json
+config.ini
+secrets.txt
+api_keys.txt
+token.txt
+password.txt
+
+# LARGE FILES
 *.zip
+*.rar
+*.tar.gz
+*.7z
 
-!**/.gitkeep
-!**/README.md
-
-# Evidencias y registros de ejecucion: solo locales, nunca se publican
-evidencias/
-evidencias_locales/
-**/evidencias/
-**/evidencias_locales/
+# TEMP
+*.tmp
+*.temp
+.tmp/
+temp/
+backup/
+.cache/
+*.log

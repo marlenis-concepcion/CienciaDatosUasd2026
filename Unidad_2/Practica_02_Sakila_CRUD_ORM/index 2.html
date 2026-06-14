@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso practico 2 - Sakila CRUD/ORM</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5d6878;
+      --line: #dce4ee;
+      --paper: #f6f8fb;
+      --white: #ffffff;
+      --green: #1f7a5c;
+      --blue: #2364aa;
+      --gold: #b87913;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      background: var(--paper);
+    }
+
+    header {
+      min-height: 62vh;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      padding: 48px 24px;
+      background:
+        linear-gradient(rgba(12, 28, 42, 0.76), rgba(12, 28, 42, 0.76)),
+        url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=80");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .wrap {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: #caeadc;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.86rem;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0 0 18px;
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 1.04;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0 0 26px;
+      color: #edf6f3;
+      font-size: 1.16rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 6px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    main {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 42px 24px 64px;
+    }
+
+    section {
+      margin-bottom: 38px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.55rem, 4vw, 2.25rem);
+      line-height: 1.16;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 1.16rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 8px 22px rgba(18, 38, 63, 0.06);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .tag.blue {
+      background: var(--blue);
+    }
+
+    .tag.gold {
+      background: var(--gold);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    pre {
+      overflow-x: auto;
+      margin: 12px 0 0;
+      padding: 14px;
+      border-radius: 8px;
+      color: #edf7f3;
+      background: #111d2b;
+      font-family: Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 22px 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: var(--white);
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        min-height: 58vh;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">INF-8237-C2 | Ciencia de Datos I | Mccarthy Team</div>
+      <h1>Caso practico 2: Sakila CRUD/ORM nativo</h1>
+      <p class="lead">
+        Proyecto en Python para gestionar paises, ciudades, peliculas e inventario de MySQL Sakila
+        usando POO, estructuras de datos, DbContext, repositorios, controladores, metricas descriptivas
+        e importacion/exportacion CSV y JSON.
+      </p>
+      <div class="actions">
+        <a class="button" href="caso_practico_2_sakila_crud_orm/README.md">README del caso</a>
+        <a class="button" href="docs/Informe_Caso_2_Sakila_APA_UASDVersionFinal.pdf">Informe PDF</a>
+        <a class="button" href="docs/CHECKLIST_ENTREGA.md">Checklist</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <span class="tag">Arquitectura</span>
+        <h2>CRUD/ORM basado en POO</h2>
+        <p>
+          La solucion separa conexion, contexto, entidades, repositorios, controladores, servicios,
+          estructuras de datos y menu de consola para mantener un flujo claro y ampliable.
+        </p>
+        <ul>
+          <li>DbContext centraliza repositorios, cache e historial.</li>
+          <li>Modelos: country, city, film e inventory.</li>
+          <li>ModelCollection representa listas de entidades.</li>
+          <li>Repositorios ejecutan create, read, update y delete.</li>
+          <li>Controladores organizan el flujo tipo MVC.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag blue">Quickstart</span>
+        <h2>Un setup por sistema</h2>
+        <p>
+          Cada integrante puede levantar MySQL/Sakila con Docker, probar la conexion y abrir el menu
+          interactivo sin configurar manualmente todo el entorno.
+        </p>
+        <pre>cd caso_practico_2_sakila_crud_orm
+./MAC_SH_QUICKSTART.sh
+./LINUX_SH_QUICKSTART.sh
+.\WINDOWS_QUICKSTART.ps1</pre>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <span class="tag gold">Entregables</span>
+        <h2>Lo que cubre</h2>
+        <ul>
+          <li>10 consultas SQL sobre Sakila.</li>
+          <li>CRUD para paises, ciudades, peliculas e inventario.</li>
+          <li>Importacion y exportacion CSV/JSON.</li>
+          <li>Media, rango, desviacion, varianza y covarianza.</li>
+          <li>Unique constraints para mejorar integridad.</li>
+          <li>Informe APA/UASD en PDF.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Evidencias</span>
+        <h2>Capturas sugeridas</h2>
+        <ul>
+          <li>Conexion exitosa a MySQL Sakila.</li>
+          <li>Crear, buscar, listar, actualizar y eliminar registros.</li>
+          <li>Metricas descriptivas de peliculas.</li>
+          <li>Consultas SQL ejecutadas en Workbench o terminal.</li>
+          <li>Pruebas unitarias aprobadas.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Mccarthy Team | Caso practico 2 | Sakila CRUD/ORM nativo
+  </footer>
+</body>
+</html>
