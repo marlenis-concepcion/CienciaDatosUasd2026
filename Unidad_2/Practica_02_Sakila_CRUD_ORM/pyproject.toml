@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = [
+  "caso_practico_2_sakila_crud_orm/tests"
+]
+pythonpath = [
+  "caso_practico_2_sakila_crud_orm"
+]
+markers = [
+  "integration: pruebas que requieren MySQL, PostgreSQL o datos reales"
+]

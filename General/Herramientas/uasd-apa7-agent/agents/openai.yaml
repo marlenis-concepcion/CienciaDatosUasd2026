@@ -1,0 +1,8 @@
+interface:
+  display_name: "UASD APA 7 Agent"
+  short_description: "Aplica normas APA 7 a trabajos UASD"
+  brand_color: "#0073B7"
+  default_prompt: "Use $uasd-apa7-agent to format and review this academic work under APA 7."
+
+policy:
+  allow_implicit_invocation: true

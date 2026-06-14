@@ -1,0 +1,19 @@
+HALLAZGOS PRINCIPALES
+
+Muestra modelada: 35,093 observaciones.
+H1: U = 223548383.00, p < .001,
+r biserial = 0.455.
+Media de clics, aprueba: 328.66.
+Media de clics, no aprueba: 148.31.
+
+Mejor modelo dicotómico por F1 macro: gradient_boosting
+(F1 = 0.719, ROC-AUC = 0.798).
+Mejor modelo ordinal por F1 macro: random_forest
+(F1 = 0.438, MSE ordinal = 1.119).
+Mejor regresión por R²: gradient_boosting
+(MSE = 213.491, R² = 0.222).
+Variables más influyentes del mejor clasificador: dias_activos_28d, code_module, clicks_28d.
+
+El Experimento X es sintético. Los resultados no establecen causalidad ni deben utilizarse
+para decisiones automáticas sobre estudiantes sin validación institucional, análisis de
+equidad y supervisión humana.

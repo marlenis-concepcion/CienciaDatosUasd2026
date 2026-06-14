@@ -1,19 +1,25 @@
 .DS_Store
+**/.DS_Store
 .env
 .venv/
+**/.venv/
+**/.matplotlib-cache/
 __pycache__/
+**/__pycache__/
 *.pyc
 .pytest_cache/
+**/.pytest_cache/
 .ipynb_checkpoints/
-
-# Datos y salidas generadas
-caso_practico_3_oulad_etl_eda/data/raw/*
-caso_practico_3_oulad_etl_eda/data/processed/*
-caso_practico_3_oulad_etl_eda/data/audit/*
-caso_practico_3_oulad_etl_eda/outputs/figures/*
-caso_practico_3_oulad_etl_eda/outputs/tables/*
-caso_practico_3_oulad_etl_eda/outputs/reports/*
+**/.ipynb_checkpoints/
+**/data/oulad.zip
+**/data/*.zip.part
+*.zip
 
 !**/.gitkeep
 !**/README.md
 
+# Evidencias y registros de ejecucion: solo locales, nunca se publican
+evidencias/
+evidencias_locales/
+**/evidencias/
+**/evidencias_locales/

@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Documentación del proyecto final de Machine Learning sobre OULAD para Ciencia de Datos I.">
+  <title>Proyecto final OULAD | Ciencia de Datos I</title>
+  <style>
+    :root {
+      --navy: #10263d;
+      --blue: #2364aa;
+      --cyan: #168aad;
+      --green: #1f7a5c;
+      --gold: #b87913;
+      --red: #a64253;
+      --ink: #182231;
+      --muted: #5b6878;
+      --line: #dce5ef;
+      --paper: #f4f7fb;
+      --white: #ffffff;
+      --soft-blue: #eaf3fb;
+      --soft-green: #e9f6f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    .skip {
+      position: absolute;
+      top: -50px;
+      left: 16px;
+      z-index: 10;
+      padding: 10px 14px;
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    .skip:focus {
+      top: 12px;
+    }
+
+    header {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 16%, rgba(22, 138, 173, 0.55), transparent 28%),
+        radial-gradient(circle at 10% 90%, rgba(31, 122, 92, 0.48), transparent 30%),
+        linear-gradient(135deg, #0b1b2d 0%, #123b60 58%, #17566f 100%);
+    }
+
+    .hero {
+      width: min(1160px, 100%);
+      min-height: 620px;
+      margin: 0 auto;
+      padding: 86px 24px 72px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      color: #bfe9dd;
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0 0 22px;
+      font-size: clamp(2.6rem, 7vw, 5.4rem);
+      line-height: 1.02;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0 0 28px;
+      color: #e8f2f8;
+      font-size: 1.14rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 44px;
+      padding: 10px 16px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 7px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.1);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: #bfe9dd;
+      color: var(--navy);
+      background: #bfe9dd;
+    }
+
+    .hero-panel {
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      background: rgba(6, 25, 42, 0.48);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-panel strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #bfe9dd;
+      font-size: 1.8rem;
+    }
+
+    .hero-stat {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .hero-stat:last-child {
+      border-bottom: 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    nav .nav-inner {
+      width: min(1160px, 100%);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 4px;
+    }
+
+    nav a {
+      padding: 15px 12px;
+      color: var(--ink);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--blue);
+      background: var(--soft-blue);
+    }
+
+    main {
+      width: min(1160px, 100%);
+      margin: 0 auto;
+      padding: 48px 24px 76px;
+    }
+
+    section {
+      margin-bottom: 54px;
+      scroll-margin-top: 70px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.65rem, 4vw, 2.45rem);
+      line-height: 1.18;
+    }
+
+    h3 {
+      margin: 0 0 9px;
+      font-size: 1.13rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .section-intro {
+      max-width: 850px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(18, 38, 63, 0.06);
+    }
+
+    .card p:last-child,
+    .card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--green);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .tag.blue {
+      background: var(--blue);
+    }
+
+    .tag.gold {
+      background: var(--gold);
+    }
+
+    .tag.red {
+      background: var(--red);
+    }
+
+    .metric {
+      padding: 20px;
+      border-left: 5px solid var(--blue);
+      border-radius: 9px;
+      background: var(--white);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 21px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #153a5c;
+      background: var(--soft-blue);
+      font-family: Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    pre {
+      overflow-x: auto;
+      margin: 14px 0 0;
+      padding: 16px;
+      border-radius: 9px;
+      color: #edf6fb;
+      background: #101e2d;
+      font-family: Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      counter-reset: ose;
+    }
+
+    .flow article {
+      min-height: 150px;
+      padding: 18px;
+      border-top: 4px solid var(--cyan);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .flow strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
+      font-size: 1.03rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--white);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--navy);
+      background: var(--soft-blue);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #15573f;
+      background: #dff3e9;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    figure {
+      margin: 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: var(--white);
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 7px;
+    }
+
+    figcaption {
+      padding-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .callout {
+      padding: 22px;
+      border: 1px solid #b9dfd0;
+      border-radius: 10px;
+      background: var(--soft-green);
+    }
+
+    .files a {
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .files a:last-child {
+      border-bottom: 0;
+    }
+
+    footer {
+      padding: 28px 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: var(--white);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .grid,
+      .grid.three {
+        grid-template-columns: 1fr;
+      }
+
+      .flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: auto;
+        padding-top: 60px;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      nav,
+      .actions {
+        display: none;
+      }
+
+      body {
+        background: var(--white);
+      }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">INF-8237-C2 · Ciencia de Datos I · Mccarthy Team</div>
+        <h1>Machine Learning sobre OULAD</h1>
+        <p class="lead">
+          Proyecto final colaborativo para predecir aprobación, resultado ordinal y promedio
+          de evaluaciones mediante un flujo OSEMN encapsulado con POO, datos OULAD y un
+          Experimento X sintético y reproducible.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Unidad_4/Practica_04_Proyecto_Final_OULAD">Ver en GitHub</a>
+          <a class="button" href="https://colab.research.google.com/github/marlenis-concepcion/CienciaDatosUasd2026/blob/main/Unidad_4/Practica_04_Proyecto_Final_OULAD/notebooks/Proyecto_Final_OULAD_Colab.ipynb">Abrir en Colab</a>
+          <a class="button primary" href="docs/Articulo_Cientifico_OULAD_APA7.docx">Artículo APA 7</a>
+          <a class="button" href="notebooks/Proyecto_Final_OULAD_Colab.ipynb">Cuaderno Colab</a>
+          <a class="button" href="docs/MATRIZ_CUMPLIMIENTO_RUBRICA.md">Rúbrica</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Resumen de resultados">
+        <div class="hero-stat">
+          <strong>35,093</strong>
+          observaciones modeladas
+        </div>
+        <div class="hero-stat">
+          <strong>.719</strong>
+          mejor F1 macro dicotómico
+        </div>
+        <div class="hero-stat">
+          <strong>.798</strong>
+          mejor ROC-AUC
+        </div>
+        <div class="hero-stat">
+          <strong>24</strong>
+          escenarios de prueba automatizados
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#resumen">Resumen</a>
+      <a href="#hipotesis">Hipótesis</a>
+      <a href="#osemn">OSEMN</a>
+      <a href="#arquitectura">Arquitectura</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#pruebas">Pruebas</a>
+      <a href="#entregables">Entregables</a>
+    </div>
+  </nav>
+
+  <main id="contenido">
+    <section id="resumen">
+      <span class="tag">Proyecto</span>
+      <h2>Tres problemas predictivos, una sola arquitectura reproducible</h2>
+      <p class="section-intro">
+        La solución usa variables disponibles durante los primeros 28 días para reducir fuga
+        temporal. OULAD aporta registros anónimos de aprendizaje en línea y el Experimento X
+        aporta un escenario sintético complementario. La fuente no se utiliza como predictor.
+      </p>
+
+      <div class="grid three">
+        <article class="card">
+          <span class="tag blue">Dicotómica</span>
+          <h3>¿Aprueba o no aprueba?</h3>
+          <p>Compara regresión logística, random forest y gradient boosting.</p>
+        </article>
+        <article class="card">
+          <span class="tag gold">Ordinal</span>
+          <h3>Resultado final ordenado</h3>
+          <p>Modela retiro, reprobación, aprobación y distinción respetando su jerarquía.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Intervalo/razón</span>
+          <h3>Promedio de evaluaciones</h3>
+          <p>Compara Ridge, random forest y gradient boosting mediante MSE y R².</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hipotesis">
+      <span class="tag gold">Investigación</span>
+      <h2>Hipótesis y criterios de interpretación</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>H1 · Interacción temprana</h3>
+          <p>
+            La distribución de clics durante los primeros 28 días difiere entre quienes
+            aprueban y quienes no aprueban. Se evalúa con Mann-Whitney U y efecto biserial.
+          </p>
+          <p><strong>Resultado:</strong> U = 223,548,383; p &lt; .001; r = .455.</p>
+        </article>
+        <article class="card">
+          <h3>H2 · Capacidad predictiva</h3>
+          <p>
+            La actividad temprana, los antecedentes académicos y variables demográficas
+            permiten predecir resultados mejor que una referencia sin información.
+          </p>
+          <p><strong>Resultado:</strong> mejor ROC-AUC = .798 y R² continuo = .222.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="osemn">
+      <span class="tag blue">Metodología</span>
+      <h2>Flujo OSEMN</h2>
+      <p class="section-intro">
+        Cada fase tiene una responsabilidad y una clase principal. Esto facilita pruebas,
+        mantenimiento y colaboración entre integrantes.
+      </p>
+      <div class="flow">
+        <article>
+          <strong>Obtain</strong>
+          Descarga verificada de UCI, lectura ZIP y Experimento X reproducible.
+        </article>
+        <article>
+          <strong>Scrub</strong>
+          Conversión numérica, faltantes, mapas ordinales y objetivos derivados.
+        </article>
+        <article>
+          <strong>Explore</strong>
+          Descriptiva, asimetría, curtosis, box plot, scatter y correlación.
+        </article>
+        <article>
+          <strong>Model</strong>
+          Nueve modelos, división de prueba, pipelines e importancias.
+        </article>
+        <article>
+          <strong>iNterpret</strong>
+          Hallazgos, CSV caso a caso, F1 manual y análisis responsable.
+        </article>
+      </div>
+    </section>
+
+    <section id="arquitectura">
+      <span class="tag">POO y TAD</span>
+      <h2>Arquitectura del código</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Clases principales</h3>
+          <ul>
+            <li><code>OULADRepository</code>: descarga y agregación de datos.</li>
+            <li><code>ExperimentXFactory</code>: escenario anónimo reproducible.</li>
+            <li><code>FeatureEngineer</code>: limpieza y variables derivadas.</li>
+            <li><code>EDAReporter</code>: análisis exploratorio y contraste H1.</li>
+            <li><code>ModelLab</code>: entrenamiento, evaluación y exportación.</li>
+            <li><code>OULADProject</code>: orquestación del flujo completo.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Colección especializada</h3>
+          <p>
+            <code>ResultRegistry</code> extiende <code>UserDict</code> y registra cada
+            <code>ModelResult</code> por tarea y algoritmo. Es la evidencia del TAD/collection
+            solicitado por la consigna.
+          </p>
+          <pre>python3 run.py
+python3 run.py --synthetic-only
+python3 -m pytest -q</pre>
+        </article>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <span class="tag red">Hallazgos</span>
+      <h2>Resultados reproducidos</h2>
+      <div class="grid three">
+        <div class="metric">
+          <strong>.719</strong>
+          <span>F1 macro · gradient boosting binario</span>
+        </div>
+        <div class="metric">
+          <strong>.798</strong>
+          <span>ROC-AUC · gradient boosting binario</span>
+        </div>
+        <div class="metric">
+          <strong>.222</strong>
+          <span>R² · gradient boosting de regresión</span>
+        </div>
+      </div>
+
+      <div class="table-wrap" style="margin-top: 22px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Tarea</th>
+              <th>Modelo destacado</th>
+              <th>Métrica principal</th>
+              <th>Lectura</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dicotómica</td>
+              <td>Gradient boosting</td>
+              <td>F1 = .719; ROC-AUC = .798</td>
+              <td>Mejor equilibrio general para aprobación.</td>
+            </tr>
+            <tr>
+              <td>Ordinal</td>
+              <td>Random forest / gradient boosting</td>
+              <td>F1 = .438 / MSE = .902</td>
+              <td>La selección cambia según equilibrio o distancia ordinal.</td>
+            </tr>
+            <tr>
+              <td>Intervalo/razón</td>
+              <td>Gradient boosting</td>
+              <td>MSE = 213.491; R² = .222</td>
+              <td>Capacidad explicativa útil, pero limitada.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid" style="margin-top: 22px;">
+        <figure>
+          <img src="outputs/eda_alto_nivel.png" alt="Panel con distribución, box plot, dispersión y matriz de correlación del análisis OULAD">
+          <figcaption>Figura 1. EDA univariado y multivariado generado por el proyecto.</figcaption>
+        </figure>
+        <article class="card">
+          <h3>Variables más influyentes</h3>
+          <ol>
+            <li>Días activos durante los primeros 28 días.</li>
+            <li>Módulo cursado.</li>
+            <li>Clics durante los primeros 28 días.</li>
+          </ol>
+          <p style="margin-top: 14px;">
+            La importancia por permutación mide contribución predictiva, no causalidad.
+            Los resultados no deben utilizarse para sancionar o excluir estudiantes.
+          </p>
+          <a href="outputs/importancias_variables.csv">Abrir importancias completas</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="pruebas">
+      <span class="tag blue">QA</span>
+      <h2>24 escenarios automatizados</h2>
+      <p class="section-intro">
+        La suite verifica cálculos, bordes de datos, reproducibilidad, contratos de salida y
+        estructura de la documentación. No vuelve a entrenar nueve modelos en cada prueba.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Métricas y TAD</h3>
+          <ul>
+            <li>TP, FP, TN y FN conocidos.</li>
+            <li>F1 sin predicciones positivas.</li>
+            <li>MSE y R² perfecto o con objetivo constante.</li>
+            <li>Agrupación de resultados por tipo de tarea.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Variables y missing</h3>
+          <ul>
+            <li>Bandas IMD válidas, faltantes e inválidas.</li>
+            <li>Mapeo de educación, edad y resultado final.</li>
+            <li>Actividad temprana faltante convertida a cero.</li>
+            <li>Categorías finales desconocidas eliminadas.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Repositorio y Experimento X</h3>
+          <ul>
+            <li>Semilla reproducible e identificadores únicos.</li>
+            <li>Archivo CSV dentro de carpetas ZIP.</li>
+            <li>Error comprensible cuando falta una tabla.</li>
+            <li>Ventana temporal de 28 días y ventana vacía.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Salidas finales</h3>
+          <ul>
+            <li>Tres algoritmos por cada tarea.</li>
+            <li>Predicciones binarias caso a caso.</li>
+            <li>F1 manual dentro de rangos válidos.</li>
+            <li>Importancias para variables, tareas y modelos.</li>
+            <li>Gráficos y hallazgos presentes.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout" style="margin-top: 20px;">
+        <strong>Comando de validación</strong>
+        <pre>python3 -m pytest -q</pre>
+      </div>
+    </section>
+
+    <section id="entregables">
+      <span class="tag gold">Entrega</span>
+      <h2>Documentos y evidencias</h2>
+      <div class="grid">
+        <article class="card files">
+          <h3>Documentación académica</h3>
+          <a href="docs/Articulo_Cientifico_OULAD_APA7.docx">Artículo científico APA 7 (.docx)</a>
+          <a href="docs/Articulo_Cientifico_OULAD_APA7.md">Artículo editable (.md)</a>
+          <a href="docs/MATRIZ_CUMPLIMIENTO_RUBRICA.md">Matriz de cumplimiento</a>
+          <a href="docs/CHECKLIST_ENTREGA.md">Checklist de entrega</a>
+          <a href="docs/GUION_VIDEO_COLABORATIVO.md">Guion del video opcional</a>
+          <a href="docs/ESCENARIOS_DE_PRUEBA.md">Catálogo de escenarios de prueba</a>
+          <a href="docs/ENTREGA_UASDVIRTUAL.md">Hoja de entrega UASDVirtual</a>
+        </article>
+        <article class="card files">
+          <h3>Código y resultados</h3>
+          <a href="notebooks/Proyecto_Final_OULAD_Colab.ipynb">Cuaderno Google Colab</a>
+          <a href="outputs/metricas_generales.csv">Métricas generales</a>
+          <a href="outputs/f1_manual.csv">F1 manual</a>
+          <a href="outputs/predicciones_binarias.csv">Predicciones binarias</a>
+          <a href="outputs/predicciones_ordinales.csv">Predicciones ordinales</a>
+          <a href="outputs/predicciones_regresion.csv">Predicciones de regresión</a>
+          <a href="outputs/hallazgos.txt">Hallazgos principales</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Uso responsable</h2>
+      <p>
+        El Experimento X es sintético y no representa una institución real. Los modelos son
+        evidencia académica y no deben fundamentar decisiones automáticas sobre estudiantes
+        sin validación externa, análisis de equidad, mecanismos de apelación y supervisión
+        humana.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Universidad Autónoma de Santo Domingo · INF-8237-C2 · Unidad 4 · Proyecto OULAD
+  </footer>
+</body>
+</html>
