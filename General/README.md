@@ -34,6 +34,9 @@ Skill local de apoyo para formato UASD/APA 7 y sus referencias.
 
 Archivos ZIP preparados para entrega. Se mantienen fuera de Git mediante `.gitignore`.
 
+Consulte [Archivos incluidos y excluidos de Git](ARCHIVOS_GITIGNORE.md) para conocer el
+criterio aplicado.
+
 ## Privacidad
 
 Los archivos de texto y código usan rutas relativas. No se documentan rutas absolutas de la

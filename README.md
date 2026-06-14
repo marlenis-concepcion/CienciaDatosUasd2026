@@ -68,3 +68,5 @@ python3 scripts/validar_repositorio.py
 - `data/oulad.zip` se descarga desde UCI y no se publica en GitHub.
 - Las rutas del código son relativas al proyecto.
 - El Experimento X de Unidad 4 es sintético y no representa estudiantes reales.
+- Los criterios completos están en
+  [General/ARCHIVOS_GITIGNORE.md](General/ARCHIVOS_GITIGNORE.md).
