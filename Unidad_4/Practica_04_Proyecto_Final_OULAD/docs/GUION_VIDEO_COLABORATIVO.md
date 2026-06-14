@@ -6,7 +6,7 @@ Duración máxima: 5 minutos.
 
 **Integrante 1**
 
-“Somos el Mccarthy Team. Nuestro proyecto analiza OULAD y un Experimento X sintético para
+“Somos el McCarthy Team. Nuestro proyecto analiza OULAD y un Experimento X sintético para
 predecir aprobación, resultado ordinal y promedio de evaluaciones. El objetivo es construir
 una alerta académica reproducible, no tomar decisiones automáticas sobre estudiantes.”
 

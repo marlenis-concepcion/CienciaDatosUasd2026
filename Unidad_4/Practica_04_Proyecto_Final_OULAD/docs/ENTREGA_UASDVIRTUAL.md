@@ -3,6 +3,7 @@
 ## Práctica 04: Proyecto final colaborativo de Machine Learning sobre OULAD
 
 **Participante:** Marlenis Judith Concepción Cuevas  
+**Equipo:** McCarthy Team  
 **Asignatura:** INF-8237-C2 Ciencia de Datos I  
 **Unidad:** Unidad 4: Introducción a Machine Learning  
 **Facilitador:** Silverio de Orbe Abad  

@@ -6,8 +6,7 @@
 **Facultad de Ingeniería y Arquitectura**  
 **Asignatura:** INF-8237-C2 Ciencia de Datos I  
 **Unidad:** Unidad 4: Introducción a Machine Learning  
-**Equipo:** Mccarthy Team  
-**Integrantes y matrículas:** [Completar por el equipo]  
+**Equipo:** McCarthy Team  
 **Facilitador:** Silverio de Orbe Abad  
 **Fecha:** 12 de julio de 2026
 
