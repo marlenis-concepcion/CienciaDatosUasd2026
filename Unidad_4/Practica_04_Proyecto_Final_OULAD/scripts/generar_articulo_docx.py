@@ -2,7 +2,6 @@ from pathlib import Path
 import re
 
 from docx import Document
-from docx.enum.section import WD_SECTION
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -41,6 +40,53 @@ def add_inline(paragraph, text):
             run.font.name = "Courier New"
 
 
+def markdown_blocks(text):
+    blocks = []
+    paragraph_lines = []
+
+    def flush_paragraph():
+        if paragraph_lines:
+            blocks.append(("paragraph", " ".join(paragraph_lines)))
+            paragraph_lines.clear()
+
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            flush_paragraph()
+            continue
+        if raw.endswith("  "):
+            flush_paragraph()
+            blocks.append(("paragraph", line))
+            continue
+        if line.startswith("# "):
+            flush_paragraph()
+            blocks.append(("title", line[2:]))
+        elif line.startswith("## "):
+            flush_paragraph()
+            blocks.append(("heading1", line[3:]))
+        elif line.startswith("### "):
+            flush_paragraph()
+            blocks.append(("heading2", line[4:]))
+        elif re.match(r"^\d+\.\s", line):
+            flush_paragraph()
+            blocks.append(("number", re.sub(r"^\d+\.\s", "", line)))
+        elif line.startswith("- "):
+            flush_paragraph()
+            blocks.append(("bullet", line[2:]))
+        else:
+            paragraph_lines.append(line)
+    flush_paragraph()
+    return blocks
+
+
+def format_paragraph(paragraph, *, indent=True, alignment=WD_ALIGN_PARAGRAPH.LEFT):
+    paragraph.alignment = alignment
+    paragraph.paragraph_format.line_spacing = 2
+    paragraph.paragraph_format.space_before = Pt(0)
+    paragraph.paragraph_format.space_after = Pt(0)
+    paragraph.paragraph_format.first_line_indent = Inches(0.5) if indent else Inches(0)
+
+
 doc = Document()
 section = doc.sections[0]
 section.page_width = Inches(8.5)
@@ -56,55 +102,74 @@ normal = styles["Normal"]
 normal.font.name = "Times New Roman"
 normal.font.size = Pt(12)
 normal.paragraph_format.line_spacing = 2
+normal.paragraph_format.space_before = Pt(0)
 normal.paragraph_format.space_after = Pt(0)
 normal.paragraph_format.first_line_indent = Inches(0.5)
+normal.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
 for name in ["Title", "Heading 1", "Heading 2", "Heading 3"]:
     style = styles[name]
     style.font.name = "Times New Roman"
     style.font.color.rgb = None
     style.font.bold = True
+    style.paragraph_format.line_spacing = 2
+    style.paragraph_format.space_before = Pt(0)
+    style.paragraph_format.space_after = Pt(0)
+    style.paragraph_format.first_line_indent = Inches(0)
 
-styles["Title"].font.size = Pt(14)
+styles["Title"].font.size = Pt(12)
 styles["Title"].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
 styles["Heading 1"].font.size = Pt(12)
 styles["Heading 1"].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
 styles["Heading 2"].font.size = Pt(12)
+styles["Heading 2"].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
 styles["Heading 3"].font.size = Pt(12)
 styles["Heading 3"].font.italic = True
 
-lines = SOURCE.read_text(encoding="utf-8").splitlines()
+blocks = markdown_blocks(SOURCE.read_text(encoding="utf-8"))
 in_references = False
-first_heading = True
-for raw in lines:
-    line = raw.strip()
-    if not line:
-        continue
-    if line.startswith("# "):
+in_cover = False
+in_abstract = False
+for kind, text in blocks:
+    if kind == "title":
         p = doc.add_paragraph(style="Title")
-        add_inline(p, line[2:])
-        first_heading = False
-    elif line.startswith("## "):
-        title = line[3:]
+        add_inline(p, text)
+        format_paragraph(p, indent=False, alignment=WD_ALIGN_PARAGRAPH.CENTER)
+        p.paragraph_format.space_before = Pt(72)
+    elif kind == "heading1":
+        title = text
         if title in {"Resumen", "Abstract", "Tabla de contenido", "Introducción"}:
             doc.add_page_break()
         p = doc.add_paragraph(title, style="Heading 1")
+        format_paragraph(p, indent=False, alignment=WD_ALIGN_PARAGRAPH.CENTER)
+        in_cover = title == "Presentación"
+        in_abstract = title in {"Resumen", "Abstract"}
         in_references = title == "Referencias"
-    elif line.startswith("### "):
-        doc.add_paragraph(line[4:], style="Heading 2")
-    elif re.match(r"^\d+\.\s", line):
+    elif kind == "heading2":
+        p = doc.add_paragraph(text, style="Heading 2")
+        format_paragraph(p, indent=False)
+        in_cover = False
+        in_abstract = False
+    elif kind == "number":
         p = doc.add_paragraph(style="List Number")
-        add_inline(p, re.sub(r"^\d+\.\s", "", line))
-    elif line.startswith("- "):
+        add_inline(p, text)
+        format_paragraph(p, indent=False)
+    elif kind == "bullet":
         p = doc.add_paragraph(style="List Bullet")
-        add_inline(p, line[2:])
+        add_inline(p, text)
+        format_paragraph(p, indent=False)
     else:
         p = doc.add_paragraph()
-        add_inline(p, line)
+        add_inline(p, text)
+        if in_cover:
+            format_paragraph(p, indent=False, alignment=WD_ALIGN_PARAGRAPH.CENTER)
+        elif in_abstract:
+            format_paragraph(p, indent=False)
+        else:
+            format_paragraph(p)
         if in_references:
-            p.paragraph_format.first_line_indent = Inches(0)
             p.paragraph_format.left_indent = Inches(0.5)
-            p.paragraph_format.hanging_indent = Inches(0.5)
+            p.paragraph_format.first_line_indent = Inches(-0.5)
 
 doc.save(OUTPUT)
 print(OUTPUT.relative_to(ROOT))
