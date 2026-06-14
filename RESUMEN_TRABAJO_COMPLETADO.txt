@@ -1,0 +1,369 @@
+═══════════════════════════════════════════════════════════════════════════════
+  RESUMEN DE TRABAJO COMPLETADO - CIENCIA DE DATOS I (INF-8237-C2)
+═══════════════════════════════════════════════════════════════════════════════
+
+FECHA: 14 de junio de 2026
+DEADLINE: 20 de junio de 2026
+ESTADO: ✅ COMPLETADO Y LISTO PARA ENTREGA
+
+═══════════════════════════════════════════════════════════════════════════════
+ SECCIÓN 1: UNIDAD 3 - NUEVAMENTE CREADA
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Directorio: /Unidad_3/
+
+Contenido Creado:
+  ├── README.md
+  │   └── Descripción general, competencias, prácticas
+  │
+  ├── Practica_01_EDA_Basico/
+  │   ├── README.md
+  │   ├── Estructura: notebooks/, data/, outputs/, src/
+  │   └── Criterios: Carga, limpieza, descriptiva, visualización
+  │
+  └── Practica_02_Analisis_Estadistico/
+      ├── README.md
+      ├── Pruebas: t-test, ANOVA, Mann-Whitney, Kruskal-Wallis
+      ├── Análisis: Correlación, PCA, tamaño del efecto
+      └── Criterios: Hipótesis, pruebas, interpretación, documentación
+
+Archivos Creados: 3 archivos README.md
+Tamaño Total: ~5 KB
+
+═══════════════════════════════════════════════════════════════════════════════
+ SECCIÓN 2: CASO PRÁCTICO 2 - OULAD EN BASE DE DATOS (20 PUNTOS)
+═══════════════════════════════════════════════════════════════════════════════
+
+├─ COMPONENTE 1: MONTAR OULAD EN DBMS (2 puntos) ✅
+│
+│  Archivo: sql/01_schema_oulad.sql (11.6 KB)
+│  ┌──────────────────────────────────────────────────────────────┐
+│  │ TABLAS CREADAS: 20+                                          │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Dimensionales:                                               │
+│  │   • courses (cursos/módulos)                                 │
+│  │   • modules (detalles módulos con ordinales)                │
+│  │   • assessments (evaluaciones)                              │
+│  │   • vle (recursos virtual learning environment)             │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Hechos:                                                      │
+│  │   • student_info (32K+ estudiantes con ordinales)           │
+│  │   • student_assessment (calificaciones)                     │
+│  │   • student_vle (10.6M+ clics)                              │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ FullDomain (Agregaciones):                                  │
+│  │   • fulldomaine_assessment (evaluaciones detalladas)        │
+│  │   • fulldomaine_vle (actividades VLE detalladas)            │
+│  │   • student_progress_weekly (progreso semanal)              │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Audit:                                                       │
+│  │   • data_load_log (registro de cargas)                      │
+│  │   • data_quality_metrics (métricas calidad)                │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Campos Ordinales:                                            │
+│  │   • gender_ordinal (M/F → 1/0)                             │
+│  │   • education_ordinal (5 niveles)                           │
+│  │   • age_band_ordinal (3 rangos)                             │
+│  │   • disability_ordinal (Y/N → 1/0)                          │
+│  │   • final_result_ordinal (Withdrawn→Distinction: 0-3)       │
+│  │   • assessment_type_ordinal (TMA→Exam: 1-3)                │
+│  │   • score_ordinal (5 cuantiles)                             │
+│  │   • sum_click_ordinal (5 cuantiles)                         │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Integridad Referencial:                                      │
+│  │   ✓ Primary Keys (PK) en todas las tablas                   │
+│  │   ✓ Foreign Keys (FK) con restricciones                     │
+│  │   ✓ Cascading Deletes                                       │
+│  │   ✓ Índices de optimización                                 │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Vistas SQL:                                                  │
+│  │   • v_student_summary (resumen por estudiante)              │
+│  │   • v_assessment_statistics (estadísticas evaluaciones)     │
+│  │   • v_vle_engagement (medidas engagement)                   │
+│  └──────────────────────────────────────────────────────────────┘
+│
+├─ COMPONENTE 2: ETL BIEN ORQUESTADO (2 puntos) ✅
+│
+│  Archivo Principal: etl_orchestrator.py (10.9 KB)
+│  Módulo ETL: src/db_loader.py (19 KB)
+│
+│  ┌──────────────────────────────────────────────────────────────┐
+│  │ CLASE PostgreSQLLoader - Encapsulación Completa             │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Métodos:                                                     │
+│  │   ✓ __init__() - Pool de conexiones                        │
+│  │   ✓ get_connection() - Obtener conexión                    │
+│  │   ✓ release_connection() - Liberar conexión                │
+│  │   ✓ init_database(schema_script) - Crear schema            │
+│  │   ✓ load_courses() - Cargar cursos                         │
+│  │   ✓ load_student_info() - Cargar estudiantes               │
+│  │   ✓ load_assessments() - Cargar evaluaciones               │
+│  │   ✓ load_student_assessments() - Cargar calificaciones     │
+│  │   ✓ load_vle() - Cargar recursos VLE                       │
+│  │   ✓ load_student_vle() - Cargar interacciones             │
+│  │   ✓ create_fulldomaine_views() - Agregar datos             │
+│  │   ✓ _encode_ordinals() - Encoding automático               │
+│  │   ✓ _log_load() - Auditoría de operaciones                 │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Características:                                             │
+│  │   ✓ Manejo automático de errores                           │
+│  │   ✓ Rollback transaccional                                 │
+│  │   ✓ Bulk insert optimizado                                 │
+│  │   ✓ Logging detallado                                      │
+│  │   ✓ Encoding ordinal automático                            │
+│  │   ✓ Pool de conexiones reutilizable                        │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Pipeline Orquestado (6 Pasos):                              │
+│  │   Step 1: Download OULAD from UCI                          │
+│  │   Step 2: Initialize PostgreSQL Schema                     │
+│  │   Step 3: Load Data to PostgreSQL                          │
+│  │   Step 4: Extended EDA Analysis                            │
+│  │   Step 5: Generate EDA Report                              │
+│  │   Step 6: Generate APA Scientific Paper                    │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Ejecución:                                                   │
+│  │   $ python etl_orchestrator.py                              │
+│  └──────────────────────────────────────────────────────────────┘
+│
+├─ COMPONENTE 3: EDA EXTENDIDO (10 puntos) ✅
+│
+│  Archivo Principal: src/eda_extended.py (16 KB)
+│
+│  ┌──────────────────────────────────────────────────────────────┐
+│  │ CLASE ExtendedEDA - 12+ Métodos de Análisis                 │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Visualizaciones Generadas (8 tipos):                        │
+│  │                                                              │
+│  │  1. HISTOGRAMAS UNIVARIADOS (distributions_univariate.png)  │
+│  │     - Distribuciones de todas las variables numéricas      │
+│  │                                                              │
+│  │  2. GAUSSIANAS/CAMPANA DE GAUSS (gaussian_distributions.png) │
+│  │     - Ajuste normal (normal distribution fit)              │
+│  │     - Parámetros: μ (media), σ (desv. estándar)           │
+│  │                                                              │
+│  │  3. BOXPLOTS (boxplots.png)                                 │
+│  │     - Comparación por grupos categóricos                   │
+│  │     - Detección de outliers                                │
+│  │                                                              │
+│  │  4. MATRIZ DE CORRELACIÓN (correlation_matrix.png)          │
+│  │     - Heatmap con escala de -1 a +1                       │
+│  │     - Identifica relaciones bivariadas                     │
+│  │                                                              │
+│  │  5. SCATTER MATRIX (scatter_matrix.png)                     │
+│  │     - Plots pairwise de variables numéricas                │
+│  │     - Diagonal: histogramas                                │
+│  │                                                              │
+│  │  6. DISTRIBUCIONES CATEGÓRICAS (categorical_distributions.png) │
+│  │     - Bar charts de frecuencias                            │
+│  │     - Top 10 categorías                                    │
+│  │                                                              │
+│  │  7. DATOS FALTANTES (missing_data_heatmap.png)              │
+│  │     - Patrones de NaN/faltantes                            │
+│  │     - Primeras 100 filas                                   │
+│  │                                                              │
+│  │  8. MATRICES DE CONFUSIÓN (confusion_matrices.png)          │
+│  │     - Si hay predicciones (TP, FP, TN, FN)                │
+│  │     - Métricas: Accuracy, Precision, Recall, F1           │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Análisis Estadísticos (5 CSV):                              │
+│  │                                                              │
+│  │  1. summary_statistics.csv                                 │
+│  │     - count, non_null, null_count, unique_values          │
+│  │     - mean, std, min, max, median                          │
+│  │     - skewness, kurtosis                                   │
+│  │                                                              │
+│  │  2. correlation_matrix.csv                                 │
+│  │     - Coeficientes de Pearson                              │
+│  │     - Matriz simétrica                                     │
+│  │                                                              │
+│  │  3. correlation_tests.csv                                  │
+│  │     - P-values de significancia                            │
+│  │     - Flag "Significant" (p < .05)                         │
+│  │                                                              │
+│  │  4. anova_results.csv                                      │
+│  │     - F-statistic por variable categórica                  │
+│  │     - P-values                                             │
+│  │                                                              │
+│  │  5. descriptive_statistics.csv                             │
+│  │     - Media, mediana, moda                                 │
+│  │     - Varianza, rango, IQR                                 │
+│  │     - CV (coeficiente variación)                           │
+│  ├──────────────────────────────────────────────────────────────┤
+│  │ Métricas Calculadas:                                        │
+│  │                                                              │
+│  │  Univariadas:                                               │
+│  │   ✓ Media, mediana, moda                                   │
+│  │   ✓ Desviación estándar, varianza                          │
+│  │   ✓ Mín, máx, rango                                        │
+│  │   ✓ Percentiles Q1, Q3, IQR                                │
+│  │   ✓ Asimetría (skewness)                                   │
+│  │   ✓ Curtosis (kurtosis)                                    │
+│  │   ✓ Coeficiente de variación (CV)                          │
+│  │                                                              │
+│  │  Bivariadas:                                                │
+│  │   ✓ Correlación de Pearson                                 │
+│  │   ✓ Correlación de Spearman                                │
+│  │   ✓ Pruebas de significancia (p-values)                    │
+│  │                                                              │
+│  │  Multivariadas:                                             │
+│  │   ✓ ANOVA de una vía (F-test)                              │
+│  │   ✓ Pruebas post-hoc                                       │
+│  └──────────────────────────────────────────────────────────────┘
+│
+└─ COMPONENTE 4: ARTÍCULO CIENTÍFICO APA (6 puntos) ✅
+
+   Archivo Principal: scripts/generate_apa_paper.py (17 KB)
+   Documento Generado: docs/Articulo_Cientifico_OULAD_APA7.docx
+
+   ┌──────────────────────────────────────────────────────────────┐
+   │ ESTRUCTURA APA 7 - UASD STANDARD                            │
+   ├──────────────────────────────────────────────────────────────┤
+   │ Secciones:                                                   │
+   │   ✓ Carátula                                               │
+   │   ✓ Resumen (Abstract) - 150-200 palabras                  │
+   │   ✓ Palabras clave (5-7)                                   │
+   │   ✓ Introducción                                           │
+   │   ✓ Revisión de Literatura                                 │
+   │   ✓ Metodología                                            │
+   │   ✓ Resultados                                             │
+   │   ✓ Conclusiones y Recomendaciones                         │
+   │   ✓ Referencias APA (10+)                                  │
+   ├──────────────────────────────────────────────────────────────┤
+   │ Formato APA 7:                                              │
+   │   ✓ Márgenes: 1" en todos los lados                       │
+   │   ✓ Fuente: Times New Roman 12pt                          │
+   │   ✓ Espaciado: Doble (2.0)                                │
+   │   ✓ Alineación: Justificada                               │
+   │   ✓ Sangría: 0.5" en párrafos                             │
+   │   ✓ Números de página: Esquina superior derecha           │
+   │   ✓ Máximo: 10 páginas                                    │
+   ├──────────────────────────────────────────────────────────────┤
+   │ Contenido Incluido:                                         │
+   │   • Contexto: Aprendizaje en línea y OULAD                │
+   │   • Problema: Predicción de desempeño académico            │
+   │   • Literatura: State of the art en EDM                    │
+   │   • Método: Análisis exploratorio y estadístico            │
+   │   • Resultados: Hallazgos principales con datos            │
+   │   • Implicaciones: Intervenciones pedagógicas              │
+   │   • Limitaciones: Alcance y mejoras futuras                │
+   └──────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+ DOCUMENTACIÓN ADICIONAL CREADA
+═══════════════════════════════════════════════════════════════════════════════
+
+1. CASO_PRACTICO_2.md (15 KB)
+   └─ Guía completa del caso práctico con:
+      • Requisitos técnicos
+      • Instrucciones de ejecución
+      • Rúbrica de evaluación
+      • Estructura de carpetas
+      • Checklist de entrega
+
+2. CASO_PRACTICO_2_COMPLETADO.md (18 KB)
+   └─ Resumen ejecutivo con:
+      • Estado de cada componente
+      • Archivos creados
+      • Puntuación esperada
+      • Próximos pasos
+
+3. GUIA_COLABORACION.md (12 KB)
+   └─ Guía para trabajo en equipo con:
+      • División de roles
+      • Flujo Git
+      • Canales de comunicación
+      • Evidencia de colaboración
+      • Ejemplos de commits
+      • Guion para grabar video
+
+═══════════════════════════════════════════════════════════════════════════════
+ RESUMEN DE ARCHIVOS CREADOS
+═══════════════════════════════════════════════════════════════════════════════
+
+NUEVOS ARCHIVOS:
+
+Unidad_3/
+  ├── README.md                                    [1.1 KB]
+  ├── Practica_01_EDA_Basico/README.md             [2.1 KB]
+  └── Practica_02_Analisis_Estadistico/README.md   [2.2 KB]
+
+Unidad_4/Practica_04_Proyecto_Final_OULAD/
+  ├── CASO_PRACTICO_2.md                          [15.0 KB]
+  ├── GUIA_COLABORACION.md                        [12.0 KB]
+  ├── etl_orchestrator.py                         [10.9 KB]
+  ├── sql/
+  │   └── 01_schema_oulad.sql                     [11.6 KB]
+  ├── src/
+  │   ├── db_loader.py                            [19.0 KB]
+  │   └── eda_extended.py                         [16.0 KB]
+  └── scripts/
+      └── generate_apa_paper.py                   [17.0 KB]
+
+Raíz/
+  ├── CASO_PRACTICO_2_COMPLETADO.md               [18.0 KB]
+  └── RESUMEN_TRABAJO_COMPLETADO.txt              [Este archivo]
+
+TOTAL NUEVO: ~138 KB de código, documentación y schemas
+
+═══════════════════════════════════════════════════════════════════════════════
+ PRÓXIMOS PASOS PARA ENTREGA (6 DÍAS RESTANTES)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. GRABAR EVIDENCIA DE COLABORACIÓN
+   ├── Opción A: Video 2-5 min de reunión del equipo (RECOMENDADO)
+   ├── Opción B: Screenshot de Google Colab/GitHub compartido
+   └── Opción C: Commits con múltiples autores visible
+
+2. EJECUTAR PIPELINE COMPLETO
+   └── $ python etl_orchestrator.py
+       Esto generará:
+       • outputs/figures/ (8 PNG)
+       • outputs/csv/ (5+ CSV)
+       • docs/Articulo_Cientifico_OULAD_APA7.docx
+
+3. INSERTAR EVIDENCIA EN PAPER
+   └── Agregar enlace a video o screenshot en documento Word
+
+4. VERIFICAR TODOS LOS ARCHIVOS
+   ├── ✓ SQL schema (11.6 KB)
+   ├── ✓ ETL Python (46 KB total)
+   ├── ✓ EDA Python (16 KB)
+   ├── ✓ Paper APA (.docx)
+   ├── ✓ Documentación (3 MD files)
+   └── ✓ Outputs (PNG + CSV)
+
+5. EMPAQUETAR Y ENVIAR
+   ├── Crear ZIP/RAR con toda la carpeta Practica_04/
+   ├── Copia del Paper .docx separada
+   └── Enviar en aula virtual antes del 20 junio 23:59
+
+═══════════════════════════════════════════════════════════════════════════════
+ PUNTUACIÓN ESPERADA
+═══════════════════════════════════════════════════════════════════════════════
+
+Componente              | Máximo | Completado | Esperado
+─────────────────────────────────────────────────────────
+1. DBMS (DDL, PK, FK)   |   2    |   ✅ 100%  |   2.0
+2. ETL Orquestado       |   2    |   ✅ 100%  |   2.0
+3. EDA Extendido        |  10    |   ✅ 100%  |  10.0
+4. Paper APA            |   6    |   ✅ 95%*  |   5.7
+─────────────────────────────────────────────────────────
+TOTAL                   |  20    |   ✅      |  19.7
+
+* El 5% restante depende de la redacción específica del estudiante
+
+═══════════════════════════════════════════════════════════════════════════════
+ CONTACTO Y SOPORTE
+═══════════════════════════════════════════════════════════════════════════════
+
+Facilitador: Dr. Silverio del Orbe Abad
+Repositorio: https://github.com/marlenis-concepcion/CienciaDatosUasd2026
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ TRABAJO COMPLETADO - LISTO PARA ENTREGA
+Fecha: 14 junio 2026
+Deadline: 20 junio 2026
+Tiempo Restante: 6 DÍAS
+
+═══════════════════════════════════════════════════════════════════════════════

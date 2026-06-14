@@ -1,0 +1,194 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         TAREAS POR SISTEMA OPERATIVO                       ║
+║                    Caso Práctico 2 - OULAD EN DBMS                          ║
+║                           SELECCIONA TU SO                                  ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🐧 USUARIOS DE LINUX (Ubuntu, Debian, Fedora, etc.)
+═══════════════════════════════════════════════════════════════════════════════
+
+VER GUÍA COMPLETA:
+  📌 QUICKSTART_LINUX.md
+
+TAREAS RÁPIDAS:
+
+  TAREA 1: Preparar ambiente (3 min)
+  □ Abre Terminal
+  □ Navega: cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+  □ Ejecuta: chmod +x run_unix.sh
+
+  TAREA 2: Ejecutar pipeline (15 min)
+  □ Ejecuta: ./run_unix.sh --skip-postgres
+  □ Espera a que termine (debería mostrar "COMPLETED SUCCESSFULLY")
+
+  TAREA 3: Verificar generaciones (2 min)
+  □ Ejecuta: ls -lh outputs/figures/
+  □ Deberías ver 8 archivos .png
+  □ Ejecuta: ls -lh outputs/*.csv
+  □ Deberías ver 5+ archivos .csv
+
+  TAREA 4: Abrir documento (1 min)
+  □ Ejecuta: libreoffice docs/Articulo_Cientifico_OULAD_APA7.docx &
+
+  TAREA 5: Grabar video (5 min)
+  □ Abre terminal
+  □ Ejecuta: obs (si tienes OBS)
+  □ O usa: simplescreenrecorder
+  □ Graba 2-5 minutos con equipo
+  □ Guarda como: video_colaboracion.mp4
+
+  TAREA 6: Insertar en documento (5 min)
+  □ En LibreOffice: Insert → Link
+  □ Pega URL de video (Google Drive)
+  □ Guarda: Ctrl+S
+
+  TAREA 7: Empaquetar (2 min)
+  □ Ejecuta: zip -r Caso_Practico_2_OULAD.zip Practica_04_Proyecto_Final_OULAD/
+
+  TAREA 8: Enviar (5 min)
+  □ Ve a: Aula Virtual UASD
+  □ Sube: Articulo_Cientifico_OULAD_APA7.docx
+  □ Sube: Caso_Practico_2_OULAD.zip
+  □ ANTES: 20 junio 23:59
+
+
+🍎 USUARIOS DE MACOS (10.15+)
+═══════════════════════════════════════════════════════════════════════════════
+
+VER GUÍA COMPLETA:
+  📌 QUICKSTART_MACOS.md
+
+TAREAS RÁPIDAS:
+
+  TAREA 1: Preparar ambiente (3 min)
+  □ Abre Terminal (Cmd+Space → Terminal)
+  □ Copia: cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+  □ Pega y Enter
+  □ Ejecuta: chmod +x run_unix.sh
+
+  TAREA 2: Ejecutar pipeline (15 min)
+  □ Ejecuta: ./run_unix.sh --skip-postgres
+  □ Espera a que termine
+
+  TAREA 3: Verificar resultados (2 min)
+  □ Ejecuta: ls -lh outputs/figures/
+  □ Deberías ver 8 PNG
+  □ Ejecuta: ls -lh outputs/*.csv
+  □ Deberías ver 5+ CSV
+
+  TAREA 4: Abrir documento (1 min)
+  □ Ejecuta: open docs/Articulo_Cientifico_OULAD_APA7.docx
+
+  TAREA 5: Grabar video (5 min)
+  □ Abre: QuickTime Player (Cmd+Space → QuickTime)
+  □ File → New Screen Recording
+  □ O usa Zoom si lo tienes
+  □ Graba 2-5 minutos
+  □ Guarda como: video_colaboracion.mp4
+
+  TAREA 6: Insertar en documento (5 min)
+  □ En Word: Insert → Link
+  □ Pega URL de video
+  □ Cmd+S para guardar
+
+  TAREA 7: Empaquetar (2 min)
+  □ Ejecuta: zip -r Caso_Practico_2_OULAD.zip Practica_04_Proyecto_Final_OULAD/
+
+  TAREA 8: Enviar (5 min)
+  □ Ve a: Aula Virtual UASD
+  □ Sube: Articulo_Cientifico_OULAD_APA7.docx
+  □ Sube: Caso_Practico_2_OULAD.zip
+  □ ANTES: 20 junio 23:59
+
+
+🪟 USUARIOS DE WINDOWS (10 o 11)
+═══════════════════════════════════════════════════════════════════════════════
+
+VER GUÍA COMPLETA:
+  📌 QUICKSTART_WINDOWS.md
+
+TAREAS RÁPIDAS:
+
+  TAREA 1: Preparar ambiente (3 min)
+  □ Abre: PowerShell (Win+X → PowerShell)
+  □ Navega: cd "C:\Users\[Tu Usuario]\Documents\NETWORKING\UASD\cienciadatosI\CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
+  □ Enter
+
+  TAREA 2: Ejecutar pipeline (15 min)
+  □ Escribe: run_windows.bat --skip-postgres
+  □ Enter
+  □ Espera a que termine (debería mostrar ✓ COMPLETED)
+
+  TAREA 3: Verificar resultados (2 min)
+  □ Ejecuta: dir outputs\figures\
+  □ Deberías ver 8 PNG
+  □ Ejecuta: dir outputs\*.csv
+  □ Deberías ver 5+ CSV
+
+  TAREA 4: Abrir documento (1 min)
+  □ Ejecuta: start docs\Articulo_Cientifico_OULAD_APA7.docx
+
+  TAREA 5: Grabar video (5 min)
+  □ Abre: Zoom o Win+G (Windows 11)
+  □ Usa Zoom: start zoom
+  □ O presiona Win+G para grabar pantalla
+  □ Graba 2-5 minutos
+  □ Guarda como: video_colaboracion.mp4
+
+  TAREA 6: Insertar en documento (5 min)
+  □ En Word: Insert → Link
+  □ Pega URL de video
+  □ Ctrl+S para guardar
+
+  TAREA 7: Empaquetar (2 min)
+  □ En PowerShell: Compress-Archive -Path Practica_04_Proyecto_Final_OULAD -DestinationPath Caso_Practico_2_OULAD.zip
+  □ O usa: click derecho → Enviar a → Carpeta comprimida
+
+  TAREA 8: Enviar (5 min)
+  □ Ve a: Aula Virtual UASD
+  □ Sube: Articulo_Cientifico_OULAD_APA7.docx
+  □ Sube: Caso_Practico_2_OULAD.zip
+  □ ANTES: 20 junio 23:59
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TIMELINE GENERAL PARA TODOS
+═══════════════════════════════════════════════════════════════════════════════
+
+Hoy (14 junio):         ✅ Todo software listo
+Mañana (15 junio):      ⏳ Ejecutar pipeline
+Días 15-19 junio:       ⏳ Grabar video colaborativo
+Día 19 junio 23:59:     ⏰ Último día para ajustes
+Día 20 junio 23:59:     📤 DEADLINE FINAL - ENVIAR
+
+TIEMPO RESTANTE: 6 DÍAS
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ARCHIVOS PRINCIPALES
+═══════════════════════════════════════════════════════════════════════════════
+
+Para LINUX:    lee QUICKSTART_LINUX.md
+Para MACOS:    lee QUICKSTART_MACOS.md
+Para WINDOWS:  lee QUICKSTART_WINDOWS.md
+
+DOCUMENTO APA (A ENVIAR):
+  docs/Articulo_Cientifico_OULAD_APA7.docx
+
+ZIP CON CÓDIGO (RESPALDO):
+  Caso_Practico_2_OULAD.zip (crearás este)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+¿LISTA PARA EMPEZAR?
+
+Selecciona tu SO arriba y comienza con TAREA 1. Sigue el orden.
+Cada tarea te toma 5 minutos o menos.
+
+TOTAL: ~40 minutos desde cero hasta envío
+
+
+═══════════════════════════════════════════════════════════════════════════════

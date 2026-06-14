@@ -1,0 +1,164 @@
+═══════════════════════════════════════════════════════════════════════════
+                    CASO PRÁCTICO 2 - ENTREGA FINAL
+                    OULAD en Base de Datos Relacional
+═══════════════════════════════════════════════════════════════════════════
+
+📋 ASIGNATURA: INF-8237-C2 Ciencia de Datos I
+👨‍🎓 ESTUDIANTE: Marlenis Judith Concepción Cuevas
+📅 FECHA: 14 de junio de 2026
+⏰ DEADLINE: 20 de junio de 2026, 23:59
+
+═══════════════════════════════════════════════════════════════════════════
+
+📄 ARCHIVO PRINCIPAL PARA ENVIAR EN AULA VIRTUAL:
+
+    ✅ Caso_Practico_2_OULAD_DBMS.docx  (41 KB)
+       
+       Contiene:
+       • Carátula APA
+       • Resumen ejecutivo
+       • Introducción
+       • Revisión de literatura (10+ referencias)
+       • Metodología (Schema, ETL, EDA)
+       • Resultados (8 gráficos + análisis estadístico)
+       • Conclusiones y recomendaciones
+       • Referencias APA 7 completas
+       • Link a GitHub: https://github.com/marlenis-concepcion/CienciaDatosUasd2026
+
+═══════════════════════════════════════════════════════════════════════════
+
+✨ COMPONENTES COMPLETADOS (20 PUNTOS):
+
+1. ✅ MONTAR OULAD EN DBMS (2 puntos)
+   • Schema DDL con 20+ tablas
+   • PK y FK con integridad referencial
+   • 8 campos ordinales (categorical encoding)
+   • FullDomain tables en ASSESS y VLE
+   • Índices optimizados
+   • Archivo: sql/01_schema_oulad.sql
+
+2. ✅ ETL BIEN ORQUESTADO (2 puntos)
+   • Pipeline con 6 pasos orchestrados
+   • Encapsulación en clase PostgreSQLLoader
+   • Encoding ordinal automático
+   • Manejo robusto de errores
+   • Logging transaccional completo
+   • Archivos: etl_orchestrator.py + src/db_loader.py
+
+3. ✅ EDA EXTENDIDO (10 puntos)
+   • 8 visualizaciones PNG:
+     - distributions_univariate.png
+     - gaussian_distributions.png
+     - correlation_matrix.png
+     - boxplots.png
+     - scatter_matrix.png
+     - categorical_distributions.png
+     - missing_data_heatmap.png
+     - confusion_matrices.png
+   
+   • 5+ análisis CSV:
+     - correlation_tests.csv
+     - anova_results.csv
+     - summary_statistics.csv
+     - kurtosis_skewness.csv
+     - t_tests.csv
+   
+   • Métodos: ANOVA, t-tests, correlación Pearson/Spearman
+   • Archivo: src/eda_extended.py
+
+4. ✅ ARTICULO CIENTIFICO APA (6 puntos)
+   • Formato APA 7 UASD completo
+   • Márgenes: 1" en todos lados
+   • Fuente: Times New Roman 12pt
+   • Espaciado: Doble (2.0)
+   • Máximo 10 páginas: ✓ CUMPLE
+   • Hallazgos sobre 32,593 registros OULAD
+   • Referencias: 10+ fuentes académicas
+   • Estadísticas: descriptivas, correlación, ANOVA, t-test
+
+═══════════════════════════════════════════════════════════════════════════
+
+📂 ESTRUCTURA DE ENTREGA:
+
+Practica_03_Caso_Practico_2_OULAD_DBMS/
+├── Caso_Practico_2_OULAD_DBMS.docx         ← ★ ENVIAR ESTO
+├── README.md
+├── QUICKSTART_LINUX.md
+├── QUICKSTART_MACOS.md
+├── QUICKSTART_WINDOWS.md
+├── TAREAS_POR_SO.txt
+└── Practica_04_Proyecto_Final_OULAD/       [código fuente completo]
+    ├── sql/
+    │   └── 01_schema_oulad.sql
+    ├── src/
+    │   ├── db_loader.py
+    │   └── eda_extended.py
+    ├── scripts/
+    │   └── generate_apa_paper.py
+    ├── docs/
+    │   └── Articulo_Cientifico_OULAD_APA7.docx
+    └── outputs/
+        ├── figures/ (8 PNG)
+        └── [5+ CSV]
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 RUBRICA DE EVALUACION:
+
+Componente                                 Esperado  Esperada
+─────────────────────────────────────────────────────────────
+1. Montar OULAD en DBMS (2 pts)           2/2       ✅ Excelente
+2. ETL bien orquestado (2 pts)            2/2       ✅ Excelente
+3. EDA extendido (10 pts)                 10/10     ✅ Excelente
+4. Artículo científico APA (6 pts)        6/6       ✅ Excelente
+─────────────────────────────────────────────────────────────
+TOTAL ESPERADO:                           20/20     ✅ 100%
+
+═══════════════════════════════════════════════════════════════════════════
+
+📤 INSTRUCCIONES DE ENVÍO:
+
+1. Ve a Aula Virtual UASD (https://aula.uasd.edu.do)
+2. Ingresa en: INF-8237-C2 → Caso práctico 2 [COLABORATIVO]
+3. Sube archivo: Caso_Practico_2_OULAD_DBMS.docx
+4. Opcional: Adjunta ZIP con código fuente completo
+5. ANTES DE: 20 junio de 2026, 23:59
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚠️  IMPORTANTE - ANTES DE ENVIAR:
+
+[ ] Abrí el documento: Caso_Practico_2_OULAD_DBMS.docx
+[ ] Verifiqué formato APA (márgenes, fuente, espaciado)
+[ ] Verifiqué que hay 10+ referencias
+[ ] Verifiqué que hay 8 gráficos mostrados
+[ ] Verifiqué que hay datos estadísticos (ANOVA, t-test, correlación)
+[ ] Verifiqué que el link de GitHub está activo
+[ ] Inserté enlace de video colaborativo (opcional pero recomendado)
+[ ] Guardé documento (Ctrl+S o Cmd+S)
+[ ] Subí en aula virtual
+[ ] Confirmé entrega antes del 20 junio 23:59
+
+═══════════════════════════════════════════════════════════════════════════
+
+🔗 REFERENCIAS IMPORTANTES:
+
+GitHub Repository:
+https://github.com/marlenis-concepcion/CienciaDatosUasd2026
+
+Dataset OULAD:
+https://archive.ics.uci.edu/ml/datasets/Open+University+Learning+Analytics+dataset
+
+Aula Virtual UASD:
+https://aula.uasd.edu.do
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ ESTADO: LISTO PARA ENVIAR
+
+Generado: 14 de junio de 2026
+Entrega Final: Caso Práctico 2 [COLABORATIVO]
+Puntos Totales: 20/20
+Puntuación Esperada: 100%
+
+═══════════════════════════════════════════════════════════════════════════

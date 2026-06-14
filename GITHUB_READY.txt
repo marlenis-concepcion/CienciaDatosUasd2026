@@ -1,0 +1,136 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    ✅ LISTO PARA SUBIR A GITHUB
+                    Caso Práctico 2 - OULAD en DBMS
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 PROYECTO LIMPIO - SIN RUTAS PERSONALES
+
+Archivos actualizados (rutas genéricas con ~):
+───────────────────────────────────────────────────────────────────────────────
+✅ Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/QUICKSTART_MACOS.md
+✅ Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/TAREAS_POR_SO.txt
+✅ Unidad_4/Practica_04_Proyecto_Final_OULAD/QUICKSTART_MACOS.md
+✅ Unidad_4/Practica_04_Proyecto_Final_OULAD/TAREAS_POR_SO.txt
+✅ Unidad_4/Practica_04_Proyecto_Final_OULAD/QUICKSTART.md
+✅ .gitignore (archivos sensibles excluidos)
+✅ README_GITHUB.md (documentación para repositorio)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔄 CAMBIOS REALIZADOS:
+
+1. Rutas personales:
+   ❌ /Users/vampy/Documents/...
+   ✅ ~/Documents/...
+
+2. Archivos de configuración:
+   ✅ .gitignore con exclusiones inteligentes
+   ✅ README_GITHUB.md con estructura clara
+   ✅ Guías por SO actualizadas
+
+3. Documentación:
+   ✅ Instrucciones genéricas para cualquier usuario
+   ✅ Comandos portables (Windows/macOS/Linux)
+   ✅ Sin hardcodes de usuario
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📦 ARCHIVOS PARA ENTREGAR EN AULA VIRTUAL:
+
+1. Caso_Practico_2_OULAD_DBMS.docx (41 KB)
+   ↳ Ubicación: Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/
+   
+2. Caso_Practico_2_OULAD.zip (opcional - código fuente)
+   ↳ Crear con: zip -r Caso_Practico_2_OULAD.zip Practica_04_Proyecto_Final_OULAD/
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 INSTRUCCIONES PARA GITHUB (cuando estés listo):
+
+1. Crear repositorio en GitHub:
+   - Nombre: CienciaDatosUasd2026
+   - Descripción: "Ciencia de Datos I - UASD Caso Práctico 2 OULAD"
+   - Público ✓
+
+2. Copiar archivos:
+   ```bash
+   git clone https://github.com/[tu-usuario]/CienciaDatosUasd2026.git
+   cd CienciaDatosUasd2026
+   
+   # Copiar carpetas
+   cp -r ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_3 .
+   cp -r ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4 .
+   cp ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/.gitignore .
+   ```
+
+3. Hacer commit:
+   ```bash
+   git add .
+   git commit -m "Caso Práctico 2: OULAD en Base de Datos - Esquema DDL, ETL, EDA, Paper APA"
+   git push origin main
+   ```
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 ESTRUCTURA FINAL:
+
+CienciaDatosUasd2026/
+├── .gitignore
+├── README.md (crear en GitHub)
+│
+├── Unidad_3/
+│   └── Practica_03_Caso_Practico_2_OULAD_DBMS/
+│       ├── Caso_Practico_2_OULAD_DBMS.docx    ← ENTREGABLE
+│       ├── README_GITHUB.md
+│       ├── QUICKSTART_MACOS.md
+│       ├── QUICKSTART_LINUX.md
+│       ├── QUICKSTART_WINDOWS.md
+│       └── TAREAS_POR_SO.txt
+│
+└── Unidad_4/
+    └── Practica_04_Proyecto_Final_OULAD/
+        ├── sql/
+        │   └── 01_schema_oulad.sql
+        ├── src/
+        │   ├── db_loader.py
+        │   └── eda_extended.py
+        ├── scripts/
+        │   └── generate_apa_paper.py
+        ├── docs/
+        │   └── Articulo_Cientifico_OULAD_APA7.docx
+        ├── outputs/
+        │   ├── figures/ (8 PNG)
+        │   └── [5+ CSV]
+        ├── etl_orchestrator.py
+        ├── requirements.txt
+        ├── run_unix.sh
+        ├── run_windows.bat
+        ├── QUICKSTART.md
+        ├── README.md
+        └── .gitignore
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST FINAL ANTES DE GITHUB:
+
+[ ] Verificar que NO hay rutas con /Users/vampy
+[ ] Confirmar que ~ funciona en tu máquina (cd ~)
+[ ] Crear ZIP: zip -r Caso_Practico_2_OULAD.zip Practica_04_Proyecto_Final_OULAD/
+[ ] Enviar en Aula Virtual UASD ANTES del 20 junio 23:59
+[ ] Luego subir a GitHub cuando lo desees
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📅 ESTADO ACTUAL:
+
+✅ Entregable académico: LISTO
+✅ Código fuente: LIMPIO Y DOCUMENTADO
+✅ GitHub: PREPARADO
+✅ Rutas: GENÉRICAS (sin datos personales)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Generado: 14 de junio de 2026
+Próximo paso: Enviar documento en Aula Virtual antes del 20 junio 23:59
+
+═══════════════════════════════════════════════════════════════════════════════
