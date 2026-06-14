@@ -6,7 +6,7 @@
 **Equipo:** McCarthy Team  
 **Asignatura:** INF-8237-C2 Ciencia de Datos I  
 **Unidad:** Unidad 4: Introducción a Machine Learning  
-**Facilitador:** Silverio de Orbe Abad  
+**Facilitador:** Dr. Silverio del Orbe Abad  
 **Repositorio:** CienciaDatosUasd2026
 
 ## Enlace principal
