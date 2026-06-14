@@ -8,7 +8,7 @@
 **Unidad:** Unidad 4: Introducción a Machine Learning  
 **Equipo:** Mccarthy Team  
 **Integrantes y matrículas:** [Completar por el equipo]  
-**Facilitador:** [Completar]  
+**Facilitador:** Silverio de Orbe Abad  
 **Fecha:** 12 de julio de 2026
 
 ## Resumen

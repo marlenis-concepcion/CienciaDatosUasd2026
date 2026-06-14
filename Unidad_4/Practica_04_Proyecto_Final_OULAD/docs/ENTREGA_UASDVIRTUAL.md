@@ -5,6 +5,7 @@
 **Participante:** Marlenis Judith Concepción Cuevas  
 **Asignatura:** INF-8237-C2 Ciencia de Datos I  
 **Unidad:** Unidad 4: Introducción a Machine Learning  
+**Facilitador:** Silverio de Orbe Abad  
 **Repositorio:** CienciaDatosUasd2026
 
 ## Enlace principal

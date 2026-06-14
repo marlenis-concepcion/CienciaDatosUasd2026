@@ -3,6 +3,7 @@
 Asignatura: INF-8237-C2 Ciencia de Datos I  
 Unidad 4: Introducción a Machine Learning  
 Equipo: Mccarthy Team
+Facilitador: Silverio de Orbe Abad
 
 ## Enlaces de entrega
 
