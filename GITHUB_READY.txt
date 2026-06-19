@@ -20,8 +20,8 @@ Archivos actualizados (rutas genéricas con ~):
 🔄 CAMBIOS REALIZADOS:
 
 1. Rutas personales:
-   ❌ /Users/vampy/Documents/...
-   ✅ ~/Documents/...
+   ❌ /PATH/...
+   ✅ /PATH/...
 
 2. Archivos de configuración:
    ✅ .gitignore con exclusiones inteligentes
@@ -58,9 +58,9 @@ Archivos actualizados (rutas genéricas con ~):
    cd CienciaDatosUasd2026
    
    # Copiar carpetas
-   cp -r ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_3 .
-   cp -r ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4 .
-   cp ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/.gitignore .
+   cp -r /PATH/CienciaDatosUasd2026/Unidad_3 .
+   cp -r /PATH/CienciaDatosUasd2026/Unidad_4 .
+   cp /PATH/CienciaDatosUasd2026/.gitignore .
    ```
 
 3. Hacer commit:
@@ -113,7 +113,7 @@ CienciaDatosUasd2026/
 
 ✅ CHECKLIST FINAL ANTES DE GITHUB:
 
-[ ] Verificar que NO hay rutas con /Users/vampy
+[ ] Verificar que NO hay rutas locales; usar /PATH/ si hace falta documentarlas
 [ ] Confirmar que ~ funciona en tu máquina (cd ~)
 [ ] Crear ZIP: zip -r Caso_Practico_2_OULAD.zip Practica_04_Proyecto_Final_OULAD/
 [ ] Enviar en Aula Virtual UASD ANTES del 20 junio 23:59

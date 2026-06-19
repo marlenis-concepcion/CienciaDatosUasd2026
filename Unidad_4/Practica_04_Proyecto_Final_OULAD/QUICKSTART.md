@@ -8,7 +8,7 @@
 
 ```bash
 # 1. Navega al directorio
-cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
 
 # 2. Activa ambiente (si no está activo)
 source .venv/bin/activate
@@ -38,7 +38,7 @@ python etl_orchestrator.py --skip-postgres
 createdb oulad_uasd
 
 # 2. Navega a la carpeta
-cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
 
 # 3. Activa ambiente
 source .venv/bin/activate

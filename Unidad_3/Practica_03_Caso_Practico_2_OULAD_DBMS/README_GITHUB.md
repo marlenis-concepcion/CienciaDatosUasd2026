@@ -85,7 +85,7 @@ Exportación, diseño e integración del dataset **OULAD** (Open University Lear
 
 ```bash
 # 1. Navega a la carpeta del proyecto
-cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
 
 # 2. Ejecuta el pipeline automático
 chmod +x run_unix.sh
@@ -95,7 +95,7 @@ chmod +x run_unix.sh
 ### Windows (PowerShell)
 
 ```powershell
-cd "$env:USERPROFILE\Documents\NETWORKING\UASD\cienciadatosI\CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
+cd "/PATH/CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
 run_windows.bat --skip-postgres
 ```
 
