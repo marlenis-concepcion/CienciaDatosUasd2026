@@ -7,7 +7,7 @@
 ## PASO 1: Navega a la carpeta
 
 ```bash
-cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
 ```
 
 O en Finder:
@@ -194,7 +194,7 @@ Practica_04_Proyecto_Final_OULAD/
 
 ## ✅ Checklist Final
 
-- [ ] Descargué proyecto a `~/Documents/NETWORKING/UASD/cienciadatosI/`
+- [ ] Descargué proyecto a `/PATH/`
 - [ ] Ejecuté `./run_unix.sh --skip-postgres`
 - [ ] Pipeline terminó exitosamente (sin errores)
 - [ ] Abrí `outputs/figures/` - veo 8 PNG
@@ -217,7 +217,7 @@ Practica_04_Proyecto_Final_OULAD/
 
 **¡Listo! El documento APA está en:** 
 ```
-~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD/docs/Articulo_Cientifico_OULAD_APA7.docx
+/PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD/docs/Articulo_Cientifico_OULAD_APA7.docx
 ```
 
 O simplemente escribe en Terminal:

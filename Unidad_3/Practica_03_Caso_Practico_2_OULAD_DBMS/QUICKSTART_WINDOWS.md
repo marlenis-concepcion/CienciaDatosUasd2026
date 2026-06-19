@@ -20,7 +20,7 @@
 ## PASO 2: Navega a la carpeta
 
 ```powershell
-cd "C:\Users\[Tu Usuario]\Documents\NETWORKING\UASD\cienciadatosI\CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
+cd "/PATH/CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
 ```
 
 O en Explorador de Archivos:
@@ -250,7 +250,7 @@ Caso_Practico_2_OULAD.zip
 ## 📍 Ruta completa del documento
 
 ```
-C:\Users\[Tu Usuario]\Documents\NETWORKING\UASD\cienciadatosI\CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD\docs\Articulo_Cientifico_OULAD_APA7.docx
+/PATH/CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD\docs\Articulo_Cientifico_OULAD_APA7.docx
 ```
 
 O simplemente en PowerShell:

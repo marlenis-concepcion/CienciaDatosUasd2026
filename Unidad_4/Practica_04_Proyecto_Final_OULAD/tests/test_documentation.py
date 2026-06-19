@@ -54,7 +54,7 @@ def test_local_html_links_and_images_resolve():
 def test_html_contains_no_personal_absolute_path():
     text = HTML.read_text(encoding="utf-8")
     assert "/Users/" not in text
-    assert "Documents/NETWORKING" not in text
+    assert "Documents" + "/NETWORKING" not in text
 
 
 def test_article_uses_apa_paragraph_formatting():

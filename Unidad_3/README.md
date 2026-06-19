@@ -17,6 +17,7 @@ La Unidad 3 cubre el análisis exploratorio de datos (EDA) y estadística infere
 
 - [Práctica 01: EDA Básico](Practica_01_EDA_Basico/README.md)
 - [Práctica 02: Análisis Estadístico Inferencial](Practica_02_Analisis_Estadistico/README.md)
+- [Práctica 03: Caso práctico OULAD DBMS](Practica_03_Caso_Practico_2_OULAD_DBMS/README.md)
 
 ## Competencias Desarrolladas
 
@@ -31,3 +32,4 @@ La Unidad 3 cubre el análisis exploratorio de datos (EDA) y estadística infere
 |----------|------|----------|
 | 01 | EDA: Limpieza, descriptiva, visualización | 2 semanas |
 | 02 | Estadística inferencial: hipótesis, correlación, ANOVA | 2 semanas |
+| 03 | OULAD DBMS: OSEMN, EDA, modelos y artículo APA 7 | 2 semanas |

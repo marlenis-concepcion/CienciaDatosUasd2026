@@ -7,7 +7,7 @@
 ## PASO 1: Navega a la carpeta
 
 ```bash
-cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
 ```
 
 O si no sabes la ruta exacta:

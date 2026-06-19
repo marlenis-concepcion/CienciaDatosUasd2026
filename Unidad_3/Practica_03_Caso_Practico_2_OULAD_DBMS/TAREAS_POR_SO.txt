@@ -14,7 +14,7 @@ TAREAS RÁPIDAS:
 
   TAREA 1: Preparar ambiente (3 min)
   □ Abre Terminal
-  □ Navega: cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+  □ Navega: cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
   □ Ejecuta: chmod +x run_unix.sh
 
   TAREA 2: Ejecutar pipeline (15 min)
@@ -62,7 +62,7 @@ TAREAS RÁPIDAS:
 
   TAREA 1: Preparar ambiente (3 min)
   □ Abre Terminal (Cmd+Space → Terminal)
-  □ Copia: cd ~/Documents/NETWORKING/UASD/cienciadatosI/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
+  □ Copia: cd /PATH/CienciaDatosUasd2026/Unidad_4/Practica_04_Proyecto_Final_OULAD
   □ Pega y Enter
   □ Ejecuta: chmod +x run_unix.sh
 
@@ -111,7 +111,7 @@ TAREAS RÁPIDAS:
 
   TAREA 1: Preparar ambiente (3 min)
   □ Abre: PowerShell (Win+X → PowerShell)
-  □ Navega: cd "C:\Users\[Tu Usuario]\Documents\NETWORKING\UASD\cienciadatosI\CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
+  □ Navega: cd "/PATH/CienciaDatosUasd2026\Unidad_4\Practica_04_Proyecto_Final_OULAD"
   □ Enter
 
   TAREA 2: Ejecutar pipeline (15 min)

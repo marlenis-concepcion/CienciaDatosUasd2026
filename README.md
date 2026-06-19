@@ -10,7 +10,10 @@ CienciaDatosUasd2026/
   General/
   Unidad_2/
     Practica_02_Sakila_CRUD_ORM/
+  Unidad_3/
+    Practica_03_Caso_Practico_2_OULAD_DBMS/
   Unidad_4/
+    Ensayo_02_Revision_Literatura_ML/
     Practica_Recuperacion_Metricas_Inferenciales_ML/
     Practica_04_Proyecto_Final_OULAD/
 ```
@@ -33,7 +36,25 @@ operaciones CRUD, importación/exportación y métricas descriptivas.
 - [Portal HTML](Unidad_2/Practica_02_Sakila_CRUD_ORM/index.html)
 - [Código principal](Unidad_2/Practica_02_Sakila_CRUD_ORM/caso_practico_2_sakila_crud_orm)
 
+## Unidad 3
+
+### Práctica 03: caso práctico OULAD DBMS
+
+Proyecto POO/OSEMN con OULAD, base de datos, EDA, métricas, modelos supervisados,
+documentación colaborativa y artículo APA 7.
+
+- [Documentación](Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/README.md)
+- [Caso práctico](Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/CASO_PRACTICO_2.md)
+- [Cuaderno Colab](Unidad_3/Practica_03_Caso_Practico_2_OULAD_DBMS/notebooks/Proyecto_Final_OULAD_Colab.ipynb)
+
 ## Unidad 4
+
+### Ensayo 02: revisión de literatura ML
+
+Ensayo académico en formato APA 7 sobre revisión de literatura aplicada a Machine Learning.
+
+- [Documentación](Unidad_4/Ensayo_02_Revision_Literatura_ML/README.md)
+- [Documento final](Unidad_4/Ensayo_02_Revision_Literatura_ML/docs/Ensayo_2_Revision_Literatura_ML_Marlenis_APA7.docx)
 
 ### Recuperación: métricas inferenciales y ML
 
