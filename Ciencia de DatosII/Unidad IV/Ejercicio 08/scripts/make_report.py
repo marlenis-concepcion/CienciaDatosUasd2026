@@ -46,11 +46,11 @@ AI_MODELS = [
      "Menos profundidad en tareas largas"],
     ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
      "No indicado para diseño experimental"],
-    ["Codex (OpenAI)", "Modelo configurado en Codex (versión a verificar)", "Apoyo complementario",
+    ["Codex (OpenAI)", "Modelo de OpenAI orientado a código (familia GPT-5-Codex)", "Apoyo complementario",
      "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
     ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
      "Puede inventar referencias: se verificaron en la fuente"],
-    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No consta su uso", "Razonamiento paso a paso y depuración lógica",
+    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No usado; recomendado para revisar la lógica de métricas", "Razonamiento paso a paso y depuración lógica",
      "No sustituye la ejecución"],
 ]
 
