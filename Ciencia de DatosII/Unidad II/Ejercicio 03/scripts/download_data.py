@@ -13,7 +13,7 @@ from inf8239_u02.data import sha256
 
 def main() -> int:
     if settings.data_source == "local":
-        print(f"Modo local. Archivo configurado: {settings.dataset_path}")
+        print(f"Modo local. Archivo configurado: {settings.dataset_path.relative_to(ROOT)}")
         return 0
     if settings.data_source != "url" or not settings.dataset_url:
         print("Configure DATA_SOURCE=url y DATASET_URL en .env", file=sys.stderr)
@@ -38,7 +38,7 @@ def main() -> int:
     df = df[["id", settings.text_column, settings.target_column]]
     df.to_csv(settings.dataset_path, index=False)
     print(f"Archivo ZIP verificado. SHA-256: {digest}")
-    print(f"Guardado: {settings.dataset_path} · {len(df)} filas")
+    print(f"Guardado: {settings.dataset_path.relative_to(ROOT)} · {len(df)} filas")
     return 0
 
 

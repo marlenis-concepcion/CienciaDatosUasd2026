@@ -20,16 +20,16 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # ============================================================================
-# STEP 1: Verificar que no hay rutas con vampy
+# STEP 1: Verificar que no hay rutas personales
 # ============================================================================
-echo "${YELLOW}[1/5]${NC} Verificando que NO hay rutas personales (vampy)..."
-if grep -r "vampy" --include="*.py" --include="*.sh" --include="*.md" --include="*.txt" \
+echo "${YELLOW}[1/5]${NC} Verificando que NO hay rutas personales..."
+if grep -rF "$HOME" --include="*.py" --include="*.sh" --include="*.md" --include="*.txt" \
     --exclude-dir=".git" --exclude-dir=".venv" --exclude-dir="outputs" . 2>/dev/null; then
-    echo "${RED}❌ ERROR: Aún hay referencias a 'vampy' en los archivos${NC}"
+    echo "${RED}❌ ERROR: Aún hay rutas de la carpeta personal en los archivos${NC}"
     echo "Por favor, revisa y reemplaza antes de subir a GitHub"
     exit 1
 else
-    echo "${GREEN}✅ Ninguna referencia a 'vampy' encontrada${NC}"
+    echo "${GREEN}✅ Ninguna ruta personal encontrada${NC}"
 fi
 echo ""
 
