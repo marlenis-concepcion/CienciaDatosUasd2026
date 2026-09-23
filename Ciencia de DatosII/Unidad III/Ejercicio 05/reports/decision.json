@@ -1,0 +1,10 @@
+{
+  "modelo_elegido": "hibrido_a0.75",
+  "factorizacion": {
+    "factores": 10,
+    "epocas": 12
+  },
+  "razon": "Frontera de Pareto: hibrido_a0.25, hibrido_a0.5, hibrido_a0.75. NDCG@10 máximo 0.0527; con al menos 95% de ese valor: hibrido_a0.75. Se elige el de mayor cobertura: hibrido_a0.75.",
+  "regla": "Pareto en validación (NDCG@10 y cobertura); mayor cobertura con NDCG >= 95% del máximo",
+  "tomada_antes_de_test": true
+}

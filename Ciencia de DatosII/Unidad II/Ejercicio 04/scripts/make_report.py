@@ -36,7 +36,7 @@ def tests_section(styles, title: str):
     rows = [["#", "Prueba", "Qué comprueba", "Por qué se hizo"]] + [
         [r.n, f"{r.prueba.replace('_', ' ')}<br/><i>{r.origen} · {r.criterio}</i>", r.comprueba, r.por_que]
         for r in tests.itertuples()]
-    return tests, table(rows, styles, widths=[18, 140, 175, 182])
+    return tests, table(rows, styles, widths=[22, 138, 173, 182])
 
 
 def main() -> None:
@@ -85,7 +85,7 @@ def main() -> None:
         KeepTogether([Image(str(reports / "curvas.png"), width=480, height=173)]),
         h("3. Costo, tamaño y decisión técnica"),
         table(rows, styles, widths=[78, 44, 40, 50, 56, 36, 60, 60, 48]), Spacer(1, 6),
-        p(f"<b>Regla fijada antes de la prueba:</b> {d['regla'].lower()}. {d['razon']} La CNN Flatten gana +0.04 de F1 macro "
+        p(f"<b>Regla fijada antes de la prueba:</b> {d['regla'][0].lower() + d['regla'][1:]}. {d['razon']} La CNN Flatten gana +0.04 de F1 macro "
           "frente al denso, a cambio de 8 veces más parámetros, 4 veces más inferencia y 5 MB en disco. En CPU (Apple M1 Pro, "
           "TensorFlow 2.21) la inferencia sigue por debajo de 0.1 ms por imagen, por lo que el costo es aceptable."),
         KeepTogether([h("4. Métricas, curvas y errores por clase"),

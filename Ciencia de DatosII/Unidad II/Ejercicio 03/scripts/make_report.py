@@ -42,7 +42,7 @@ def tests_section(styles, title: str):
     rows = [["#", "Prueba", "Qué comprueba", "Por qué se hizo"]] + [
         [r.n, f"{r.prueba.replace('_', ' ')}<br/><i>{r.origen} · {r.criterio}</i>", r.comprueba, r.por_que]
         for r in tests.itertuples()]
-    return tests, table(rows, styles, widths=[18, 140, 175, 182])
+    return tests, table(rows, styles, widths=[22, 138, 173, 182])
 
 
 def main() -> None:
