@@ -1,0 +1,6 @@
+Validación local: 23 de septiembre de 2026.
+Comando: python -m pytest -q tests
+Cuatro pruebas de este ejercicio aprobadas; ocho en la ejecución conjunta.
+Los notebooks se ejecutaron de principio a fin, sin celdas con error.
+Se verificó la descarga desde cero y su SHA256.
+Advertencias de dependencias: urllib3 con LibreSSL y deprecaciones de pyparsing; no impidieron descarga ni pruebas.

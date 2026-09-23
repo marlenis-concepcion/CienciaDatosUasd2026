@@ -1,0 +1,12 @@
+{
+  "python": "3.9.6",
+  "sistema": "macOS-26.6-arm64-arm-64bit",
+  "maquina": "arm64",
+  "hilos": 1,
+  "repeticiones": 3,
+  "predicciones_por_repeticion": 30,
+  "tamano_lote": 70,
+  "inferencia": "mediana de 30 predicciones de lote por repetición, dividida por filas; luego mediana de tres repeticiones",
+  "energia": "No medida; tiempo y tamaño son indicadores indirectos, no kWh ni CO2.",
+  "advertencia": "Las tres repeticiones mantienen semilla y partición; miden variabilidad temporal, no incertidumbre estadística."
+}

@@ -1,0 +1,21 @@
+{
+  "filas_originales": 351,
+  "filas_utilizadas": 350,
+  "duplicados_eliminados": 1,
+  "faltantes": 0,
+  "columnas_constantes": [
+    "atributo_02"
+  ],
+  "clases": {
+    "g": 225,
+    "b": 126
+  },
+  "sha256_datos": "46d52186b84e20be52918adb93e8fb9926b34795ff7504c24350ae0616a04bbd",
+  "particiones": {
+    "entrenamiento": 210,
+    "validacion": 70,
+    "prueba": 70
+  },
+  "semilla": 42,
+  "aprobacion_docente": "pendiente"
+}

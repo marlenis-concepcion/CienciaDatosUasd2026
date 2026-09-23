@@ -1,0 +1,11 @@
+# Evidencias requeridas por las tareas: excepciones al gitignore general.
+!**/reports/
+!**/reports/*.csv
+!**/reports/*.png
+!**/reports/*.pdf
+!**/reports/*.json
+!**/reports/modelos/
+!**/reports/modelos/*.joblib
+.venv/
+**/data/
+**/.ipynb_checkpoints/

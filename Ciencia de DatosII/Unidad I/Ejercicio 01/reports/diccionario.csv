@@ -1,0 +1,36 @@
+variable,tipo,rol,descripcion,faltantes
+atributo_01,int64,predictor,Atributo 1 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_02,int64,predictor,Atributo 2 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_03,float64,predictor,Atributo 3 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_04,float64,predictor,Atributo 4 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_05,float64,predictor,Atributo 5 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_06,float64,predictor,Atributo 6 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_07,float64,predictor,Atributo 7 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_08,float64,predictor,Atributo 8 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_09,float64,predictor,Atributo 9 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_10,float64,predictor,Atributo 10 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_11,float64,predictor,Atributo 11 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_12,float64,predictor,Atributo 12 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_13,float64,predictor,Atributo 13 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_14,float64,predictor,Atributo 14 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_15,float64,predictor,Atributo 15 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_16,float64,predictor,Atributo 16 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_17,float64,predictor,Atributo 17 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_18,float64,predictor,Atributo 18 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_19,float64,predictor,Atributo 19 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_20,float64,predictor,Atributo 20 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_21,float64,predictor,Atributo 21 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_22,float64,predictor,Atributo 22 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_23,float64,predictor,Atributo 23 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_24,float64,predictor,Atributo 24 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_25,float64,predictor,Atributo 25 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_26,float64,predictor,Atributo 26 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_27,float64,predictor,Atributo 27 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_28,float64,predictor,Atributo 28 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_29,float64,predictor,Atributo 29 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_30,float64,predictor,Atributo 30 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_31,float64,predictor,Atributo 31 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_32,float64,predictor,Atributo 32 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_33,float64,predictor,Atributo 33 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+atributo_34,float64,predictor,Atributo 34 de la señal procesada por autocorrelación; sin unidad individual especificada por UCI.,0
+clase,categorica,target,b=retorno malo (0); g=retorno bueno (1).,0
