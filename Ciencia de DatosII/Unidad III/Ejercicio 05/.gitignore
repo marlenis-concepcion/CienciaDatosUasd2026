@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.py[cod]
+# MovieLens no se redistribuye (términos de uso de GroupLens y mandato del ejercicio).
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
+# Evidencias de la entrega: excepciones al .gitignore general del repositorio.
+!reports/*.csv
+!reports/*.png
+!reports/*.json
+!reports/*.pdf
+!docs/*.csv

@@ -1,0 +1,6 @@
+{
+  "modelo_elegido": "vae_16",
+  "razon": "Pérdida total en validación: vae_16=242.60, vae_2=262.92. Se elige la menor: vae_16.",
+  "regla": "VAE con menor pérdida total (reconstrucción + KL) en validación",
+  "tomada_antes_de_test": true
+}

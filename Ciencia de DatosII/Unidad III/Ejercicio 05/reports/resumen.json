@@ -1,0 +1,46 @@
+{
+  "auditoria": {
+    "valoraciones": 100836,
+    "usuarios": 610,
+    "peliculas_catalogo": 9742,
+    "peliculas_valoradas": 9724,
+    "densidad": 0.017,
+    "desde": "1996-03-29",
+    "hasta": "2018-09-24",
+    "duplicados_usuario_pelicula": 0,
+    "nulos": 0,
+    "valoraciones_por_usuario": {
+      "min": 20,
+      "mediana": 70.5,
+      "max": 2698
+    },
+    "peliculas_con_una_valoracion": 3446,
+    "porcentaje_valoraciones_en_top10pct_peliculas": 60.0,
+    "peliculas_sin_genero": 34,
+    "distribucion_rating": {
+      "0.5": 1370,
+      "1.0": 2811,
+      "1.5": 1791,
+      "2.0": 7551,
+      "2.5": 5550,
+      "3.0": 20047,
+      "3.5": 13136,
+      "4.0": 26818,
+      "4.5": 8551,
+      "5.0": 13211
+    }
+  },
+  "particion": {
+    "usuarios_frios": 61,
+    "usuarios_calidos": 549,
+    "train": 63101,
+    "valid": 9023,
+    "test": 18027,
+    "regla": "por usuario: 70 % más antiguo entrenamiento, 10 % siguiente validación, 20 % más reciente prueba"
+  },
+  "rmse_test_factorizacion": 0.9938940015446637,
+  "segundos_entrenar_factorizacion": 4.983677875003195,
+  "fraccion_relevantes_alcanzables": 0.9330641213901126,
+  "k": 10,
+  "umbral_relevancia": 4.0
+}

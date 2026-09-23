@@ -1,0 +1,128 @@
+{
+  "reconstruccion": {
+    "media": {
+      "mse_pixel": 0.08664162121788187,
+      "bce_por_imagen": 385.0185654257193
+    },
+    "pca_16": {
+      "mse_pixel": 0.019821900614543256,
+      "bce_por_imagen": 249.27961423128554
+    },
+    "ae_16": {
+      "mse_pixel": 0.01791294832069993,
+      "bce_por_imagen": 234.5889018467058
+    },
+    "vae_2": {
+      "mse_pixel": 0.029179194680838183,
+      "bce_por_imagen": 257.9558406919991,
+      "perdida_valid": 262.9199523925781,
+      "kl_valid": 6.341322422027588
+    },
+    "vae_16": {
+      "mse_pixel": 0.013997415045125583,
+      "bce_por_imagen": 223.93846405310467,
+      "perdida_valid": 242.60333251953125,
+      "kl_valid": 15.643712997436523
+    }
+  },
+  "costos": {
+    "media": {
+      "parametros": 784,
+      "segundos": 0.0
+    },
+    "pca_16": {
+      "parametros": 13328,
+      "segundos": 0.22753662499962957
+    },
+    "ae_16": {
+      "parametros": 25888,
+      "segundos": 19.828095166998537,
+      "epocas": 30,
+      "tamano_kb": 330.65234375
+    },
+    "vae_2": {
+      "parametros": 202516,
+      "segundos": 41.19839037499696,
+      "epocas": 40,
+      "tamano_kb": 832.9560546875
+    },
+    "vae_16": {
+      "parametros": 207920,
+      "segundos": 44.180405084000085,
+      "epocas": 40,
+      "tamano_kb": 854.0703125
+    }
+  },
+  "generacion": {
+    "real_prueba": {
+      "confianza_media": 0.9002682566642761,
+      "confianza_mayor_0_9": 0.704,
+      "clases_cubiertas": 10,
+      "entropia_clases": 0.9978255833360646,
+      "reparto": [
+        0.103,
+        0.105,
+        0.093,
+        0.091,
+        0.117,
+        0.092,
+        0.119,
+        0.09,
+        0.095,
+        0.095
+      ],
+      "dispersion": 11.242585182189941,
+      "dist_vecino_train_mediana": 3.520813465118408,
+      "posibles_copias": 0.05
+    },
+    "vae_2": {
+      "confianza_media": 0.5284221768379211,
+      "confianza_mayor_0_9": 0.092,
+      "clases_cubiertas": 9,
+      "entropia_clases": 0.8828583106211262,
+      "reparto": [
+        0.16,
+        0.054,
+        0.0,
+        0.114,
+        0.021,
+        0.052,
+        0.212,
+        0.074,
+        0.137,
+        0.176
+      ],
+      "dispersion": 6.956150531768799,
+      "dist_vecino_train_mediana": 2.558936595916748,
+      "posibles_copias": 0.19
+    },
+    "vae_16": {
+      "confianza_media": 0.6251766085624695,
+      "confianza_mayor_0_9": 0.163,
+      "clases_cubiertas": 10,
+      "entropia_clases": 0.9808748624284216,
+      "reparto": [
+        0.092,
+        0.078,
+        0.039,
+        0.126,
+        0.122,
+        0.074,
+        0.112,
+        0.125,
+        0.102,
+        0.13
+      ],
+      "dispersion": 8.553399085998535,
+      "dist_vecino_train_mediana": 3.6245903968811035,
+      "posibles_copias": 0.005
+    },
+    "umbral_copia": 1.9613052606582642,
+    "exactitud_juez_prueba": 0.8934000134468079
+  },
+  "hardware": {
+    "sistema": "macOS-26.6-arm64-arm-64bit",
+    "tensorflow": "2.21.0",
+    "gpu": []
+  }
+}
