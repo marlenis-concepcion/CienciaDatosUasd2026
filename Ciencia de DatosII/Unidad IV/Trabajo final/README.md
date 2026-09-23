@@ -2,7 +2,14 @@
 
 **Autora:** Marlenis Judith Concepción Cuevas · **Docente:** Edwin Ramón José Nolasco · **Entrega:** 31 de octubre de 2026, 23:59
 
-> Estado: carpeta creada. Pendiente de definir tema, modalidad y tamaño del equipo antes de construir el producto.
+> **Estado:** equipo y flujo Git definidos; falta elegir el tema de la lista del docente.
+
+| Decisión | Valor |
+|---|---|
+| Equipo | Individual (1 integrante) |
+| Alcance mínimo | Baseline + 1 modelo candidato; 6 pruebas; documentación, repositorio y demostración |
+| Evidencia Git | Issues por hito, ramas por tarea y pull requests revisados en este repositorio |
+| Tema y modalidad | Pendiente (lista «Unidad 04. Temas trabajo final») |
 
 ## Mandato (resumen)
 
