@@ -1,0 +1,11 @@
+activity,R,A,C,I
+Inventario y minimización de datos,Data Engineer,Data Protection Officer,Data Scientist,Product Owner
+Retención y eliminación de datos,Data Engineer,Data Protection Officer,Legal,Product Owner
+Calidad y contrato de datos,Data Engineer,Product Owner,Data Scientist,ML Engineer
+Auditoría de equidad,Data Scientist,Product Owner,Community representatives,Institutional Owner
+Validación de la regla o modelo,Data Scientist,Product Owner,Data Engineer,Operators
+Decisión de despliegue o retiro,Product Owner,Institutional Owner,Legal and Data Scientist,Operators and community representatives
+Monitoreo semanal y mensual,ML Engineer,Product Owner,Data Scientist,Operators
+Respuesta a incidentes,ML Engineer,Institutional Owner,Legal and Data Scientist,Affected representatives
+Atención de apelaciones,Operators,Product Owner,Data Scientist,Affected person
+Comunicación a afectados,Product Owner,Institutional Owner,Legal,Community representatives

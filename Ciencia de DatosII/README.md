@@ -2,9 +2,9 @@
 
 **Marlenis Judith Concepción Cuevas** · INF-8239-C2 · Maestría en Ciencia de Datos e Inteligencia Artificial, Universidad Autónoma de Santo Domingo (UASD) · Docente / Instructor: Edwin Ramón José Nolasco
 
-> **ES** · Seis proyectos reproducibles de aprendizaje automático: clasificación con SVM y ensambles, reducción dimensional y Green AI, clasificación de texto, visión con CNN, sistemas de recomendación y modelos generativos (VAE). Cada proyecto incluye descarga verificada de datos, auditoría, líneas base, decisión fijada en validación antes de tocar la prueba, pruebas automatizadas, notebook ejecutado y PDF de entrega.
+> **ES** · Ocho proyectos reproducibles: clasificación con SVM y ensambles, reducción dimensional y Green AI, clasificación de texto, visión con CNN, sistemas de recomendación, modelos generativos (VAE), auditoría de equidad y gobernanza de un sistema de apoyo a decisiones. Cada proyecto incluye descarga verificada de datos, auditoría, líneas base, decisión fijada en validación antes de tocar la prueba, pruebas automatizadas, notebook ejecutado y PDF de entrega.
 >
-> **EN** · Six reproducible machine-learning projects: SVM and ensemble classification, dimensionality reduction and Green AI, text classification, CNN-based vision, recommender systems and generative models (VAE). Every project ships verified data download, data audit, baselines, a model decision locked on validation before touching the test set, automated tests, an executed notebook and a PDF report.
+> **EN** · Eight reproducible projects: SVM and ensemble classification, dimensionality reduction and Green AI, text classification, CNN-based vision, recommender systems, generative models (VAE), fairness auditing and governance of a decision-support system. Every project ships verified data download, data audit, baselines, a model decision locked on validation before touching the test set, automated tests, an executed notebook and a PDF report.
 
 ## Resultados / Results
 
@@ -16,8 +16,10 @@
 | II | [04 · CNN y Model Card](Unidad%20II/Ejercicio%2004/README.md) | Fashion-MNIST | Denso vs CNN; costo vs precisión / dense vs CNN; cost vs accuracy | CNN F1 macro **0.919** vs 0.876 dense | 9 |
 | III | [05 · Recomendador](Unidad%20III/Ejercicio%2005/README.md) | MovieLens (no redistribuido / not redistributed) | Popularidad, contenido, factorización, híbrido; Pareto NDCG–cobertura | Híbrido: NDCG@10 **0.059**, cobertura / coverage **+35 %** vs MF | 13 |
 | III | [06 · VAE y Model Card](Unidad%20III/Ejercicio%2006/README.md) | Fashion-MNIST | Media, PCA, AE, VAE 2/16; fidelidad, diversidad, memoria | VAE 16: MSE **0.0140**, 10/10 clases, **0.5 %** posibles copias / possible copies | 12 |
+| IV | [07 · Impacto y equidad](Unidad%20IV/Ejercicio%2007/README.md) | DSS territorial sintético / synthetic | Fairlearn, bootstrap, interseccional, NIST AI RMF, Ley 172-13 | Regla transparente: brecha de recall **0.011** vs 0.138 del modelo; decisión / decision **LIMITAR** | 23 |
+| IV | [08 · Gobernanza y simulacro](Unidad%20IV/Ejercicio%2008/README.md) | DSS territorial sintético / synthetic | Inventario, retención, RACI, Datasheet, Model Card, monitoreo, runbook | Falla detectada en la **1.ª semana** (z = −7.8) / incident caught in week 1 | 34 |
 
-**55 pruebas automatizadas / automated tests**, todas aprobadas / all passing.
+**112 pruebas automatizadas / automated tests**, todas aprobadas / all passing.
 
 ## Qué demuestra este repositorio / What this repository demonstrates
 
@@ -46,10 +48,11 @@
 - **[Unidad I](Unidad%20I/README.md)** · Técnicas avanzadas de análisis de datos / Advanced data analysis techniques: SVM, kernels, ensembles, PCA, t-SNE, Green AI.
 - **[Unidad II](Unidad%20II/README.md)** · Procesamiento de lenguaje natural y visión / NLP and computer vision: corpus auditing, TF-IDF, text classification, CNN, Model Cards.
 - **[Unidad III](Unidad%20III/README.md)** · Recomendación y modelos generativos / Recommenders and generative models: content-based, matrix factorization, hybrids, autoencoders, VAE.
+- **[Unidad IV](Unidad%20IV/README.md)** · Ética, privacidad, equidad y gobernanza / Ethics, privacy, fairness and governance: impact assessment, Fairlearn audit, NIST AI RMF, RACI, monitoring, incident drill, [final project](Unidad%20IV/Trabajo%20final/README.md).
 
 ## Stack
 
-Python 3.12 (Unidad I: 3.9) · uv · scikit-learn · TensorFlow/Keras 2.21 · pandas · NumPy · matplotlib · pytest · Jupyter · ReportLab
+Python 3.12 (Unidad I: 3.9) · uv · scikit-learn · TensorFlow/Keras 2.21 · Fairlearn · pandas · NumPy · matplotlib · pytest · Jupyter · ReportLab
 
 ## Reproducir / Reproduce
 

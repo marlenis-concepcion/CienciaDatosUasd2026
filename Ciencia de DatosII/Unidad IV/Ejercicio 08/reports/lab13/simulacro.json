@@ -1,0 +1,13 @@
+{
+  "casos_afectados_diciembre": 46,
+  "positivos_reales": 29,
+  "falsos_negativos_con_datos_correctos": 6,
+  "falsos_negativos_si_nadie_detecta": 9,
+  "casos_alto_riesgo_perdidos_si_nadie_detecta": 3,
+  "casos_alto_riesgo_perdidos_en_primera_semana": 1,
+  "recall_correcto": 0.7931034482758621,
+  "recall_con_falla": 0.6896551724137931,
+  "semana_deteccion": "2026-11-30",
+  "z_deteccion": -7.801912998575131,
+  "estado": "CONTENER"
+}

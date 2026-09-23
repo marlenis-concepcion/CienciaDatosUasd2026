@@ -1,0 +1,10 @@
+column,description,type,sensitivity,operational_view,audit_view,purpose,legal_basis_if_real,retention,minimization
+case_id,Identificador seudónimo del caso,texto,seudónimo,yes,yes,Trazabilidad y apelación,Finalidad declarada (Ley 172-13),12 meses operativo / 24 meses auditoría,Sin relación con nombre ni documento
+received_date,Fecha de recepción del caso,fecha,operativa,yes,yes,Orden temporal y retención,Finalidad declarada,igual que case_id,Solo fecha; sin hora
+zone,Zona territorial (Norte/Sur/Este/Oeste),categórica,cuasi-identificador,no,yes,Auditoría por zona,Interés legítimo de auditoría,24 meses en vista de auditoría,Excluida de la regla elegida
+protected_group,Grupo protegido sintético (G1/G2),categórica,sensible,no,yes,Solo auditoría de equidad,Obligación de no discriminación (Constitución art. 39),24 meses en vista de auditoría con acceso restringido,Nunca entra a la decisión
+age_band,Rango de edad,categórica,sensible,no,yes,Auditoría interseccional,Obligación de no discriminación,24 meses en vista de auditoría con acceso restringido,Rangos y no edad exacta
+previous_incidents,Incidentes previos registrados,entera,operativa,yes,yes,Variable de la regla,Finalidad declarada,igual que case_id,Necesaria para priorizar
+infrastructure_score,Puntuación de infraestructura,decimal,operativa,no,yes,Solo auditoría y comparación con modelos,Finalidad declarada,24 meses en vista de auditoría,Excluida de la regla elegida
+exposure,Exposición al riesgo (0-1),decimal,operativa,yes,yes,Variable de la regla,Finalidad declarada,igual que case_id,Necesaria para priorizar
+target,Resultado observado tras la revisión,binaria,operativa,no,yes,Evaluación y monitoreo,Finalidad declarada,24 meses en vista de auditoría,No se muestra al analista antes de revisar

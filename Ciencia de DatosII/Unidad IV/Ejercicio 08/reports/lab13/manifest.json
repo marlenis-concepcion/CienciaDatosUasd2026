@@ -1,0 +1,34 @@
+{
+  "dataset": {
+    "path": "data/territorial_risk_synthetic.csv",
+    "sha256": "2af1858fe874f3914b0f9bfe068fd876cb716186694a6ece9a16e8c929128a01"
+  },
+  "configuracion": {
+    "path": "configs/governance.yml",
+    "sha256": "e8f90325a8ed1c973b638ea94a2122c68f6435a4df8a6020b6fb2d000843df35"
+  },
+  "inventario": {
+    "path": "docs/data_inventory.csv",
+    "sha256": "5cbabcd0326b85c75b3fb7e5fd0314ebc154b2f01d18890bd99180d102c22398"
+  },
+  "raci": {
+    "path": "student_inputs/raci.csv",
+    "sha256": "05995509e0ef94a7190d542a18a7f803aa1ee6f331f31a4c7d6361afab156e28"
+  },
+  "decision_e07": {
+    "path": "reports/lab12/decision.json",
+    "sha256": "4f1c0fd6922911ead92a665f3dd76c077539a1d9f423bab211cc095f63341c8c"
+  },
+  "datasheet": {
+    "path": "docs/DATASHEET.md",
+    "sha256": "ec1ed58e94d740c1442d7baea65806e0ff96072f0ce35924164335b8ff3cb37d"
+  },
+  "model_card": {
+    "path": "docs/MODEL_CARD.md",
+    "sha256": "998ceaccf99eb375362eeae37fb6c7bb9cc8ea6fb000c6d15c33032fa83a483d"
+  },
+  "runbook": {
+    "path": "docs/RUNBOOK.md",
+    "sha256": "85962a3753d3fdc40117ee2791d858105031f120acccb7b63afc23d702f798cf"
+  }
+}

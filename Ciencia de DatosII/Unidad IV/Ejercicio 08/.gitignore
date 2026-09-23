@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+models/*.joblib
+# Datos sintéticos del curso y evidencias: excepciones al .gitignore general del repositorio.
+!data/
+!data/*.csv
+!student_inputs/*.csv
+!reports/**/
+!reports/**/*.csv
+!reports/**/*.png
+!reports/**/*.json
+!reports/*.pdf
+!docs/*.csv

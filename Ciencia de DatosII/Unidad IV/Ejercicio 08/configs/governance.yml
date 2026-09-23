@@ -1,0 +1,24 @@
+system_name: Territorial Review DSS - Synthetic
+purpose: Prioritize synthetic cases for human review
+prohibited_uses:
+  - automatic intervention
+  - eligibility decision
+  - emergency declaration
+sensitive_features: [protected_group, age_band]
+direct_identifiers: [name, document_number, email, phone]
+gates:
+  min_recall: 0.68
+  max_recall_gap: 0.16
+  max_fpr_gap: 0.16
+  max_latency_ms: 500
+  max_model_kb: 1024
+retention:
+  operational_cases_months: 12
+  audit_view_months: 24
+  monitoring_logs_months: 36
+monitoring:
+  min_recall: 0.68
+  max_recall_gap: 0.16
+  max_abs_z: 4.0
+  min_window: 100
+  safe_baseline: previous_incidents >= 4
