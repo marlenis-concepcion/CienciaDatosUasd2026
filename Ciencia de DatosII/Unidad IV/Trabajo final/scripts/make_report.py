@@ -28,6 +28,28 @@ def table(rows, styles, widths=None):
     return t
 
 
+AI_MODELS = [
+    ["Herramienta", "Modelo", "Uso en esta práctica", "Para qué sirve", "Límite y control"],
+    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b>", "<b>Usado.</b> Agente en VS Code: código, pruebas, cuaderno, "
+     "documentación, ejecución y PDF", "Tareas largas de varios pasos sobre un repositorio", "Todo se verificó con pruebas y reportes"],
+    ["Claude (Anthropic)", "Claude Sonnet 5", "No usado", "Programación cotidiana, equilibrio velocidad-calidad",
+     "Menos profundidad en tareas largas"],
+    ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
+     "No indicado para diseño experimental"],
+    ["Codex (OpenAI)", "Modelo configurado en Codex (versión a verificar)", "Apoyo complementario",
+     "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
+    ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
+     "Puede inventar referencias: se verificaron en la fuente"],
+    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No consta su uso", "Razonamiento paso a paso y depuración lógica",
+     "No sustituye la ejecución"],
+]
+
+
+def ai_table(styles):
+    """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
+    return table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110])
+
+
 def main() -> None:
     styles = getSampleStyleSheet()
     styles["BodyText"].fontSize, styles["BodyText"].leading, styles["BodyText"].alignment = 9.5, 13.5, TA_LEFT
@@ -150,7 +172,7 @@ def main() -> None:
         KeepTogether([h("12. Uso de IA"),
                       p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo para estructura, código, "
                         "pruebas y redacción. Capacidad, compuertas, reglas de apoyo y reparto por edad son decisiones propias. "
-                        "Detalle en docs/AI_USE_DECLARATION.md.")])]
+                        "Detalle en docs/AI_USE_DECLARATION.md."), ai_table(styles)])]
     SimpleDocTemplate(str(r / "Informe_Trabajo_Final.pdf"), rightMargin=38, leftMargin=38, topMargin=34, bottomMargin=34,
                       title="Trabajo final · INF-8239").build(story)
     print("PDF:", r / "Informe_Trabajo_Final.pdf")

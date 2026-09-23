@@ -40,6 +40,28 @@ def tests_section(styles, title: str):
     return tests, table(rows, styles, widths=[22, 138, 173, 182])
 
 
+AI_MODELS = [
+    ["Herramienta", "Modelo", "Uso en esta práctica", "Para qué sirve", "Límite y control"],
+    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b>", "<b>Usado.</b> Agente en VS Code: código, pruebas, cuaderno, "
+     "documentación, ejecución y PDF", "Tareas largas de varios pasos sobre un repositorio", "Todo se verificó con pruebas y reportes"],
+    ["Claude (Anthropic)", "Claude Sonnet 5", "No usado", "Programación cotidiana, equilibrio velocidad-calidad",
+     "Menos profundidad en tareas largas"],
+    ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
+     "No indicado para diseño experimental"],
+    ["Codex (OpenAI)", "Modelo configurado en Codex (versión a verificar)", "Apoyo complementario",
+     "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
+    ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
+     "Puede inventar referencias: se verificaron en la fuente"],
+    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No consta su uso", "Razonamiento paso a paso y depuración lógica",
+     "No sustituye la ejecución"],
+]
+
+
+def ai_table(styles):
+    """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
+    return table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110])
+
+
 def main() -> None:
     reports = ROOT / "reports"
     styles = getSampleStyleSheet()
@@ -75,7 +97,7 @@ def main() -> None:
           "y el VAE 2 del proyecto base y con un VAE de latente 16. Parada temprana sobre la pérdida de validación."),
         h("2. Tabla principal de resultados"),
         table(rows, styles, widths=[80, 62, 62, 56, 62, 40, 50, 40]), Spacer(1, 6),
-        p(f"<b>Decisión fijada en validación:</b> {d['regla'][0].lower() + d['regla'][1:]}. {d['razon']} La pérdida total (reconstrucción + KL) "
+        p(f"<b>Decisión fijada en validación:</b> {d['regla']}. {d['razon']} La pérdida total (reconstrucción + KL) "
           "es una cota de la verosimilitud y es comparable entre dimensiones latentes."),
         KeepTogether([h("3. Reconstrucción, muestreo e interpolación"),
                       Image(str(reports / "reconstruccion.png"), width=470, height=236)]),
@@ -109,7 +131,7 @@ def main() -> None:
                         "proyecto base, añadí las líneas base, el VAE 16, la validación y las medidas de fidelidad, diversidad y "
                         "memoria, y escribí las pruebas, el cuaderno y la redacción. Verifiqué que los modelos recargados "
                         "reproducen las métricas, las figuras y las pruebas; se corrigió una prueba con tolerancia numérica "
-                        "incorrecta. Detalle en AI_USE_DECLARATION.md.")])]
+                        "incorrecta. Detalle en AI_USE_DECLARATION.md."), ai_table(styles)])]
     SimpleDocTemplate(str(reports / "Ejercicio_06.pdf"), rightMargin=40, leftMargin=40, topMargin=34, bottomMargin=34,
                       title="Ejercicio 06 · INF-8239").build(story)
     print("PDF:", reports / "Ejercicio_06.pdf")
