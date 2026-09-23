@@ -1,0 +1,29 @@
+# Declaración de uso de IA · Trabajo final
+
+## Herramientas
+- Claude Code (modelo Claude Opus 5.5, de Anthropic), en VS Code sobre este repositorio.
+- Codex (OpenAI), como apoyo complementario durante el desarrollo.
+- DeepSeek, como apoyo complementario durante el desarrollo.
+
+## Finalidad
+Claude Code propuso el tema dentro del mandato, la estructura del proyecto y el flujo de trabajo en GitHub (issues, ramas, pull requests), y escribió el código (`src/tutoria_dss`), los scripts, las pruebas, la aplicación, la documentación y el generador del informe.
+
+## Prompts relevantes
+- «Haz el trabajo final también, el folder que va», con el mandato del trabajo final.
+- «Pon muchas pruebas, más de 15, que se vea que se hizo el trabajo».
+
+## Decisiones de valores de la autora
+Capacidad del 15 %, compuertas (recall mínimo 0.35 y brecha máxima 0.15), reglas de tipo de apoyo y **repartir los cupos por franja de edad**. Esta última usa la edad para asignar un apoyo voluntario, no dentro del modelo ni para sancionar; la autora debe confirmarla y defenderla.
+
+## Verificaciones
+- Licencia CC BY 4.0 y DOI 10.24432/C5MC89 en la ficha de UCI; SHA-256 del archivo descargado.
+- Todas las pruebas pasan (`reports/pruebas.txt`); cada cifra del informe sale de `reports/`.
+- La mitigación se eligió en validación y la prueba se evaluó una sola vez.
+
+## Errores detectados y correcciones
+- El riesgo se redondeaba antes de seleccionar y una prueba falló; ahora se redondea solo al mostrar.
+- Las explicaciones decían «unidades aprobadas» sin valor; ahora muestran el valor del estudiante.
+- La primera versión de los pull requests usaba «Cierra #1», que GitHub no reconoce; se cambió a «Closes».
+
+## Responsabilidad
+La autora revisó el código, las cifras, las referencias y las conclusiones, y responde por ellos.
