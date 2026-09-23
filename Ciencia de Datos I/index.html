@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prácticas de Ciencia de Datos I organizadas por unidad.">
+  <title>Ciencia de Datos UASD 2026</title>
+  <style>
+    :root {
+      --navy: #102b46;
+      --blue: #2364aa;
+      --green: #1f7a5c;
+      --gold: #b87913;
+      --ink: #172231;
+      --muted: #5d6878;
+      --line: #dce5ef;
+      --paper: #f4f7fb;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 58vh;
+      padding: 78px 24px;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 82% 18%, rgba(35, 100, 170, .55), transparent 29%),
+        linear-gradient(135deg, #0c2034, #174f69);
+    }
+    .wrap { width: min(1120px, 100%); margin: 0 auto; }
+    .eyebrow {
+      color: #bde6d7;
+      font-size: .85rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 900px;
+      margin: 10px 0 18px;
+      font-size: clamp(2.7rem, 8vw, 5.5rem);
+      line-height: 1.02;
+    }
+    .lead { max-width: 760px; color: #e8f3f8; font-size: 1.15rem; }
+    main { width: min(1120px, 100%); margin: 0 auto; padding: 48px 24px 72px; }
+    section { margin-bottom: 44px; }
+    h2 { margin: 0 0 18px; font-size: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(18, 38, 63, .06);
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--green);
+      font-size: .78rem;
+      font-weight: 800;
+    }
+    .tag.blue { background: var(--blue); }
+    .tag.gold { background: var(--gold); }
+    h3 { margin: 14px 0 9px; font-size: 1.35rem; }
+    p { color: var(--muted); }
+    .button {
+      display: inline-block;
+      margin: 6px 8px 0 0;
+      padding: 9px 13px;
+      border-radius: 7px;
+      color: var(--white);
+      background: var(--navy);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #153a5c;
+      background: #eaf3fb;
+    }
+    footer {
+      padding: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: var(--white);
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Universidad Autónoma de Santo Domingo · INF-8237-C2</div>
+      <h1>Ciencia de Datos UASD 2026</h1>
+      <p class="lead">
+        Repositorio único de prácticas organizado por unidad, con código reproducible,
+        documentación académica, cuadernos Colab, pruebas y evidencias.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>General</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag gold">Recursos</span>
+          <h3>Material transversal</h3>
+          <p>
+            Documentos históricos, normas APA, plantillas, recursos visuales, scripts
+            generadores y herramientas que no pertenecen a una práctica específica.
+          </p>
+          <a class="button" href="General/README.md">Abrir índice</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Unidad 2</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Práctica 02</span>
+          <h3>Sakila CRUD/ORM</h3>
+          <p>
+            MySQL Sakila, POO, estructuras de datos, CRUD, importación/exportación y métricas
+            descriptivas.
+          </p>
+          <a class="button" href="Unidad_2/Practica_02_Sakila_CRUD_ORM/index.html">Abrir portal</a>
+          <a class="button" href="Unidad_2/Practica_02_Sakila_CRUD_ORM/README.md">README</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Unidad 4</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag gold">Recuperación</span>
+          <h3>Métricas inferenciales y ML</h3>
+          <p>
+            EDA, pruebas de hipótesis, correlaciones, regresión, SVM y red neuronal básica.
+          </p>
+          <a class="button" href="Unidad_4/Practica_Recuperacion_Metricas_Inferenciales_ML/Practica_Unidad_4_Metricas_Inferenciales_ML.ipynb">Abrir cuaderno</a>
+          <a class="button" href="Unidad_4/Practica_Recuperacion_Metricas_Inferenciales_ML/README.md">README</a>
+        </article>
+
+        <article class="card">
+          <span class="tag blue">Práctica 04</span>
+          <h3>Proyecto final OULAD</h3>
+          <p>
+            Proyecto POO/OSEMN con EDA extendido, nueve modelos, métricas, predicciones,
+            importancias, artículo APA y 24 pruebas automatizadas.
+          </p>
+          <a class="button" href="Unidad_4/Practica_04_Proyecto_Final_OULAD/index.html">Abrir portal</a>
+          <a class="button" href="Unidad_4/Practica_04_Proyecto_Final_OULAD/README.md">README</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Validación</h2>
+      <p>Las pruebas se ejecutan de forma aislada para evitar colisiones entre paquetes.</p>
+      <code>python3 scripts/validar_repositorio.py</code>
+    </section>
+  </main>
+
+  <footer>
+    Marlenis Judith Concepción Cuevas · Ciencia de Datos I · 2026
+  </footer>
+</body>
+</html>

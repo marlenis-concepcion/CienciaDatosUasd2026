@@ -12,3 +12,7 @@ git add -f .ia-index/PROJECT-INDEX.md
 ```
 
 Este repositorio publica deliberadamente el índice en GitHub. No publiques el registro global del indexador ni archivos de credenciales.
+
+## Carpeta de trabajo
+
+Los nuevos trabajos de Ciencia de Datos II se crean en `Ciencia de DatosII/`. El contenido anterior se conserva en `Ciencia de Datos I/`.
