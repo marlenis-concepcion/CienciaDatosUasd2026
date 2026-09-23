@@ -2,9 +2,9 @@
 
 **Marlenis Judith Concepción Cuevas** · INF-8239-C2 · Maestría en Ciencia de Datos e Inteligencia Artificial, Universidad Autónoma de Santo Domingo (UASD) · Docente / Instructor: Edwin Ramón José Nolasco
 
-> **ES** · Ocho proyectos reproducibles: clasificación con SVM y ensambles, reducción dimensional y Green AI, clasificación de texto, visión con CNN, sistemas de recomendación, modelos generativos (VAE), auditoría de equidad y gobernanza de un sistema de apoyo a decisiones. Cada proyecto incluye descarga verificada de datos, auditoría, líneas base, decisión fijada en validación antes de tocar la prueba, pruebas automatizadas, notebook ejecutado y PDF de entrega.
+> **ES** · Ocho proyectos y un trabajo final reproducibles: clasificación con SVM y ensambles, reducción dimensional y Green AI, clasificación de texto, visión con CNN, sistemas de recomendación, modelos generativos (VAE), auditoría de equidad y gobernanza de un sistema de apoyo a decisiones. Cada proyecto incluye descarga verificada de datos, auditoría, líneas base, decisión fijada en validación antes de tocar la prueba, pruebas automatizadas, notebook ejecutado y PDF de entrega.
 >
-> **EN** · Eight reproducible projects: SVM and ensemble classification, dimensionality reduction and Green AI, text classification, CNN-based vision, recommender systems, generative models (VAE), fairness auditing and governance of a decision-support system. Every project ships verified data download, data audit, baselines, a model decision locked on validation before touching the test set, automated tests, an executed notebook and a PDF report.
+> **EN** · Eight projects and a final project, all reproducible: SVM and ensemble classification, dimensionality reduction and Green AI, text classification, CNN-based vision, recommender systems, generative models (VAE), fairness auditing and governance of a decision-support system. Every project ships verified data download, data audit, baselines, a model decision locked on validation before touching the test set, automated tests, an executed notebook and a PDF report.
 
 ## Resultados / Results
 
@@ -18,8 +18,9 @@
 | III | [06 · VAE y Model Card](Unidad%20III/Ejercicio%2006/README.md) | Fashion-MNIST | Media, PCA, AE, VAE 2/16; fidelidad, diversidad, memoria | VAE 16: MSE **0.0140**, 10/10 clases, **0.5 %** posibles copias / possible copies | 12 |
 | IV | [07 · Impacto y equidad](Unidad%20IV/Ejercicio%2007/README.md) | DSS territorial sintético / synthetic | Fairlearn, bootstrap, interseccional, NIST AI RMF, Ley 172-13 | Regla transparente: brecha de recall **0.011** vs 0.138 del modelo; decisión / decision **LIMITAR** | 23 |
 | IV | [08 · Gobernanza y simulacro](Unidad%20IV/Ejercicio%2008/README.md) | DSS territorial sintético / synthetic | Inventario, retención, RACI, Datasheet, Model Card, monitoreo, runbook | Falla detectada en la **1.ª semana** (z = −7.8) / incident caught in week 1 | 34 |
+| IV | [Trabajo final · DSS de tutoría](Unidad%20IV/Trabajo%20final/README.md) | UCI 697 (4424 estudiantes) | Baseline de reglas vs logística, cupos, explicación, auditoría de equidad, Streamlit | Recall a capacidad **0.408** con brecha por edad 0.261 → **0.087**; decisión **LIMITAR** | 35 |
 
-**134 pruebas automatizadas / automated tests**, todas aprobadas / all passing.
+**169 pruebas automatizadas / automated tests**, todas aprobadas / all passing.
 
 ## Qué demuestra este repositorio / What this repository demonstrates
 
