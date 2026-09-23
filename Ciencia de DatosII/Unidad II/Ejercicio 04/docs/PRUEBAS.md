@@ -1,0 +1,16 @@
+# Pruebas automatizadas · Ejercicio 04
+
+9 pruebas; se ejecutan con `uv run pytest -q` y el resultado queda en `reports/pruebas.txt`.
+Cada fila indica qué comprueba la prueba, por qué se hizo y qué criterio de la rúbrica respalda.
+
+| # | Prueba | Origen | Criterio | Qué comprueba | Por qué |
+|---|---|---|---|---|---|
+| 1 | `test_data.py::test_normalize_adds_channel_and_scales` | Proyecto base | Auditoría y partición | Las imágenes pasan de 0–255 a 0–1 y reciben el canal (28×28×1). | La red espera ese formato y esa escala; con píxeles sin escalar el entrenamiento es inestable. |
+| 2 | `test_data.py::test_validate_rejects_wrong_shape` | Proyecto base | Auditoría y partición | Falla si una imagen no tiene la forma 28×28×1. | Detiene el proceso antes de entrenar con datos mal cargados en lugar de fallar dentro de Keras con un error poco claro. |
+| 3 | `test_model_contract.py::test_cnn_output_contract` | Proyecto base | Baseline y CNN | La CNN del proyecto base devuelve 10 probabilidades por imagen que suman 1. | Confirma que la salida es una distribución válida sobre las 10 clases; sin eso las métricas no tienen sentido. |
+| 4 | `test_model_contract.py::test_other_models_output_probabilities[build_dense]` | Nueva | Baseline y CNN | El modelo denso cumple el mismo contrato: 10 probabilidades que suman 1. | Los tres modelos se comparan con las mismas métricas, así que deben producir el mismo tipo de salida. |
+| 5 | `test_model_contract.py::test_other_models_output_probabilities[build_cnn_flatten]` | Nueva | Baseline y CNN | La CNN Flatten (la elegida) cumple el mismo contrato. | Es el modelo que se entrega; se verifica igual que el del profesor. |
+| 6 | `test_partition_decision.py::test_validation_split_is_disjoint_stratified_and_reproducible` | Nueva | Auditoría y partición | Entrenamiento y validación no comparten imágenes, suman el total, cada clase tiene la misma cantidad en validación y con la semilla 42 la partición es idéntica al repetirla. | El proyecto base tomaba las últimas 6000 imágenes sin estratificar; la prueba garantiza una validación equilibrada y reproducible, sin tocar la prueba oficial. |
+| 7 | `test_partition_decision.py::test_audit_detects_train_images_repeated_in_test` | Nueva | Auditoría y partición | La auditoría por hash detecta una imagen de entrenamiento copiada en prueba. | En Fashion-MNIST se encontraron 0 copias; la prueba demuestra que la auditoría sí las habría encontrado, así que ese 0 es confiable. |
+| 8 | `test_partition_decision.py::test_choose_prefers_cheaper_model_within_tolerance` | Nueva | Costo, tamaño y decisión | Si dos modelos están a menos de 0.01 de F1, se elige el de menos parámetros; si la diferencia es mayor, se elige el mejor. | Fija la regla de decisión técnica antes de ver la prueba: solo se paga más costo si la mejora es real. |
+| 9 | `test_partition_decision.py::test_per_class_and_confusions_count_errors` | Nueva | Métricas y errores por clase | Los errores por clase y las confusiones principales (por ejemplo Shirt → T-shirt/top) se cuentan correctamente en un caso pequeño calculado a mano. | Las tablas de errores por clase del PDF y la Model Card salen de estas funciones; la prueba confirma que los conteos son correctos. |

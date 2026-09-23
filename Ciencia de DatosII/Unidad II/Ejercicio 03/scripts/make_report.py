@@ -29,6 +29,22 @@ def params(raw: str) -> str:
     return f"{grams}, min_df={values['tfidf__min_df']}, " + ", ".join(f"{k}={v}" for k, v in hyper.items())
 
 
+def tests_section(styles, title: str):
+    """Genera docs/PRUEBAS.md y la tabla del PDF desde docs/pruebas.csv."""
+    tests = pd.read_csv(ROOT / "docs/pruebas.csv")
+    lines = [f"# Pruebas automatizadas · {title}", "",
+             f"{len(tests)} pruebas; se ejecutan con `uv run pytest -q` y el resultado queda en `reports/pruebas.txt`.",
+             "Cada fila indica qué comprueba la prueba, por qué se hizo y qué criterio de la rúbrica respalda.", "",
+             "| # | Prueba | Origen | Criterio | Qué comprueba | Por qué |", "|---|---|---|---|---|---|"]
+    lines += [f"| {r.n} | `{r.archivo}::{r.prueba}` | {r.origen} | {r.criterio} | {r.comprueba} | {r.por_que} |"
+              for r in tests.itertuples()]
+    (ROOT / "docs/PRUEBAS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    rows = [["#", "Prueba", "Qué comprueba", "Por qué se hizo"]] + [
+        [r.n, f"{r.prueba.replace('_', ' ')}<br/><i>{r.origen} · {r.criterio}</i>", r.comprueba, r.por_que]
+        for r in tests.itertuples()]
+    return tests, table(rows, styles, widths=[18, 140, 175, 182])
+
+
 def main() -> None:
     reports = ROOT / "reports"
     styles = getSampleStyleSheet()
@@ -40,6 +56,7 @@ def main() -> None:
     errors = pd.read_csv(reports / "error_analysis.csv")
     decision = json.loads((reports / "decision.json").read_text(encoding="utf-8"))
     d = audit["duplicados"]
+    tests, tests_table = tests_section(styles, "Ejercicio 03")
     p = lambda text: Paragraph(text, styles["BodyText"])
     h = lambda text: Paragraph(text, styles["Heading2"])
 
@@ -104,12 +121,16 @@ def main() -> None:
                 "(ruido de etiqueta). Otros 7 son mensajes legítimos con vocabulario comercial (free, offer, phone). Los números de "
                 "tarificación especial no se aprovechan porque cada número es un token distinto; un rasgo que los agrupe sería una "
                 "mejora concreta."),
-              h("6. Conclusión y límites"),
+              h("6. Pruebas automatizadas"),
+              p(f"{len(tests)} pruebas, todas aprobadas (reports/pruebas.txt): 6 del proyecto base y 7 propias sobre "
+                "duplicados, fuga, selección del modelo y análisis de errores. Lista completa en docs/PRUEBAS.md."),
+              tests_table, Spacer(1, 6),
+              h("7. Conclusión y límites"),
               p("TF-IDF con un clasificador lineal resuelve bien este corpus (F1 macro 0.976 frente a 0.468 de la línea base) y "
                 "el resultado no depende de duplicados, porque se eliminaron antes de partir. El techo lo marcan la calidad de "
                 "las etiquetas y la antigüedad del corpus: el modelo no debe usarse en mensajería actual ni en español sin "
                 "reentrenarlo y sin revisión humana."),
-              KeepTogether([h("7. Uso de IA"), p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo. Con Claude Code adapté el proyecto base y escribí las pruebas, el cuaderno y la redacción. "
+              KeepTogether([h("8. Uso de IA"), p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo. Con Claude Code adapté el proyecto base y escribí las pruebas, el cuaderno y la redacción. "
                 "Verifiqué licencias y DOI en UCI, la composición del corpus en su readme, el SHA-256 y la reproducibilidad de las "
                 "métricas; se corrigió la descripción de las fuentes del corpus y una prueba mal construida. Detalle, prompts y "
                 "correcciones en docs/DECLARACION_IA.md.")])]
