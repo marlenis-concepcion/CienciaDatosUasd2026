@@ -13,3 +13,4 @@ data/raw/*
 !reports/*.pdf
 !docs/*.csv
 !configs/*.yml
+models/*.joblib
