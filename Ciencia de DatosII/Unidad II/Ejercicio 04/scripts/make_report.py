@@ -86,8 +86,8 @@ def main() -> None:
           "estratificada y reproducible, detección de fuga por hash, regla de decisión y conteo de errores). Los modelos "
           "guardados reproducen las métricas al recargarlos en el cuaderno."),
         h("6. Uso de IA"),
-        p("Utilicé Claude Code (Claude Opus 5.5) para adaptar el proyecto base, proponer la CNN Flatten, escribir pruebas, "
-          "el cuaderno y la redacción. Verifiqué la corrida de 8 épocas, la reproducción de métricas desde los modelos "
+        p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo. Con Claude Code adapté el proyecto base, propuse la CNN Flatten y escribí las "
+          "pruebas, el cuaderno y la redacción. Verifiqué la corrida de 8 épocas, la reproducción de métricas desde los modelos "
           "guardados, la partición y las pruebas; se corrigió la regla de decisión y la partición de validación. Detalle en "
           "docs/DECLARACION_IA.md."),
     ]
