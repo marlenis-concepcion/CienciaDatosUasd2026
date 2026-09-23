@@ -39,6 +39,28 @@ def tests_section(styles, title: str):
     return tests, table(rows, styles, widths=[22, 138, 173, 182])
 
 
+AI_MODELS = [
+    ["Herramienta", "Modelo", "Uso en esta práctica", "Para qué sirve", "Límite y control"],
+    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b>", "<b>Usado.</b> Agente en VS Code: código, pruebas, cuaderno, "
+     "documentación, ejecución y PDF", "Tareas largas de varios pasos sobre un repositorio", "Todo se verificó con pruebas y reportes"],
+    ["Claude (Anthropic)", "Claude Sonnet 5", "No usado", "Programación cotidiana, equilibrio velocidad-calidad",
+     "Menos profundidad en tareas largas"],
+    ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
+     "No indicado para diseño experimental"],
+    ["Codex (OpenAI)", "Modelo configurado en Codex (versión a verificar)", "Apoyo complementario",
+     "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
+    ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
+     "Puede inventar referencias: se verificaron en la fuente"],
+    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No consta su uso", "Razonamiento paso a paso y depuración lógica",
+     "No sustituye la ejecución"],
+]
+
+
+def ai_table(styles):
+    """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
+    return table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110])
+
+
 def main() -> None:
     styles = getSampleStyleSheet()
     styles["BodyText"].fontSize, styles["BodyText"].leading, styles["BodyText"].alignment = 9.5, 13.5, TA_LEFT
@@ -149,7 +171,7 @@ def main() -> None:
                         "menos intrusiva, no usar el grupo protegido al decidir) son decisiones propias. Verifiqué las "
                         "subcategorías del NIST AI RMF en el documento oficial y la Ley 172-13 y la Constitución en fuentes "
                         "oficiales. Se corrigieron dos scripts del proyecto base que no ejecutaban. Detalle en "
-                        "docs/AI_USE_DECLARATION.md.")])]
+                        "docs/AI_USE_DECLARATION.md."), ai_table(styles)])]
     SimpleDocTemplate(str(ROOT / "reports/Ejercicio_07.pdf"), rightMargin=40, leftMargin=40, topMargin=34,
                       bottomMargin=34, title="Ejercicio 07 · INF-8239").build(story)
     print("PDF:", ROOT / "reports/Ejercicio_07.pdf")

@@ -38,6 +38,28 @@ def tests_section(styles, title: str):
     return tests, table(rows, styles, widths=[22, 138, 173, 182])
 
 
+AI_MODELS = [
+    ["Herramienta", "Modelo", "Uso en esta práctica", "Para qué sirve", "Límite y control"],
+    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b>", "<b>Usado.</b> Agente en VS Code: código, pruebas, cuaderno, "
+     "documentación, ejecución y PDF", "Tareas largas de varios pasos sobre un repositorio", "Todo se verificó con pruebas y reportes"],
+    ["Claude (Anthropic)", "Claude Sonnet 5", "No usado", "Programación cotidiana, equilibrio velocidad-calidad",
+     "Menos profundidad en tareas largas"],
+    ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
+     "No indicado para diseño experimental"],
+    ["Codex (OpenAI)", "Modelo configurado en Codex (versión a verificar)", "Apoyo complementario",
+     "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
+    ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
+     "Puede inventar referencias: se verificaron en la fuente"],
+    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No consta su uso", "Razonamiento paso a paso y depuración lógica",
+     "No sustituye la ejecución"],
+]
+
+
+def ai_table(styles):
+    """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
+    return table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110])
+
+
 def main() -> None:
     reports = ROOT / "reports"
     styles = getSampleStyleSheet()
@@ -102,7 +124,7 @@ def main() -> None:
           "recomendable; el resto son películas nuevas que ningún modelo colaborativo puede recomendar."),
         KeepTogether([h("5. Híbrido y decisión Pareto"),
                       Image(str(reports / "pareto.png"), width=330, height=213),
-                      p(f"<b>Regla fijada en validación:</b> {d['regla'][0].lower() + d['regla'][1:]}. {d['razon']} "
+                      p(f"<b>Regla fijada en validación:</b> {d['regla']}. {d['razon']} "
                         "En prueba la factorización queda ligeramente por encima en NDCG (0.062 frente a 0.059), pero el "
                         "híbrido recomienda un 35 % más del catálogo y con más novedad. Se mantiene la decisión de validación: "
                         "cambiarla después de ver la prueba sería ajustar el modelo a la prueba.")]),
@@ -129,7 +151,7 @@ def main() -> None:
                         "partición temporal y los usuarios fríos, extendí el proyecto base con métricas de ranking, novedad, "
                         "Pareto e híbridos, y escribí las pruebas, el cuaderno y la redacción. Verifiqué la licencia y la cita "
                         "en el README de MovieLens, el SHA-256, las pruebas y que la corrección del error no alteró las métricas. "
-                        "Detalle en docs/DECLARACION_IA.md.")])]
+                        "Detalle en docs/DECLARACION_IA.md."), ai_table(styles)])]
     SimpleDocTemplate(str(reports / "Ejercicio_05.pdf"), rightMargin=40, leftMargin=40, topMargin=34, bottomMargin=34,
                       title="Ejercicio 05 · INF-8239").build(story)
     print("PDF:", reports / "Ejercicio_05.pdf")
