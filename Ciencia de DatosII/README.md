@@ -1,5 +1,7 @@
 # Ciencia de Datos II
 
-Carpeta de trabajo para todas las prácticas, tareas, proyectos y materiales de Ciencia de Datos II.
+Marlenis Judith Concepción Cuevas · INF-8239-C2
 
-Los trabajos nuevos se guardarán aquí.
+- [Unidad I: modelos avanzados, reducción dimensional y Green AI](Unidad%20I/README.md).
+
+Los nuevos trabajos de la asignatura se guardan en esta carpeta.

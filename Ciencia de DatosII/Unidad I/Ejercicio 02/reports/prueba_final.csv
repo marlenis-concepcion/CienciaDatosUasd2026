@@ -1,0 +1,2 @@
+modelo,particion,accuracy,f1_macro,precision_macro,recall_b,recall_g,roc_auc
+GB_50,prueba,0.9285714285714286,0.9215070643642072,0.9257246376811594,0.88,0.9555555555555556,0.964

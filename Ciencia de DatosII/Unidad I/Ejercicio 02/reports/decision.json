@@ -1,0 +1,8 @@
+{
+  "modelo": "GB_50",
+  "regla": "Frontera Pareto de cuatro objetivos; F1 macro >= mejor F1 - 0.02; menor latencia amortizada por fila; desempate por tamaño.",
+  "f1_validacion": 0.9352451433857539,
+  "tolerancia_f1": 0.02,
+  "criterio": "validacion",
+  "semilla": 42
+}

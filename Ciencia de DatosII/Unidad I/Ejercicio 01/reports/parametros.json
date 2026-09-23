@@ -1,0 +1,9 @@
+{
+  "mejores_parametros": {
+    "svm__C": 10,
+    "svm__gamma": "scale",
+    "svm__kernel": "rbf"
+  },
+  "f1_cv": 0.9416787132316966,
+  "busqueda_segundos": 0.552650667
+}
