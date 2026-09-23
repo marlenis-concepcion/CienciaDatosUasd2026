@@ -41,19 +41,17 @@ def tests_section(styles, title: str):
 
 
 AI_MODELS = [
-    ["Herramienta", "Modelo", "Uso en esta práctica", "Para qué sirve", "Límite y control"],
-    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b>", "<b>Usado.</b> Agente en VS Code: código, pruebas, cuaderno, "
-     "documentación, ejecución y PDF", "Tareas largas de varios pasos sobre un repositorio", "Todo se verificó con pruebas y reportes"],
-    ["Claude (Anthropic)", "Claude Sonnet 5", "No usado", "Programación cotidiana, equilibrio velocidad-calidad",
-     "Menos profundidad en tareas largas"],
-    ["Claude (Anthropic)", "Claude Haiku 4.5", "No usado", "Tareas rápidas y baratas: resúmenes, clasificación",
-     "No indicado para diseño experimental"],
-    ["Codex (OpenAI)", "Modelo de OpenAI orientado a código (familia GPT-5-Codex)", "Apoyo complementario",
-     "Proponer y revisar código, explicar errores, sugerir pruebas", "Se acepta solo si pasa las pruebas"],
-    ["DeepSeek", "DeepSeek-V3 (chat)", "Apoyo complementario", "Explicar conceptos y revisar redacción",
-     "Puede inventar referencias: se verificaron en la fuente"],
-    ["DeepSeek", "DeepSeek-R1 (razonamiento)", "No usado; recomendado para revisar la lógica de métricas", "Razonamiento paso a paso y depuración lógica",
-     "No sustituye la ejecución"],
+    ["Herramienta", "Modelos", "Uso en esta práctica", "Para qué sirve cada modelo", "Control"],
+    ["Claude Code (Anthropic)", "<b>Claude Opus 5.5</b> · Claude Sonnet 5 · Claude Haiku 4.5",
+     "<b>Agente principal (Opus 5.5)</b>: código, pruebas, cuaderno, documentación, ejecución y PDF",
+     "Opus 5.5: tareas largas de varios pasos · Sonnet 5: programación cotidiana · Haiku 4.5: tareas rápidas y baratas",
+     "Todo se verificó con pruebas y reportes"],
+    ["Codex (OpenAI)", "<b>GPT-5-Codex</b> · codex-mini", "Apoyo complementario",
+     "GPT-5-Codex: proponer y revisar cambios de código en el repositorio · codex-mini: respuestas rápidas en terminal",
+     "Se acepta solo si pasa las pruebas"],
+    ["DeepSeek", "<b>DeepSeek-V3</b> · DeepSeek-R1 · DeepSeek-Coder-V2", "Apoyo complementario",
+     "V3: explicar conceptos y revisar redacción · R1: razonamiento paso a paso sobre métricas · Coder-V2: generar código",
+     "Referencias verificadas en la fuente"],
 ]
 
 
@@ -69,7 +67,7 @@ RESPONSIBILITIES = [
 
 def ai_table(styles):
     """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
-    return KeepTogether([table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110]), Spacer(1, 6),
+    return KeepTogether([table(AI_MODELS, styles, widths=[70, 100, 110, 150, 86]), Spacer(1, 6),
                          Paragraph("<b>Reparto de responsabilidades</b>", styles["BodyText"]),
                          table(RESPONSIBILITIES, styles, widths=[330, 186])])
 

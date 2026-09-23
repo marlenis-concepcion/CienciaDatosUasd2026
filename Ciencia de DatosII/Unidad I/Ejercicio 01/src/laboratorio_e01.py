@@ -116,26 +116,26 @@ def crear_pdf(path, titulo, sections, table, figures, tests=None):
                         'redacción. Verifiqué las cifras ejecutando el código y las pruebas; la interpretación y las decisiones '
                         'son propias.', styles['BodyText'])]
     small_ai = styles['BodyText'].clone('IA', fontSize=7.5, leading=9.5)
-    ai_rows = [['Herramienta', 'Modelo', 'Uso en esta práctica', 'Para qué sirve', 'Límite y control'],
-               ['Claude Code (Anthropic)', '<b>Claude Opus 5.5</b>', '<b>Usado.</b> Código, pruebas, cuaderno, documentación y PDF',
-                'Tareas largas de varios pasos sobre un repositorio', 'Todo se verificó con pruebas y reportes'],
-               ['Claude (Anthropic)', 'Claude Sonnet 5', 'No usado', 'Programación cotidiana, equilibrio velocidad-calidad',
-                'Menos profundidad en tareas largas'],
-               ['Claude (Anthropic)', 'Claude Haiku 4.5', 'No usado', 'Tareas rápidas y baratas: resúmenes, clasificación',
-                'No indicado para diseño experimental'],
-               ['Codex (OpenAI)', 'Modelo de OpenAI orientado a código (familia GPT-5-Codex)', 'Apoyo complementario',
-                'Proponer y revisar código, explicar errores, sugerir pruebas', 'Se acepta solo si pasa las pruebas'],
-               ['DeepSeek', 'DeepSeek-V3 (chat)', 'Apoyo complementario', 'Explicar conceptos y revisar redacción',
-                'Puede inventar referencias: se verificaron en la fuente'],
-               ['DeepSeek', 'DeepSeek-R1 (razonamiento)', 'No usado; recomendado para revisar la lógica de métricas', 'Razonamiento paso a paso y depuración lógica',
-                'No sustituye la ejecución']]
+    ai_rows = [
+        ['Herramienta', 'Modelos', 'Uso en esta práctica', 'Para qué sirve cada modelo', 'Control'],
+        ['Claude Code (Anthropic)', '<b>Claude Opus 5.5</b> · Claude Sonnet 5 · Claude Haiku 4.5',
+         '<b>Agente principal (Opus 5.5)</b>: código, pruebas, cuaderno, documentación, ejecución y PDF',
+         'Opus 5.5: tareas largas de varios pasos · Sonnet 5: programación cotidiana · Haiku 4.5: tareas rápidas y baratas',
+         'Todo se verificó con pruebas y reportes'],
+        ['Codex (OpenAI)', '<b>GPT-5-Codex</b> · codex-mini', 'Apoyo complementario',
+         'GPT-5-Codex: proponer y revisar cambios de código en el repositorio · codex-mini: respuestas rápidas en terminal',
+         'Se acepta solo si pasa las pruebas'],
+        ['DeepSeek', '<b>DeepSeek-V3</b> · DeepSeek-R1 · DeepSeek-Coder-V2', 'Apoyo complementario',
+         'V3: explicar conceptos y revisar redacción · R1: razonamiento paso a paso sobre métricas · Coder-V2: generar código',
+         'Referencias verificadas en la fuente'],
+    ]
     resp_rows = [['Responsabilidad', 'Quién'],
                  ['Valores del análisis (métrica principal, tolerancias, decisiones de uso)', 'La autora'],
                  ['Elección de datos y verificación de licencias y referencias', 'La autora, con apoyo de las herramientas'],
                  ['Borradores de código, pruebas y redacción', 'Herramientas de IA'],
                  ['Ejecución de pruebas y comprobación de cada cifra contra reports/', 'La autora, con Claude Code'],
                  ['Defensa oral y respuesta a preguntas técnicas', 'La autora']]
-    for rows, widths in [(ai_rows, [80, 90, 115, 115, 110]), (resp_rows, [330, 180])]:
+    for rows, widths in [(ai_rows, [70, 100, 110, 150, 80]), (resp_rows, [330, 180])]:
         t = Table([[Paragraph(str(v), small_ai) for v in row] for row in rows], repeatRows=1, hAlign='LEFT', colWidths=widths)
         t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dde9f4')),('GRID',(0,0),(-1,-1),0.3,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP')]))
         story += [Spacer(1, 6), t]
