@@ -111,6 +111,34 @@ def crear_pdf(path, titulo, sections, table, figures, tests=None):
                   colWidths=[24, 136, 175, 175])
         t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dde9f4')),('GRID',(0,0),(-1,-1),0.3,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP')]))
         story += [t]
+    story += [Paragraph('Uso de IA', styles['Heading2']),
+              Paragraph('Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo para código, pruebas y '
+                        'redacción. Verifiqué las cifras ejecutando el código y las pruebas; la interpretación y las decisiones '
+                        'son propias.', styles['BodyText'])]
+    small_ai = styles['BodyText'].clone('IA', fontSize=7.5, leading=9.5)
+    ai_rows = [['Herramienta', 'Modelo', 'Uso en esta práctica', 'Para qué sirve', 'Límite y control'],
+               ['Claude Code (Anthropic)', '<b>Claude Opus 5.5</b>', '<b>Usado.</b> Código, pruebas, cuaderno, documentación y PDF',
+                'Tareas largas de varios pasos sobre un repositorio', 'Todo se verificó con pruebas y reportes'],
+               ['Claude (Anthropic)', 'Claude Sonnet 5', 'No usado', 'Programación cotidiana, equilibrio velocidad-calidad',
+                'Menos profundidad en tareas largas'],
+               ['Claude (Anthropic)', 'Claude Haiku 4.5', 'No usado', 'Tareas rápidas y baratas: resúmenes, clasificación',
+                'No indicado para diseño experimental'],
+               ['Codex (OpenAI)', 'Modelo configurado en Codex (versión a verificar)', 'Apoyo complementario',
+                'Proponer y revisar código, explicar errores, sugerir pruebas', 'Se acepta solo si pasa las pruebas'],
+               ['DeepSeek', 'DeepSeek-V3 (chat)', 'Apoyo complementario', 'Explicar conceptos y revisar redacción',
+                'Puede inventar referencias: se verificaron en la fuente'],
+               ['DeepSeek', 'DeepSeek-R1 (razonamiento)', 'No consta su uso', 'Razonamiento paso a paso y depuración lógica',
+                'No sustituye la ejecución']]
+    resp_rows = [['Responsabilidad', 'Quién'],
+                 ['Valores del análisis (métrica principal, tolerancias, decisiones de uso)', 'La autora'],
+                 ['Elección de datos y verificación de licencias y referencias', 'La autora, con apoyo de las herramientas'],
+                 ['Borradores de código, pruebas y redacción', 'Herramientas de IA'],
+                 ['Ejecución de pruebas y comprobación de cada cifra contra reports/', 'La autora, con Claude Code'],
+                 ['Defensa oral y respuesta a preguntas técnicas', 'La autora']]
+    for rows, widths in [(ai_rows, [80, 90, 115, 115, 110]), (resp_rows, [330, 180])]:
+        t = Table([[Paragraph(str(v), small_ai) for v in row] for row in rows], repeatRows=1, hAlign='LEFT', colWidths=widths)
+        t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dde9f4')),('GRID',(0,0),(-1,-1),0.3,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP')]))
+        story += [Spacer(1, 6), t]
     SimpleDocTemplate(str(path), rightMargin=42,leftMargin=42,topMargin=36,bottomMargin=36).build(story)
 
 

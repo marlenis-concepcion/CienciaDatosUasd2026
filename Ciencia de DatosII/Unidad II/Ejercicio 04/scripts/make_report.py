@@ -56,9 +56,21 @@ AI_MODELS = [
 ]
 
 
+RESPONSIBILITIES = [
+    ["Responsabilidad", "Quién"],
+    ["Valores del análisis (daño prioritario, tolerancias, compuertas, decisiones de uso)", "La autora"],
+    ["Elección de datos y verificación de licencias y referencias", "La autora, con apoyo de las herramientas"],
+    ["Borradores de código, pruebas y redacción", "Herramientas de IA"],
+    ["Ejecución de pruebas y comprobación de cada cifra contra reports/", "La autora, con Claude Code"],
+    ["Defensa oral y respuesta a preguntas técnicas", "La autora"],
+]
+
+
 def ai_table(styles):
     """Modelos de IA con uso real, función y límite; los valores del análisis los decide la autora."""
-    return table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110])
+    return KeepTogether([table(AI_MODELS, styles, widths=[78, 88, 120, 120, 110]), Spacer(1, 6),
+                         Paragraph("<b>Reparto de responsabilidades</b>", styles["BodyText"]),
+                         table(RESPONSIBILITIES, styles, widths=[330, 186])])
 
 
 def main() -> None:
