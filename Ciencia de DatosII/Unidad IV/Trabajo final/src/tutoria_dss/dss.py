@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from .evaluation import top_k_mask
+from .fairness import allocate_by_group
 
 SUPPORTS = {
     "financiera": "Orientación financiera + tutoría",
@@ -75,9 +76,11 @@ def explain(contrib: pd.DataFrame, rows: pd.DataFrame | None = None, top: int = 
     return out
 
 
-def prioritize(df: pd.DataFrame, risk: np.ndarray, share: float, contrib: pd.DataFrame | None = None) -> pd.DataFrame:
-    """Lista para la coordinación: solo los cupos disponibles, ordenados por riesgo, con apoyo y explicación."""
-    selected = top_k_mask(risk, share)
+def prioritize(df: pd.DataFrame, risk: np.ndarray, share: float, contrib: pd.DataFrame | None = None,
+               quota_groups: pd.Series | None = None) -> pd.DataFrame:
+    """Lista para la coordinación: solo los cupos disponibles, ordenados por riesgo, con apoyo y explicación.
+    Con quota_groups, los cupos se reparten entre grupos (mitigación elegida en validación)."""
+    selected = top_k_mask(risk, share) if quota_groups is None else allocate_by_group(risk, quota_groups, share)
     table = df.loc[selected, ["student_id"]].copy()
     table["riesgo"] = np.asarray(risk)[selected]
     table["apoyo_sugerido"] = df.loc[selected].apply(support_type, axis=1).to_numpy()

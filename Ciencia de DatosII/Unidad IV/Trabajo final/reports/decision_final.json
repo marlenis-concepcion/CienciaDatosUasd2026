@@ -1,0 +1,62 @@
+{
+  "alternativa_elegida": "logistica_cupos_edad",
+  "regla": "choose_mitigation en validación",
+  "decision": "limitar",
+  "recall_capacidad": 0.4084507042253521,
+  "brechas": {
+    "genero": 0.036275375110326524,
+    "edad": 0.08662092624356776,
+    "beca": 0.0
+  },
+  "limite_superior_ic95": {
+    "genero": 0.1557963849468283,
+    "edad": 0.19417011019283736,
+    "beca": 0.29097619047619044
+  },
+  "prueba_todas": {
+    "logistica": {
+      "recall_capacidad": 0.45539906103286387,
+      "precision_capacidad": 0.97,
+      "brechas": {
+        "genero": 0.13336275375110324,
+        "edad": 0.261455525606469,
+        "beca": 0.0
+      }
+    },
+    "reglas": {
+      "recall_capacidad": 0.38967136150234744,
+      "precision_capacidad": 0.83,
+      "brechas": {
+        "genero": 0.021359223300970898,
+        "edad": 0.24603174603174605,
+        "beca": 0.0
+      }
+    },
+    "hibrido_rangos": {
+      "recall_capacidad": 0.4413145539906103,
+      "precision_capacidad": 0.94,
+      "brechas": {
+        "genero": 0.047837599293910016,
+        "edad": 0.22371967654986524,
+        "beca": 0.0
+      }
+    },
+    "logistica_cupos_edad": {
+      "recall_capacidad": 0.4084507042253521,
+      "precision_capacidad": 0.87,
+      "brechas": {
+        "genero": 0.036275375110326524,
+        "edad": 0.08662092624356776,
+        "beca": 0.0
+      }
+    }
+  },
+  "green_ai": {
+    "segundos_entrenamiento": 0.017299584003922064,
+    "ms_por_estudiante": 0.0037861257531031116,
+    "tamano_modelo_kb": 10.5009765625,
+    "parametros": 101,
+    "hardware": "CPU Apple M1 Pro"
+  },
+  "nota": "El reparto de cupos por edad no usa la edad en el modelo; es una decisión de valores de la autora."
+}
