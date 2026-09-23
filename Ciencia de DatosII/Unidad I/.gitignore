@@ -9,3 +9,5 @@
 .venv/
 **/data/
 **/.ipynb_checkpoints/
+!**/docs/
+!**/docs/*.csv

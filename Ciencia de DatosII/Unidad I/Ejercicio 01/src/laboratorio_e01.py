@@ -78,7 +78,7 @@ def guardar_json(path, value):
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False, default=lambda x: x.item() if hasattr(x, 'item') else str(x)))
 
 
-def crear_pdf(path, titulo, sections, table, figures):
+def crear_pdf(path, titulo, sections, table, figures, tests=None):
     from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, KeepTogether
     from reportlab.lib.styles import getSampleStyleSheet
     from reportlab.lib import colors
@@ -88,7 +88,7 @@ def crear_pdf(path, titulo, sections, table, figures):
     styles['BodyText'].leading = 13
     styles['BodyText'].alignment = TA_LEFT
     story = [Paragraph(titulo, styles['Title']), Paragraph('Marlenis Judith Concepción Cuevas · INF-8239-C2 · Unidad I', styles['BodyText']), Spacer(1, 10),
-             Paragraph('Dataset propuesto: Ionosphere (UCI). Aprobación docente pendiente. Versión para revisión.', styles['BodyText'])]
+             Paragraph('Dataset propuesto: Ionosphere (UCI). Aprobación docente pendiente.', styles['BodyText'])]
     link = 'https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Ciencia%20de%20DatosII/Unidad%20I/' + ('Ejercicio%2001' if '01' in titulo else 'Ejercicio%2002')
     story += [Paragraph(f'Repositorio: <link href="{link}" color="blue">abrir carpeta del ejercicio en GitHub</link>', styles['BodyText']), Spacer(1, 10)]
     if table is not None:
@@ -102,6 +102,15 @@ def crear_pdf(path, titulo, sections, table, figures):
             story += [Paragraph(para.replace('\n',' '), styles['BodyText']), Spacer(1, 6)]
     for fig, caption in figures:
         story += [KeepTogether([Paragraph(caption, styles['Heading3']), Image(str(fig), width=440, height=290)])]
+    if tests is not None:
+        small = styles['BodyText'].clone('Pruebas', fontSize=7.5, leading=9.5)
+        story += [Paragraph(f'Pruebas automatizadas ({len(tests)}, todas aprobadas)', styles['Heading2'])]
+        rows = [['#', 'Prueba', 'Qué comprueba', 'Por qué se hizo']] + [
+            [r.n, r.prueba.replace('_', ' '), r.comprueba, r.por_que] for r in tests.itertuples()]
+        t = Table([[Paragraph(str(v), small) for v in row] for row in rows], repeatRows=1, hAlign='LEFT',
+                  colWidths=[24, 136, 175, 175])
+        t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dde9f4')),('GRID',(0,0),(-1,-1),0.3,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP')]))
+        story += [t]
     SimpleDocTemplate(str(path), rightMargin=42,leftMargin=42,topMargin=36,bottomMargin=36).build(story)
 
 

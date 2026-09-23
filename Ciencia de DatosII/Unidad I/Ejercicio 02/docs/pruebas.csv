@@ -1,0 +1,16 @@
+n,prueba,comprueba,por_que
+1,test_pareto_descarta_dominado_y_conserva_compromiso,La frontera de Pareto excluye un modelo peor en todo y conserva los compromisos.,La decisión Green AI se basa en esta frontera.
+2,test_decision_respeta_tolerancia_y_latencia,Se elige el modelo más rápido dentro de 0.02 del mejor F1.,Aplica la regla de decisión escrita.
+3,test_seis_configuraciones_y_reduccion_dentro_pipeline,Hay seis configuraciones y el PCA está dentro del pipeline.,PCA fuera del pipeline filtraría información de validación.
+4,test_evidencias_misma_particion_y_tres_repeticiones,Se usa la misma partición del Ejercicio 01 y cada modelo se mide tres veces.,Comparación justa y tiempos estables.
+5,test_empate_exacto_no_domina,Dos modelos idénticos quedan ambos en la frontera.,Un empate no debe eliminar a ninguno.
+6,test_modelo_mejor_en_todo_domina_al_resto,Un modelo mejor en F1 y en costo domina al otro.,Comprueba la dirección de cada objetivo (maximizar F1 y minimizar costos).
+7,test_eleccion_ignora_modelos_fuera_de_la_frontera,Un modelo dominado no se elige aunque sea el más rápido.,La elección debe salir solo de la frontera.
+8,test_desempate_por_tamano_y_nombre,"Con igual F1 y latencia, gana el de menor tamaño y luego el nombre.",El desempate está escrito y es determinista.
+9,test_hiperparametros_de_ensambles_y_semilla,"Árboles, profundidad, imputación y semilla de cada ensamble son los documentados.",Los modelos comparados son exactamente los que describe el README.
+10,test_pca_se_ajusta_solo_con_entrenamiento_y_retiene_95,El PCA aprende con 210 filas de entrenamiento y retiene al menos 95 % de la varianza con menos de 34 componentes.,Demuestra la reducción sin fuga.
+11,test_varianza_acumulada_es_creciente_y_alcanza_95,La varianza acumulada guardada crece y llega al 95 %.,Valida la figura de PCA del PDF.
+12,test_modelo_elegido_esta_en_la_frontera_y_dentro_de_tolerancia,El modelo de decision.json está en la frontera y dentro de la tolerancia.,La decisión guardada cumple su propia regla.
+13,test_prueba_final_solo_evalua_el_modelo_elegido,La prueba final contiene solo el modelo elegido.,La prueba se usa una sola vez y después de decidir.
+14,test_tsne_con_dos_semillas_y_confiabilidad_valida,t-SNE se evaluó con las semillas 42 y 73 y su confiabilidad está entre 0 y 1.,t-SNE cambia con la semilla; se documenta su estabilidad.
+15,test_los_seis_modelos_guardados_cargan_y_predicen,Los seis modelos guardados cargan y predicen clases válidas.,Los artefactos del repositorio son utilizables.

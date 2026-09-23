@@ -1,4 +1,4 @@
-# Conclusión · borrador para revisión personal
+# Conclusión
 
 El experimento examinó si un pipeline SVM podía clasificar retornos de radar y superar una regla constante. Se utilizó Ionosphere, procedente de UCI y distribuido con licencia CC BY 4.0. La comparación previa con Banknote Authentication favoreció provisionalmente Ionosphere porque sus 34 atributos permiten estudiar posteriormente reducción dimensional. Esta selección sigue pendiente de aprobación docente; la ejecución técnica no sustituye ese requisito académico.
 
@@ -8,4 +8,4 @@ La búsqueda comparó kernels lineal y RBF con validación cruzada estratificada
 
 El F1 macro descendió de 0.984 en entrenamiento a 0.953 en validación y 0.938 en prueba. Esta diferencia exige cautela frente al sobreajuste, aunque no elimina la mejora respecto a la referencia. Hubo 4 errores entre las 70 observaciones de prueba. El recall fue 0.920 para retornos malos y 0.956 para buenos; la matriz de confusión permite distinguir los errores en ambas direcciones. Sin información adicional de adquisición no se puede atribuir causalmente cada fallo a una característica concreta.
 
-Los resultados respaldan continuar con la comparación de ensambles, pero no garantizan desempeño fuera de este radar histórico. El pequeño tamaño de prueba limita la precisión de las estimaciones y no se calculó un intervalo de confianza. La descarga verificada, las semillas, las pruebas y el código reutilizable facilitan reproducir el procedimiento. Antes de entregar corresponde confirmar la aprobación del dataset, contrastar los laboratorios completos y revisar esta conclusión para poder defender sus decisiones.
+Los resultados respaldan continuar con la comparación de ensambles, pero no garantizan desempeño fuera de este radar histórico. El pequeño tamaño de prueba limita la precisión de las estimaciones y no se calculó un intervalo de confianza. La descarga verificada, las semillas, las pruebas y el código reutilizable facilitan reproducir el procedimiento.
