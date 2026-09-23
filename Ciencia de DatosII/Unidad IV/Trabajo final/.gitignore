@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.py[cod]
+# Los datos se descargan con scripts/download_data.py (CC BY 4.0); no se versionan.
+data/raw/*
+!data/raw/.gitkeep
+# Evidencias de la entrega: excepciones al .gitignore general del repositorio.
+!reports/*.csv
+!reports/*.png
+!reports/*.json
+!reports/*.pdf
+!docs/*.csv
+!configs/*.yml
