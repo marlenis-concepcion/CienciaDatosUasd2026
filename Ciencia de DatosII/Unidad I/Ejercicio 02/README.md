@@ -8,7 +8,7 @@
 
 - `notebooks/ejercicio_02.ipynb`: cuaderno ejecutado con resultados y figuras.
 - `src/`: código reutilizable de ejecución e informe.
-- `tests/`: cuatro pruebas automatizadas.
+- `tests/`: 15 pruebas automatizadas; lista justificada en `docs/pruebas.csv` y abajo.
 - `reports/`: CSV, figuras, conclusión y PDF.
 - `requirements.txt`: versiones de dependencias usadas.
 
@@ -46,7 +46,7 @@ La imputación, escala y, cuando corresponde, PCA se ajustan solo en entrenamien
 
 ## Entrega
 
-PDF: [`reports/Ejercicio_02.pdf`](reports/Ejercicio_02.pdf). Revisar [`reports/conclusion.md`](reports/conclusion.md) y adaptar la reflexión a lo que puedas explicar y defender. Los resultados son reales; la conclusión redactada es un borrador para revisión personal.
+PDF: [`reports/Ejercicio_02.pdf`](reports/Ejercicio_02.pdf). Conclusión: [`reports/conclusion.md`](reports/conclusion.md).
 
 Repositorio: [CienciaDatosUasd2026](https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Ciencia%20de%20DatosII/Unidad%20I/Ejercicio%2002).
 
@@ -72,3 +72,24 @@ Las pruebas verifican dominancia de Pareto, regla de selección, seis pipelines 
 ## Corrección durante la ejecución
 
 Se corrigió la precedencia de importaciones para que el notebook 02 cargue su propio generador de informe y reutilice únicamente las funciones de datos del Ejercicio 01. Se repitió la ejecución completa tras corregirlo.
+
+## Pruebas automatizadas
+
+15 pruebas, todas aprobadas (`python -m pytest -q tests`, resultado en `reports/pruebas.txt`).
+
+1. **`test_pareto_descarta_dominado_y_conserva_compromiso`**. La frontera de Pareto excluye un modelo peor en todo y conserva los compromisos. *Por qué:* La decisión Green AI se basa en esta frontera.
+2. **`test_decision_respeta_tolerancia_y_latencia`**. Se elige el modelo más rápido dentro de 0.02 del mejor F1. *Por qué:* Aplica la regla de decisión escrita.
+3. **`test_seis_configuraciones_y_reduccion_dentro_pipeline`**. Hay seis configuraciones y el PCA está dentro del pipeline. *Por qué:* PCA fuera del pipeline filtraría información de validación.
+4. **`test_evidencias_misma_particion_y_tres_repeticiones`**. Se usa la misma partición del Ejercicio 01 y cada modelo se mide tres veces. *Por qué:* Comparación justa y tiempos estables.
+5. **`test_empate_exacto_no_domina`**. Dos modelos idénticos quedan ambos en la frontera. *Por qué:* Un empate no debe eliminar a ninguno.
+6. **`test_modelo_mejor_en_todo_domina_al_resto`**. Un modelo mejor en F1 y en costo domina al otro. *Por qué:* Comprueba la dirección de cada objetivo (maximizar F1 y minimizar costos).
+7. **`test_eleccion_ignora_modelos_fuera_de_la_frontera`**. Un modelo dominado no se elige aunque sea el más rápido. *Por qué:* La elección debe salir solo de la frontera.
+8. **`test_desempate_por_tamano_y_nombre`**. Con igual F1 y latencia, gana el de menor tamaño y luego el nombre. *Por qué:* El desempate está escrito y es determinista.
+9. **`test_hiperparametros_de_ensambles_y_semilla`**. Árboles, profundidad, imputación y semilla de cada ensamble son los documentados. *Por qué:* Los modelos comparados son exactamente los que describe el README.
+10. **`test_pca_se_ajusta_solo_con_entrenamiento_y_retiene_95`**. El PCA aprende con 210 filas de entrenamiento y retiene al menos 95 % de la varianza con menos de 34 componentes. *Por qué:* Demuestra la reducción sin fuga.
+11. **`test_varianza_acumulada_es_creciente_y_alcanza_95`**. La varianza acumulada guardada crece y llega al 95 %. *Por qué:* Valida la figura de PCA del PDF.
+12. **`test_modelo_elegido_esta_en_la_frontera_y_dentro_de_tolerancia`**. El modelo de decision.json está en la frontera y dentro de la tolerancia. *Por qué:* La decisión guardada cumple su propia regla.
+13. **`test_prueba_final_solo_evalua_el_modelo_elegido`**. La prueba final contiene solo el modelo elegido. *Por qué:* La prueba se usa una sola vez y después de decidir.
+14. **`test_tsne_con_dos_semillas_y_confiabilidad_valida`**. t-SNE se evaluó con las semillas 42 y 73 y su confiabilidad está entre 0 y 1. *Por qué:* t-SNE cambia con la semilla; se documenta su estabilidad.
+15. **`test_los_seis_modelos_guardados_cargan_y_predicen`**. Los seis modelos guardados cargan y predicen clases válidas. *Por qué:* Los artefactos del repositorio son utilizables.
+

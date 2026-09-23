@@ -1,4 +1,4 @@
-# Conclusión · borrador para revisión personal
+# Conclusión
 
 Se compararon seis configuraciones sobre las mismas 350 observaciones, target y partición del Ejercicio 01: SVM, SVM con PCA al 95%, dos Random Forest y dos Gradient Boosting. Los parámetros del SVM proceden de la búsqueda previa sobre entrenamiento; las alternativas de ensambles se fijaron antes de evaluar validación. El conjunto de prueba se utilizó únicamente después de registrar la decisión de este ejercicio. La aprobación docente del dataset continúa pendiente.
 
@@ -8,4 +8,4 @@ Cada configuración se entrenó tres veces con la misma semilla, usando un hilo 
 
 PCA necesitó 21 componentes para retener al menos el 95% de la varianza de entrenamiento. El SVM sin reducción obtuvo F1 de validación 0.953, frente a 0.935 con PCA; conservar varianza no garantiza conservar toda la información discriminativa. Las dos proyecciones t-SNE usan semillas 42 y 73, con perplexity 30. Su preservación de vecindades, medida mediante trustworthiness con cinco vecinos, fue 0.891 y 0.892. En la semilla 42 se observa una zona de retornos buenos en la parte superior izquierda y otra hacia la inferior derecha, con retornos malos más presentes en el centro derecho. En la semilla 73 cambia la disposición: aparece una banda de buenos en la parte superior y se mantiene mezcla de clases en zonas centrales. Ningún mapa separa por completo ambas clases. Las figuras deben interpretarse como exploración local: cambios de orientación, distancias entre grupos o separación aparente no demuestran capacidad predictiva.
 
-La decisión expresa un compromiso medido en este equipo y podría cambiar con hardware, carga o tamaño de lote. No se midieron energía ni emisiones, por lo que no se atribuyen ahorros de kWh o CO2. Se conservaron modelos, resultados individuales y evidencia de la partición para revisión. Antes de entregar, corresponde confirmar la selección con el profesor y revisar personalmente la interpretación y los límites del experimento.
+La decisión expresa un compromiso medido en este equipo y podría cambiar con hardware, carga o tamaño de lote. No se midieron energía ni emisiones, por lo que no se atribuyen ahorros de kWh o CO2. Se conservaron modelos, resultados individuales y evidencia de la partición para revisión.
