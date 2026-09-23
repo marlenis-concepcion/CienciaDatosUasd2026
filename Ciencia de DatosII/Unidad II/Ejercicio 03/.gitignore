@@ -1,0 +1,19 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.py[cod]
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/sample/*.csv
+# Evidencias de la entrega: excepciones al .gitignore general del repositorio.
+!reports/*.csv
+!reports/*.png
+!reports/*.json
+!reports/*.pdf
+!docs/*.csv
+models/word2vec.model

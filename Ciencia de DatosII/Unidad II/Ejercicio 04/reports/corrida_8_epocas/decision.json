@@ -1,0 +1,6 @@
+{
+  "modelo_elegido": "dense",
+  "razon": "La mejora de la CNN (-0.0771) no alcanza el umbral 0.01; se prefiere el modelo más barato.",
+  "regla": "CNN solo si mejora el F1 macro de validación del denso en al menos 0.01",
+  "tomada_antes_de_test": true
+}

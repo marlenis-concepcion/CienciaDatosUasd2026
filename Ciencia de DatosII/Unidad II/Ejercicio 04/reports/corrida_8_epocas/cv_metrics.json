@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "f1_macro_valid": 0.01818181818181818,
+    "f1_macro": 0.01818181818181818,
+    "accuracy": 0.1,
+    "parametros": 0
+  },
+  "dense": {
+    "f1_macro_valid": 0.8759714432916791,
+    "epocas": 8,
+    "f1_macro": 0.860435573537113,
+    "accuracy": 0.8614,
+    "parametros": 50890,
+    "segundos_entrenamiento": 3.774108958998113,
+    "tamano_kb": 619.0966796875,
+    "inferencia_ms_por_imagen": 0.006999145800000406
+  },
+  "cnn": {
+    "f1_macro_valid": 0.7989050000207729,
+    "epocas": 8,
+    "f1_macro": 0.7848964029526232,
+    "accuracy": 0.7927,
+    "parametros": 19466,
+    "segundos_entrenamiento": 50.80056012499699,
+    "tamano_kb": 262.126953125,
+    "inferencia_ms_por_imagen": 0.02895779999998922
+  },
+  "hardware": {
+    "cpu": "arm",
+    "sistema": "macOS-26.6-arm64-arm-64bit",
+    "tensorflow": "2.21.0",
+    "gpu": []
+  }
+}

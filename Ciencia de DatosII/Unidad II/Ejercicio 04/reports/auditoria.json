@@ -1,0 +1,48 @@
+{
+  "forma_entrenamiento": [
+    60000,
+    28,
+    28
+  ],
+  "forma_prueba": [
+    10000,
+    28,
+    28
+  ],
+  "tipo": "uint8",
+  "rango_pixeles": [
+    0,
+    255
+  ],
+  "media_pixel_entrenamiento": 0.286,
+  "desviacion_pixel_entrenamiento": 0.353,
+  "clases_entrenamiento": {
+    "T-shirt/top": 6000,
+    "Trouser": 6000,
+    "Pullover": 6000,
+    "Dress": 6000,
+    "Coat": 6000,
+    "Sandal": 6000,
+    "Shirt": 6000,
+    "Sneaker": 6000,
+    "Bag": 6000,
+    "Ankle boot": 6000
+  },
+  "clases_prueba": {
+    "T-shirt/top": 1000,
+    "Trouser": 1000,
+    "Pullover": 1000,
+    "Dress": 1000,
+    "Coat": 1000,
+    "Sandal": 1000,
+    "Shirt": 1000,
+    "Sneaker": 1000,
+    "Bag": 1000,
+    "Ankle boot": 1000
+  },
+  "duplicados_en_entrenamiento": 0,
+  "duplicados_en_prueba": 0,
+  "entrenamiento_repetido_en_prueba": 0,
+  "etiquetas_contradictorias": 0,
+  "imagenes_vacias": 0
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.py[cod]
+# Evidencias de la entrega: excepciones al .gitignore general del repositorio.
+!reports/*.csv
+!reports/*.png
+!reports/*.json
+!reports/*.pdf
+!reports/corrida_8_epocas/*

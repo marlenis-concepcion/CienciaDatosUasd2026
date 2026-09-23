@@ -1,0 +1,24 @@
+id,categoria,explicacion
+3890,Vocabulario comercial en mensaje legítimo,"""Unlimited texts"" y ""minutes"" son términos de ofertas de telefonía; aquí describen un plan en una conversación normal."
+1430,Etiqueta dudosa de la fuente,Parece un anuncio personal de venta y no un SMS masivo; probablemente es texto copiado de un comentario del foro Grumbletext.
+3603,Texto corto con palabras poco frecuentes,"""Cps"", ""outages"" y ""energy"" casi no aparecen en entrenamiento; con tan pocas palabras conocidas la probabilidad queda cerca de 0.5."
+495,Vocabulario comercial en mensaje legítimo,"""free"" y ""call now"" son frecuentes en spam; aquí forman una pregunta personal. El modelo no distingue el contexto."
+991,Texto corto con palabras poco frecuentes,"Solo contiene una fecha en mayúsculas; los números ordinales y las mayúsculas se asocian a promociones con fecha límite."
+2823,Etiqueta dudosa de la fuente,"Es un horóscopo (""ROMCAPspam"" parece un código de suscripción pegado). Sin premio, número ni llamada a la acción, el texto no tiene señales de spam."
+4914,Spam sin señales típicas,"Es un servicio de suscripción a resultados de fútbol; el contenido es informativo y no incluye premio, precio ni número."
+4069,Etiqueta dudosa de la fuente,Es el comentario de una persona sobre una empresa de cobros; corresponde al foro de origen y no a un SMS enviado por un spammer.
+5372,Etiqueta dudosa de la fuente,Es una pregunta de un usuario del foro sobre por qué recibió spam de citas; el texto en sí no es spam.
+4862,Vocabulario comercial en mensaje legítimo,"""Nokia"" y ""phone"" aparecen muchísimo en spam de teléfonos gratis; aquí es una opinión personal."
+1458,Spam con tono personal,"Tiene número de tarificación especial (090…) y precio por minuto, pero el tono coloquial y el nombre propio pesan más que esas señales; cada número es único y el modelo no generaliza el patrón."
+2770,Spam sin señales típicas,"Promoción de marca sin número ni código corto; las palabras ""play"", ""footy"" y ""stadium"" también son comunes en conversaciones."
+4732,Texto corto con palabras poco frecuentes,Abreviaturas y emoticonos sin palabras de contenido conocidas; la decisión depende de muy pocos tokens.
+4600,Vocabulario comercial en mensaje legítimo,"""airtel"" y ""line"" son vocabulario de operadoras; en entrenamiento aparecen sobre todo en spam."
+1269,Spam con tono personal,"Mismo patrón que el id 1458 (número 090…, ""Calls£1/min""); el modelo no aprendió que los números premium son una señal fuerte porque cada número es un token distinto."
+2965,Etiqueta dudosa de la fuente,Es un chiste reenviado; no vende nada ni pide acción. Su etiqueta de spam es discutible.
+2614,Vocabulario comercial en mensaje legítimo,"""sending"" y ""question"" aparecen en concursos por SMS; aquí es un agradecimiento."
+5451,Etiqueta dudosa de la fuente,"Chiste tipo ""Latest News!"" de un servicio de contenidos; sin precio ni número visible, es difícil de separar de un reenvío personal."
+3742,Fragmento de mensaje dividido,"Es la segunda parte (""2/2"") de un SMS largo y solo trae un código de tarifa; sin la primera parte no hay contexto."
+1638,Etiqueta dudosa de la fuente,Es un comentario del foro sobre la responsabilidad de las operadoras; no es un SMS de spam.
+2289,Vocabulario comercial en mensaje legítimo,"""message offer"" coincide literalmente con frases de promociones."
+1506,Vocabulario comercial en mensaje legítimo,"""free download"" es típico de spam; aquí es una recomendación entre amigos."
+4989,Texto corto con palabras poco frecuentes,"Casi todo son emoticonos; ""channel"" aparece en spam de televisión y decide la predicción."

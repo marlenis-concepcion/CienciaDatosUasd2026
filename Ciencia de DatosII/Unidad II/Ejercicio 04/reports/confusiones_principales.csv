@@ -1,0 +1,9 @@
+real,predicha,errores
+Shirt,T-shirt/top,118
+Shirt,Coat,69
+T-shirt/top,Shirt,63
+Pullover,Coat,62
+Ankle boot,Sneaker,56
+Pullover,Shirt,52
+Shirt,Pullover,50
+Coat,Dress,35

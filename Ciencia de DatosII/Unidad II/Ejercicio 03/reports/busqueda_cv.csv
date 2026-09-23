@@ -1,0 +1,3 @@
+modelo,mejores_parametros,f1_macro_cv,f1_macro_cv_std,combinaciones,segundos_busqueda
+naive_bayes,"{""model__alpha"": ""0.1"", ""tfidf__min_df"": ""1"", ""tfidf__ngram_range"": ""(1, 2)""}",0.9612570518965171,0.0071729337194106355,12,2.6462567079979635
+logistic,"{""model__C"": ""10.0"", ""tfidf__min_df"": ""1"", ""tfidf__ngram_range"": ""(1, 2)""}",0.9639036751047554,0.005197131644904641,12,3.5019458749993646

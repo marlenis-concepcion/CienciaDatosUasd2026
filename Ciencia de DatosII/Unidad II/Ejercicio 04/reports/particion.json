@@ -1,0 +1,30 @@
+{
+  "semilla": 42,
+  "entrenamiento": 54000,
+  "validacion": 6000,
+  "prueba": 10000,
+  "validacion_por_clase": [
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600,
+    600
+  ],
+  "indices_validacion_inicio": [
+    17,
+    18,
+    27,
+    29,
+    60,
+    87,
+    95,
+    108,
+    110,
+    117
+  ]
+}

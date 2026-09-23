@@ -1,0 +1,100 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import pandas as pd
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Image, KeepTogether, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+
+ROOT = Path(__file__).resolve().parents[1]
+REPO = ("https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/"
+        "Ciencia%20de%20DatosII/Unidad%20II/Ejercicio%2004")
+NAMES = {"baseline": "Línea base", "dense": "Denso (base)", "cnn": "CNN pequeña (base)", "cnn_flatten": "CNN Flatten"}
+
+
+def table(rows, styles, widths=None):
+    cells = [[Paragraph(str(v), styles["Small"]) for v in row] for row in rows]
+    t = Table(cells, repeatRows=1, hAlign="LEFT", colWidths=widths)
+    t.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#dde9f4")),
+                           ("GRID", (0, 0), (-1, -1), 0.3, colors.grey), ("VALIGN", (0, 0), (-1, -1), "TOP")]))
+    return t
+
+
+def main() -> None:
+    reports = ROOT / "reports"
+    styles = getSampleStyleSheet()
+    styles["BodyText"].fontSize, styles["BodyText"].leading, styles["BodyText"].alignment = 9.5, 13.5, TA_LEFT
+    styles.add(styles["BodyText"].clone("Small", fontSize=8, leading=10))
+    p = lambda text: Paragraph(text, styles["BodyText"])
+    h = lambda text: Paragraph(text, styles["Heading2"])
+    m = json.loads((reports / "cv_metrics.json").read_text(encoding="utf-8"))
+    a = json.loads((reports / "auditoria.json").read_text(encoding="utf-8"))
+    d = json.loads((reports / "decision.json").read_text(encoding="utf-8"))
+    per_class = pd.read_csv(reports / "metricas_por_clase.csv")
+    conf = pd.read_csv(reports / "confusiones_principales.csv")
+
+    rows = [["Modelo", "F1 valid.", "F1 test", "Accuracy test", "Parámetros", "Épocas", "Entrenamiento s",
+             "Inferencia ms/img", "Tamaño KB"]]
+    for key in ["baseline", "dense", "cnn", "cnn_flatten"]:
+        v = m[key]
+        rows.append([f"<b>{NAMES[key]}</b>" if key == d["modelo_elegido"] else NAMES[key], f"{v['f1_macro_valid']:.3f}",
+                     f"{v['f1_macro']:.3f}", f"{v['accuracy']:.3f}", f"{v['parametros']:,}", v.get("epocas", "—"),
+                     f"{v['segundos_entrenamiento']:.1f}" if "segundos_entrenamiento" in v else "—",
+                     f"{v['inferencia_ms_por_imagen']:.3f}" if "inferencia_ms_por_imagen" in v else "—",
+                     f"{v['tamano_kb']:.0f}" if "tamano_kb" in v else "—"])
+    classes = [["Clase", "Precisión", "Recall", "F1", "Errores"]] + [
+        [r.clase, f"{r.precision:.3f}", f"{r.recall:.3f}", f"{r.f1:.3f}", r.errores] for r in per_class.itertuples()]
+    confusions = [["Real", "Predicha", "Errores"]] + [[r.real, r.predicha, r.errores] for r in conf.head(5).itertuples()]
+    story = [
+        Paragraph("Ejercicio 04 · Clasificador visual con CNN y Model Card", styles["Title"]),
+        p("Marlenis Judith Concepción Cuevas · INF-8239-C2 · Unidad II · Docente: Edwin Ramón José Nolasco"),
+        p(f'Repositorio: <link href="{REPO}" color="blue">{REPO}</link>'),
+        h("1. Auditoría y partición reproducible"),
+        p(f"Fashion-MNIST (Xiao, Rasul y Vollgraf, 2017; licencia MIT), cargado con tf.keras. {a['forma_entrenamiento'][0]:,} "
+          f"imágenes de entrenamiento y {a['forma_prueba'][0]:,} de prueba de 28×28, balanceadas (6000 y 1000 por clase). "
+          f"La auditoría por hash no encontró duplicados en entrenamiento ({a['duplicados_en_entrenamiento']}), ni en prueba "
+          f"({a['duplicados_en_prueba']}), ni imágenes de entrenamiento repetidas en prueba ({a['entrenamiento_repetido_en_prueba']}). "
+          "La validación son 6000 imágenes estratificadas del entrenamiento oficial (semilla 42, índices guardados); la prueba "
+          "oficial se usó una sola vez, después de fijar la decisión."),
+        Image(str(reports / "muestras.png"), width=480, height=112),
+        h("2. Línea base y CNN"),
+        p("Se comparan la clase más frecuente, el modelo denso y la CNN pequeña del proyecto base, y una CNN propia que "
+          "sustituye el promedio global por Flatten + Dense(128). Todos usan Adam, lotes de 128 y parada temprana sobre la "
+          "pérdida de validación (paciencia 2), con un máximo de 30 épocas. Con las 8 épocas del proyecto base, la CNN pequeña "
+          "obtuvo F1 0.785 en prueba, por debajo del denso; las curvas muestran que no había convergido."),
+        KeepTogether([Image(str(reports / "curvas.png"), width=480, height=173)]),
+        h("3. Costo, tamaño y decisión técnica"),
+        table(rows, styles, widths=[78, 44, 40, 50, 56, 36, 60, 60, 48]), Spacer(1, 6),
+        p(f"<b>Regla fijada antes de la prueba:</b> {d['regla'].lower()}. {d['razon']} La CNN Flatten gana +0.04 de F1 macro "
+          "frente al denso, a cambio de 8 veces más parámetros, 4 veces más inferencia y 5 MB en disco. En CPU (Apple M1 Pro, "
+          "TensorFlow 2.21) la inferencia sigue por debajo de 0.1 ms por imagen, por lo que el costo es aceptable."),
+        KeepTogether([h("4. Métricas, curvas y errores por clase"),
+                      Table([[table(classes, styles), table(confusions, styles)]], colWidths=[290, 220],
+                            style=[("VALIGN", (0, 0), (-1, -1), "TOP")])]),
+        Spacer(1, 6),
+        KeepTogether([Image(str(reports / "confusion_cnn.png"), width=330, height=286)]),
+        KeepTogether([Image(str(reports / "cnn_errors.png"), width=430, height=242)]),
+        p("Shirt es la clase más débil (recall 0.728): se confunde con T-shirt/top, Coat y Pullover, prendas con la misma "
+          "silueta a 28×28 píxeles. Los errores de calzado (Ankle boot → Sneaker) son el otro grupo relevante. Trouser, Bag, "
+          "Sandal y Sneaker superan 0.95 de F1."),
+        h("5. Model Card, pruebas y reproducibilidad"),
+        p("La Model Card (MODEL_CARD.md) documenta uso previsto, usos fuera de alcance, datos, métricas por clase, costo, "
+          "límites y monitoreo. Hay 9 pruebas (normalización, forma, contrato de salida de los tres modelos, partición "
+          "estratificada y reproducible, detección de fuga por hash, regla de decisión y conteo de errores). Los modelos "
+          "guardados reproducen las métricas al recargarlos en el cuaderno."),
+        h("6. Uso de IA"),
+        p("Utilicé Claude Code (Claude Opus 5.5) para adaptar el proyecto base, proponer la CNN Flatten, escribir pruebas, "
+          "el cuaderno y la redacción. Verifiqué la corrida de 8 épocas, la reproducción de métricas desde los modelos "
+          "guardados, la partición y las pruebas; se corrigió la regla de decisión y la partición de validación. Detalle en "
+          "docs/DECLARACION_IA.md."),
+    ]
+    SimpleDocTemplate(str(reports / "Ejercicio_04.pdf"), rightMargin=40, leftMargin=40, topMargin=34, bottomMargin=34,
+                      title="Ejercicio 04 · INF-8239").build(story)
+    print("PDF:", reports / "Ejercicio_04.pdf")
+
+
+if __name__ == "__main__":
+    main()
