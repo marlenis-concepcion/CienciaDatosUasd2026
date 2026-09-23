@@ -1,0 +1,35 @@
+{
+  "filas": 4424,
+  "columnas": 39,
+  "nulos": 0,
+  "duplicados": 0,
+  "clases": {
+    "Graduate": 2209,
+    "Dropout": 1421,
+    "Enrolled": 794
+  },
+  "tasa_abandono": 0.3212,
+  "abandono_por_genero": {
+    "mujer": 0.251,
+    "hombre": 0.4505
+  },
+  "abandono_por_beca": {
+    "sin beca": 0.3871,
+    "becario": 0.1219
+  },
+  "variables_modelo": 24,
+  "variables_excluidas": [
+    "Age at enrollment",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Gender",
+    "International",
+    "Marital status",
+    "Nacionality",
+    "Scholarship holder"
+  ]
+}
