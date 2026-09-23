@@ -2,7 +2,7 @@
   "alternativa_elegida": "logistica",
   "regla": "mayor recall a capacidad en validación; desempate por average precision",
   "C": 1.0,
-  "segundos_busqueda": 0.3254006249990198,
+  "segundos_busqueda": 0.3263427080019028,
   "techo_recall_capacidad_prueba": 0.4694835680751174,
   "tomada_antes_de_prueba": true
 }

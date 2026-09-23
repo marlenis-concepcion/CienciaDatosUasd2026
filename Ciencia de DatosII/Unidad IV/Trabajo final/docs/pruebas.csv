@@ -1,0 +1,36 @@
+n,archivo,prueba,area,comprueba,por_que
+1,test_data_contract.py,test_dataset_contract_and_binary_target,Datos,"Hay 4424 estudiantes, cada uno con identificador único y objetivo binario.",Contrato mínimo antes de cualquier análisis.
+2,test_data_contract.py,test_contract_rejects_nulls_and_impossible_approvals,Datos,El contrato rechaza nulos y más unidades aprobadas que inscritas.,Un dato imposible en origen produciría prioridades absurdas.
+3,test_data_contract.py,test_model_features_exclude_sensitive_and_second_semester,Datos,El modelo no usa variables sensibles ni del 2.º semestre.,Evita la discriminación directa y la fuga de información del futuro.
+4,test_data_contract.py,test_split_is_disjoint_complete_and_stratified,Datos,"Entrenamiento, validación y prueba no se solapan, cubren todo y mantienen la tasa de abandono.",Base de una evaluación honesta.
+5,test_data_contract.py,test_rule_baseline_prioritizes_failed_units_and_unpaid_tuition,Baseline,La regla da más prioridad a quien no aprobó unidades o no pagó la matrícula.,El baseline debe reflejar el criterio que usaría una persona sin modelo.
+6,test_model.py,test_model_outputs_valid_probabilities,Modelo,El modelo devuelve una probabilidad entre 0 y 1 por estudiante.,La lista se ordena por esa probabilidad.
+7,test_model.py,test_scaler_is_fitted_only_on_training_data,Modelo,La estandarización aprende solo con entrenamiento.,Evita fuga de validación o prueba al modelo.
+8,test_model.py,test_model_ignores_sensitive_columns_even_if_they_change,Equidad,Cambiar género o edad no cambia el riesgo estimado.,Prueba directa de que el modelo no usa atributos sensibles.
+9,test_model.py,test_contributions_add_up_to_the_logit,Explicación,Las contribuciones por variable reconstruyen exactamente la probabilidad.,La explicación que ve la coordinación es fiel al modelo.
+10,test_model.py,test_top_k_selects_exactly_capacity_and_highest_scores,Priorización,La selección toma exactamente los cupos y a los de mayor riesgo.,El DSS no puede ofrecer más tutorías de las disponibles.
+11,test_model.py,test_capacity_metrics_match_hand_calculation,Evaluación,Recall y precisión a capacidad coinciden con un cálculo manual.,Son las métricas de éxito del proyecto.
+12,test_model.py,test_choice_ignores_random_reference_and_uses_recall_then_ap,Evaluación,La regla de elección ignora el azar y usa recall y luego average precision.,La decisión se toma con una regla escrita antes de la prueba.
+13,test_dss.py,test_support_rules_are_explicit_and_ordered[deuda],Reglas DSS,Con deuda se sugiere orientación financiera.,Lo financiero bloquea la continuidad y va primero.
+14,test_dss.py,test_support_rules_are_explicit_and_ordered[matrícula y 0 aprobadas],Reglas DSS,Matrícula atrasada tiene prioridad sobre las unidades no aprobadas.,Comprueba el orden de las reglas.
+15,test_dss.py,test_support_rules_are_explicit_and_ordered[0 aprobadas],Reglas DSS,Sin unidades aprobadas se sugiere tutoría académica intensiva.,Apoyo acorde con la causa probable.
+16,test_dss.py,test_support_rules_are_explicit_and_ordered[resto],Reglas DSS,En los demás casos se sugiere seguimiento del tutor.,Toda persona priorizada recibe una propuesta.
+17,test_dss.py,test_priority_list_respects_capacity_and_is_sorted,Priorización,La lista tiene tantos estudiantes como cupos y está ordenada.,La coordinación ve primero a quien más lo necesita.
+18,test_dss.py,test_priority_list_contains_the_highest_risk_students,Priorización,Nadie fuera de la lista tiene más riesgo que el último de la lista.,Detectó un error real de redondeo que se corrigió.
+19,test_dss.py,test_every_prioritized_student_gets_support_and_explanation,Explicación,Cada estudiante de la lista tiene apoyo sugerido y explicación.,Una recomendación sin razón no es un DSS.
+20,test_dss.py,test_explanations_never_mention_sensitive_attributes,Equidad,"Las explicaciones no mencionan género, edad, nacionalidad ni beca.",Evita estigmatizar y confirma que no hay variables sensibles en el modelo.
+21,test_dss.py,test_explanation_lists_only_risk_increasing_factors,Explicación,La explicación muestra solo factores que suben el riesgo y con su valor.,La coordinación puede verificar cada razón.
+22,test_dss.py,test_human_decision_log_requires_reason_and_owner,Supervisión humana,Rechazar o modificar exige motivo y toda decisión exige responsable.,La decisión final es humana y queda trazada.
+23,test_dss.py,test_streamlit_app_starts_and_warns_about_human_decision,Interfaz,La aplicación arranca y advierte que la coordinación decide.,El artefacto práctico funciona y es transparente.
+24,test_fairness.py,test_age_bands_cover_all_ages_without_gaps,Equidad,Las franjas de edad cubren todas las edades sin huecos.,Nadie queda fuera de la auditoría.
+25,test_fairness.py,test_audit_groups_are_readable_and_complete,Equidad,Los grupos de auditoría son legibles y no tienen vacíos.,Tablas de equidad comprensibles.
+26,test_fairness.py,test_group_recall_matches_hand_calculation,Equidad,El recall por grupo y la brecha coinciden con un cálculo manual.,Base de la decisión de equidad.
+27,test_fairness.py,test_small_groups_do_not_count_in_the_gap,Equidad,Los grupos con menos de 30 abandonos no cuentan en la brecha.,Evita conclusiones con muestras pequeñas.
+28,test_fairness.py,test_quota_allocation_uses_exact_capacity_and_top_risk_within_group,Mitigación,El reparto por cupos usa exactamente la capacidad y elige a los de mayor riesgo en cada grupo.,La mitigación no regala ni pierde cupos.
+29,test_fairness.py,test_quota_gives_places_to_low_risk_groups_that_global_ranking_ignores,Mitigación,Un grupo con menor riesgo promedio recibe cupos.,Es el propósito de la mitigación por edad.
+30,test_fairness.py,test_prioritized_list_with_quota_keeps_capacity,Mitigación,La lista con cupos por edad mantiene la capacidad.,La mitigación se integra en el DSS real.
+31,test_fairness.py,test_mitigation_choice_prefers_best_recall_among_those_that_pass_gates,Decisión,Se elige la alternativa con mejor recall entre las que cumplen las compuertas.,La mitigación se elige con una regla y en validación.
+32,test_fairness.py,test_gate_decision_maps_to_four_options[desplegar],Decisión,Compuertas cumplidas con poca incertidumbre dan desplegar.,Las cuatro opciones salen de reglas explícitas.
+33,test_fairness.py,test_gate_decision_maps_to_four_options[limitar],Decisión,Compuertas cumplidas con intervalo amplio dan limitar.,Es la decisión de este proyecto.
+34,test_fairness.py,test_gate_decision_maps_to_four_options[modificar],Decisión,Brecha observada fuera de tolerancia da modificar.,Obliga a mitigar antes de usar.
+35,test_fairness.py,test_gate_decision_maps_to_four_options[no utilizar],Decisión,Recall por debajo del mínimo da no utilizar.,Un sistema que no alcanza a quien abandona no sirve.
