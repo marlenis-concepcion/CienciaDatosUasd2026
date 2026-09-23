@@ -1,0 +1,6 @@
+priority_harm: Falso negativo, un caso de alto riesgo que no se prioriza y se revisa tarde. Por eso la métrica principal es el recall y su brecha entre grupos (igualdad de oportunidades), no la tasa de selección.
+primary_metric: Recall global y brecha de recall entre grupos protegidos, con la brecha de FPR como métrica secundaria por la carga de trabajo.
+tolerance: Recall mayor o igual a 0.68; brecha de recall y de FPR menor o igual a 0.16 (configs/governance.yml), incluido el extremo superior del intervalo bootstrap del 95 %.
+evidence: reports/lab12/candidatos.csv, por_grupo.csv, por_edad.csv, interseccional.csv, bootstrap.json y decision.json.
+limitation: Datos sintéticos; prueba de 160 casos con subgrupos interseccionales de hasta 8 casos; tasas base distintas entre grupos (0.49 y 0.73 en prueba), por lo que la paridad de selección no es un objetivo adecuado.
+recommendation: Ver reports/lab12/decision.json. No usar el modelo de aprendizaje automático; usar la regla transparente solo para ordenar revisiones humanas en un piloto limitado, con apelación y monitoreo.

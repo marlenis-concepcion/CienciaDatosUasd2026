@@ -1,0 +1,6 @@
+stakeholder,benefit,harm,power,participation
+Affected person,Su caso de alto riesgo se revisa antes,Quedar al final de la cola por un falso negativo o ser revisado sin necesidad por un falso positivo,low,Canal de apelación y consulta comunitaria antes del piloto
+Operator,Ordena la carga de trabajo con un criterio explícito,Sobrecarga si hay muchos falsos positivos; exceso de confianza en la lista (sesgo de automatización),medium,Capacitación y registro de discrepancias con la lista sugerida
+Institutional owner,Usa mejor el tiempo del equipo y documenta decisiones,Responsabilidad legal y reputacional si el sistema discrimina,high,Aprueba o retira el sistema y firma el registro de decisión
+Data team,Mejora el sistema con evidencia y retroalimentación,Culpa por errores de datos o de modelo fuera de su control,medium,Mantiene auditorías y monitoreo; propone cambios
+Community organizations,Transparencia sobre cómo se prioriza su zona,Estigmatización de zonas o grupos,low,Reciben el resumen de auditoría y pueden observar el piloto

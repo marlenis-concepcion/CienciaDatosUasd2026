@@ -1,0 +1,50 @@
+{
+  "columnas_originales": [
+    "case_id",
+    "received_date",
+    "zone",
+    "protected_group",
+    "age_band",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure",
+    "target"
+  ],
+  "vista_operativa": [
+    "case_id",
+    "received_date",
+    "previous_incidents",
+    "exposure"
+  ],
+  "vista_auditoria": [
+    "case_id",
+    "received_date",
+    "zone",
+    "protected_group",
+    "age_band",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure",
+    "target"
+  ],
+  "columnas_retiradas_de_la_operacion": [
+    "age_band",
+    "infrastructure_score",
+    "protected_group",
+    "target",
+    "zone"
+  ],
+  "simulacion_retencion": {
+    "fecha_revision": "2027-06-30",
+    "operativa": {
+      "meses": 12,
+      "conservados": 316,
+      "eliminados": 324
+    },
+    "auditoria": {
+      "meses": 24,
+      "conservados": 640,
+      "eliminados": 0
+    }
+  }
+}

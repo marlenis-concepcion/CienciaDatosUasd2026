@@ -1,0 +1,20 @@
+{
+  "candidato_elegido": "regla_no_predictiva",
+  "razon_eleccion": "Cumplen las compuertas en validación: regla_no_predictiva, logistica_0.50, logistica_0.56. Se elige el de mayor recall: regla_no_predictiva. ThresholdOptimizer se excluye porque necesita el grupo protegido en el momento de decidir (tratamiento diferenciado explícito).",
+  "umbral_global": 0.56,
+  "recall_objetivo": 0.8,
+  "train": 480,
+  "valid": 120,
+  "test": 160,
+  "decision": "limitar",
+  "cumple_compuertas_en_prueba": true,
+  "incertidumbre_supera_tolerancia": true,
+  "celdas_interseccionales_pequenas": 7,
+  "modelo_ml_logistica": {
+    "decision": "limitar",
+    "cumple_compuertas_en_prueba": true,
+    "incertidumbre_supera_tolerancia": true,
+    "celdas_interseccionales_pequenas": 7
+  },
+  "tomada_con_validacion": true
+}

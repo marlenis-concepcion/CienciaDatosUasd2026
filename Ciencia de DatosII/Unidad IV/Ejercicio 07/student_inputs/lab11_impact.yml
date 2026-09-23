@@ -1,0 +1,9 @@
+purpose: Ordenar los casos territoriales entrantes para que el equipo técnico revise primero los de mayor riesgo; el sistema no decide intervenciones.
+assisted_decision: Orden de revisión humana de casos (qué caso mira primero el analista). La intervención, elegibilidad o emergencia la decide siempre una persona con autoridad institucional.
+users: Analistas territoriales que revisan casos y su supervisor de turno.
+affected_population: Personas y comunidades de las zonas Norte, Sur, Este y Oeste cuyos casos se registran; en especial el grupo G2 y las personas de 60+, con mayor exposición y menor puntuación de infraestructura en los datos.
+owner: Responsable institucional del programa territorial (Product Owner); responde por la decisión de uso y el retiro del sistema.
+non_predictive_alternative: Regla transparente sin modelo, priorizar si hay 4 o más incidentes previos o exposición mayor o igual a 0.6; y el orden de llegada como referencia mínima.
+out_of_scope_use: Decidir automáticamente intervenciones, elegibilidad para ayudas o declaratorias de emergencia; perfilar personas; usar el grupo protegido o la edad como criterio de decisión; aplicarlo a datos reales sin nueva evaluación.
+withdrawal_condition: Retirar o volver a la regla transparente si el recall baja de 0.68, si la brecha de recall o de FPR entre grupos supera 0.16 en dos revisiones mensuales seguidas, si aparece un incidente de discriminación confirmado o si cambia la población atendida.
+appeal_mechanism: Cualquier persona u organización comunitaria puede pedir revisión manual de la prioridad asignada por el canal institucional; un analista distinto revisa en 5 días hábiles y la respuesta queda registrada con su justificación.
