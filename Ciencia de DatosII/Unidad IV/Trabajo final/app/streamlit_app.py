@@ -7,6 +7,7 @@ import streamlit as st
 from tutoria_dss.config import ROOT, load_config
 from tutoria_dss.data import load, split
 from tutoria_dss.dss import SUPPORTS, prioritize, record_decision
+from tutoria_dss.fairness import audit_groups
 from tutoria_dss.models import contributions, predict_risk
 
 MODEL = ROOT / "models/logistica.joblib"
@@ -23,8 +24,11 @@ cfg = load_config()
 model = joblib.load(MODEL)
 cohort = split(load(), cfg["random_state"])["test"]
 share = st.slider("Cupos de tutoría (proporción de la cohorte)", 0.05, 0.40, float(cfg["capacity_share"]), 0.01)
+quota = st.checkbox("Repartir cupos por grupo de edad (mitigación elegida en validación; el modelo no usa la edad)",
+                    value=True)
 risk = predict_risk(model, cohort)
-table = prioritize(cohort, risk, share, contributions(model, cohort))
+table = prioritize(cohort, risk, share, contributions(model, cohort),
+                   audit_groups(cohort)["edad"] if quota else None)
 st.caption(f"Cohorte de demostración: {len(cohort)} estudiantes · cupos: {len(table)} · "
            "variables sensibles fuera del modelo · punto de decisión: fin del primer semestre")
 st.dataframe(table.round({"riesgo": 3}), use_container_width=True, hide_index=True)
