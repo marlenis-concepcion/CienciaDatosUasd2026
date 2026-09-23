@@ -1,0 +1,5 @@
+{
+  "modelo_elegido": "naive_bayes",
+  "criterio": "F1 macro en validación; desempate por recall de spam",
+  "tomada_antes_de_test": true
+}

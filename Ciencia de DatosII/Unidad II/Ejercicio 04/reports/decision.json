@@ -1,0 +1,6 @@
+{
+  "modelo_elegido": "cnn_flatten",
+  "razon": "F1 macro de validación máximo 0.9263; dentro de la tolerancia 0.01: cnn_flatten. Se elige el de menos parámetros: cnn_flatten.",
+  "regla": "Menos parámetros entre los modelos a menos de 0.01 del mejor F1 macro de validación",
+  "tomada_antes_de_test": true
+}

@@ -2,6 +2,9 @@
 
 Marlenis Judith Concepción Cuevas · INF-8239-C2
 
-Unidad 02: Procesamiento en Lenguaje Natural (NLP).
+Unidad 02: Procesamiento de Lenguaje Natural, Redes Sociales y Visión.
 
-Los ejercicios de esta unidad se agregarán en esta carpeta.
+- [Ejercicio 03: corpus público y clasificador de texto reproducible](Ejercicio%2003/README.md) (LAB04–LAB05).
+- [Ejercicio 04: clasificador visual con CNN y Model Card](Ejercicio%2004/README.md) (LAB07).
+
+Cada ejercicio parte del proyecto base del curso y se instala de forma independiente con `uv sync`.

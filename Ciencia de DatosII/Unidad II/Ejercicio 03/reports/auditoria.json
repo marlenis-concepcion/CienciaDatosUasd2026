@@ -1,0 +1,52 @@
+{
+  "archivo": "data/raw/sms_spam.csv",
+  "sha256_csv": "07f666611f1eba029f63b764fb554a5a95189e57c520bacb1425bd027f0f3808",
+  "filas": 5574,
+  "columnas": [
+    "id",
+    "text",
+    "label"
+  ],
+  "nulos": {
+    "id": 0,
+    "text": 0,
+    "label": 0
+  },
+  "distribucion": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "proporcion": {
+    "ham": 0.866,
+    "spam": 0.134
+  },
+  "duplicados": {
+    "filas_originales": 5574,
+    "duplicados_exactos": 403,
+    "duplicados_normalizados": 434,
+    "duplicados_solo_por_normalizacion": 31,
+    "etiquetas_contradictorias": 0,
+    "filas_finales": 5140
+  },
+  "grupos_repetidos": 300,
+  "caracteres_por_clase": {
+    "ham": {
+      "count": 4827.0,
+      "mean": 71.5,
+      "std": 58.3,
+      "min": 2.0,
+      "50%": 52.0,
+      "90%": 147.0,
+      "max": 910.0
+    },
+    "spam": {
+      "count": 747.0,
+      "mean": 138.7,
+      "std": 28.9,
+      "min": 13.0,
+      "50%": 149.0,
+      "90%": 160.0,
+      "max": 223.0
+    }
+  }
+}

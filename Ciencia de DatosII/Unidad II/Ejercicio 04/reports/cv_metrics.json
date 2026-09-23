@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "f1_macro_valid": 0.01818181818181818,
+    "f1_macro": 0.01818181818181818,
+    "accuracy": 0.1,
+    "parametros": 0
+  },
+  "dense": {
+    "f1_macro_valid": 0.8875234936736145,
+    "epocas": 28,
+    "f1_macro": 0.876128645501748,
+    "accuracy": 0.8768,
+    "parametros": 50890,
+    "segundos_entrenamiento": 10.928873333999945,
+    "tamano_kb": 619.0966796875,
+    "inferencia_ms_por_imagen": 0.008195183399948291
+  },
+  "cnn": {
+    "f1_macro_valid": 0.853678941192985,
+    "epocas": 30,
+    "f1_macro": 0.8473635870606062,
+    "accuracy": 0.8503,
+    "parametros": 19466,
+    "segundos_entrenamiento": 188.175413500001,
+    "tamano_kb": 262.126953125,
+    "inferencia_ms_por_imagen": 0.028477529099836828
+  },
+  "cnn_flatten": {
+    "f1_macro_valid": 0.9263053021577328,
+    "epocas": 12,
+    "f1_macro": 0.9192827213733924,
+    "accuracy": 0.9199,
+    "parametros": 421642,
+    "segundos_entrenamiento": 86.83849979200022,
+    "tamano_kb": 4979.9453125,
+    "inferencia_ms_por_imagen": 0.0318641125002614
+  },
+  "hardware": {
+    "cpu": "arm",
+    "sistema": "macOS-26.6-arm64-arm-64bit",
+    "tensorflow": "2.21.0",
+    "gpu": []
+  }
+}
