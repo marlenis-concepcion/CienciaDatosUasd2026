@@ -1,7 +1,9 @@
 # Declaración de uso de IA · Ejercicio 04
 
-## Herramienta
-Claude Code (modelo Claude Opus 5.5, de Anthropic), usado dentro de VS Code sobre este repositorio.
+## Herramientas
+- Claude Code (modelo Claude Opus 5.5, de Anthropic), usado dentro de VS Code sobre este repositorio.
+- Codex (OpenAI), como apoyo complementario durante el desarrollo.
+- DeepSeek, como apoyo complementario durante el desarrollo.
 
 ## Prompts relevantes
 1. "Hazlo ambos y sigue la guía del profesor", acompañado del texto del mandato U02.E04 y del proyecto base `INF8239_U02_CV_Proyecto_Base`.

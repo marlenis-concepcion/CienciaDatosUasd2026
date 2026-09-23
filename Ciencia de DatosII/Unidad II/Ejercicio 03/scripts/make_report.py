@@ -109,7 +109,7 @@ def main() -> None:
                 "el resultado no depende de duplicados, porque se eliminaron antes de partir. El techo lo marcan la calidad de "
                 "las etiquetas y la antigüedad del corpus: el modelo no debe usarse en mensajería actual ni en español sin "
                 "reentrenarlo y sin revisión humana."),
-              KeepTogether([h("7. Uso de IA"), p("Utilicé Claude Code (Claude Opus 5.5) para adaptar el proyecto base, escribir pruebas, el cuaderno y la redacción. "
+              KeepTogether([h("7. Uso de IA"), p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo. Con Claude Code adapté el proyecto base y escribí las pruebas, el cuaderno y la redacción. "
                 "Verifiqué licencias y DOI en UCI, la composición del corpus en su readme, el SHA-256 y la reproducibilidad de las "
                 "métricas; se corrigió la descripción de las fuentes del corpus y una prueba mal construida. Detalle, prompts y "
                 "correcciones en docs/DECLARACION_IA.md.")])]
