@@ -52,8 +52,8 @@
     }
   },
   "green_ai": {
-    "segundos_entrenamiento": 0.017299584003922064,
-    "ms_por_estudiante": 0.0037861257531031116,
+    "segundos_entrenamiento": 0.016803124999569263,
+    "ms_por_estudiante": 0.00369112695829332,
     "tamano_modelo_kb": 10.5009765625,
     "parametros": 101,
     "hardware": "CPU Apple M1 Pro"
