@@ -69,6 +69,24 @@ Corpus: [SMS Spam Collection, UCI 228](https://archive.ics.uci.edu/dataset/228/s
 - Hiperparámetros por validación cruzada de 5 pliegues sobre entrenamiento, con la misma rejilla de TF-IDF para ambos pipelines.
 - Dos ejecuciones completas producen las mismas métricas y los mismos errores.
 
+## Pruebas automatizadas
+
+13 pruebas, todas aprobadas (`uv run pytest -q`, resultado en `reports/pruebas.txt`). La tabla completa, con el criterio de la rúbrica de cada una, está en [`docs/PRUEBAS.md`](docs/PRUEBAS.md).
+
+1. **`test_accepts_valid_dataframe`** (proyecto base). Un DataFrame con texto y etiqueta válidos pasa la validación sin error. *Por qué:* Asegura que la validación no rechaza datos correctos; si lo hiciera bloquearía todo el flujo.
+2. **`test_rejects_missing_target`** (proyecto base). Falla con un mensaje claro si falta la columna objetivo. *Por qué:* Sin la etiqueta no se puede entrenar; es mejor detenerse que entrenar con una columna equivocada.
+3. **`test_rejects_empty_text`** (proyecto base). Falla si hay textos vacíos. *Por qué:* Un texto vacío no aporta información y distorsiona TF-IDF y las métricas.
+4. **`test_each_pipeline_predicts_one_label`** (proyecto base). Los tres pipelines (línea base, Naive Bayes y logística) entrenan y devuelven una predicción, y todos tienen los pasos tfidf y model. *Por qué:* Confirma que los tres modelos comparados tienen la misma estructura; así la comparación es justa.
+5. **`test_tokenize_normalizes_and_removes_one_character_tokens`** (proyecto base). La tokenización pasa a minúsculas y elimina tokens de una letra. *Por qué:* Documenta cómo se normaliza el texto; si cambiara sin aviso cambiarían los resultados.
+6. **`test_demo_network_has_valid_pagerank`** (proyecto base). El PageRank de la red de demostración suma 1 y cada valor está entre 0 y 1. *Por qué:* Comprueba que el entorno de LAB06 funciona; no forma parte de la evaluación de este ejercicio.
+7. **`test_deduplicate_removes_normalized_copies_before_split`** (nueva). "Call 0800 NOW" y "call  0999 now" se reconocen como el mismo mensaje y se conserva solo el primero. *Por qué:* El corpus tiene 403 duplicados exactos y 31 más que solo difieren en mayúsculas, números o espacios; si no se eliminan, la misma plantilla de spam puede quedar en entrenamiento y en prueba.
+8. **`test_deduplicate_rejects_contradictory_labels`** (nueva). Si un mismo texto aparece como ham y como spam el proceso se detiene. *Por qué:* Una etiqueta contradictoria indica un error de datos; eliminarla en silencio ocultaría el problema. En este corpus hay 0 casos, y la prueba garantiza que se detectarían.
+9. **`test_splits_are_disjoint_complete_and_stratified`** (nueva). Entrenamiento, validación y prueba no comparten filas, entre las tres cubren todo el corpus y cada una mantiene la proporción de spam. *Por qué:* Si una fila estuviera en dos particiones la evaluación sería optimista; si se perdieran filas o cambiara la proporción la comparación dejaría de ser válida.
+10. **`test_leakage_check_detects_normalized_duplicate_across_splits`** (nueva). El control de fuga detecta dos mensajes que solo difieren en números y mayúsculas aunque estén en particiones distintas. *Por qué:* Demuestra que la verificación que se ejecuta en cada corrida sí encuentra la fuga que se quiere evitar.
+11. **`test_vectorizer_learns_vocabulary_only_from_training_texts`** (nueva). Una palabra que solo aparece en el texto de prueba no entra al vocabulario TF-IDF. *Por qué:* Si TF-IDF se ajustara con todos los datos, el modelo conocería palabras e IDF de la prueba antes de evaluarse; el pipeline lo evita y la prueba lo demuestra.
+12. **`test_choose_ignores_baseline_and_breaks_ties_by_spam_recall`** (nueva). La regla de selección nunca elige la línea base y, si hay empate en F1 macro, prefiere el modelo con mayor recall de spam. *Por qué:* La decisión se toma en validación antes de ver la prueba; la prueba fija esa regla para que no se pueda ajustar después según el resultado.
+13. **`test_every_analyzed_error_has_category_and_explanation`** (nueva). Hay al menos 20 errores clasificados, sin ids repetidos y todos con categoría y explicación. *Por qué:* La rúbrica exige analizar 20 errores; la prueba evita entregar errores sin interpretar.
+
 ## Análisis de errores
 
 Se leyeron y clasificaron 23 errores del modelo elegido: los 8 de prueba y los 15 de validación ([`reports/error_analysis.csv`](reports/error_analysis.csv)). Las categorías más frecuentes son etiquetas dudosas de la fuente (7) y mensajes legítimos con vocabulario comercial (7).

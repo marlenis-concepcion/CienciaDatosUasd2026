@@ -23,11 +23,28 @@ def table(rows, styles, widths=None):
     return t
 
 
+def tests_section(styles, title: str):
+    """Genera docs/PRUEBAS.md y la tabla del PDF desde docs/pruebas.csv."""
+    tests = pd.read_csv(ROOT / "docs/pruebas.csv")
+    lines = [f"# Pruebas automatizadas · {title}", "",
+             f"{len(tests)} pruebas; se ejecutan con `uv run pytest -q` y el resultado queda en `reports/pruebas.txt`.",
+             "Cada fila indica qué comprueba la prueba, por qué se hizo y qué criterio de la rúbrica respalda.", "",
+             "| # | Prueba | Origen | Criterio | Qué comprueba | Por qué |", "|---|---|---|---|---|---|"]
+    lines += [f"| {r.n} | `{r.archivo}::{r.prueba}` | {r.origen} | {r.criterio} | {r.comprueba} | {r.por_que} |"
+              for r in tests.itertuples()]
+    (ROOT / "docs/PRUEBAS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    rows = [["#", "Prueba", "Qué comprueba", "Por qué se hizo"]] + [
+        [r.n, f"{r.prueba.replace('_', ' ')}<br/><i>{r.origen} · {r.criterio}</i>", r.comprueba, r.por_que]
+        for r in tests.itertuples()]
+    return tests, table(rows, styles, widths=[18, 140, 175, 182])
+
+
 def main() -> None:
     reports = ROOT / "reports"
     styles = getSampleStyleSheet()
     styles["BodyText"].fontSize, styles["BodyText"].leading, styles["BodyText"].alignment = 9.5, 13.5, TA_LEFT
     styles.add(styles["BodyText"].clone("Small", fontSize=8, leading=10))
+    tests, tests_table = tests_section(styles, "Ejercicio 04")
     p = lambda text: Paragraph(text, styles["BodyText"])
     h = lambda text: Paragraph(text, styles["Heading2"])
     m = json.loads((reports / "cv_metrics.json").read_text(encoding="utf-8"))
@@ -80,12 +97,16 @@ def main() -> None:
         p("Shirt es la clase más débil (recall 0.728): se confunde con T-shirt/top, Coat y Pullover, prendas con la misma "
           "silueta a 28×28 píxeles. Los errores de calzado (Ankle boot → Sneaker) son el otro grupo relevante. Trouser, Bag, "
           "Sandal y Sneaker superan 0.95 de F1."),
-        h("5. Model Card, pruebas y reproducibilidad"),
+        h("5. Model Card y reproducibilidad"),
         p("La Model Card (MODEL_CARD.md) documenta uso previsto, usos fuera de alcance, datos, métricas por clase, costo, "
-          "límites y monitoreo. Hay 9 pruebas (normalización, forma, contrato de salida de los tres modelos, partición "
-          "estratificada y reproducible, detección de fuga por hash, regla de decisión y conteo de errores). Los modelos "
+          "límites y monitoreo. "
+          "Los modelos "
           "guardados reproducen las métricas al recargarlos en el cuaderno."),
-        h("6. Uso de IA"),
+        h("6. Pruebas automatizadas"),
+        p(f"{len(tests)} pruebas, todas aprobadas (reports/pruebas.txt): 3 del proyecto base y 6 propias sobre partición, "
+          "fuga, contrato de los modelos, decisión y conteo de errores. Lista completa en docs/PRUEBAS.md."),
+        tests_table, Spacer(1, 6),
+        h("7. Uso de IA"),
         p("Utilicé Claude Code (Claude Opus 5.5), Codex (OpenAI) y DeepSeek como apoyo. Con Claude Code adapté el proyecto base, propuse la CNN Flatten y escribí las "
           "pruebas, el cuaderno y la redacción. Verifiqué la corrida de 8 épocas, la reproducción de métricas desde los modelos "
           "guardados, la partición y las pruebas; se corrigió la regla de decisión y la partición de validación. Detalle en "
