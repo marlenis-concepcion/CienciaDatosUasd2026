@@ -1,0 +1,9 @@
+# Parámetros del DSS. Son decisiones de diseño documentadas en docs/ALCANCE.md.
+decision_point: fin del primer semestre
+capacity_share: 0.15          # cupos de tutoría por cohorte: 15 % de estudiantes
+random_state: 42
+sensitive_features: [Gender, Age at enrollment, Scholarship holder, Nacionality, International, Marital status]
+gates:
+  min_recall_at_capacity: 0.35  # proporción de abandonos reales alcanzados con los cupos
+  max_recall_gap: 0.15          # brecha máxima entre grupos
+  min_group_size: 30
