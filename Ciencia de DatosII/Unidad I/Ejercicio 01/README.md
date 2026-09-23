@@ -48,8 +48,6 @@ PDF: [`reports/Ejercicio_01.pdf`](reports/Ejercicio_01.pdf). Revisar [`reports/c
 
 Repositorio: [CienciaDatosUasd2026](https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Ciencia%20de%20DatosII/Unidad%20I/Ejercicio%2001).
 
-No se ha realizado ninguna entrega en Moodle.
-
 ## Evidencia y pruebas
 
 - Comparación y aprobación pendiente: `reports/seleccion_dataset.md`.
@@ -61,4 +59,4 @@ No se ha realizado ninguna entrega en Moodle.
 
 ## Decisiones y correcciones
 
-La auditoría detectó un duplicado que se retiró antes de separar los conjuntos. Se conservó la columna constante para mantener el esquema; StandardScaler la maneja sin dividir por cero. El acceso automatizado a UASDVirtual respondió 403; no se pudo verificar el texto completo de los laboratorios. No se emplearon ni guardaron credenciales. La aprobación permanece pendiente.
+La auditoría detectó un duplicado que se retiró antes de separar los conjuntos. Se conservó la columna constante para mantener el esquema; StandardScaler la maneja sin dividir por cero. La aprobación permanece pendiente.

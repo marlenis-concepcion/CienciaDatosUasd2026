@@ -50,8 +50,6 @@ PDF: [`reports/Ejercicio_02.pdf`](reports/Ejercicio_02.pdf). Revisar [`reports/c
 
 Repositorio: [CienciaDatosUasd2026](https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Ciencia%20de%20DatosII/Unidad%20I/Ejercicio%2002).
 
-No se ha realizado ninguna entrega en Moodle.
-
 ## Seis configuraciones y medición
 
 1. SVM con los parámetros del Ejercicio 01.
