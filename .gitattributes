@@ -1,2 +1,5 @@
 # Academic PDF artifacts are binary files.
 *.pdf binary
+
+# Preserve original CSV line endings without treating CRLF as trailing spaces.
+*.csv whitespace=cr-at-eol
