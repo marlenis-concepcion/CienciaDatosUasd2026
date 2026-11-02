@@ -1,0 +1,1201 @@
+﻿LoteID,Fecha,ProductoID,Producto,Planta,Turno,UnidadesPlanificadas,UnidadesProducidas,UnidadesDefectuosas,CostoProduccion_DOP
+L00001,2025-12-30,P05,Galletas Avena,Planta Santo Domingo,Tarde,549,441,24,9309.5
+L00002,2025-02-09,P06,Bebida Energetica,Planta Santo Domingo,Manana,318,252,15,10704.82
+L00003,2025-08-26,P06,Bebida Energetica,Planta Santiago,Manana,785,754,37,32190.9
+L00004,2025-11-01,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,894,1000,40,24532.73
+L00005,2025-01-27,P03,Agua 600ml,Planta Santiago,Noche,976,822,51,20036.8
+L00006,2025-12-16,P05,Galletas Avena,Planta Santo Domingo,Tarde,889,974,60,22405.58
+L00007,2025-11-22,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1450,1575,100,57224.11
+L00008,2025-02-18,P06,Bebida Energetica,Planta Santo Domingo,Noche,1030,943,12,37125.26
+L00009,2025-06-27,P04,Refresco Cola 500ml,Planta Santiago,Manana,1454,1480,87,26508.94
+L00010,2025-09-05,P05,Galletas Avena,Planta Santo Domingo,Manana,513,427,3,18466.52
+L00011,2025-12-02,P05,Galletas Avena,Planta Santiago,Noche,413,452,13,18377.01
+L00012,2025-10-05,P05,Galletas Avena,Planta Santiago,Manana,542,422,3,10025.6
+L00013,2025-01-30,P04,Refresco Cola 500ml,Planta Santiago,Manana,1436,1283,46,18934.06
+L00014,2025-06-21,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1379,1541,75,23082.77
+L00015,2025-06-14,P06,Bebida Energetica,Planta Santo Domingo,Manana,590,580,30,9463.79
+L00016,2025-07-09,P01,Jugo Naranja 1L,Planta Santiago,Manana,1008,820,26,11112.97
+L00017,2025-10-18,P06,Bebida Energetica,Planta Santiago,Noche,914,793,26,12291.64
+L00018,2025-12-23,P05,Galletas Avena,Planta Santiago,Tarde,1408,1343,31,37258.07
+L00019,2025-10-09,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,686,541,7,7708.95
+L00020,2025-11-24,P06,Bebida Energetica,Planta Santo Domingo,Manana,1292,1366,63,55872.29
+L00021,2025-10-03,P03,Agua 600ml,Planta Santo Domingo,Manana,1118,1050,41,30381.22
+L00022,2025-10-31,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,766,605,12,12269.79
+L00023,2025-04-17,P05,Galletas Avena,Planta Santo Domingo,Tarde,1229,1171,10,40787.8
+L00024,2025-05-30,P06,Bebida Energetica,Planta Santo Domingo,Noche,428,448,15,12285.68
+L00025,2025-09-24,P03,Agua 600ml,Planta Santiago,Noche,990,1087,67,41593.36
+L00026,2025-02-23,P04,Refresco Cola 500ml,Planta Santiago,Tarde,751,703,20,23489.89
+L00027,2025-09-11,P04,Refresco Cola 500ml,Planta Santiago,Noche,933,727,27,14631.98
+L00028,2025-02-18,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1398,1098,70,16614.6
+L00029,2025-01-16,P03,Agua 600ml,Planta Santo Domingo,Manana,966,1018,18,39898.38
+L00030,2025-08-18,P06,Bebida Energetica,Planta Santiago,Tarde,1135,1123,26,32102.61
+L00031,2025-02-12,P03,Agua 600ml,Planta Santiago,Tarde,1434,1422,79,20014.69
+L00032,2025-01-28,P02,Jugo Mango 1L,Planta Santiago,Manana,848,928,31,27648.31
+L00033,2025-10-20,P02,Jugo Mango 1L,Planta Santiago,Noche,1029,812,12,27660.57
+L00034,2025-04-13,P02,Jugo Mango 1L,Planta Santiago,Manana,303,251,6,7154.88
+L00035,2025-03-31,P03,Agua 600ml,Planta Santo Domingo,Manana,1063,1164,18,35490.85
+L00036,2025-12-17,P01,Jugo Naranja 1L,Planta Santiago,Noche,1350,1090,7,16245.69
+L00037,2025-07-21,P05,Galletas Avena,Planta Santiago,Tarde,716,559,33,10949.83
+L00038,2025-02-26,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,824,730,17,17973.34
+L00039,2025-08-21,P05,Galletas Avena,Planta Santo Domingo,Noche,391,400,2,6170.15
+L00040,2025-05-11,P01,Jugo Naranja 1L,Planta Santiago,Manana,868,766,8,16370.56
+L00041,2025-10-07,P06,Bebida Energetica,Planta Santiago,Tarde,993,819,51,33022.86
+L00042,2025-11-26,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,802,856,11,22502.17
+L00043,2025-09-08,P03,Agua 600ml,Planta Santo Domingo,Tarde,330,261,9,11268.24
+L00044,2025-10-02,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,455,503,5,10716.39
+L00045,2025-10-30,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1205,996,61,19213.96
+L00046,2025-11-20,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,950,951,15,30934.11
+L00047,2025-05-21,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1500,1194,51,24718.18
+L00048,2025-03-05,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1340,1472,87,32844.09
+L00049,2025-12-20,P06,Bebida Energetica,Planta Santiago,Manana,1456,1469,85,63406.21
+L00050,2025-08-12,P02,Jugo Mango 1L,Planta Santiago,Manana,818,897,44,16461.61
+L00051,2025-07-29,P05,Galletas Avena,Planta Santiago,Noche,1208,1261,78,47925.38
+L00052,2025-03-26,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,988,1034,39,27065.16
+L00053,2025-03-27,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,472,495,16,15163.91
+L00054,2025-07-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,443,462,28,8798.66
+L00055,2025-10-29,P05,Galletas Avena,Planta Santo Domingo,Tarde,1098,1095,25,44032.89
+L00056,2025-02-21,P05,Galletas Avena,Planta Santo Domingo,Tarde,729,618,15,9225.17
+L00057,2025-12-16,P02,Jugo Mango 1L,Planta Santiago,Tarde,913,732,23,29164.24
+L00058,2025-03-06,P03,Agua 600ml,Planta Santo Domingo,Tarde,501,505,17,13906.67
+L00059,2025-03-28,P05,Galletas Avena,Planta Santo Domingo,Manana,1014,1089,9,21731.24
+L00060,2025-02-13,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1338,1060,63,22950.95
+L00061,2025-04-21,P04,Refresco Cola 500ml,Planta Santiago,Noche,660,655,37,14959.66
+L00062,2025-07-06,P05,Galletas Avena,Planta Santiago,Manana,1405,1476,89,59039.3
+L00063,2025-06-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1089,1022,46,19467.01
+L00064,2025-03-29,P06,Bebida Energetica,Planta Santo Domingo,Manana,783,691,3,21985.62
+L00065,2025-09-19,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,859,890,13,34368.39
+L00066,2025-10-29,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,570,484,4,18442.09
+L00067,2025-04-30,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,745,799,39,16079.13
+L00068,2025-12-09,P06,Bebida Energetica,Planta Santiago,Noche,770,654,20,21680.68
+L00069,2025-01-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,665,662,13,23272.1
+L00070,2025-12-05,P03,Agua 600ml,Planta Santiago,Manana,1181,1228,13,41903.62
+L00071,2025-09-25,P03,Agua 600ml,Planta Santo Domingo,Manana,1180,988,11,25725.41
+L00072,2025-11-19,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1266,1303,70,22220.21
+L00073,2025-06-15,P05,Galletas Avena,Planta Santiago,Manana,1132,1056,65,24735.37
+L00074,2025-09-06,P02,Jugo Mango 1L,Planta Santiago,Tarde,1461,1630,54,36957.3
+L00075,2025-12-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,589,611,26,13694.12
+L00076,2025-11-24,P05,Galletas Avena,Planta Santo Domingo,Manana,402,387,17,12810.33
+L00077,2025-04-09,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,329,361,14,8149.21
+L00078,2025-04-27,P05,Galletas Avena,Planta Santo Domingo,Manana,1297,1059,14,43921.16
+L00079,2025-08-02,P05,Galletas Avena,Planta Santo Domingo,Noche,537,584,7,11498.73
+L00080,2025-02-10,P05,Galletas Avena,Planta Santo Domingo,Noche,924,839,50,34129.08
+L00081,2025-05-27,P03,Agua 600ml,Planta Santiago,Tarde,1333,1060,57,38286.21
+L00082,2025-04-24,P03,Agua 600ml,Planta Santo Domingo,Tarde,328,316,13,4723.9
+L00083,2025-01-12,P05,Galletas Avena,Planta Santiago,Noche,1318,1340,75,47701.73
+L00084,2025-12-09,P05,Galletas Avena,Planta Santo Domingo,Manana,894,762,33,20453.99
+L00085,2025-04-26,P05,Galletas Avena,Planta Santo Domingo,Tarde,1302,1088,48,42638.05
+L00086,2025-10-23,P01,Jugo Naranja 1L,Planta Santiago,Noche,1464,1396,20,35075.79
+L00087,2025-05-06,P03,Agua 600ml,Planta Santiago,Tarde,1409,1411,29,46027.01
+L00088,2025-08-03,P05,Galletas Avena,Planta Santiago,Tarde,556,457,25,6324.9
+L00089,2025-02-28,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,598,607,13,24574.97
+L00090,2025-01-03,P05,Galletas Avena,Planta Santiago,Noche,888,879,54,22882.71
+L00091,2025-02-11,P03,Agua 600ml,Planta Santo Domingo,Noche,961,839,7,26262.31
+L00092,2025-06-06,P06,Bebida Energetica,Planta Santiago,Tarde,512,553,34,8126.75
+L00093,2025-04-16,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,789,836,17,32007.81
+L00094,2025-09-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,885,872,27,18123.98
+L00095,2025-07-28,P04,Refresco Cola 500ml,Planta Santiago,Manana,1336,1466,29,29561.87
+L00096,2025-07-25,P03,Agua 600ml,Planta Santo Domingo,Tarde,704,641,15,21878.01
+L00097,2025-02-13,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,327,360,10,14320.77
+L00098,2025-03-02,P06,Bebida Energetica,Planta Santiago,Manana,1425,1370,70,40756.4
+L00099,2025-08-31,P02,Jugo Mango 1L,Planta Santiago,Tarde,591,580,25,9258.56
+L00100,2025-03-15,P04,Refresco Cola 500ml,Planta Santiago,Tarde,578,629,4,21074.08
+L00101,2025-07-09,P02,Jugo Mango 1L,Planta Santiago,Tarde,794,880,8,29986.39
+L00102,2025-06-06,P06,Bebida Energetica,Planta Santo Domingo,Tarde,409,382,9,15253.74
+L00103,2025-02-10,P06,Bebida Energetica,Planta Santiago,Tarde,1312,1043,46,16640.66
+L00104,2025-12-13,P06,Bebida Energetica,Planta Santiago,Manana,865,873,16,21422.42
+L00105,2025-02-06,P03,Agua 600ml,Planta Santo Domingo,Tarde,935,821,43,12423.61
+L00106,2025-06-02,P03,Agua 600ml,Planta Santiago,Noche,1413,1521,32,54385.3
+L00107,2025-03-17,P03,Agua 600ml,Planta Santo Domingo,Noche,957,1035,14,22118.92
+L00108,2025-06-27,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,970,811,16,18265.85
+L00109,2025-09-23,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,318,267,5,9050.13
+L00110,2025-10-30,P01,Jugo Naranja 1L,Planta Santiago,Manana,1383,1135,23,20037.22
+L00111,2025-05-26,P04,Refresco Cola 500ml,Planta Santiago,Noche,536,536,22,14888.73
+L00112,2025-09-14,P05,Galletas Avena,Planta Santiago,Manana,435,387,4,5445.93
+L00113,2025-08-16,P02,Jugo Mango 1L,Planta Santiago,Noche,832,759,5,30153.91
+L00114,2025-06-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,655,524,18,13852.11
+L00115,2025-12-29,P04,Refresco Cola 500ml,Planta Santiago,Noche,987,935,60,28848.37
+L00116,2025-11-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,912,872,48,35556.57
+L00117,2025-03-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,496,509,17,8812.94
+L00118,2025-04-24,P04,Refresco Cola 500ml,Planta Santiago,Tarde,575,532,23,22594.47
+L00119,2025-06-03,P04,Refresco Cola 500ml,Planta Santiago,Noche,461,380,15,8443.33
+L00120,2025-07-30,P04,Refresco Cola 500ml,Planta Santiago,Noche,1131,993,26,19840.41
+L00121,2025-10-18,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1281,1354,35,45659.19
+L00122,2025-03-27,P06,Bebida Energetica,Planta Santo Domingo,Tarde,421,384,22,6667.87
+L00123,2025-02-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,397,326,13,10839.63
+L00124,2025-11-04,P05,Galletas Avena,Planta Santiago,Tarde,786,679,31,23451.32
+L00125,2025-05-21,P05,Galletas Avena,Planta Santiago,Tarde,601,589,27,13655.18
+L00126,2025-04-01,P02,Jugo Mango 1L,Planta Santiago,Tarde,417,422,20,7808.48
+L00127,2025-02-28,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,681,761,29,30650.42
+L00128,2025-03-12,P06,Bebida Energetica,Planta Santiago,Manana,414,352,11,14508.84
+L00129,2025-02-16,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1280,1360,35,29157.69
+L00130,2025-02-20,P03,Agua 600ml,Planta Santo Domingo,Noche,943,758,21,14925.79
+L00131,2025-05-30,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1342,1401,33,32475.62
+L00132,2025-11-18,P03,Agua 600ml,Planta Santo Domingo,Manana,517,545,12,17499.03
+L00133,2025-07-04,P06,Bebida Energetica,Planta Santiago,Manana,324,362,8,14893.97
+L00134,2025-03-13,P04,Refresco Cola 500ml,Planta Santiago,Manana,597,609,23,18953.5
+L00135,2025-06-17,P05,Galletas Avena,Planta Santo Domingo,Noche,1307,1132,71,20081.17
+L00136,2025-11-28,P03,Agua 600ml,Planta Santo Domingo,Manana,431,427,23,10531.95
+L00137,2025-01-18,P04,Refresco Cola 500ml,Planta Santiago,Tarde,470,447,3,11389.05
+L00138,2025-02-28,P05,Galletas Avena,Planta Santo Domingo,Manana,501,509,16,15312.57
+L00139,2025-10-25,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,815,847,27,31464.67
+L00140,2025-12-29,P02,Jugo Mango 1L,Planta Santiago,Tarde,437,374,22,14115.15
+L00141,2025-05-09,P03,Agua 600ml,Planta Santiago,Tarde,953,958,50,28908.37
+L00142,2025-07-15,P03,Agua 600ml,Planta Santiago,Noche,782,629,24,22514.6
+L00143,2025-09-15,P06,Bebida Energetica,Planta Santo Domingo,Manana,1048,833,11,27713.95
+L00144,2025-11-21,P05,Galletas Avena,Planta Santo Domingo,Manana,1206,1291,61,27217.59
+L00145,2025-06-25,P02,Jugo Mango 1L,Planta Santiago,Tarde,1354,1488,39,42574.25
+L00146,2025-07-11,P01,Jugo Naranja 1L,Planta Santiago,Tarde,504,468,24,7646.41
+L00147,2025-05-14,P05,Galletas Avena,Planta Santo Domingo,Manana,485,519,30,13765.61
+L00148,2025-02-03,P03,Agua 600ml,Planta Santiago,Manana,1243,1347,37,50085.83
+L00149,2025-06-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,970,965,16,30823.27
+L00150,2025-01-20,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,863,824,36,20221.54
+L00151,2025-05-11,P06,Bebida Energetica,Planta Santiago,Noche,1344,1066,17,17859.38
+L00152,2025-08-29,P04,Refresco Cola 500ml,Planta Santiago,Noche,777,614,25,24185.91
+L00153,2025-03-19,P02,Jugo Mango 1L,Planta Santiago,Noche,1229,1139,62,29406.88
+L00154,2025-06-06,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1123,1170,52,46531.96
+L00155,2025-04-28,P05,Galletas Avena,Planta Santo Domingo,Tarde,300,285,17,5962.14
+L00156,2025-12-24,P03,Agua 600ml,Planta Santo Domingo,Manana,1115,926,12,28320.51
+L00157,2025-11-10,P04,Refresco Cola 500ml,Planta Santiago,Manana,529,518,2,9906.47
+L00158,2025-07-08,P04,Refresco Cola 500ml,Planta Santiago,Tarde,388,312,12,11027.61
+L00159,2025-10-29,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,672,539,15,13881.08
+L00160,2025-06-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,836,909,52,11820.47
+L00161,2025-01-10,P02,Jugo Mango 1L,Planta Santiago,Tarde,1499,1507,72,23826.9
+L00162,2025-09-17,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,912,796,41,32801.99
+L00163,2025-05-01,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,970,866,36,33372.21
+L00164,2025-10-15,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1295,1156,26,34685.08
+L00165,2025-04-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,454,445,15,13912.49
+L00166,2025-04-04,P04,Refresco Cola 500ml,Planta Santiago,Tarde,967,1057,51,34382.18
+L00167,2025-03-30,P03,Agua 600ml,Planta Santo Domingo,Noche,1156,1194,18,51334.86
+L00168,2025-12-07,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1000,813,45,14918.56
+L00169,2025-08-07,P02,Jugo Mango 1L,Planta Santiago,Noche,966,809,6,18650.4
+L00170,2025-11-13,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,652,653,39,10719.48
+L00171,2025-08-02,P06,Bebida Energetica,Planta Santiago,Manana,433,380,4,7331.02
+L00172,2025-07-15,P05,Galletas Avena,Planta Santo Domingo,Tarde,1183,998,7,17771.56
+L00173,2025-08-19,P01,Jugo Naranja 1L,Planta Santiago,Tarde,979,845,51,24407.16
+L00174,2025-04-21,P05,Galletas Avena,Planta Santiago,Noche,790,740,22,22755.39
+L00175,2025-07-28,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1435,1289,74,50522.28
+L00176,2025-07-29,P02,Jugo Mango 1L,Planta Santiago,Tarde,473,372,11,5993.28
+L00177,2025-06-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,494,527,20,15686.75
+L00178,2025-05-13,P02,Jugo Mango 1L,Planta Santiago,Manana,606,616,21,14192.47
+L00179,2025-01-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,706,688,24,22269.67
+L00180,2025-09-28,P02,Jugo Mango 1L,Planta Santiago,Noche,668,746,46,20681.35
+L00181,2025-06-18,P03,Agua 600ml,Planta Santiago,Tarde,728,693,26,13054.81
+L00182,2025-02-10,P03,Agua 600ml,Planta Santiago,Manana,1015,1097,42,30165.76
+L00183,2025-01-18,P03,Agua 600ml,Planta Santiago,Manana,1330,1173,27,28477.75
+L00184,2025-12-08,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,510,539,21,11847.04
+L00185,2025-09-15,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,935,791,44,22307.95
+L00186,2025-09-27,P05,Galletas Avena,Planta Santo Domingo,Manana,1389,1137,55,23988.83
+L00187,2025-11-25,P05,Galletas Avena,Planta Santiago,Tarde,1400,1136,65,41563.06
+L00188,2025-07-12,P06,Bebida Energetica,Planta Santiago,Noche,364,299,4,6275.62
+L00189,2025-12-10,P05,Galletas Avena,Planta Santiago,Manana,1227,1036,54,18300.95
+L00190,2025-06-17,P04,Refresco Cola 500ml,Planta Santiago,Tarde,840,663,36,24317.27
+L00191,2025-10-09,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,669,559,23,14619.54
+L00192,2025-04-16,P06,Bebida Energetica,Planta Santo Domingo,Noche,516,494,4,6977.01
+L00193,2025-08-01,P05,Galletas Avena,Planta Santo Domingo,Noche,1304,1252,46,46689.78
+L00194,2025-05-20,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,483,477,8,19395.34
+L00195,2025-01-27,P06,Bebida Energetica,Planta Santo Domingo,Manana,1032,1151,12,21371.24
+L00196,2025-08-22,P06,Bebida Energetica,Planta Santo Domingo,Manana,898,779,31,30826.64
+L00197,2025-08-03,P01,Jugo Naranja 1L,Planta Santiago,Noche,827,777,20,32185.29
+L00198,2025-09-03,P06,Bebida Energetica,Planta Santiago,Tarde,696,717,24,23885.91
+L00199,2025-09-13,P06,Bebida Energetica,Planta Santiago,Manana,321,318,4,12118.28
+L00200,2025-04-15,P02,Jugo Mango 1L,Planta Santiago,Manana,805,728,28,18640.85
+L00201,2025-02-15,P01,Jugo Naranja 1L,Planta Santiago,Manana,659,732,38,30330.54
+L00202,2025-07-12,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1381,1537,32,37508.26
+L00203,2025-06-29,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,840,782,27,23451.27
+L00204,2025-11-04,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,794,751,31,28830.66
+L00205,2025-12-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,796,772,45,24507.4
+L00206,2025-05-10,P01,Jugo Naranja 1L,Planta Santiago,Manana,1438,1197,75,15578.86
+L00207,2025-06-18,P01,Jugo Naranja 1L,Planta Santiago,Manana,1344,1282,43,32216.7
+L00208,2025-05-05,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1440,1158,21,29280.79
+L00209,2025-08-19,P06,Bebida Energetica,Planta Santo Domingo,Noche,777,622,22,15396.13
+L00210,2025-04-26,P01,Jugo Naranja 1L,Planta Santiago,Noche,945,821,20,18568.01
+L00211,2025-06-02,P05,Galletas Avena,Planta Santo Domingo,Tarde,957,857,53,22218.16
+L00212,2025-08-18,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1489,1590,84,68009.49
+L00213,2025-09-01,P05,Galletas Avena,Planta Santo Domingo,Manana,1220,1286,50,43915.19
+L00214,2025-04-08,P02,Jugo Mango 1L,Planta Santiago,Tarde,710,557,15,16470.52
+L00215,2025-09-20,P05,Galletas Avena,Planta Santiago,Manana,609,555,4,21787.54
+L00216,2025-04-19,P01,Jugo Naranja 1L,Planta Santiago,Manana,1497,1486,69,27865.9
+L00217,2025-01-06,P04,Refresco Cola 500ml,Planta Santiago,Noche,1321,1167,48,46216.08
+L00218,2025-11-09,P02,Jugo Mango 1L,Planta Santiago,Manana,1300,1405,18,18822.35
+L00219,2025-01-11,P03,Agua 600ml,Planta Santo Domingo,Noche,1442,1166,68,38292.91
+L00220,2025-06-23,P01,Jugo Naranja 1L,Planta Santiago,Noche,875,724,31,23885.96
+L00221,2025-12-20,P01,Jugo Naranja 1L,Planta Santiago,Manana,1139,1208,58,48945.08
+L00222,2025-09-21,P03,Agua 600ml,Planta Santo Domingo,Noche,367,405,4,12354.18
+L00223,2025-07-25,P03,Agua 600ml,Planta Santiago,Noche,1027,837,14,18526.55
+L00224,2025-05-10,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,950,1040,62,20010.63
+L00225,2025-10-27,P05,Galletas Avena,Planta Santo Domingo,Tarde,388,304,12,13240.63
+L00226,2025-10-17,P02,Jugo Mango 1L,Planta Santiago,Tarde,467,485,24,9210.63
+L00227,2025-09-27,P01,Jugo Naranja 1L,Planta Santiago,Noche,1349,1117,24,38684.57
+L00228,2025-03-22,P06,Bebida Energetica,Planta Santiago,Manana,1377,1265,59,33076.77
+L00229,2025-03-26,P01,Jugo Naranja 1L,Planta Santiago,Manana,657,549,10,21246.18
+L00230,2025-11-07,P05,Galletas Avena,Planta Santo Domingo,Tarde,876,706,36,28090.16
+L00231,2025-08-14,P03,Agua 600ml,Planta Santiago,Tarde,846,770,24,20167.1
+L00232,2025-09-21,P05,Galletas Avena,Planta Santiago,Noche,825,848,15,19889.06
+L00233,2025-12-12,P02,Jugo Mango 1L,Planta Santiago,Tarde,664,562,25,11220.69
+L00234,2025-06-08,P06,Bebida Energetica,Planta Santiago,Tarde,1236,1152,23,48264.69
+L00235,2025-12-23,P06,Bebida Energetica,Planta Santiago,Tarde,1110,1054,39,15619.55
+L00236,2025-12-14,P01,Jugo Naranja 1L,Planta Santiago,Noche,966,1014,60,21712.0
+L00237,2025-10-19,P06,Bebida Energetica,Planta Santo Domingo,Manana,860,729,34,26657.02
+L00238,2025-06-09,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1419,1413,42,61758.12
+L00239,2025-09-19,P06,Bebida Energetica,Planta Santiago,Noche,865,777,25,26483.36
+L00240,2025-05-24,P04,Refresco Cola 500ml,Planta Santiago,Noche,1189,1048,64,22126.48
+L00241,2025-11-12,P05,Galletas Avena,Planta Santo Domingo,Tarde,822,779,20,32689.08
+L00242,2025-09-15,P05,Galletas Avena,Planta Santo Domingo,Noche,1003,871,10,14427.64
+L00243,2025-10-31,P06,Bebida Energetica,Planta Santo Domingo,Manana,585,503,13,14851.44
+L00244,2025-02-08,P02,Jugo Mango 1L,Planta Santiago,Noche,583,637,39,22354.16
+L00245,2025-05-07,P03,Agua 600ml,Planta Santiago,Manana,964,1053,12,36117.23
+L00246,2025-12-29,P03,Agua 600ml,Planta Santo Domingo,Noche,1313,1370,39,30706.52
+L00247,2025-08-20,P03,Agua 600ml,Planta Santo Domingo,Noche,1499,1611,81,53624.27
+L00248,2025-02-21,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1347,1290,23,28896.87
+L00249,2025-05-16,P03,Agua 600ml,Planta Santo Domingo,Tarde,1068,890,36,36816.87
+L00250,2025-05-29,P05,Galletas Avena,Planta Santiago,Tarde,639,619,23,23955.99
+L00251,2025-05-14,P03,Agua 600ml,Planta Santiago,Manana,1285,1076,30,17946.03
+L00252,2025-03-03,P03,Agua 600ml,Planta Santiago,Noche,1404,1563,93,49221.05
+L00253,2025-01-14,P03,Agua 600ml,Planta Santo Domingo,Noche,391,395,19,16984.74
+L00254,2025-01-04,P01,Jugo Naranja 1L,Planta Santiago,Manana,663,545,17,7570.43
+L00255,2025-09-10,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,365,380,8,12119.48
+L00256,2025-12-01,P05,Galletas Avena,Planta Santiago,Tarde,1221,988,15,24180.89
+L00257,2025-10-24,P05,Galletas Avena,Planta Santiago,Manana,821,748,15,21880.37
+L00258,2025-12-20,P01,Jugo Naranja 1L,Planta Santiago,Noche,1436,1170,50,32876.63
+L00259,2025-12-31,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1370,1098,65,34272.61
+L00260,2025-05-07,P05,Galletas Avena,Planta Santiago,Tarde,1405,1268,80,23254.94
+L00261,2025-06-12,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,768,826,34,28804.94
+L00262,2025-08-23,P05,Galletas Avena,Planta Santiago,Tarde,1413,1185,54,51622.94
+L00263,2025-11-18,P05,Galletas Avena,Planta Santo Domingo,Manana,1067,1107,62,24711.08
+L00264,2025-05-04,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1447,1160,71,42547.17
+L00265,2025-03-19,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,436,431,4,6325.46
+L00266,2025-05-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,304,296,4,5438.22
+L00267,2025-08-23,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,567,464,14,6930.84
+L00268,2025-11-05,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1058,1052,16,38765.26
+L00269,2025-06-29,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,579,547,25,23245.21
+L00270,2025-03-22,P06,Bebida Energetica,Planta Santiago,Tarde,471,398,20,11906.93
+L00271,2025-05-13,P05,Galletas Avena,Planta Santo Domingo,Tarde,492,486,20,19367.79
+L00272,2025-10-05,P06,Bebida Energetica,Planta Santiago,Noche,1239,1360,63,42440.23
+L00273,2025-05-01,P03,Agua 600ml,Planta Santiago,Tarde,874,839,51,26494.4
+L00274,2025-08-15,P06,Bebida Energetica,Planta Santo Domingo,Noche,868,726,33,22976.18
+L00275,2025-11-26,P05,Galletas Avena,Planta Santiago,Tarde,482,515,14,10563.25
+L00276,2025-01-08,P02,Jugo Mango 1L,Planta Santiago,Manana,1456,1353,9,21071.46
+L00277,2025-03-09,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1343,1220,20,52616.55
+L00278,2025-11-30,P03,Agua 600ml,Planta Santiago,Manana,786,649,8,19113.4
+L00279,2025-07-01,P05,Galletas Avena,Planta Santo Domingo,Noche,1389,1334,84,32390.32
+L00280,2025-12-10,P05,Galletas Avena,Planta Santiago,Tarde,874,721,23,10385.07
+L00281,2025-06-14,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,534,558,14,16299.85
+L00282,2025-06-05,P03,Agua 600ml,Planta Santiago,Manana,1490,1575,49,67823.87
+L00283,2025-12-31,P01,Jugo Naranja 1L,Planta Santiago,Tarde,661,699,43,22322.95
+L00284,2025-07-17,P05,Galletas Avena,Planta Santo Domingo,Manana,1493,1224,51,52840.67
+L00285,2025-10-26,P03,Agua 600ml,Planta Santiago,Noche,614,580,9,21740.12
+L00286,2025-04-21,P04,Refresco Cola 500ml,Planta Santiago,Noche,383,359,12,11864.3
+L00287,2025-04-22,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,944,902,13,39038.02
+L00288,2025-12-25,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1037,989,13,34792.31
+L00289,2025-05-31,P03,Agua 600ml,Planta Santo Domingo,Tarde,459,384,13,6681.5
+L00290,2025-11-05,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1309,1041,31,15128.69
+L00291,2025-11-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,957,1021,52,32102.72
+L00292,2025-05-12,P06,Bebida Energetica,Planta Santo Domingo,Manana,1266,1271,81,45858.74
+L00293,2025-09-10,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1455,1520,24,30371.49
+L00294,2025-06-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,991,1033,36,30485.06
+L00295,2025-04-28,P01,Jugo Naranja 1L,Planta Santiago,Manana,924,752,25,13868.82
+L00296,2025-06-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1305,1332,37,52985.03
+L00297,2025-04-11,P02,Jugo Mango 1L,Planta Santiago,Noche,1122,973,25,27955.38
+L00298,2025-10-28,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,977,913,54,35184.86
+L00299,2025-08-11,P03,Agua 600ml,Planta Santo Domingo,Tarde,1465,1443,33,43149.87
+L00300,2025-10-19,P04,Refresco Cola 500ml,Planta Santiago,Tarde,732,721,7,13182.02
+L00301,2025-09-27,P06,Bebida Energetica,Planta Santo Domingo,Noche,1286,1024,53,21694.4
+L00302,2025-02-26,P06,Bebida Energetica,Planta Santiago,Noche,1198,1056,6,20861.83
+L00303,2025-11-30,P03,Agua 600ml,Planta Santo Domingo,Manana,401,350,15,9806.75
+L00304,2025-07-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,931,799,25,27727.92
+L00305,2025-01-20,P05,Galletas Avena,Planta Santo Domingo,Noche,663,551,17,23948.2
+L00306,2025-05-05,P04,Refresco Cola 500ml,Planta Santiago,Tarde,539,512,28,21987.0
+L00307,2025-04-02,P05,Galletas Avena,Planta Santiago,Manana,344,334,5,7837.75
+L00308,2025-01-01,P06,Bebida Energetica,Planta Santiago,Tarde,1137,1130,17,21965.59
+L00309,2025-03-23,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,695,630,24,27139.84
+L00310,2025-06-14,P05,Galletas Avena,Planta Santo Domingo,Noche,1421,1399,74,59320.47
+L00311,2025-12-12,P02,Jugo Mango 1L,Planta Santiago,Noche,601,485,27,10961.64
+L00312,2025-01-31,P06,Bebida Energetica,Planta Santo Domingo,Noche,1445,1198,51,39834.32
+L00313,2025-05-10,P03,Agua 600ml,Planta Santiago,Noche,873,898,35,23994.1
+L00314,2025-05-12,P03,Agua 600ml,Planta Santo Domingo,Noche,534,498,13,20765.65
+L00315,2025-09-26,P03,Agua 600ml,Planta Santiago,Tarde,752,791,34,14627.36
+L00316,2025-03-23,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,729,718,21,24444.13
+L00317,2025-12-20,P01,Jugo Naranja 1L,Planta Santiago,Noche,1415,1567,56,39246.25
+L00318,2025-07-25,P02,Jugo Mango 1L,Planta Santiago,Tarde,354,369,20,14628.18
+L00319,2025-03-27,P03,Agua 600ml,Planta Santo Domingo,Noche,1102,926,39,36989.52
+L00320,2025-11-08,P01,Jugo Naranja 1L,Planta Santiago,Noche,1440,1271,45,53305.81
+L00321,2025-08-09,P01,Jugo Naranja 1L,Planta Santiago,Tarde,657,643,11,10351.91
+L00322,2025-04-20,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,752,733,43,27121.2
+L00323,2025-12-17,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1436,1229,43,39671.67
+L00324,2025-04-15,P02,Jugo Mango 1L,Planta Santiago,Noche,1208,1041,46,22648.97
+L00325,2025-07-11,P02,Jugo Mango 1L,Planta Santiago,Manana,679,577,33,22582.8
+L00326,2025-03-30,P06,Bebida Energetica,Planta Santo Domingo,Noche,1129,1188,55,50072.22
+L00327,2025-09-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1495,1617,46,34949.75
+L00328,2025-08-17,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,356,287,14,5493.03
+L00329,2025-08-05,P05,Galletas Avena,Planta Santiago,Manana,364,386,9,10903.66
+L00330,2025-05-29,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1423,1366,18,26291.02
+L00331,2025-09-08,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1439,1223,22,30871.94
+L00332,2025-07-22,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1303,1278,39,32825.3
+L00333,2025-08-14,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1400,1394,89,28528.52
+L00334,2025-04-23,P04,Refresco Cola 500ml,Planta Santiago,Manana,792,703,41,12186.57
+L00335,2025-03-21,P03,Agua 600ml,Planta Santo Domingo,Manana,376,408,5,9226.44
+L00336,2025-06-21,P04,Refresco Cola 500ml,Planta Santiago,Manana,1266,1398,63,24875.5
+L00337,2025-07-22,P02,Jugo Mango 1L,Planta Santiago,Noche,898,922,33,19842.2
+L00338,2025-02-25,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,671,625,39,22360.24
+L00339,2025-02-21,P03,Agua 600ml,Planta Santiago,Tarde,1032,957,39,13523.73
+L00340,2025-03-30,P05,Galletas Avena,Planta Santo Domingo,Manana,663,528,18,18759.71
+L00341,2025-06-25,P05,Galletas Avena,Planta Santiago,Noche,1037,1124,61,28518.56
+L00342,2025-04-09,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,702,679,20,9683.35
+L00343,2025-09-16,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1110,1149,72,18131.62
+L00344,2025-11-02,P05,Galletas Avena,Planta Santo Domingo,Manana,326,280,15,5231.19
+L00345,2025-02-02,P03,Agua 600ml,Planta Santo Domingo,Tarde,620,619,25,12988.82
+L00346,2025-12-01,P02,Jugo Mango 1L,Planta Santiago,Manana,945,1012,54,32639.8
+L00347,2025-01-29,P03,Agua 600ml,Planta Santo Domingo,Tarde,1045,1008,8,37458.92
+L00348,2025-09-05,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,466,481,26,13298.15
+L00349,2025-01-03,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,455,399,18,16224.48
+L00350,2025-04-24,P04,Refresco Cola 500ml,Planta Santiago,Manana,933,918,21,24132.2
+L00351,2025-10-12,P03,Agua 600ml,Planta Santo Domingo,Manana,1243,1146,40,25631.85
+L00352,2025-06-10,P03,Agua 600ml,Planta Santiago,Noche,1475,1283,18,24549.31
+L00353,2025-09-21,P06,Bebida Energetica,Planta Santiago,Tarde,974,927,53,37691.49
+L00354,2025-09-09,P05,Galletas Avena,Planta Santiago,Tarde,1137,889,30,12171.53
+L00355,2025-09-09,P01,Jugo Naranja 1L,Planta Santiago,Noche,1241,1297,62,50035.67
+L00356,2025-11-04,P01,Jugo Naranja 1L,Planta Santiago,Manana,1331,1291,46,29551.91
+L00357,2025-07-28,P03,Agua 600ml,Planta Santiago,Tarde,420,407,19,13588.93
+L00358,2025-03-30,P04,Refresco Cola 500ml,Planta Santiago,Manana,1110,1133,31,40427.19
+L00359,2025-12-27,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1459,1231,10,17721.03
+L00360,2025-04-24,P06,Bebida Energetica,Planta Santo Domingo,Noche,816,638,6,16516.34
+L00361,2025-01-28,P05,Galletas Avena,Planta Santo Domingo,Noche,1277,1167,73,42328.66
+L00362,2025-11-02,P05,Galletas Avena,Planta Santiago,Noche,1231,1209,25,47354.08
+L00363,2025-01-16,P06,Bebida Energetica,Planta Santiago,Tarde,778,758,28,11019.01
+L00364,2025-07-18,P06,Bebida Energetica,Planta Santiago,Manana,914,1021,37,34210.58
+L00365,2025-09-13,P06,Bebida Energetica,Planta Santiago,Tarde,1294,1055,27,38985.27
+L00366,2025-04-22,P01,Jugo Naranja 1L,Planta Santiago,Noche,352,339,9,12686.63
+L00367,2025-09-10,P03,Agua 600ml,Planta Santiago,Noche,1041,928,25,36235.36
+L00368,2025-10-15,P04,Refresco Cola 500ml,Planta Santiago,Noche,1303,1078,26,21440.62
+L00369,2025-05-14,P01,Jugo Naranja 1L,Planta Santiago,Manana,1068,1094,29,43700.43
+L00370,2025-11-26,P06,Bebida Energetica,Planta Santiago,Noche,687,750,25,27629.06
+L00371,2025-05-22,P04,Refresco Cola 500ml,Planta Santiago,Manana,1406,1509,24,46307.98
+L00372,2025-10-03,P03,Agua 600ml,Planta Santiago,Tarde,882,982,39,28634.29
+L00373,2025-12-09,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1131,1145,62,15404.67
+L00374,2025-10-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,810,736,32,10643.44
+L00375,2025-07-04,P06,Bebida Energetica,Planta Santo Domingo,Noche,693,552,31,19614.29
+L00376,2025-04-10,P01,Jugo Naranja 1L,Planta Santiago,Tarde,357,294,16,11964.41
+L00377,2025-09-01,P04,Refresco Cola 500ml,Planta Santiago,Tarde,617,564,16,12408.78
+L00378,2025-01-15,P03,Agua 600ml,Planta Santo Domingo,Manana,750,789,46,15825.94
+L00379,2025-11-23,P04,Refresco Cola 500ml,Planta Santiago,Manana,1214,1014,28,18212.02
+L00380,2025-04-30,P03,Agua 600ml,Planta Santo Domingo,Manana,738,734,43,27799.88
+L00381,2025-08-08,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1219,1263,21,22982.67
+L00382,2025-08-19,P03,Agua 600ml,Planta Santiago,Tarde,329,302,12,6559.16
+L00383,2025-02-25,P05,Galletas Avena,Planta Santo Domingo,Manana,935,780,18,27966.06
+L00384,2025-06-23,P05,Galletas Avena,Planta Santo Domingo,Noche,1088,1038,19,31382.24
+L00385,2025-10-26,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,911,766,42,24920.95
+L00386,2025-01-10,P05,Galletas Avena,Planta Santiago,Tarde,351,288,15,12351.23
+L00387,2025-10-16,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1380,1100,22,46880.43
+L00388,2025-02-04,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1199,1114,18,20493.8
+L00389,2025-12-01,P06,Bebida Energetica,Planta Santiago,Noche,337,264,2,4851.85
+L00390,2025-11-15,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1227,1310,44,40912.39
+L00391,2025-11-29,P05,Galletas Avena,Planta Santiago,Tarde,481,484,27,19914.27
+L00392,2025-03-01,P05,Galletas Avena,Planta Santiago,Tarde,436,349,3,9135.5
+L00393,2025-08-04,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1074,1002,9,43051.0
+L00394,2025-08-20,P05,Galletas Avena,Planta Santo Domingo,Manana,817,703,25,13354.87
+L00395,2025-03-22,P04,Refresco Cola 500ml,Planta Santiago,Tarde,949,953,44,34621.64
+L00396,2025-07-25,P05,Galletas Avena,Planta Santo Domingo,Tarde,349,374,3,12426.48
+L00397,2025-12-15,P02,Jugo Mango 1L,Planta Santiago,Tarde,717,662,32,8727.62
+L00398,2025-10-22,P02,Jugo Mango 1L,Planta Santiago,Tarde,757,825,13,18545.82
+L00399,2025-08-18,P05,Galletas Avena,Planta Santo Domingo,Manana,672,553,5,18871.28
+L00400,2025-08-28,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,930,922,22,35642.3
+L00401,2025-01-14,P05,Galletas Avena,Planta Santiago,Noche,1405,1211,7,35770.28
+L00402,2025-04-19,P04,Refresco Cola 500ml,Planta Santiago,Manana,755,661,31,13932.89
+L00403,2025-10-10,P05,Galletas Avena,Planta Santiago,Manana,525,522,31,7249.8
+L00404,2025-01-26,P05,Galletas Avena,Planta Santo Domingo,Noche,747,604,7,18335.58
+L00405,2025-10-17,P03,Agua 600ml,Planta Santo Domingo,Tarde,1014,921,33,32755.74
+L00406,2025-10-30,P06,Bebida Energetica,Planta Santo Domingo,Manana,586,508,3,15381.99
+L00407,2025-01-09,P03,Agua 600ml,Planta Santo Domingo,Manana,948,917,20,36740.01
+L00408,2025-10-16,P06,Bebida Energetica,Planta Santo Domingo,Manana,676,553,27,14497.68
+L00409,2025-06-27,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,535,542,20,19262.24
+L00410,2025-11-08,P06,Bebida Energetica,Planta Santiago,Tarde,652,513,32,16593.51
+L00411,2025-05-04,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,345,280,3,7403.89
+L00412,2025-06-17,P05,Galletas Avena,Planta Santo Domingo,Noche,1250,1323,39,49372.21
+L00413,2025-06-29,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1113,1181,37,38259.78
+L00414,2025-06-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,641,511,30,12264.58
+L00415,2025-01-03,P05,Galletas Avena,Planta Santiago,Noche,981,929,23,38733.99
+L00416,2025-06-29,P01,Jugo Naranja 1L,Planta Santiago,Noche,415,456,28,18034.87
+L00417,2025-10-01,P04,Refresco Cola 500ml,Planta Santiago,Manana,1361,1429,48,49113.27
+L00418,2025-05-25,P03,Agua 600ml,Planta Santo Domingo,Noche,656,705,7,14242.42
+L00419,2025-06-17,P02,Jugo Mango 1L,Planta Santiago,Tarde,752,688,25,10749.33
+L00420,2025-10-20,P05,Galletas Avena,Planta Santiago,Noche,773,654,4,13532.14
+L00421,2025-07-13,P03,Agua 600ml,Planta Santiago,Noche,1219,1328,63,28711.84
+L00422,2025-03-16,P06,Bebida Energetica,Planta Santiago,Manana,1048,1137,69,22140.44
+L00423,2025-10-12,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,994,1076,51,40324.31
+L00424,2025-05-02,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1024,936,57,36681.24
+L00425,2025-12-14,P05,Galletas Avena,Planta Santiago,Tarde,851,877,21,33833.26
+L00426,2025-08-10,P02,Jugo Mango 1L,Planta Santiago,Noche,844,774,29,23005.54
+L00427,2025-11-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1028,995,53,36126.82
+L00428,2025-10-13,P05,Galletas Avena,Planta Santo Domingo,Tarde,327,344,9,13682.0
+L00429,2025-05-09,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,442,402,13,10526.48
+L00430,2025-05-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,364,377,15,7516.54
+L00431,2025-09-25,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,747,788,42,18026.75
+L00432,2025-11-06,P05,Galletas Avena,Planta Santiago,Noche,1408,1278,55,20604.92
+L00433,2025-07-23,P05,Galletas Avena,Planta Santo Domingo,Manana,819,821,9,27081.91
+L00434,2025-07-06,P03,Agua 600ml,Planta Santiago,Noche,1248,1152,14,43000.89
+L00435,2025-04-25,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,504,483,13,15523.48
+L00436,2025-11-03,P04,Refresco Cola 500ml,Planta Santiago,Noche,1250,1262,74,28019.26
+L00437,2025-12-12,P03,Agua 600ml,Planta Santiago,Noche,985,982,31,31751.32
+L00438,2025-04-27,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1477,1205,62,52964.86
+L00439,2025-10-29,P06,Bebida Energetica,Planta Santo Domingo,Tarde,943,842,24,24329.5
+L00440,2025-01-20,P01,Jugo Naranja 1L,Planta Santiago,Noche,381,359,2,11486.7
+L00441,2025-08-29,P05,Galletas Avena,Planta Santiago,Noche,1289,1305,58,18877.87
+L00442,2025-09-10,P05,Galletas Avena,Planta Santiago,Tarde,964,1050,30,18815.26
+L00443,2025-09-04,P05,Galletas Avena,Planta Santiago,Tarde,576,618,37,8038.38
+L00444,2025-05-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,415,416,10,10707.03
+L00445,2025-01-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,799,700,43,17392.81
+L00446,2025-06-10,P02,Jugo Mango 1L,Planta Santiago,Manana,1197,1123,72,36338.01
+L00447,2025-09-14,P04,Refresco Cola 500ml,Planta Santiago,Manana,881,821,7,24311.6
+L00448,2025-03-30,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1362,1300,14,24741.62
+L00449,2025-04-01,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1021,1089,29,39004.77
+L00450,2025-10-24,P02,Jugo Mango 1L,Planta Santiago,Manana,838,889,30,37773.71
+L00451,2025-09-03,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,924,900,56,32667.37
+L00452,2025-02-02,P01,Jugo Naranja 1L,Planta Santiago,Noche,1218,978,7,13113.45
+L00453,2025-05-16,P05,Galletas Avena,Planta Santo Domingo,Noche,574,632,3,24749.28
+L00454,2025-07-11,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1435,1190,37,44562.77
+L00455,2025-12-24,P03,Agua 600ml,Planta Santiago,Tarde,1185,1292,44,36822.32
+L00456,2025-11-12,P03,Agua 600ml,Planta Santo Domingo,Tarde,1139,898,16,37581.04
+L00457,2025-02-12,P05,Galletas Avena,Planta Santo Domingo,Tarde,1094,884,49,23956.78
+L00458,2025-09-10,P02,Jugo Mango 1L,Planta Santiago,Noche,642,557,8,18665.65
+L00459,2025-03-28,P03,Agua 600ml,Planta Santiago,Noche,970,785,27,13473.24
+L00460,2025-04-01,P05,Galletas Avena,Planta Santiago,Noche,1440,1312,73,27969.7
+L00461,2025-11-01,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1277,1094,61,40917.69
+L00462,2025-07-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1184,1061,23,36773.22
+L00463,2025-04-16,P06,Bebida Energetica,Planta Santo Domingo,Manana,1421,1276,69,17063.34
+L00464,2025-02-10,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1131,1006,20,21908.79
+L00465,2025-04-07,P06,Bebida Energetica,Planta Santo Domingo,Manana,1265,1081,21,37456.94
+L00466,2025-10-25,P05,Galletas Avena,Planta Santiago,Manana,892,832,50,13520.14
+L00467,2025-08-17,P01,Jugo Naranja 1L,Planta Santiago,Tarde,677,690,18,17207.8
+L00468,2025-02-19,P03,Agua 600ml,Planta Santo Domingo,Manana,510,427,3,7061.94
+L00469,2025-03-25,P05,Galletas Avena,Planta Santo Domingo,Tarde,792,884,25,34503.16
+L00470,2025-04-09,P03,Agua 600ml,Planta Santiago,Tarde,1065,1075,16,26175.78
+L00471,2025-03-30,P05,Galletas Avena,Planta Santo Domingo,Tarde,404,321,14,7423.21
+L00472,2025-04-24,P05,Galletas Avena,Planta Santo Domingo,Tarde,1238,1092,30,20227.45
+L00473,2025-07-11,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,357,342,7,10455.05
+L00474,2025-02-11,P05,Galletas Avena,Planta Santo Domingo,Tarde,796,886,31,20741.21
+L00475,2025-11-12,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1216,1117,52,33879.47
+L00476,2025-07-01,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1094,1194,12,29095.04
+L00477,2025-01-04,P04,Refresco Cola 500ml,Planta Santiago,Noche,1210,1154,51,15222.05
+L00478,2025-09-22,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,454,372,13,5363.73
+L00479,2025-03-31,P05,Galletas Avena,Planta Santiago,Manana,691,694,6,28386.09
+L00480,2025-04-16,P03,Agua 600ml,Planta Santo Domingo,Manana,679,550,15,21918.53
+L00481,2025-07-23,P03,Agua 600ml,Planta Santiago,Manana,880,803,19,14178.55
+L00482,2025-01-08,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,384,395,11,12573.42
+L00483,2025-02-03,P05,Galletas Avena,Planta Santo Domingo,Tarde,1067,1093,7,37203.65
+L00484,2025-10-12,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1423,1558,62,54424.56
+L00485,2025-08-24,P06,Bebida Energetica,Planta Santiago,Tarde,1484,1190,75,22608.62
+L00486,2025-02-14,P03,Agua 600ml,Planta Santiago,Tarde,1120,929,31,17588.51
+L00487,2025-06-01,P06,Bebida Energetica,Planta Santiago,Tarde,514,572,17,15823.94
+L00488,2025-11-29,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,360,322,19,5780.06
+L00489,2025-10-19,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,877,930,14,39930.37
+L00490,2025-12-28,P03,Agua 600ml,Planta Santo Domingo,Manana,1411,1178,74,30064.4
+L00491,2025-06-08,P03,Agua 600ml,Planta Santo Domingo,Tarde,880,966,62,20796.0
+L00492,2025-08-29,P03,Agua 600ml,Planta Santo Domingo,Noche,748,680,28,28652.75
+L00493,2025-10-30,P05,Galletas Avena,Planta Santo Domingo,Noche,1478,1615,32,25349.88
+L00494,2025-10-01,P04,Refresco Cola 500ml,Planta Santiago,Manana,800,752,12,18576.8
+L00495,2025-04-04,P05,Galletas Avena,Planta Santo Domingo,Manana,521,547,12,17383.99
+L00496,2025-01-14,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1041,932,31,30900.36
+L00497,2025-02-27,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,695,555,7,19158.61
+L00498,2025-11-09,P05,Galletas Avena,Planta Santo Domingo,Noche,800,790,43,10834.36
+L00499,2025-12-25,P06,Bebida Energetica,Planta Santiago,Noche,687,707,21,16398.94
+L00500,2025-02-01,P03,Agua 600ml,Planta Santiago,Tarde,1303,1437,68,61579.86
+L00501,2025-05-20,P03,Agua 600ml,Planta Santo Domingo,Manana,368,378,9,7273.76
+L00502,2025-02-02,P06,Bebida Energetica,Planta Santiago,Manana,846,856,14,22441.74
+L00503,2025-10-11,P06,Bebida Energetica,Planta Santiago,Manana,1130,975,53,28587.67
+L00504,2025-02-18,P06,Bebida Energetica,Planta Santo Domingo,Noche,1364,1273,18,50368.71
+L00505,2025-09-11,P05,Galletas Avena,Planta Santo Domingo,Manana,823,658,11,11281.6
+L00506,2025-02-12,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,360,332,13,11510.26
+L00507,2025-03-19,P02,Jugo Mango 1L,Planta Santiago,Manana,1153,949,19,17414.06
+L00508,2025-01-23,P01,Jugo Naranja 1L,Planta Santiago,Tarde,776,801,30,16148.67
+L00509,2025-06-10,P03,Agua 600ml,Planta Santiago,Noche,605,649,26,12576.46
+L00510,2025-09-16,P02,Jugo Mango 1L,Planta Santiago,Tarde,411,373,7,6610.49
+L00511,2025-07-17,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,689,549,3,19318.35
+L00512,2025-09-21,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1230,1194,63,48515.89
+L00513,2025-08-11,P02,Jugo Mango 1L,Planta Santiago,Manana,919,908,22,14270.01
+L00514,2025-10-06,P03,Agua 600ml,Planta Santiago,Noche,1108,1073,65,39155.65
+L00515,2025-11-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1349,1444,82,60009.12
+L00516,2025-12-05,P05,Galletas Avena,Planta Santiago,Noche,397,359,10,5530.4
+L00517,2025-11-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,663,721,18,17322.95
+L00518,2025-01-16,P06,Bebida Energetica,Planta Santiago,Tarde,1455,1263,43,43694.45
+L00519,2025-04-01,P02,Jugo Mango 1L,Planta Santiago,Tarde,1100,1225,48,44087.85
+L00520,2025-02-25,P05,Galletas Avena,Planta Santo Domingo,Tarde,743,808,6,30372.5
+L00521,2025-12-10,P03,Agua 600ml,Planta Santiago,Noche,1391,1118,31,23767.16
+L00522,2025-04-28,P01,Jugo Naranja 1L,Planta Santiago,Manana,787,648,20,21840.4
+L00523,2025-02-03,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,380,300,14,4976.07
+L00524,2025-08-25,P05,Galletas Avena,Planta Santiago,Tarde,732,819,8,25011.77
+L00525,2025-01-21,P06,Bebida Energetica,Planta Santiago,Manana,1100,1149,5,50115.64
+L00526,2025-08-16,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,452,477,23,17360.73
+L00527,2025-09-04,P06,Bebida Energetica,Planta Santo Domingo,Noche,967,965,5,20249.51
+L00528,2025-12-22,P05,Galletas Avena,Planta Santiago,Tarde,585,552,15,20807.36
+L00529,2025-10-06,P05,Galletas Avena,Planta Santiago,Tarde,383,310,13,12342.93
+L00530,2025-04-17,P06,Bebida Energetica,Planta Santo Domingo,Noche,780,787,29,11879.07
+L00531,2025-03-09,P02,Jugo Mango 1L,Planta Santiago,Tarde,709,643,13,9605.52
+L00532,2025-09-17,P03,Agua 600ml,Planta Santo Domingo,Tarde,904,717,28,24487.35
+L00533,2025-11-06,P03,Agua 600ml,Planta Santiago,Manana,644,579,12,12666.77
+L00534,2025-07-28,P05,Galletas Avena,Planta Santo Domingo,Noche,1211,1178,49,48872.1
+L00535,2025-08-03,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,823,906,39,17359.88
+L00536,2025-05-15,P05,Galletas Avena,Planta Santiago,Noche,476,390,13,10455.46
+L00537,2025-09-28,P06,Bebida Energetica,Planta Santo Domingo,Tarde,321,256,6,6637.94
+L00538,2025-10-12,P02,Jugo Mango 1L,Planta Santiago,Manana,346,325,5,8068.3
+L00539,2025-04-23,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,443,438,22,12502.92
+L00540,2025-07-02,P06,Bebida Energetica,Planta Santo Domingo,Tarde,717,610,26,13202.47
+L00541,2025-02-24,P05,Galletas Avena,Planta Santo Domingo,Tarde,525,574,8,20410.8
+L00542,2025-03-04,P03,Agua 600ml,Planta Santiago,Tarde,1329,1190,30,34519.8
+L00543,2025-01-06,P06,Bebida Energetica,Planta Santiago,Tarde,1123,1182,49,39280.52
+L00544,2025-12-11,P01,Jugo Naranja 1L,Planta Santiago,Manana,907,735,31,13980.51
+L00545,2025-09-14,P03,Agua 600ml,Planta Santiago,Noche,634,683,21,27576.55
+L00546,2025-11-22,P05,Galletas Avena,Planta Santiago,Manana,836,682,40,16235.47
+L00547,2025-11-02,P05,Galletas Avena,Planta Santo Domingo,Manana,782,713,28,24377.55
+L00548,2025-10-22,P05,Galletas Avena,Planta Santiago,Noche,475,477,29,12664.72
+L00549,2025-06-13,P06,Bebida Energetica,Planta Santiago,Tarde,1042,1022,44,32638.9
+L00550,2025-03-28,P06,Bebida Energetica,Planta Santiago,Tarde,540,545,8,19059.26
+L00551,2025-07-10,P03,Agua 600ml,Planta Santo Domingo,Manana,383,375,6,5651.01
+L00552,2025-09-23,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1055,952,47,27396.93
+L00553,2025-05-15,P03,Agua 600ml,Planta Santiago,Tarde,907,892,30,12055.85
+L00554,2025-06-19,P04,Refresco Cola 500ml,Planta Santiago,Tarde,661,556,8,13452.31
+L00555,2025-03-06,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,302,241,8,7302.78
+L00556,2025-01-07,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1120,1225,50,38622.16
+L00557,2025-03-26,P06,Bebida Energetica,Planta Santo Domingo,Noche,965,805,9,20847.02
+L00558,2025-11-29,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1343,1358,82,29263.84
+L00559,2025-08-31,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1488,1196,73,19719.77
+L00560,2025-10-01,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1499,1585,24,26540.6
+L00561,2025-08-06,P03,Agua 600ml,Planta Santiago,Manana,1256,1204,77,38427.37
+L00562,2025-08-24,P03,Agua 600ml,Planta Santo Domingo,Manana,1495,1201,73,20733.08
+L00563,2025-07-22,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,542,498,4,7356.94
+L00564,2025-03-09,P03,Agua 600ml,Planta Santo Domingo,Tarde,1087,852,54,30936.58
+L00565,2025-04-27,P06,Bebida Energetica,Planta Santiago,Manana,311,246,14,6989.28
+L00566,2025-07-06,P06,Bebida Energetica,Planta Santo Domingo,Tarde,737,687,8,18732.47
+L00567,2025-12-18,P05,Galletas Avena,Planta Santo Domingo,Tarde,1473,1426,78,48121.15
+L00568,2025-12-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,536,487,31,14741.37
+L00569,2025-10-30,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,739,756,48,18356.15
+L00570,2025-02-13,P04,Refresco Cola 500ml,Planta Santiago,Noche,964,946,47,41012.82
+L00571,2025-03-03,P04,Refresco Cola 500ml,Planta Santiago,Manana,387,396,13,7250.46
+L00572,2025-05-10,P06,Bebida Energetica,Planta Santiago,Tarde,800,652,18,11007.08
+L00573,2025-08-10,P06,Bebida Energetica,Planta Santo Domingo,Noche,1391,1414,70,31047.04
+L00574,2025-04-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,717,800,7,19436.75
+L00575,2025-11-17,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,578,581,3,19340.71
+L00576,2025-10-08,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,772,804,9,26530.58
+L00577,2025-05-27,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1300,1247,52,52345.32
+L00578,2025-05-10,P05,Galletas Avena,Planta Santo Domingo,Manana,1153,1185,41,27752.76
+L00579,2025-10-23,P06,Bebida Energetica,Planta Santo Domingo,Manana,1385,1290,42,54186.33
+L00580,2025-07-02,P03,Agua 600ml,Planta Santiago,Manana,1347,1357,30,41859.69
+L00581,2025-02-22,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,861,933,33,24757.58
+L00582,2025-07-16,P02,Jugo Mango 1L,Planta Santiago,Tarde,1203,1270,58,45461.2
+L00583,2025-04-12,P02,Jugo Mango 1L,Planta Santiago,Manana,450,417,13,7850.28
+L00584,2025-04-10,P05,Galletas Avena,Planta Santo Domingo,Manana,635,600,16,10582.07
+L00585,2025-01-13,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,983,966,35,21834.03
+L00586,2025-09-23,P03,Agua 600ml,Planta Santiago,Noche,1295,1328,57,36377.72
+L00587,2025-05-14,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1213,1103,35,32705.44
+L00588,2025-08-10,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,470,421,13,15663.72
+L00589,2025-04-26,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,455,393,9,6592.6
+L00590,2025-01-15,P06,Bebida Energetica,Planta Santo Domingo,Noche,1476,1221,57,34242.19
+L00591,2025-03-10,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,344,292,8,6548.35
+L00592,2025-08-06,P06,Bebida Energetica,Planta Santiago,Noche,1320,1378,18,53951.51
+L00593,2025-07-03,P05,Galletas Avena,Planta Santo Domingo,Tarde,1263,1340,51,51537.83
+L00594,2025-12-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1021,1137,17,31193.37
+L00595,2025-03-26,P05,Galletas Avena,Planta Santo Domingo,Tarde,1072,1109,41,33885.34
+L00596,2025-03-30,P05,Galletas Avena,Planta Santo Domingo,Tarde,1089,854,33,36305.27
+L00597,2025-10-02,P05,Galletas Avena,Planta Santiago,Tarde,345,358,22,7457.03
+L00598,2025-12-18,P03,Agua 600ml,Planta Santo Domingo,Manana,549,535,27,9748.8
+L00599,2025-02-07,P01,Jugo Naranja 1L,Planta Santiago,Noche,523,562,33,9576.7
+L00600,2025-11-21,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1205,1330,15,26424.59
+L00601,2025-08-12,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,695,749,7,16547.15
+L00602,2025-04-24,P03,Agua 600ml,Planta Santo Domingo,Tarde,1091,906,33,35163.49
+L00603,2025-06-13,P01,Jugo Naranja 1L,Planta Santiago,Noche,644,617,28,22941.2
+L00604,2025-12-19,P02,Jugo Mango 1L,Planta Santiago,Tarde,801,783,14,16574.84
+L00605,2025-11-21,P03,Agua 600ml,Planta Santo Domingo,Tarde,576,595,38,17979.61
+L00606,2025-08-03,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1490,1591,25,39334.87
+L00607,2025-01-13,P02,Jugo Mango 1L,Planta Santiago,Noche,983,987,6,36917.97
+L00608,2025-03-12,P03,Agua 600ml,Planta Santo Domingo,Noche,1265,1325,19,21043.38
+L00609,2025-01-30,P05,Galletas Avena,Planta Santo Domingo,Tarde,559,561,2,19093.61
+L00610,2025-07-31,P02,Jugo Mango 1L,Planta Santiago,Manana,590,522,14,10838.37
+L00611,2025-05-15,P05,Galletas Avena,Planta Santiago,Tarde,711,747,5,23319.84
+L00612,2025-09-15,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1181,984,58,41225.38
+L00613,2025-01-09,P02,Jugo Mango 1L,Planta Santiago,Manana,1258,1178,32,43378.52
+L00614,2025-12-31,P01,Jugo Naranja 1L,Planta Santiago,Noche,381,333,2,7474.24
+L00615,2025-08-08,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1011,884,54,14406.7
+L00616,2025-06-05,P06,Bebida Energetica,Planta Santo Domingo,Noche,534,586,37,21215.34
+L00617,2025-09-11,P05,Galletas Avena,Planta Santiago,Tarde,1014,929,54,30534.68
+L00618,2025-07-31,P06,Bebida Energetica,Planta Santo Domingo,Noche,550,502,28,11022.73
+L00619,2025-03-08,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1271,1090,40,14299.54
+L00620,2025-04-11,P04,Refresco Cola 500ml,Planta Santiago,Noche,485,539,28,17800.1
+L00621,2025-02-02,P05,Galletas Avena,Planta Santo Domingo,Tarde,977,1046,33,35570.14
+L00622,2025-04-18,P03,Agua 600ml,Planta Santo Domingo,Noche,989,1023,7,32524.13
+L00623,2025-06-23,P01,Jugo Naranja 1L,Planta Santiago,Manana,1239,978,49,20712.65
+L00624,2025-09-13,P04,Refresco Cola 500ml,Planta Santiago,Manana,389,349,3,5968.01
+L00625,2025-05-25,P06,Bebida Energetica,Planta Santo Domingo,Manana,669,698,30,11466.74
+L00626,2025-06-30,P03,Agua 600ml,Planta Santiago,Manana,500,522,28,12140.89
+L00627,2025-06-19,P01,Jugo Naranja 1L,Planta Santiago,Noche,645,619,35,14439.48
+L00628,2025-10-09,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1191,1072,64,37344.13
+L00629,2025-04-02,P06,Bebida Energetica,Planta Santiago,Noche,901,877,25,26689.25
+L00630,2025-09-15,P03,Agua 600ml,Planta Santo Domingo,Noche,1023,950,40,27113.26
+L00631,2025-11-28,P05,Galletas Avena,Planta Santo Domingo,Tarde,857,919,22,37779.69
+L00632,2025-08-20,P03,Agua 600ml,Planta Santo Domingo,Manana,859,696,18,16936.52
+L00633,2025-06-22,P03,Agua 600ml,Planta Santiago,Manana,874,951,16,40654.37
+L00634,2025-06-11,P03,Agua 600ml,Planta Santiago,Tarde,1030,1006,23,39590.0
+L00635,2025-03-05,P02,Jugo Mango 1L,Planta Santiago,Tarde,835,925,9,29995.19
+L00636,2025-07-09,P05,Galletas Avena,Planta Santo Domingo,Noche,987,1105,46,22316.2
+L00637,2025-04-20,P03,Agua 600ml,Planta Santiago,Manana,597,484,9,7891.3
+L00638,2025-04-09,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,589,485,20,7533.01
+L00639,2025-02-27,P05,Galletas Avena,Planta Santiago,Noche,1090,904,18,35523.72
+L00640,2025-07-07,P05,Galletas Avena,Planta Santo Domingo,Tarde,1500,1347,40,21900.99
+L00641,2025-09-14,P06,Bebida Energetica,Planta Santiago,Tarde,930,783,36,23214.36
+L00642,2025-10-10,P06,Bebida Energetica,Planta Santiago,Noche,1344,1437,35,50583.95
+L00643,2025-09-19,P03,Agua 600ml,Planta Santiago,Tarde,1240,1257,58,46618.45
+L00644,2025-02-10,P06,Bebida Energetica,Planta Santiago,Tarde,1062,909,32,39510.26
+L00645,2025-08-28,P04,Refresco Cola 500ml,Planta Santiago,Noche,538,498,14,11501.36
+L00646,2025-06-02,P03,Agua 600ml,Planta Santiago,Manana,390,336,8,5538.5
+L00647,2025-04-16,P03,Agua 600ml,Planta Santo Domingo,Tarde,489,399,14,5754.09
+L00648,2025-07-15,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1436,1356,32,52689.16
+L00649,2025-04-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1213,1016,52,19991.81
+L00650,2025-08-02,P05,Galletas Avena,Planta Santiago,Manana,1349,1104,44,15438.96
+L00651,2025-03-21,P03,Agua 600ml,Planta Santo Domingo,Noche,1418,1554,89,65862.2
+L00652,2025-05-25,P03,Agua 600ml,Planta Santo Domingo,Tarde,1180,980,10,22828.31
+L00653,2025-03-09,P03,Agua 600ml,Planta Santiago,Manana,979,851,52,19658.55
+L00654,2025-07-29,P01,Jugo Naranja 1L,Planta Santiago,Noche,1011,952,28,31949.44
+L00655,2025-02-27,P03,Agua 600ml,Planta Santo Domingo,Manana,591,650,41,8929.2
+L00656,2025-01-06,P03,Agua 600ml,Planta Santo Domingo,Manana,1316,1464,54,35961.0
+L00657,2025-01-30,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1166,1054,27,14490.68
+L00658,2025-02-12,P03,Agua 600ml,Planta Santo Domingo,Manana,1169,1281,41,46634.14
+L00659,2025-08-14,P04,Refresco Cola 500ml,Planta Santiago,Noche,706,659,41,17557.62
+L00660,2025-07-03,P01,Jugo Naranja 1L,Planta Santiago,Noche,677,585,22,10019.81
+L00661,2025-08-15,P03,Agua 600ml,Planta Santiago,Manana,1294,1435,54,50405.57
+L00662,2025-10-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,973,903,21,33199.86
+L00663,2025-05-27,P03,Agua 600ml,Planta Santo Domingo,Manana,1139,1077,66,36468.44
+L00664,2025-07-31,P02,Jugo Mango 1L,Planta Santiago,Tarde,1095,868,27,32380.25
+L00665,2025-07-05,P01,Jugo Naranja 1L,Planta Santiago,Manana,852,772,45,28065.91
+L00666,2025-07-03,P03,Agua 600ml,Planta Santiago,Tarde,1148,1274,39,46248.58
+L00667,2025-08-22,P03,Agua 600ml,Planta Santo Domingo,Manana,969,802,50,17329.18
+L00668,2025-01-23,P04,Refresco Cola 500ml,Planta Santiago,Manana,1185,1199,66,38529.48
+L00669,2025-07-19,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1463,1305,80,40587.17
+L00670,2025-08-08,P06,Bebida Energetica,Planta Santiago,Manana,1357,1317,44,33518.36
+L00671,2025-12-23,P05,Galletas Avena,Planta Santiago,Manana,973,831,12,21320.42
+L00672,2025-01-05,P06,Bebida Energetica,Planta Santo Domingo,Noche,557,570,20,22407.12
+L00673,2025-07-09,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1409,1448,81,21513.66
+L00674,2025-04-17,P05,Galletas Avena,Planta Santo Domingo,Noche,1033,844,48,19332.34
+L00675,2025-04-16,P03,Agua 600ml,Planta Santo Domingo,Manana,1351,1175,57,31556.56
+L00676,2025-06-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1156,1266,22,32089.87
+L00677,2025-05-31,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,873,818,25,24518.04
+L00678,2025-08-29,P05,Galletas Avena,Planta Santiago,Manana,789,878,42,23235.62
+L00679,2025-02-07,P03,Agua 600ml,Planta Santiago,Noche,459,358,18,6503.42
+L00680,2025-05-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1361,1461,29,26232.79
+L00681,2025-03-16,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,452,394,20,15367.09
+L00682,2025-10-19,P06,Bebida Energetica,Planta Santo Domingo,Manana,955,839,11,34757.61
+L00683,2025-03-31,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,678,626,28,23585.79
+L00684,2025-02-27,P06,Bebida Energetica,Planta Santiago,Noche,1127,1064,21,32103.97
+L00685,2025-03-31,P05,Galletas Avena,Planta Santo Domingo,Manana,826,681,17,29241.23
+L00686,2025-06-05,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1239,1090,68,44568.16
+L00687,2025-01-24,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,432,340,21,6825.51
+L00688,2025-12-11,P06,Bebida Energetica,Planta Santiago,Tarde,1375,1533,22,45582.48
+L00689,2025-08-12,P06,Bebida Energetica,Planta Santiago,Manana,961,1064,27,25525.41
+L00690,2025-11-25,P02,Jugo Mango 1L,Planta Santiago,Manana,990,1004,28,43949.18
+L00691,2025-03-19,P06,Bebida Energetica,Planta Santiago,Tarde,1311,1405,23,48229.89
+L00692,2025-12-08,P03,Agua 600ml,Planta Santiago,Manana,992,889,56,17791.33
+L00693,2025-06-08,P03,Agua 600ml,Planta Santiago,Manana,561,538,17,22430.2
+L00694,2025-05-08,P06,Bebida Energetica,Planta Santiago,Noche,896,808,42,19551.25
+L00695,2025-07-08,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1110,1122,48,42318.53
+L00696,2025-11-08,P01,Jugo Naranja 1L,Planta Santiago,Manana,1284,1099,10,39661.98
+L00697,2025-05-14,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,781,631,39,12094.01
+L00698,2025-01-18,P06,Bebida Energetica,Planta Santo Domingo,Noche,372,331,2,6861.37
+L00699,2025-05-05,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,337,353,2,8742.29
+L00700,2025-10-02,P02,Jugo Mango 1L,Planta Santiago,Tarde,560,578,25,22821.87
+L00701,2025-02-12,P02,Jugo Mango 1L,Planta Santiago,Noche,385,343,4,14743.58
+L00702,2025-06-25,P06,Bebida Energetica,Planta Santo Domingo,Noche,709,639,34,22647.09
+L00703,2025-10-07,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,797,876,10,22532.39
+L00704,2025-05-06,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1285,1286,43,54026.79
+L00705,2025-06-15,P03,Agua 600ml,Planta Santo Domingo,Noche,1173,1288,36,18645.99
+L00706,2025-12-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1006,840,52,12249.2
+L00707,2025-02-20,P03,Agua 600ml,Planta Santo Domingo,Noche,788,744,42,14238.55
+L00708,2025-05-08,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1052,901,34,33715.41
+L00709,2025-12-13,P05,Galletas Avena,Planta Santiago,Noche,1392,1209,49,51881.87
+L00710,2025-07-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1491,1387,56,39807.45
+L00711,2025-01-07,P04,Refresco Cola 500ml,Planta Santiago,Tarde,497,550,20,8161.47
+L00712,2025-10-22,P04,Refresco Cola 500ml,Planta Santiago,Noche,914,866,30,36905.0
+L00713,2025-01-24,P03,Agua 600ml,Planta Santiago,Manana,460,507,5,16695.63
+L00714,2025-05-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,706,765,36,26889.3
+L00715,2025-12-08,P02,Jugo Mango 1L,Planta Santiago,Manana,638,506,12,16270.11
+L00716,2025-09-17,P03,Agua 600ml,Planta Santiago,Noche,801,750,28,21040.24
+L00717,2025-08-22,P06,Bebida Energetica,Planta Santo Domingo,Tarde,543,528,20,15388.92
+L00718,2025-07-17,P05,Galletas Avena,Planta Santo Domingo,Manana,859,690,33,16966.6
+L00719,2025-07-27,P05,Galletas Avena,Planta Santiago,Tarde,439,399,21,8924.93
+L00720,2025-07-02,P04,Refresco Cola 500ml,Planta Santiago,Manana,1207,1105,41,44634.21
+L00721,2025-05-23,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,450,384,13,6721.58
+L00722,2025-09-07,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1381,1313,15,34532.24
+L00723,2025-01-17,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1378,1242,25,40946.55
+L00724,2025-07-21,P03,Agua 600ml,Planta Santiago,Manana,746,643,33,17646.52
+L00725,2025-10-24,P05,Galletas Avena,Planta Santo Domingo,Noche,1329,1445,13,48500.31
+L00726,2025-09-17,P01,Jugo Naranja 1L,Planta Santiago,Manana,874,696,44,19602.14
+L00727,2025-08-19,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1097,972,31,20841.11
+L00728,2025-02-08,P06,Bebida Energetica,Planta Santo Domingo,Noche,569,631,18,26273.02
+L00729,2025-04-01,P05,Galletas Avena,Planta Santiago,Manana,749,733,23,15724.87
+L00730,2025-02-01,P05,Galletas Avena,Planta Santiago,Noche,1463,1273,80,34330.22
+L00731,2025-02-01,P05,Galletas Avena,Planta Santiago,Noche,359,307,13,11577.01
+L00732,2025-03-09,P01,Jugo Naranja 1L,Planta Santiago,Noche,644,626,3,18340.45
+L00733,2025-07-06,P06,Bebida Energetica,Planta Santiago,Noche,457,456,3,16849.08
+L00734,2025-05-17,P06,Bebida Energetica,Planta Santo Domingo,Manana,575,526,32,14573.62
+L00735,2025-04-22,P04,Refresco Cola 500ml,Planta Santiago,Noche,549,445,12,13435.03
+L00736,2025-12-18,P03,Agua 600ml,Planta Santo Domingo,Tarde,1189,1282,49,27176.08
+L00737,2025-05-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,420,433,21,18667.52
+L00738,2025-10-17,P04,Refresco Cola 500ml,Planta Santiago,Tarde,756,655,26,22381.58
+L00739,2025-01-21,P02,Jugo Mango 1L,Planta Santiago,Tarde,700,677,11,11137.27
+L00740,2025-09-26,P05,Galletas Avena,Planta Santiago,Manana,509,528,32,14898.84
+L00741,2025-08-25,P06,Bebida Energetica,Planta Santiago,Manana,984,976,6,33303.03
+L00742,2025-07-03,P03,Agua 600ml,Planta Santo Domingo,Tarde,1159,1269,31,54416.15
+L00743,2025-04-09,P03,Agua 600ml,Planta Santo Domingo,Tarde,1000,1118,42,22728.55
+L00744,2025-03-06,P02,Jugo Mango 1L,Planta Santiago,Tarde,1196,1137,61,16613.58
+L00745,2025-07-29,P01,Jugo Naranja 1L,Planta Santiago,Manana,326,358,8,8057.17
+L00746,2025-05-20,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,643,513,21,15914.65
+L00747,2025-03-27,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1328,1046,51,32273.7
+L00748,2025-06-29,P01,Jugo Naranja 1L,Planta Santiago,Tarde,671,625,11,14722.42
+L00749,2025-12-23,P06,Bebida Energetica,Planta Santo Domingo,Noche,952,796,16,33269.06
+L00750,2025-09-01,P04,Refresco Cola 500ml,Planta Santiago,Noche,516,512,11,10976.46
+L00751,2025-12-27,P06,Bebida Energetica,Planta Santiago,Tarde,643,568,14,18898.85
+L00752,2025-10-02,P05,Galletas Avena,Planta Santiago,Tarde,476,520,3,10407.31
+L00753,2025-09-15,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1411,1213,8,20393.73
+L00754,2025-08-08,P04,Refresco Cola 500ml,Planta Santiago,Tarde,769,677,35,9709.52
+L00755,2025-08-26,P06,Bebida Energetica,Planta Santiago,Noche,976,997,15,43486.26
+L00756,2025-01-24,P03,Agua 600ml,Planta Santiago,Tarde,1492,1615,93,63759.13
+L00757,2025-12-09,P03,Agua 600ml,Planta Santiago,Manana,820,840,5,15570.51
+L00758,2025-12-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1172,1051,49,43053.98
+L00759,2025-08-31,P03,Agua 600ml,Planta Santo Domingo,Noche,400,369,19,13073.64
+L00760,2025-06-01,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,523,481,12,9633.96
+L00761,2025-04-18,P03,Agua 600ml,Planta Santiago,Manana,1157,976,12,40995.7
+L00762,2025-10-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1291,1230,26,47233.18
+L00763,2025-01-11,P05,Galletas Avena,Planta Santiago,Noche,801,752,30,24021.21
+L00764,2025-07-24,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,855,902,17,19817.48
+L00765,2025-12-31,P04,Refresco Cola 500ml,Planta Santiago,Manana,1241,1361,22,53537.05
+L00766,2025-04-04,P03,Agua 600ml,Planta Santo Domingo,Manana,1207,1032,50,21798.49
+L00767,2025-10-15,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1032,1012,41,41701.04
+L00768,2025-07-16,P05,Galletas Avena,Planta Santiago,Manana,925,735,26,20161.46
+L00769,2025-11-18,P02,Jugo Mango 1L,Planta Santiago,Manana,838,832,5,31069.24
+L00770,2025-07-09,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,345,385,4,15730.91
+L00771,2025-06-30,P03,Agua 600ml,Planta Santiago,Tarde,627,601,8,9073.03
+L00772,2025-12-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,972,974,38,24243.29
+L00773,2025-03-04,P06,Bebida Energetica,Planta Santiago,Noche,744,597,9,26194.52
+L00774,2025-05-12,P02,Jugo Mango 1L,Planta Santiago,Noche,1367,1102,13,47190.27
+L00775,2025-05-18,P03,Agua 600ml,Planta Santiago,Manana,1211,1215,63,28369.95
+L00776,2025-12-07,P03,Agua 600ml,Planta Santo Domingo,Tarde,1045,1137,51,24738.11
+L00777,2025-04-27,P03,Agua 600ml,Planta Santo Domingo,Tarde,1129,1139,13,33645.44
+L00778,2025-06-14,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,941,819,38,32050.08
+L00779,2025-11-18,P06,Bebida Energetica,Planta Santo Domingo,Tarde,371,408,15,14670.16
+L00780,2025-06-07,P05,Galletas Avena,Planta Santo Domingo,Tarde,467,437,12,12427.85
+L00781,2025-07-28,P03,Agua 600ml,Planta Santiago,Manana,969,1038,26,30145.2
+L00782,2025-09-23,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,412,326,6,11156.9
+L00783,2025-10-12,P05,Galletas Avena,Planta Santiago,Noche,1060,1026,23,40214.23
+L00784,2025-07-14,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1246,1038,47,27533.12
+L00785,2025-03-28,P03,Agua 600ml,Planta Santiago,Tarde,886,774,35,15503.85
+L00786,2025-06-25,P06,Bebida Energetica,Planta Santo Domingo,Noche,609,614,17,10242.11
+L00787,2025-07-01,P03,Agua 600ml,Planta Santiago,Tarde,1145,921,18,29395.71
+L00788,2025-07-11,P05,Galletas Avena,Planta Santo Domingo,Tarde,1442,1171,11,45751.25
+L00789,2025-09-02,P04,Refresco Cola 500ml,Planta Santiago,Tarde,815,870,47,29275.15
+L00790,2025-11-30,P06,Bebida Energetica,Planta Santo Domingo,Manana,636,678,38,13306.18
+L00791,2025-12-19,P05,Galletas Avena,Planta Santo Domingo,Tarde,1321,1111,8,30301.41
+L00792,2025-07-18,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,911,890,22,19789.59
+L00793,2025-08-14,P05,Galletas Avena,Planta Santo Domingo,Manana,1188,1244,21,23926.26
+L00794,2025-10-31,P05,Galletas Avena,Planta Santiago,Noche,851,752,19,25800.11
+L00795,2025-01-13,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1481,1338,59,40577.97
+L00796,2025-02-22,P03,Agua 600ml,Planta Santiago,Tarde,517,424,5,7619.08
+L00797,2025-04-19,P03,Agua 600ml,Planta Santiago,Noche,984,840,41,26366.15
+L00798,2025-12-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,782,815,13,26612.33
+L00799,2025-02-16,P06,Bebida Energetica,Planta Santiago,Manana,331,282,1,5641.84
+L00800,2025-02-22,P05,Galletas Avena,Planta Santiago,Noche,635,525,26,15402.71
+L00801,2025-07-03,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1408,1312,75,19247.83
+L00802,2025-11-27,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,859,824,29,34583.51
+L00803,2025-06-22,P04,Refresco Cola 500ml,Planta Santiago,Manana,1423,1204,38,30475.6
+L00804,2025-06-30,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1407,1188,33,30964.48
+L00805,2025-06-26,P01,Jugo Naranja 1L,Planta Santiago,Noche,1390,1118,35,19537.05
+L00806,2025-12-24,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1324,1436,62,49810.56
+L00807,2025-11-20,P02,Jugo Mango 1L,Planta Santiago,Tarde,1421,1372,13,60367.6
+L00808,2025-04-27,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,757,647,38,14000.49
+L00809,2025-04-26,P03,Agua 600ml,Planta Santiago,Manana,931,998,57,42441.72
+L00810,2025-12-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1026,950,11,21338.57
+L00811,2025-12-15,P05,Galletas Avena,Planta Santiago,Manana,654,564,20,15959.25
+L00812,2025-11-04,P04,Refresco Cola 500ml,Planta Santiago,Manana,1008,985,33,42502.14
+L00813,2025-12-26,P05,Galletas Avena,Planta Santo Domingo,Manana,821,689,42,25657.82
+L00814,2025-03-02,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1079,1085,8,26830.44
+L00815,2025-06-21,P02,Jugo Mango 1L,Planta Santiago,Manana,1226,1082,20,15028.23
+L00816,2025-01-22,P05,Galletas Avena,Planta Santo Domingo,Manana,388,408,16,17862.05
+L00817,2025-05-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1015,829,31,16013.41
+L00818,2025-06-03,P05,Galletas Avena,Planta Santiago,Noche,975,918,54,17836.06
+L00819,2025-11-12,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,739,762,35,19167.36
+L00820,2025-11-15,P04,Refresco Cola 500ml,Planta Santiago,Noche,592,568,22,19081.8
+L00821,2025-03-22,P01,Jugo Naranja 1L,Planta Santiago,Tarde,830,925,57,32829.24
+L00822,2025-07-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,573,489,28,20900.46
+L00823,2025-10-06,P05,Galletas Avena,Planta Santo Domingo,Noche,932,841,31,35504.43
+L00824,2025-07-12,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1191,1266,70,32417.49
+L00825,2025-04-16,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,683,744,39,13881.77
+L00826,2025-10-18,P06,Bebida Energetica,Planta Santiago,Tarde,930,739,36,12554.25
+L00827,2025-09-26,P06,Bebida Energetica,Planta Santiago,Tarde,364,312,4,9273.32
+L00828,2025-02-21,P03,Agua 600ml,Planta Santiago,Tarde,535,585,31,10810.66
+L00829,2025-02-13,P06,Bebida Energetica,Planta Santo Domingo,Noche,910,925,45,37558.73
+L00830,2025-02-24,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,415,463,14,11711.92
+L00831,2025-09-16,P05,Galletas Avena,Planta Santo Domingo,Noche,1232,1024,15,25359.47
+L00832,2025-12-28,P03,Agua 600ml,Planta Santo Domingo,Noche,993,1052,17,35459.05
+L00833,2025-03-25,P03,Agua 600ml,Planta Santiago,Tarde,375,393,11,14575.52
+L00834,2025-08-04,P04,Refresco Cola 500ml,Planta Santiago,Noche,1058,1038,36,27711.37
+L00835,2025-12-20,P03,Agua 600ml,Planta Santo Domingo,Noche,927,1017,10,27416.68
+L00836,2025-05-28,P05,Galletas Avena,Planta Santiago,Tarde,760,690,36,20648.02
+L00837,2025-01-20,P06,Bebida Energetica,Planta Santiago,Tarde,809,668,16,20891.12
+L00838,2025-06-10,P05,Galletas Avena,Planta Santiago,Tarde,1431,1469,38,46484.83
+L00839,2025-07-22,P03,Agua 600ml,Planta Santiago,Tarde,604,664,3,17968.7
+L00840,2025-07-15,P01,Jugo Naranja 1L,Planta Santiago,Tarde,417,396,12,11539.67
+L00841,2025-03-22,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1005,874,42,33703.89
+L00842,2025-11-16,P02,Jugo Mango 1L,Planta Santiago,Tarde,432,417,7,13775.91
+L00843,2025-12-31,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1299,1353,78,17969.46
+L00844,2025-08-22,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,741,828,35,35039.37
+L00845,2025-05-11,P06,Bebida Energetica,Planta Santiago,Tarde,531,495,8,20327.38
+L00846,2025-12-24,P06,Bebida Energetica,Planta Santo Domingo,Tarde,793,838,24,14804.36
+L00847,2025-12-22,P05,Galletas Avena,Planta Santo Domingo,Manana,1294,1247,65,21034.69
+L00848,2025-04-01,P03,Agua 600ml,Planta Santiago,Noche,456,463,28,10001.87
+L00849,2025-06-14,P03,Agua 600ml,Planta Santo Domingo,Manana,381,301,4,6408.37
+L00850,2025-12-24,P03,Agua 600ml,Planta Santo Domingo,Manana,1470,1511,34,30433.33
+L00851,2025-01-02,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,458,442,10,9901.59
+L00852,2025-02-01,P03,Agua 600ml,Planta Santo Domingo,Noche,917,720,22,23875.45
+L00853,2025-03-12,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1361,1202,36,45459.56
+L00854,2025-04-17,P06,Bebida Energetica,Planta Santo Domingo,Tarde,482,416,17,14882.96
+L00855,2025-10-06,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,864,758,27,30078.24
+L00856,2025-01-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,726,783,41,14653.19
+L00857,2025-06-17,P05,Galletas Avena,Planta Santiago,Noche,1441,1380,46,26110.61
+L00858,2025-01-25,P06,Bebida Energetica,Planta Santiago,Manana,333,314,11,7309.33
+L00859,2025-04-12,P05,Galletas Avena,Planta Santiago,Noche,869,926,8,39040.21
+L00860,2025-08-03,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1438,1220,69,31074.25
+L00861,2025-03-24,P04,Refresco Cola 500ml,Planta Santiago,Noche,784,736,45,23478.71
+L00862,2025-04-25,P06,Bebida Energetica,Planta Santo Domingo,Manana,1382,1283,71,53415.11
+L00863,2025-05-11,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1289,1224,65,42758.04
+L00864,2025-08-30,P06,Bebida Energetica,Planta Santiago,Noche,1453,1395,67,41978.16
+L00865,2025-06-24,P01,Jugo Naranja 1L,Planta Santiago,Noche,1314,1316,12,17722.31
+L00866,2025-10-05,P05,Galletas Avena,Planta Santo Domingo,Manana,412,378,10,14075.36
+L00867,2025-12-31,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1444,1359,17,51594.49
+L00868,2025-06-20,P03,Agua 600ml,Planta Santo Domingo,Tarde,514,416,2,8884.19
+L00869,2025-09-29,P01,Jugo Naranja 1L,Planta Santiago,Noche,1428,1464,60,62112.93
+L00870,2025-08-08,P04,Refresco Cola 500ml,Planta Santiago,Noche,452,478,5,11028.67
+L00871,2025-06-11,P03,Agua 600ml,Planta Santo Domingo,Noche,560,597,12,22662.98
+L00872,2025-04-16,P04,Refresco Cola 500ml,Planta Santiago,Noche,1162,1095,25,47436.49
+L00873,2025-04-19,P06,Bebida Energetica,Planta Santiago,Noche,375,312,20,13361.06
+L00874,2025-04-14,P02,Jugo Mango 1L,Planta Santiago,Tarde,1162,1212,25,19464.16
+L00875,2025-12-09,P05,Galletas Avena,Planta Santo Domingo,Noche,463,436,27,6167.0
+L00876,2025-12-02,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,645,564,13,18691.36
+L00877,2025-02-15,P05,Galletas Avena,Planta Santiago,Noche,1457,1359,18,21488.02
+L00878,2025-11-30,P03,Agua 600ml,Planta Santo Domingo,Manana,1073,899,46,35155.94
+L00879,2025-05-16,P05,Galletas Avena,Planta Santo Domingo,Tarde,591,593,22,16720.09
+L00880,2025-12-18,P03,Agua 600ml,Planta Santiago,Noche,357,347,9,13013.11
+L00881,2025-04-03,P06,Bebida Energetica,Planta Santiago,Tarde,675,554,7,12235.15
+L00882,2025-07-28,P05,Galletas Avena,Planta Santiago,Noche,757,640,9,23102.11
+L00883,2025-08-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1090,1088,9,27325.23
+L00884,2025-12-05,P05,Galletas Avena,Planta Santiago,Manana,705,589,30,17870.72
+L00885,2025-09-07,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,962,959,37,30837.32
+L00886,2025-07-07,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1437,1559,64,48575.26
+L00887,2025-01-09,P05,Galletas Avena,Planta Santiago,Noche,1395,1271,15,35139.32
+L00888,2025-06-05,P06,Bebida Energetica,Planta Santiago,Tarde,749,700,33,21955.9
+L00889,2025-10-21,P03,Agua 600ml,Planta Santiago,Tarde,344,320,19,7435.05
+L00890,2025-05-26,P02,Jugo Mango 1L,Planta Santiago,Noche,743,767,17,28575.51
+L00891,2025-08-26,P06,Bebida Energetica,Planta Santiago,Tarde,424,345,8,7485.34
+L00892,2025-11-12,P06,Bebida Energetica,Planta Santo Domingo,Tarde,760,723,29,11184.69
+L00893,2025-12-29,P05,Galletas Avena,Planta Santo Domingo,Noche,1456,1494,66,21986.44
+L00894,2025-06-30,P03,Agua 600ml,Planta Santiago,Tarde,1106,1195,29,34301.92
+L00895,2025-10-23,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,425,471,9,15392.2
+L00896,2025-01-17,P03,Agua 600ml,Planta Santo Domingo,Tarde,1389,1334,54,29597.26
+L00897,2025-08-30,P02,Jugo Mango 1L,Planta Santiago,Manana,1296,1435,80,62315.62
+L00898,2025-09-25,P04,Refresco Cola 500ml,Planta Santiago,Noche,479,526,2,6905.07
+L00899,2025-07-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,768,758,13,32995.86
+L00900,2025-07-21,P04,Refresco Cola 500ml,Planta Santiago,Tarde,1387,1103,10,40041.38
+L00901,2025-01-28,P06,Bebida Energetica,Planta Santiago,Noche,1487,1452,52,42180.17
+L00902,2025-05-17,P02,Jugo Mango 1L,Planta Santiago,Noche,1295,1178,63,33117.83
+L00903,2025-12-30,P02,Jugo Mango 1L,Planta Santiago,Manana,595,505,9,10203.28
+L00904,2025-11-13,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,495,386,24,13170.35
+L00905,2025-05-28,P02,Jugo Mango 1L,Planta Santiago,Tarde,1450,1420,8,46722.27
+L00906,2025-12-02,P06,Bebida Energetica,Planta Santiago,Tarde,463,418,7,10489.4
+L00907,2025-02-17,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1123,1001,8,35199.88
+L00908,2025-08-12,P02,Jugo Mango 1L,Planta Santiago,Tarde,765,620,35,9853.88
+L00909,2025-04-30,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,401,340,15,11417.87
+L00910,2025-02-17,P05,Galletas Avena,Planta Santiago,Manana,521,550,11,16128.02
+L00911,2025-08-29,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1252,1228,46,42102.69
+L00912,2025-03-01,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,568,582,24,24312.5
+L00913,2025-07-13,P05,Galletas Avena,Planta Santo Domingo,Tarde,1468,1588,77,24222.94
+L00914,2025-11-03,P05,Galletas Avena,Planta Santiago,Tarde,928,859,27,16319.92
+L00915,2025-05-06,P06,Bebida Energetica,Planta Santo Domingo,Manana,894,995,11,23668.8
+L00916,2025-04-29,P01,Jugo Naranja 1L,Planta Santiago,Manana,1205,1212,40,53281.05
+L00917,2025-05-31,P04,Refresco Cola 500ml,Planta Santiago,Noche,397,429,26,17941.33
+L00918,2025-12-31,P02,Jugo Mango 1L,Planta Santiago,Tarde,633,556,3,9207.05
+L00919,2025-04-28,P06,Bebida Energetica,Planta Santo Domingo,Manana,805,641,20,28039.62
+L00920,2025-09-16,P03,Agua 600ml,Planta Santo Domingo,Noche,637,515,6,18186.72
+L00921,2025-11-02,P02,Jugo Mango 1L,Planta Santiago,Noche,365,342,9,7442.48
+L00922,2025-12-02,P05,Galletas Avena,Planta Santiago,Tarde,517,541,32,11048.06
+L00923,2025-04-13,P05,Galletas Avena,Planta Santiago,Manana,728,612,3,11387.61
+L00924,2025-10-18,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1499,1590,83,52438.2
+L00925,2025-06-02,P04,Refresco Cola 500ml,Planta Santiago,Manana,516,549,2,19077.92
+L00926,2025-02-17,P06,Bebida Energetica,Planta Santo Domingo,Manana,1190,992,11,26435.44
+L00927,2025-10-20,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,680,659,37,17717.37
+L00928,2025-07-19,P06,Bebida Energetica,Planta Santiago,Tarde,1069,896,52,19454.19
+L00929,2025-03-13,P02,Jugo Mango 1L,Planta Santiago,Noche,1158,1163,29,21216.35
+L00930,2025-12-10,P04,Refresco Cola 500ml,Planta Santiago,Manana,1164,1114,7,26982.98
+L00931,2025-10-18,P03,Agua 600ml,Planta Santo Domingo,Tarde,1140,1146,45,42741.2
+L00932,2025-05-10,P05,Galletas Avena,Planta Santiago,Tarde,804,755,15,15982.09
+L00933,2025-06-16,P04,Refresco Cola 500ml,Planta Santiago,Noche,622,520,29,18972.68
+L00934,2025-09-11,P05,Galletas Avena,Planta Santo Domingo,Noche,684,538,5,8849.2
+L00935,2025-11-15,P02,Jugo Mango 1L,Planta Santiago,Tarde,1268,1114,15,19032.83
+L00936,2025-06-10,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,350,313,14,13415.9
+L00937,2025-09-11,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,999,1037,35,44947.74
+L00938,2025-10-19,P05,Galletas Avena,Planta Santo Domingo,Tarde,343,344,11,5292.5
+L00939,2025-10-19,P06,Bebida Energetica,Planta Santo Domingo,Noche,725,673,15,27239.66
+L00940,2025-07-05,P03,Agua 600ml,Planta Santiago,Manana,629,561,29,7349.78
+L00941,2025-12-04,P05,Galletas Avena,Planta Santiago,Manana,739,599,25,20848.4
+L00942,2025-09-13,P04,Refresco Cola 500ml,Planta Santiago,Manana,626,585,4,25022.38
+L00943,2025-06-02,P02,Jugo Mango 1L,Planta Santiago,Tarde,698,646,3,28051.04
+L00944,2025-06-21,P06,Bebida Energetica,Planta Santo Domingo,Manana,1452,1337,49,37210.37
+L00945,2025-04-14,P06,Bebida Energetica,Planta Santo Domingo,Manana,1142,923,17,16151.59
+L00946,2025-01-26,P05,Galletas Avena,Planta Santo Domingo,Tarde,797,771,14,13610.22
+L00947,2025-05-28,P02,Jugo Mango 1L,Planta Santiago,Manana,736,711,4,31124.48
+L00948,2025-09-30,P05,Galletas Avena,Planta Santo Domingo,Noche,1098,1148,6,16692.77
+L00949,2025-12-01,P06,Bebida Energetica,Planta Santiago,Tarde,1230,1139,36,38833.2
+L00950,2025-10-13,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,404,397,7,10171.78
+L00951,2025-06-18,P02,Jugo Mango 1L,Planta Santiago,Manana,919,918,38,16846.77
+L00952,2025-10-26,P02,Jugo Mango 1L,Planta Santiago,Manana,854,762,38,18884.32
+L00953,2025-04-05,P02,Jugo Mango 1L,Planta Santiago,Manana,650,610,16,12703.29
+L00954,2025-06-27,P06,Bebida Energetica,Planta Santo Domingo,Noche,1012,1122,67,30987.49
+L00955,2025-12-08,P06,Bebida Energetica,Planta Santo Domingo,Manana,389,415,24,12998.18
+L00956,2025-12-04,P06,Bebida Energetica,Planta Santo Domingo,Noche,919,993,60,30583.78
+L00957,2025-08-09,P03,Agua 600ml,Planta Santo Domingo,Manana,757,741,10,17940.66
+L00958,2025-03-01,P06,Bebida Energetica,Planta Santiago,Manana,853,770,14,25656.84
+L00959,2025-07-10,P06,Bebida Energetica,Planta Santo Domingo,Tarde,1025,1034,57,32177.49
+L00960,2025-02-22,P01,Jugo Naranja 1L,Planta Santiago,Noche,852,924,4,17037.39
+L00961,2025-12-16,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1131,1091,53,42062.94
+L00962,2025-12-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1374,1350,31,44504.57
+L00963,2025-08-06,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,637,677,20,20856.97
+L00964,2025-08-29,P05,Galletas Avena,Planta Santo Domingo,Tarde,845,768,22,16225.13
+L00965,2025-11-05,P03,Agua 600ml,Planta Santo Domingo,Manana,1203,988,17,30308.13
+L00966,2025-06-29,P05,Galletas Avena,Planta Santiago,Tarde,1116,1223,16,50577.48
+L00967,2025-07-21,P03,Agua 600ml,Planta Santo Domingo,Tarde,859,768,27,23198.81
+L00968,2025-01-13,P03,Agua 600ml,Planta Santo Domingo,Tarde,1410,1178,52,34379.23
+L00969,2025-08-03,P05,Galletas Avena,Planta Santo Domingo,Noche,382,397,23,8255.68
+L00970,2025-03-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,876,751,40,24751.92
+L00971,2025-02-03,P05,Galletas Avena,Planta Santo Domingo,Manana,1468,1627,97,47945.77
+L00972,2025-02-13,P03,Agua 600ml,Planta Santiago,Manana,1049,1166,32,50491.61
+L00973,2025-11-27,P05,Galletas Avena,Planta Santo Domingo,Tarde,647,649,41,11407.45
+L00974,2025-05-14,P05,Galletas Avena,Planta Santiago,Noche,619,582,33,8068.5
+L00975,2025-03-21,P03,Agua 600ml,Planta Santiago,Manana,672,722,8,29278.35
+L00976,2025-11-05,P01,Jugo Naranja 1L,Planta Santiago,Tarde,574,621,13,18082.06
+L00977,2025-10-26,P06,Bebida Energetica,Planta Santiago,Manana,804,831,40,34726.13
+L00978,2025-07-21,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1030,1019,47,24317.95
+L00979,2025-07-17,P03,Agua 600ml,Planta Santiago,Tarde,981,1074,28,26953.41
+L00980,2025-08-01,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,307,327,9,14339.71
+L00981,2025-10-15,P05,Galletas Avena,Planta Santiago,Noche,1228,1187,46,36184.83
+L00982,2025-09-08,P03,Agua 600ml,Planta Santo Domingo,Manana,596,525,26,8044.9
+L00983,2025-07-02,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,493,413,2,8147.48
+L00984,2025-10-21,P02,Jugo Mango 1L,Planta Santiago,Tarde,764,734,46,10400.92
+L00985,2025-09-25,P05,Galletas Avena,Planta Santo Domingo,Manana,493,431,25,15110.26
+L00986,2025-12-13,P03,Agua 600ml,Planta Santiago,Tarde,1360,1278,65,55204.72
+L00987,2025-06-08,P05,Galletas Avena,Planta Santiago,Manana,1233,988,11,25590.42
+L00988,2025-03-14,P05,Galletas Avena,Planta Santo Domingo,Tarde,1488,1388,66,58160.27
+L00989,2025-03-26,P03,Agua 600ml,Planta Santo Domingo,Tarde,1285,1293,38,21153.58
+L00990,2025-08-18,P02,Jugo Mango 1L,Planta Santiago,Manana,591,551,5,20517.86
+L00991,2025-02-27,P06,Bebida Energetica,Planta Santiago,Noche,359,396,2,11587.42
+L00992,2025-07-14,P05,Galletas Avena,Planta Santiago,Noche,1329,1465,94,37457.19
+L00993,2025-04-25,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,605,664,28,23395.9
+L00994,2025-12-19,P06,Bebida Energetica,Planta Santiago,Noche,915,729,19,10002.84
+L00995,2025-01-06,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,387,310,12,8238.66
+L00996,2025-06-10,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1199,1336,28,39568.77
+L00997,2025-06-03,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,1337,1198,14,44411.13
+L00998,2025-05-29,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,702,699,29,27241.96
+L00999,2025-06-15,P06,Bebida Energetica,Planta Santiago,Noche,1038,1150,56,37286.19
+L01000,2025-03-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,820,703,38,22368.63
+L01001,2025-03-28,P01,Jugo Naranja 1L,Planta Santiago,Manana,1476,1341,43,31466.28
+L01002,2025-08-12,P03,Agua 600ml,Planta Santiago,Manana,1299,1052,35,33902.81
+L01003,2025-11-05,P06,Bebida Energetica,Planta Santiago,Manana,1132,1004,23,18170.47
+L01004,2025-12-17,P05,Galletas Avena,Planta Santo Domingo,Noche,1204,1092,41,34869.71
+L01005,2025-09-07,P05,Galletas Avena,Planta Santiago,Tarde,718,641,16,23788.39
+L01006,2025-10-04,P03,Agua 600ml,Planta Santiago,Manana,982,870,48,29268.53
+L01007,2025-06-15,P02,Jugo Mango 1L,Planta Santiago,Tarde,1328,1248,35,37934.73
+L01008,2025-03-18,P06,Bebida Energetica,Planta Santo Domingo,Noche,1060,1006,45,42790.28
+L01009,2025-10-15,P06,Bebida Energetica,Planta Santo Domingo,Tarde,748,833,7,31498.28
+L01010,2025-09-20,P03,Agua 600ml,Planta Santiago,Noche,891,748,19,16699.25
+L01011,2025-11-13,P04,Refresco Cola 500ml,Planta Santiago,Noche,1064,972,44,36461.48
+L01012,2025-09-06,P06,Bebida Energetica,Planta Santiago,Tarde,1379,1287,67,18223.31
+L01013,2025-08-02,P06,Bebida Energetica,Planta Santiago,Manana,995,805,13,15813.98
+L01014,2025-01-05,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,419,463,4,19241.51
+L01015,2025-01-18,P06,Bebida Energetica,Planta Santo Domingo,Manana,316,249,10,6329.43
+L01016,2025-07-19,P06,Bebida Energetica,Planta Santo Domingo,Manana,847,851,32,30612.67
+L01017,2025-11-29,P06,Bebida Energetica,Planta Santo Domingo,Tarde,549,440,2,17842.15
+L01018,2025-06-07,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,764,829,36,21141.19
+L01019,2025-03-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,412,397,8,7196.3
+L01020,2025-11-21,P01,Jugo Naranja 1L,Planta Santiago,Noche,547,574,31,15048.67
+L01021,2025-08-19,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,379,309,7,11234.18
+L01022,2025-04-03,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,590,640,10,15029.63
+L01023,2025-06-06,P01,Jugo Naranja 1L,Planta Santiago,Manana,1427,1166,40,43828.52
+L01024,2025-08-04,P06,Bebida Energetica,Planta Santo Domingo,Noche,1203,1148,48,43675.74
+L01025,2025-11-10,P01,Jugo Naranja 1L,Planta Santiago,Manana,381,344,16,7380.67
+L01026,2025-11-27,P05,Galletas Avena,Planta Santiago,Tarde,980,782,44,33706.02
+L01027,2025-02-01,P05,Galletas Avena,Planta Santiago,Noche,1329,1098,59,45902.62
+L01028,2025-07-12,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,578,543,9,17676.03
+L01029,2025-03-02,P05,Galletas Avena,Planta Santiago,Tarde,844,770,47,16481.43
+L01030,2025-03-01,P03,Agua 600ml,Planta Santiago,Noche,1021,1035,20,43232.64
+L01031,2025-06-06,P05,Galletas Avena,Planta Santo Domingo,Tarde,603,635,36,19024.15
+L01032,2025-06-27,P03,Agua 600ml,Planta Santo Domingo,Noche,494,422,21,18393.64
+L01033,2025-12-31,P01,Jugo Naranja 1L,Planta Santiago,Noche,900,739,32,10226.16
+L01034,2025-08-10,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1492,1190,8,45273.58
+L01035,2025-11-06,P04,Refresco Cola 500ml,Planta Santiago,Tarde,508,462,21,10089.16
+L01036,2025-12-31,P06,Bebida Energetica,Planta Santo Domingo,Manana,1321,1194,54,50506.79
+L01037,2025-07-26,P03,Agua 600ml,Planta Santo Domingo,Tarde,802,841,22,34671.3
+L01038,2025-12-12,P05,Galletas Avena,Planta Santo Domingo,Tarde,1265,1090,27,38079.41
+L01039,2025-06-11,P01,Jugo Naranja 1L,Planta Santiago,Noche,1462,1574,34,62067.43
+L01040,2025-11-02,P03,Agua 600ml,Planta Santiago,Manana,943,950,56,24479.48
+L01041,2025-06-12,P05,Galletas Avena,Planta Santiago,Noche,1054,862,53,36447.86
+L01042,2025-05-24,P04,Refresco Cola 500ml,Planta Santiago,Noche,876,811,5,33475.26
+L01043,2025-07-07,P05,Galletas Avena,Planta Santo Domingo,Noche,484,436,21,17965.63
+L01044,2025-05-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1127,1084,28,33292.77
+L01045,2025-01-20,P01,Jugo Naranja 1L,Planta Santiago,Noche,745,635,24,15082.05
+L01046,2025-04-02,P03,Agua 600ml,Planta Santiago,Manana,1116,987,28,38967.72
+L01047,2025-08-17,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,515,473,19,19419.57
+L01048,2025-11-12,P03,Agua 600ml,Planta Santiago,Tarde,1051,934,10,25967.75
+L01049,2025-11-11,P06,Bebida Energetica,Planta Santiago,Tarde,656,570,9,8361.36
+L01050,2025-02-16,P03,Agua 600ml,Planta Santo Domingo,Manana,1138,1027,65,44473.41
+L01051,2025-06-24,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1299,1299,12,18015.96
+L01052,2025-12-15,P04,Refresco Cola 500ml,Planta Santiago,Manana,848,894,22,34902.65
+L01053,2025-07-27,P01,Jugo Naranja 1L,Planta Santiago,Noche,533,458,28,9066.58
+L01054,2025-07-27,P06,Bebida Energetica,Planta Santiago,Manana,861,783,47,11444.78
+L01055,2025-03-30,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1464,1469,49,35102.68
+L01056,2025-09-13,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1485,1539,61,42509.25
+L01057,2025-04-03,P06,Bebida Energetica,Planta Santiago,Tarde,1407,1237,45,27380.51
+L01058,2025-05-04,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,1348,1376,60,50681.37
+L01059,2025-08-24,P03,Agua 600ml,Planta Santo Domingo,Tarde,1468,1345,15,42748.84
+L01060,2025-12-05,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,391,432,13,5752.61
+L01061,2025-02-28,P06,Bebida Energetica,Planta Santo Domingo,Tarde,717,666,28,24012.27
+L01062,2025-02-12,P02,Jugo Mango 1L,Planta Santiago,Tarde,722,647,24,9651.44
+L01063,2025-06-21,P06,Bebida Energetica,Planta Santo Domingo,Tarde,992,1032,48,27761.23
+L01064,2025-09-13,P06,Bebida Energetica,Planta Santo Domingo,Noche,509,443,4,17329.87
+L01065,2025-09-25,P02,Jugo Mango 1L,Planta Santiago,Manana,1270,1081,65,14256.57
+L01066,2025-05-05,P05,Galletas Avena,Planta Santiago,Tarde,697,691,21,25100.75
+L01067,2025-11-04,P04,Refresco Cola 500ml,Planta Santiago,Tarde,460,360,12,13465.73
+L01068,2025-03-13,P04,Refresco Cola 500ml,Planta Santiago,Manana,1285,1077,26,37146.61
+L01069,2025-08-29,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1270,1352,48,55990.84
+L01070,2025-10-30,P04,Refresco Cola 500ml,Planta Santiago,Manana,335,322,16,5685.52
+L01071,2025-12-11,P01,Jugo Naranja 1L,Planta Santo Domingo,Manana,923,896,21,28004.47
+L01072,2025-09-11,P06,Bebida Energetica,Planta Santo Domingo,Tarde,324,337,13,5412.14
+L01073,2025-07-12,P05,Galletas Avena,Planta Santo Domingo,Manana,1109,932,27,21942.98
+L01074,2025-08-01,P01,Jugo Naranja 1L,Planta Santiago,Tarde,1026,1129,29,37806.45
+L01075,2025-06-17,P02,Jugo Mango 1L,Planta Santiago,Manana,302,326,16,5529.52
+L01076,2025-04-13,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1353,1225,14,36035.08
+L01077,2025-12-16,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,465,446,11,9961.46
+L01078,2025-07-20,P06,Bebida Energetica,Planta Santiago,Tarde,1203,1101,41,16371.21
+L01079,2025-02-27,P04,Refresco Cola 500ml,Planta Santiago,Noche,1271,1293,27,20070.57
+L01080,2025-09-06,P06,Bebida Energetica,Planta Santiago,Tarde,590,463,23,6697.32
+L01081,2025-11-18,P04,Refresco Cola 500ml,Planta Santiago,Noche,811,641,37,24799.85
+L01082,2025-07-14,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,802,649,39,22117.75
+L01083,2025-08-04,P06,Bebida Energetica,Planta Santiago,Noche,479,507,32,20297.23
+L01084,2025-08-10,P03,Agua 600ml,Planta Santiago,Noche,686,724,37,19755.83
+L01085,2025-11-27,P04,Refresco Cola 500ml,Planta Santiago,Manana,382,350,22,8861.76
+L01086,2025-06-09,P03,Agua 600ml,Planta Santo Domingo,Noche,1451,1208,48,24171.34
+L01087,2025-05-21,P03,Agua 600ml,Planta Santo Domingo,Manana,1424,1395,16,26105.47
+L01088,2025-08-23,P01,Jugo Naranja 1L,Planta Santiago,Noche,365,323,8,6724.63
+L01089,2025-03-24,P05,Galletas Avena,Planta Santo Domingo,Tarde,1076,887,24,32822.91
+L01090,2025-04-25,P02,Jugo Mango 1L,Planta Santiago,Manana,886,909,29,30545.05
+L01091,2025-03-11,P04,Refresco Cola 500ml,Planta Santiago,Noche,981,999,18,24579.79
+L01092,2025-02-24,P04,Refresco Cola 500ml,Planta Santiago,Manana,906,986,18,34045.8
+L01093,2025-07-16,P05,Galletas Avena,Planta Santiago,Noche,884,836,25,31946.05
+L01094,2025-12-23,P05,Galletas Avena,Planta Santiago,Tarde,307,271,7,9434.93
+L01095,2025-02-23,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,484,504,27,19901.24
+L01096,2025-12-18,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,863,674,28,13660.46
+L01097,2025-01-05,P05,Galletas Avena,Planta Santo Domingo,Noche,841,892,33,18504.76
+L01098,2025-07-03,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,1100,864,43,29308.56
+L01099,2025-01-09,P06,Bebida Energetica,Planta Santo Domingo,Tarde,940,742,6,23067.07
+L01100,2025-01-16,P05,Galletas Avena,Planta Santiago,Tarde,756,821,38,25841.8
+L01101,2025-01-17,P05,Galletas Avena,Planta Santiago,Noche,616,614,3,25801.03
+L01102,2025-09-19,P03,Agua 600ml,Planta Santo Domingo,Manana,1273,1020,31,34115.43
+L01103,2025-08-04,P03,Agua 600ml,Planta Santiago,Noche,465,378,11,8739.68
+L01104,2025-08-26,P01,Jugo Naranja 1L,Planta Santiago,Noche,1133,948,16,20920.55
+L01105,2025-05-19,P01,Jugo Naranja 1L,Planta Santo Domingo,Tarde,346,342,6,13259.03
+L01106,2025-01-22,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,1139,901,50,33861.22
+L01107,2025-05-25,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,685,760,45,11612.16
+L01108,2025-06-08,P04,Refresco Cola 500ml,Planta Santiago,Noche,610,494,12,15754.99
+L01109,2025-10-23,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,1398,1476,39,28474.85
+L01110,2025-07-09,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,981,894,29,30544.14
+L01111,2025-12-04,P04,Refresco Cola 500ml,Planta Santiago,Manana,596,469,5,14977.13
+L01112,2025-03-27,P06,Bebida Energetica,Planta Santo Domingo,Tarde,390,400,8,12369.68
+L01113,2025-07-25,P03,Agua 600ml,Planta Santo Domingo,Manana,672,580,11,24949.74
+L01114,2025-11-05,P05,Galletas Avena,Planta Santo Domingo,Noche,503,522,3,8614.92
+L01115,2025-08-13,P03,Agua 600ml,Planta Santiago,Manana,1324,1346,21,48663.51
+L01116,2025-09-05,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,427,430,25,16859.75
+L01117,2025-08-08,P02,Jugo Mango 1L,Planta Santiago,Tarde,886,894,4,12424.16
+L01118,2025-01-04,P05,Galletas Avena,Planta Santo Domingo,Noche,1337,1330,47,57861.29
+L01119,2025-10-01,P06,Bebida Energetica,Planta Santiago,Tarde,807,687,24,13551.76
+L01120,2025-06-25,P01,Jugo Naranja 1L,Planta Santiago,Noche,915,724,43,10576.69
+L01121,2025-01-01,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,521,441,4,11519.98
+L01122,2025-11-22,P05,Galletas Avena,Planta Santo Domingo,Tarde,1223,1043,43,45509.4
+L01123,2025-09-05,P06,Bebida Energetica,Planta Santo Domingo,Manana,796,734,30,10750.3
+L01124,2025-10-17,P02,Jugo Mango 1L,Planta Santiago,Manana,534,569,12,22676.86
+L01125,2025-02-28,P03,Agua 600ml,Planta Santo Domingo,Noche,712,652,20,18280.72
+L01126,2025-10-09,P03,Agua 600ml,Planta Santo Domingo,Manana,441,362,6,10852.24
+L01127,2025-09-11,P05,Galletas Avena,Planta Santo Domingo,Noche,1024,924,14,39252.93
+L01128,2025-09-07,P03,Agua 600ml,Planta Santiago,Tarde,1319,1113,12,26526.96
+L01129,2025-08-26,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,430,430,19,14724.71
+L01130,2025-01-10,P06,Bebida Energetica,Planta Santiago,Manana,1449,1314,39,29919.41
+L01131,2025-08-07,P01,Jugo Naranja 1L,Planta Santiago,Tarde,627,668,18,22098.02
+L01132,2025-10-24,P05,Galletas Avena,Planta Santo Domingo,Manana,1321,1284,29,43778.77
+L01133,2025-09-16,P01,Jugo Naranja 1L,Planta Santiago,Tarde,467,436,17,12914.86
+L01134,2025-03-23,P05,Galletas Avena,Planta Santiago,Manana,1499,1184,40,24811.07
+L01135,2025-03-17,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,566,450,6,11705.85
+L01136,2025-02-26,P06,Bebida Energetica,Planta Santo Domingo,Manana,730,667,25,26303.67
+L01137,2025-12-07,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,808,852,37,14790.16
+L01138,2025-02-27,P03,Agua 600ml,Planta Santiago,Manana,581,624,4,20418.02
+L01139,2025-09-25,P03,Agua 600ml,Planta Santo Domingo,Manana,374,416,23,7051.7
+L01140,2025-01-13,P03,Agua 600ml,Planta Santo Domingo,Noche,1396,1332,72,23136.03
+L01141,2025-06-30,P02,Jugo Mango 1L,Planta Santo Domingo,Noche,424,465,30,12021.49
+L01142,2025-02-16,P03,Agua 600ml,Planta Santo Domingo,Tarde,1367,1378,60,50536.6
+L01143,2025-02-22,P05,Galletas Avena,Planta Santo Domingo,Tarde,1089,967,26,29652.39
+L01144,2025-09-03,P04,Refresco Cola 500ml,Planta Santiago,Noche,694,727,16,28239.47
+L01145,2025-01-06,P05,Galletas Avena,Planta Santo Domingo,Noche,1211,973,55,16384.89
+L01146,2025-02-01,P02,Jugo Mango 1L,Planta Santiago,Manana,931,783,8,25506.05
+L01147,2025-06-28,P04,Refresco Cola 500ml,Planta Santiago,Manana,1127,1234,71,49774.53
+L01148,2025-01-10,P06,Bebida Energetica,Planta Santiago,Tarde,926,870,6,12860.64
+L01149,2025-03-01,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,1462,1212,18,51063.81
+L01150,2025-03-22,P05,Galletas Avena,Planta Santo Domingo,Tarde,337,297,5,7435.08
+L01151,2025-07-10,P03,Agua 600ml,Planta Santiago,Tarde,1353,1170,17,44255.54
+L01152,2025-09-04,P03,Agua 600ml,Planta Santiago,Noche,1064,1168,10,32188.47
+L01153,2025-09-01,P03,Agua 600ml,Planta Santiago,Tarde,1315,1276,42,29785.84
+L01154,2025-07-24,P06,Bebida Energetica,Planta Santiago,Manana,374,399,22,12011.74
+L01155,2025-08-22,P06,Bebida Energetica,Planta Santiago,Tarde,815,668,10,15931.12
+L01156,2025-10-22,P03,Agua 600ml,Planta Santo Domingo,Tarde,1434,1443,40,60053.4
+L01157,2025-06-02,P02,Jugo Mango 1L,Planta Santo Domingo,Manana,901,783,46,12402.01
+L01158,2025-03-28,P04,Refresco Cola 500ml,Planta Santiago,Tarde,699,591,14,12483.63
+L01159,2025-12-06,P05,Galletas Avena,Planta Santo Domingo,Noche,688,648,40,27001.88
+L01160,2025-05-26,P03,Agua 600ml,Planta Santo Domingo,Manana,1374,1092,24,43214.99
+L01161,2025-04-24,P05,Galletas Avena,Planta Santo Domingo,Manana,919,1010,43,23175.13
+L01162,2025-01-25,P02,Jugo Mango 1L,Planta Santiago,Tarde,1247,1012,35,21427.66
+L01163,2025-03-17,P06,Bebida Energetica,Planta Santo Domingo,Manana,1026,1126,17,35299.45
+L01164,2025-10-12,P02,Jugo Mango 1L,Planta Santiago,Manana,968,987,31,39249.6
+L01165,2025-12-23,P05,Galletas Avena,Planta Santo Domingo,Noche,895,800,22,17420.56
+L01166,2025-02-26,P06,Bebida Energetica,Planta Santiago,Tarde,467,486,25,19579.59
+L01167,2025-09-15,P05,Galletas Avena,Planta Santo Domingo,Tarde,675,556,35,8202.63
+L01168,2025-11-28,P01,Jugo Naranja 1L,Planta Santiago,Noche,1032,932,31,14309.25
+L01169,2025-06-30,P01,Jugo Naranja 1L,Planta Santiago,Tarde,734,767,23,23858.07
+L01170,2025-05-23,P06,Bebida Energetica,Planta Santiago,Tarde,996,791,18,27254.96
+L01171,2025-05-28,P04,Refresco Cola 500ml,Planta Santiago,Noche,1185,1158,43,37646.2
+L01172,2025-08-20,P02,Jugo Mango 1L,Planta Santiago,Manana,1430,1403,49,21476.11
+L01173,2025-09-02,P03,Agua 600ml,Planta Santo Domingo,Manana,875,855,34,21346.94
+L01174,2025-02-02,P03,Agua 600ml,Planta Santo Domingo,Noche,853,836,44,34055.56
+L01175,2025-10-11,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1362,1094,68,30507.58
+L01176,2025-05-19,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,350,387,15,9836.32
+L01177,2025-08-06,P06,Bebida Energetica,Planta Santiago,Noche,511,545,17,17061.87
+L01178,2025-08-11,P05,Galletas Avena,Planta Santiago,Noche,1402,1552,23,65498.51
+L01179,2025-11-28,P04,Refresco Cola 500ml,Planta Santiago,Noche,1278,1300,50,27834.5
+L01180,2025-08-10,P04,Refresco Cola 500ml,Planta Santo Domingo,Noche,1349,1452,22,20252.28
+L01181,2025-09-26,P03,Agua 600ml,Planta Santiago,Noche,1099,1157,43,18544.5
+L01182,2025-01-26,P05,Galletas Avena,Planta Santiago,Tarde,978,968,48,36291.37
+L01183,2025-07-24,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,814,752,28,31802.63
+L01184,2025-05-12,P05,Galletas Avena,Planta Santo Domingo,Manana,485,423,26,15293.61
+L01185,2025-07-17,P04,Refresco Cola 500ml,Planta Santo Domingo,Tarde,1456,1319,58,53806.88
+L01186,2025-07-19,P02,Jugo Mango 1L,Planta Santo Domingo,Tarde,499,467,15,14036.65
+L01187,2025-02-01,P06,Bebida Energetica,Planta Santo Domingo,Noche,443,463,8,11365.1
+L01188,2025-05-12,P02,Jugo Mango 1L,Planta Santiago,Manana,1405,1536,69,49246.22
+L01189,2025-04-03,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1344,1183,26,49917.44
+L01190,2025-12-04,P04,Refresco Cola 500ml,Planta Santo Domingo,Manana,751,667,14,16523.53
+L01191,2025-05-05,P04,Refresco Cola 500ml,Planta Santiago,Manana,734,773,9,19526.55
+L01192,2025-05-07,P05,Galletas Avena,Planta Santo Domingo,Tarde,487,439,11,14757.89
+L01193,2025-10-27,P01,Jugo Naranja 1L,Planta Santiago,Manana,1397,1222,35,42021.64
+L01194,2025-08-10,P02,Jugo Mango 1L,Planta Santiago,Noche,980,888,54,38941.75
+L01195,2025-11-02,P06,Bebida Energetica,Planta Santo Domingo,Manana,933,779,9,26349.97
+L01196,2025-04-01,P05,Galletas Avena,Planta Santiago,Tarde,1392,1317,11,40844.32
+L01197,2025-11-28,P05,Galletas Avena,Planta Santo Domingo,Noche,361,376,11,5952.43
+L01198,2025-01-31,P02,Jugo Mango 1L,Planta Santiago,Tarde,1300,1291,13,44202.49
+L01199,2025-02-20,P05,Galletas Avena,Planta Santiago,Noche,1141,1113,31,24098.78
+L01200,2025-05-31,P01,Jugo Naranja 1L,Planta Santo Domingo,Noche,1326,1403,12,53873.67

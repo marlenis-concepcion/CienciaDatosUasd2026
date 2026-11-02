@@ -728,3 +728,33 @@ Nueva materia independiente de Ciencia de Datos II. Esta sección incorpora los 
 
 ### 📂 Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/recursos/
 - uasd_logo.png
+
+## Ampliación: Unidad II de Visualización de Datos I (2026-11-02)
+
+### 📂 Visualización de Datos I/INF-8240-C2/
+- IndustriasCaribe_Reclamos.csv
+- IndustriasCaribe_Produccion.csv
+- IndustriasCaribe_Ventas.csv
+
+### 📂 Visualización de Datos I/INF-8240-C2/Unidad II/Practica 2/
+- Consigna.md
+- Informe_Unidad_II_IndustriasCaribe.pdf
+- Marlenis_Concepcion_IndustriasCaribe.xlsx
+- README.md
+- VERIFICACION.md
+- datos.py
+- excel_nativo.py
+- generar_excel.py
+- generar_informe.py
+- requirements.txt
+- verificar_entrega.py
+
+### 📂 Visualización de Datos I/INF-8240-C2/Unidad II/Practica 2/graficos/
+- 01_categoria.png
+- 02_estado.png
+- 03_mes_reclamo.png
+- 04_region_prioridad.png
+- 05_plan_planta.png
+- 06_defectos_producto.png
+- 07_produccion_mes.png
+- 08_turno.png
