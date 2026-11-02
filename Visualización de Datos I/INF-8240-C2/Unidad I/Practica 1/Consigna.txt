@@ -1,0 +1,189 @@
+Práctica 1. Evaluación integral de la Unidad I
+
+Evaluación individual · 10 puntos
+
+Caso de estudio: análisis de desempeño de una plataforma de comercio electrónico
+
+Una empresa ficticia de comercio electrónico, denominada ComercioDigital RD, desea evaluar su desempeño durante seis meses.
+
+La dirección necesita comprender la evolución de las ventas, el comportamiento de las reclamaciones y la contribución de sus canales comerciales. También quiere recibir recomendaciones basadas en evidencia.
+
+El estudiante asumirá el rol de analista de datos y deberá preparar un informe visual dirigido a la gerencia.
+
+Conjunto de datos A. Ventas y reclamaciones mensuales
+
+Mes
+
+Ventas (miles de RD$)
+
+Reclamaciones
+
+Enero
+
+100
+
+8
+
+Febrero
+
+120
+
+9
+
+Marzo
+
+120
+
+9
+
+Abril
+
+140
+
+12
+
+Mayo
+
+160
+
+15
+
+Junio
+
+260
+
+25
+
+Conjunto de datos B. Ventas por canal en junio
+
+Canal
+
+Ventas (miles de RD$)
+
+Página web
+
+100
+
+Aplicación móvil
+
+80
+
+Redes sociales
+
+50
+
+Ventas telefónicas
+
+30
+
+Total
+
+260
+
+
+ 
+
+Parte I. Comprensión y análisis de datos
+
+Actividad 1. Identifica las variables presentes en ambos conjuntos de datos. Clasifícalas como categóricas o cuantitativas y explica cuáles tienen una dimensión temporal.
+
+Actividad 2. Utilizando los datos de junio, presenta un ejemplo de cada uno de los siguientes conceptos:
+
+Dato.
+Información.
+Conocimiento o interpretación contextualizada.
+Decisión propuesta.
+Actividad 3. Explica dos beneficios de la visualización de datos en un proyecto de Ciencia de Datos y menciona una diferencia entre visualizaciones estáticas e interactivas.
+
+Parte II. Estadística descriptiva
+
+Actividad 4. Calcula para las ventas mensuales:
+
+Media aritmética (Promedio).
+Mediana.
+Moda.
+Valor mínimo y máximo.
+Rango.
+Muestra las fórmulas y los cálculos.
+
+Actividad 5. Explica si la media representa adecuadamente el comportamiento habitual de las ventas y qué efecto tiene el valor de junio sobre ella.
+
+Parte III. Construcción e interpretación de gráficos
+
+Actividad 6. Construye tres gráficos diferentes:
+
+Un gráfico de líneas que muestre la evolución de las ventas mensuales.
+Un gráfico de barras que compare las ventas por canal en junio.
+Un gráfico circular que represente la participación de cada canal en las ventas totales de junio.
+Para cada gráfico, incluye un título descriptivo, etiquetas y unidades, escala apropiada, leyenda cuando sea necesaria y fuente de los datos.
+
+Actividad 7. Para cada gráfico, responde:
+
+¿Qué pregunta analítica permite responder?
+¿Por qué elegiste ese tipo de gráfico?
+¿Cuál es el principal hallazgo?
+¿Qué limitación tiene la representación?
+Actividad 8. Explica qué gráfico utilizarías para explorar la relación entre ventas y reclamaciones mensuales y por qué. Indica qué precaución debes tener antes de interpretar esa relación como causal.
+
+Parte IV. Interpretación crítica y comunicación
+
+Actividad 9. Evalúa estas afirmaciones y clasifícalas como sustentadas por los datos, no sustentadas o parcialmente sustentadas. Justifica cada respuesta.
+
+Afirmación
+
+Evaluación del estudiante
+
+A. Las ventas de junio fueron superiores a las de enero.
+
+B. La aplicación móvil fue el canal con mayores ventas en junio.
+
+C. El aumento de reclamaciones provocó el aumento de las ventas.
+
+D. Las ventas aumentaron o se mantuvieron entre meses consecutivos.
+
+E. El crecimiento de junio garantiza que las ventas seguirán aumentando en julio.
+
+ 
+
+
+ 
+
+Parte V. Storytelling con datos
+
+Actividad 10. Diseña una presentación de cuatro diapositivas que contenga:
+
+Diapositiva
+
+Contenido requerido
+
+1. Contexto
+
+Problema empresarial y pregunta principal
+
+2. Evidencia
+
+Gráfica de evolución de ventas y hallazgo
+
+3. Análisis
+
+Participación de los canales y comportamiento de las reclamaciones
+
+4. Recomendación
+
+Dos acciones propuestas, sus fundamentos y una limitación de los datos
+
+La presentación deberá incluir títulos orientados a hallazgos, visualizaciones legibles y recomendaciones que no atribuyan causas sin evidencia suficiente.
+
+Parte VI. Reflexión final
+
+Actividad 11. Responde en un máximo de 200 palabras:
+
+«¿Por qué un profesional de Ciencia de Datos debe comprender los principios de visualización y comunicación, incluso cuando dispone de herramientas que generan gráficos automáticamente?»
+
+Requisitos de entrega
+
+El estudiante deberá entregar un archivo PDF con su análisis y presentación, acompañado de un archivo Excel o equivalente que permita revisar los cálculos y los datos utilizados.
+
+Tiempo sugerido: 120–150 minutos.
+Modalidad: individual.
+Herramientas permitidas: Excel, Google Sheets, Python, u otra herramienta de análisis o visualización. La selección de la herramienta no sustituye la explicación del procedimiento.

@@ -100,3 +100,9 @@ temp/
 backup/
 .cache/
 *.log
+
+# Entrega académica de Visualización de Datos I (archivos revisados)
+!Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/Entrega_Visualizacion_Datos_I.pdf
+!Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/Calculos_Visualizacion_Datos_I.xlsx
+!Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/graficos/*.png
+!Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/recursos/uasd_logo.png
