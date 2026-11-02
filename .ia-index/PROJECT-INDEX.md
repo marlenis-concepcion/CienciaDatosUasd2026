@@ -738,6 +738,7 @@ Nueva materia independiente de Ciencia de Datos II. Esta sección incorpora los 
 
 ### 📂 Visualización de Datos I/INF-8240-C2/Unidad II/Practica 2/
 - Consigna.md
+- Informe_Unidad_II_IndustriasCaribe.docx
 - Informe_Unidad_II_IndustriasCaribe.pdf
 - Marlenis_Concepcion_IndustriasCaribe.xlsx
 - README.md
@@ -746,6 +747,7 @@ Nueva materia independiente de Ciencia de Datos II. Esta sección incorpora los 
 - excel_nativo.py
 - generar_excel.py
 - generar_informe.py
+- generar_word.py
 - requirements.txt
 - verificar_entrega.py
 
