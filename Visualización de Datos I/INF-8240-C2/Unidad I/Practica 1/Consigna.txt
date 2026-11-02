@@ -81,7 +81,7 @@ Total
 260
 
 
- 
+
 
 Parte I. Comprensión y análisis de datos
 
@@ -143,10 +143,10 @@ D. Las ventas aumentaron o se mantuvieron entre meses consecutivos.
 
 E. El crecimiento de junio garantiza que las ventas seguirán aumentando en julio.
 
- 
 
 
- 
+
+
 
 Parte V. Storytelling con datos
 

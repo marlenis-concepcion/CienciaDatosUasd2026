@@ -728,4 +728,3 @@ Nueva materia independiente de Ciencia de Datos II. Esta sección incorpora los 
 
 ### 📂 Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/recursos/
 - uasd_logo.png
-
