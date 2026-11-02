@@ -6,6 +6,7 @@
 - 76 fórmulas de dashboards recalculadas contra los datos originales y conciliadas con sus resultados guardados.
 - 204 combinaciones de filtros con expectativas calculadas desde los datos originales. Estas comprobaciones no ejecutan la interfaz de Excel.
 - XML y relaciones internas: válidos; sin enlaces externos a datos ni macros. El enlace web de GitHub es un hipervínculo.
+- Word editable: portada, siete tablas y ocho gráficos, más el escudo; contenido y metadatos revisados.
 - PDF: 9 páginas; enlace GitHub clicable presente.
 - Sin rutas personales, nombres de dispositivos ni parámetros de sesión en el contenido entregable.
 

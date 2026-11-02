@@ -4,6 +4,7 @@
 **Estudiante:** Marlenis Judith Concepción Cuevas
 
 - [Excel de la solución](Marlenis_Concepcion_IndustriasCaribe.xlsx): datos, 10 tablas dinámicas nativas, 6 segmentadores, 2 dashboards, 8 gráficos y fórmulas revisables.
+- [Informe Word editable](Informe_Unidad_II_IndustriasCaribe.docx): portada, texto, siete tablas y ocho gráficos.
 - [Informe PDF con portada UASD](Informe_Unidad_II_IndustriasCaribe.pdf): análisis, procedimiento, ocho gráficos, hallazgos, limitaciones y recomendaciones.
 - [GitHub: solución completa](https://github.com/marlenis-concepcion/CienciaDatosUasd2026/tree/main/Visualizaci%C3%B3n%20de%20Datos%20I/INF-8240-C2/Unidad%20II/Practica%202).
 - [Verificación y alcance de las pruebas](VERIFICACION.md).
@@ -36,6 +37,7 @@ Desde esta carpeta, en un entorno Python 3.10 o posterior:
 python -m pip install -r requirements.txt
 python generar_excel.py
 python generar_informe.py
+python generar_word.py
 python verificar_entrega.py
 ```
 

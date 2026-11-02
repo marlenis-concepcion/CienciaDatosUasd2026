@@ -10,6 +10,7 @@ def load():
     result={}
     for key in ['Reclamos','Produccion','Ventas']:
         path=SUBJECT/f'IndustriasCaribe_{key}.csv'
+        if not path.exists():path=SUBJECT/'Unidad II'/f'IndustriasCaribe_{key}.csv'
         with path.open(encoding='utf-8-sig',newline='') as f: rows=list(csv.DictReader(f))
         for row in rows:
             for col,val in list(row.items()):

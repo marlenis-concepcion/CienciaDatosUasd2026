@@ -85,13 +85,19 @@ def main():
     pattern=re.compile(r'/(?:Users|home)/[^\s]+|sesskey=|file://',re.I)
     for path in ROOT.rglob('*'):
         if not path.is_file() or path.suffix in ['.png','.pyc']:continue
-        if path.suffix=='.xlsx':
+        if path.suffix in ['.xlsx','.docx']:
             with ZipFile(path) as z:texts=[z.read(n).decode('utf8',errors='ignore') for n in z.namelist() if n.endswith('.xml')]
         elif path.suffix=='.pdf':texts=[p.extract_text() for p in pdf.pages]+[str(pdf.metadata)]
         else:texts=[path.read_text()]
         if path.name=='verificar_entrega.py':continue # Sanitization patterns are test fixtures.
         assert all(not pattern.search(t) for t in texts),path.name
-    result=f'''# Verificación de la entrega\n\n- {len(checks)} controles de datos y relaciones: correctos.\n- 10 tablas dinámicas nativas, 2 cachés, 6 segmentadores; cada uno conectado a las 5 TD compatibles.\n- 8 gráficos de Excel y 8 visualizaciones del informe.\n- {checked} fórmulas de dashboards recalculadas contra los datos originales y conciliadas con sus resultados guardados.\n- {scenarios} combinaciones de filtros con expectativas calculadas desde los datos originales. Estas comprobaciones no ejecutan la interfaz de Excel.\n- XML y relaciones internas: válidos; sin enlaces externos a datos ni macros. El enlace web de GitHub es un hipervínculo.\n- PDF: {len(pdf.pages)} páginas; enlace GitHub clicable presente.\n- Sin rutas personales, nombres de dispositivos ni parámetros de sesión en el contenido entregable.\n\n## Alcance y compatibilidad\n\nEl libro se abrió con LibreOffice para revisar datos iniciales y gráficos. Los segmentadores requieren Excel compatible; su interacción en Excel de escritorio no se pudo ejecutar en este entorno. No guardar la vista previa de LibreOffice sobre el original, ya que puede perder las extensiones de segmentadores.\n\nPruebas manuales propuestas: Estado = Resuelto → total 318 y resueltos 318; Estado = Abierto → total 54, resueltos 0 y promedios sin datos; Planta Santiago → plan 545,792, real 516,231 y defectuosas 17,354. Borrar filtros restablece los totales globales.\n'''
+    word=ROOT/'Informe_Unidad_II_IndustriasCaribe.docx'
+    if word.exists():
+        with ZipFile(word) as z:
+            document=E.fromstring(z.read('word/document.xml'));wns={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+            assert len(document.findall('.//w:tbl',wns))==7
+            assert len(document.findall('.//w:drawing',wns))==9
+    result=f'''# Verificación de la entrega\n\n- {len(checks)} controles de datos y relaciones: correctos.\n- 10 tablas dinámicas nativas, 2 cachés, 6 segmentadores; cada uno conectado a las 5 TD compatibles.\n- 8 gráficos de Excel y 8 visualizaciones del informe.\n- {checked} fórmulas de dashboards recalculadas contra los datos originales y conciliadas con sus resultados guardados.\n- {scenarios} combinaciones de filtros con expectativas calculadas desde los datos originales. Estas comprobaciones no ejecutan la interfaz de Excel.\n- XML y relaciones internas: válidos; sin enlaces externos a datos ni macros. El enlace web de GitHub es un hipervínculo.\n- Word editable: portada, siete tablas y ocho gráficos, más el escudo; contenido y metadatos revisados.\n- PDF: {len(pdf.pages)} páginas; enlace GitHub clicable presente.\n- Sin rutas personales, nombres de dispositivos ni parámetros de sesión en el contenido entregable.\n\n## Alcance y compatibilidad\n\nEl libro se abrió con LibreOffice para revisar datos iniciales y gráficos. Los segmentadores requieren Excel compatible; su interacción en Excel de escritorio no se pudo ejecutar en este entorno. No guardar la vista previa de LibreOffice sobre el original, ya que puede perder las extensiones de segmentadores.\n\nPruebas manuales propuestas: Estado = Resuelto → total 318 y resueltos 318; Estado = Abierto → total 54, resueltos 0 y promedios sin datos; Planta Santiago → plan 545,792, real 516,231 y defectuosas 17,354. Borrar filtros restablece los totales globales.\n'''
     (ROOT/'VERIFICACION.md').write_text(result);print(result)
 
 if __name__=='__main__':main()
