@@ -703,3 +703,29 @@
 - **test_dss.py** — fn cohort() · fn test_support_rules_are_explicit_and_ordered() · fn test_priority_list_respects_capacity_and_is_sorted() · fn test_priority_list_contains_the_highest_risk_students() · fn test_every_prioritized_student_gets_support_and_explanation() · fn test_explanations_never_mention_sensitive_attributes() · fn test_explanation_lists_only_risk_increasing_factors() · fn test_human_decision_log_requires_reason_and_owner() · fn test_streamlit_app_starts_and_warns_about_human_decision()
 - **test_fairness.py** — fn test_age_bands_cover_all_ages_without_gaps() · fn test_audit_groups_are_readable_and_complete() · fn test_group_recall_matches_hand_calculation() · fn test_small_groups_do_not_count_in_the_gap() · fn test_quota_allocation_uses_exact_capacity_and_top_risk_within_group() · fn test_quota_gives_places_to_low_risk_groups_that_global_ranking_ignores() · fn test_prioritized_list_with_quota_keeps_capacity() · fn test_mitigation_choice_prefers_best_recall_among_those_that_pass_gates() · fn test_gate_decision_maps_to_four_options()
 - **test_model.py** — fn fitted() · fn test_model_outputs_valid_probabilities() · fn test_scaler_is_fitted_only_on_training_data() · fn test_model_ignores_sensitive_columns_even_if_they_change() · fn test_contributions_add_up_to_the_logit() · fn test_top_k_selects_exactly_capacity_and_highest_scores() · fn test_capacity_metrics_match_hand_calculation() · fn test_choice_ignores_random_reference_and_uses_recall_then_ap()
+
+## Ampliación: Visualización de Datos I (2026-11-02)
+
+Nueva materia independiente de Ciencia de Datos II. Esta sección incorpora los archivos de la entrega sin regenerar las secciones anteriores.
+
+### 📂 Visualización de Datos I/INF-8240-C2/
+- README.md
+
+### 📂 Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/
+- Calculos_Visualizacion_Datos_I.xlsx
+- Consigna.txt
+- Entrega_Visualizacion_Datos_I.pdf
+- Presentacion_Visualizacion_Datos_I.pptx
+- README.md
+- generar_entrega.py
+- requirements.txt
+
+### 📂 Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/graficos/
+- 01_ventas.png
+- 02_canales.png
+- 03_participacion.png
+- 04_relacion.png
+
+### 📂 Visualización de Datos I/INF-8240-C2/Unidad I/Practica 1/recursos/
+- uasd_logo.png
+

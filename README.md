@@ -5,6 +5,8 @@ Repositorio académico de Marlenis Judith Concepción Cuevas.
 - [Ciencia de Datos I](Ciencia%20de%20Datos%20I/README.md): materiales y trabajos de la primera asignatura.
 - [Ciencia de Datos II](Ciencia%20de%20DatosII/README.md): carpeta de trabajo para los nuevos materiales, tareas y proyectos.
 
+- [Visualización de Datos I · INF-8240-C2](Visualizaci%C3%B3n%20de%20Datos%20I/INF-8240-C2/README.md): prácticas, informes y presentaciones de la nueva materia.
+
 ## Organización
 
 ```text
@@ -15,8 +17,10 @@ CienciaDatosUasd2026/
 │   ├── Unidad_3/
 │   ├── Unidad_4/
 │   └── scripts/
-└── Ciencia de DatosII/
-    └── README.md
+├── Ciencia de DatosII/
+│   └── README.md
+└── Visualización de Datos I/
+    └── INF-8240-C2/
 ```
 
 ## Índice para asistentes
