@@ -1,0 +1,451 @@
+﻿ReclamoID,VentaID,FechaReclamo,ProductoID,Region,Categoria,Prioridad,Estado,DiasResolucion,Satisfaccion_1a5
+R0001,V01116,2025-06-20,P02,Gran Santo Domingo,Calidad,Media,Resuelto,9,1
+R0002,V02464,2026-01-12,P05,Este,Empaque,Baja,En proceso,,
+R0003,V02682,2025-02-25,P06,Este,Facturacion,Media,Abierto,,
+R0004,V01797,2025-08-20,P05,Gran Santo Domingo,Entrega,Media,Resuelto,9,5
+R0005,V02455,2025-05-07,P06,Este,Entrega,Alta,Resuelto,15,2
+R0006,V02229,2025-08-08,P04,Este,Atencion,Baja,Resuelto,8,4
+R0007,V01191,2025-10-07,P04,Cibao,Calidad,Baja,Resuelto,4,4
+R0008,V01893,2025-09-08,P03,Este,Facturacion,Media,Resuelto,8,2
+R0009,V00223,2025-11-23,P05,Gran Santo Domingo,Calidad,Media,Resuelto,12,1
+R0010,V01193,2025-12-29,P01,Sur,Empaque,Media,En proceso,,
+R0011,V02333,2025-04-07,P02,Sur,Empaque,Media,Resuelto,16,3
+R0012,V00877,2025-08-24,P01,Cibao,Calidad,Baja,En proceso,,
+R0013,V02683,2025-01-19,P06,Gran Santo Domingo,Empaque,Media,Resuelto,10,2
+R0014,V00494,2025-09-11,P05,Este,Entrega,Baja,Resuelto,13,1
+R0015,V00107,2025-05-28,P01,Este,Atencion,Baja,Resuelto,1,2
+R0016,V01868,2025-04-01,P06,Este,Empaque,Baja,Resuelto,13,5
+R0017,V00276,2025-04-05,P01,Este,Empaque,Alta,Resuelto,9,5
+R0018,V01957,2025-02-24,P05,Cibao,Entrega,Baja,En proceso,,
+R0019,V00689,2025-11-07,P03,Sur,Facturacion,Baja,Abierto,,
+R0020,V02235,2025-03-21,P04,Cibao,Empaque,Alta,Resuelto,6,4
+R0021,V00039,2025-10-17,P02,Cibao,Empaque,Media,Resuelto,7,4
+R0022,V02928,2025-12-10,P03,Cibao,Atencion,Alta,Abierto,,
+R0023,V00922,2025-05-08,P04,Gran Santo Domingo,Entrega,Media,En proceso,,
+R0024,V00491,2025-05-27,P05,Sur,Empaque,Alta,Resuelto,12,2
+R0025,V02447,2025-08-29,P06,Gran Santo Domingo,Atencion,Media,Resuelto,13,3
+R0026,V01404,2025-06-14,P03,Sur,Empaque,Media,Resuelto,1,3
+R0027,V02651,2025-08-08,P06,Este,Empaque,Media,Resuelto,13,3
+R0028,V01844,2025-01-23,P01,Cibao,Calidad,Alta,Resuelto,7,2
+R0029,V01561,2025-05-20,P01,Sur,Facturacion,Baja,Abierto,,
+R0030,V00162,2025-10-20,P02,Este,Empaque,Baja,Resuelto,6,3
+R0031,V01873,2025-10-08,P03,Sur,Atencion,Media,Resuelto,3,2
+R0032,V00806,2025-08-08,P05,Sur,Empaque,Alta,En proceso,,
+R0033,V01121,2025-03-08,P05,Gran Santo Domingo,Facturacion,Baja,Resuelto,8,2
+R0034,V02638,2025-08-02,P05,Sur,Calidad,Alta,Resuelto,7,1
+R0035,V00344,2025-02-11,P03,Cibao,Atencion,Media,Resuelto,16,4
+R0036,V02619,2025-06-18,P05,Este,Empaque,Alta,En proceso,,
+R0037,V00092,2025-10-10,P02,Este,Empaque,Media,Resuelto,16,1
+R0038,V02918,2025-11-29,P06,Sur,Atencion,Baja,Resuelto,7,1
+R0039,V02226,2025-08-20,P02,Este,Empaque,Alta,Resuelto,4,5
+R0040,V01576,2025-02-08,P03,Cibao,Entrega,Media,Resuelto,2,5
+R0041,V01646,2025-11-25,P06,Cibao,Facturacion,Baja,En proceso,,
+R0042,V02239,2025-04-20,P05,Este,Empaque,Alta,Resuelto,8,5
+R0043,V02850,2025-03-11,P05,Gran Santo Domingo,Facturacion,Alta,Resuelto,3,3
+R0044,V01384,2025-09-02,P02,Este,Entrega,Alta,Resuelto,7,2
+R0045,V02087,2025-04-14,P03,Sur,Facturacion,Media,Resuelto,5,4
+R0046,V01499,2025-05-15,P02,Cibao,Atencion,Alta,Resuelto,12,3
+R0047,V01257,2025-12-22,P01,Gran Santo Domingo,Empaque,Alta,Resuelto,2,1
+R0048,V01389,2025-07-23,P06,Cibao,Calidad,Media,Resuelto,9,1
+R0049,V00781,2025-10-14,P02,Gran Santo Domingo,Entrega,Baja,Resuelto,13,2
+R0050,V00428,2025-09-02,P04,Cibao,Empaque,Media,Abierto,,
+R0051,V01701,2025-11-30,P06,Gran Santo Domingo,Empaque,Baja,Resuelto,3,1
+R0052,V02222,2025-06-24,P02,Cibao,Empaque,Media,Resuelto,10,5
+R0053,V00288,2025-03-14,P06,Este,Calidad,Media,Resuelto,10,2
+R0054,V01484,2025-04-13,P03,Sur,Atencion,Alta,Resuelto,8,3
+R0055,V02973,2025-10-09,P03,Gran Santo Domingo,Empaque,Alta,En proceso,,
+R0056,V00016,2025-05-05,P04,Gran Santo Domingo,Entrega,Media,Resuelto,14,3
+R0057,V00591,2025-05-01,P05,Este,Entrega,Alta,Resuelto,15,5
+R0058,V00832,2025-08-06,P06,Cibao,Atencion,Baja,Resuelto,14,2
+R0059,V02005,2025-01-20,P05,Cibao,Empaque,Media,Resuelto,7,5
+R0060,V00767,2026-01-23,P06,Gran Santo Domingo,Atencion,Baja,Resuelto,13,3
+R0061,V02169,2025-09-20,P05,Sur,Empaque,Alta,Resuelto,7,3
+R0062,V00735,2025-09-24,P06,Gran Santo Domingo,Empaque,Media,Resuelto,9,3
+R0063,V01101,2025-11-05,P04,Este,Facturacion,Media,En proceso,,
+R0064,V02110,2025-07-25,P06,Este,Entrega,Baja,Resuelto,1,2
+R0065,V00739,2025-04-11,P03,Sur,Empaque,Baja,Resuelto,10,4
+R0066,V01307,2025-06-21,P01,Sur,Empaque,Baja,En proceso,,
+R0067,V01237,2025-10-15,P02,Este,Facturacion,Media,Resuelto,14,1
+R0068,V02280,2025-03-24,P02,Sur,Calidad,Baja,Resuelto,7,2
+R0069,V01798,2025-07-08,P01,Sur,Atencion,Baja,Resuelto,16,4
+R0070,V02842,2025-10-22,P02,Sur,Empaque,Media,En proceso,,
+R0071,V01563,2025-12-06,P04,Gran Santo Domingo,Atencion,Media,Resuelto,9,1
+R0072,V01862,2025-03-09,P01,Cibao,Entrega,Alta,En proceso,,
+R0073,V01295,2025-12-19,P05,Este,Facturacion,Baja,Resuelto,14,5
+R0074,V00828,2025-11-17,P05,Gran Santo Domingo,Calidad,Alta,Resuelto,4,4
+R0075,V02690,2025-11-04,P05,Sur,Empaque,Media,Resuelto,9,3
+R0076,V01085,2025-04-21,P01,Este,Atencion,Alta,Resuelto,14,1
+R0077,V02749,2025-08-18,P05,Gran Santo Domingo,Entrega,Media,En proceso,,
+R0078,V01548,2025-01-27,P03,Cibao,Calidad,Media,Resuelto,3,2
+R0079,V00720,2025-04-02,P04,Este,Entrega,Media,Abierto,,
+R0080,V02534,2025-09-13,P01,Gran Santo Domingo,Calidad,Alta,Abierto,,
+R0081,V02103,2025-04-01,P02,Sur,Calidad,Baja,Resuelto,5,4
+R0082,V02723,2025-11-18,P02,Gran Santo Domingo,Entrega,Media,Resuelto,4,2
+R0083,V01694,2025-10-22,P06,Cibao,Atencion,Media,Resuelto,14,5
+R0084,V01458,2025-07-27,P05,Este,Entrega,Alta,Resuelto,16,5
+R0085,V00686,2025-03-01,P01,Cibao,Empaque,Media,Abierto,,
+R0086,V01382,2026-01-14,P02,Cibao,Empaque,Media,Abierto,,
+R0087,V00255,2025-02-21,P06,Cibao,Facturacion,Media,Resuelto,16,1
+R0088,V00332,2025-04-13,P01,Cibao,Empaque,Alta,Resuelto,6,2
+R0089,V00477,2025-06-20,P04,Este,Entrega,Media,Resuelto,11,5
+R0090,V02602,2025-05-14,P03,Cibao,Empaque,Baja,En proceso,,
+R0091,V00875,2026-01-10,P06,Sur,Atencion,Alta,Resuelto,12,5
+R0092,V00960,2026-01-07,P04,Gran Santo Domingo,Facturacion,Baja,Resuelto,16,5
+R0093,V02235,2025-04-14,P04,Cibao,Facturacion,Media,En proceso,,
+R0094,V00810,2025-02-28,P05,Cibao,Facturacion,Baja,Resuelto,13,5
+R0095,V00692,2025-12-02,P04,Gran Santo Domingo,Empaque,Alta,En proceso,,
+R0096,V00463,2025-08-13,P05,Gran Santo Domingo,Empaque,Baja,Resuelto,13,3
+R0097,V02835,2025-11-30,P04,Gran Santo Domingo,Calidad,Baja,Resuelto,12,4
+R0098,V02944,2025-06-11,P04,Este,Calidad,Baja,Resuelto,5,1
+R0099,V01520,2025-07-21,P05,Cibao,Entrega,Alta,En proceso,,
+R0100,V02787,2025-10-11,P02,Sur,Atencion,Alta,En proceso,,
+R0101,V00385,2025-08-19,P02,Cibao,Facturacion,Media,Resuelto,12,1
+R0102,V02171,2025-12-06,P06,Cibao,Calidad,Media,Resuelto,6,5
+R0103,V02778,2025-07-12,P01,Este,Empaque,Media,Resuelto,4,5
+R0104,V02587,2025-12-21,P02,Sur,Facturacion,Baja,Resuelto,1,5
+R0105,V01199,2025-10-20,P04,Gran Santo Domingo,Calidad,Media,Resuelto,13,4
+R0106,V01836,2025-01-25,P02,Gran Santo Domingo,Entrega,Alta,Resuelto,12,2
+R0107,V01270,2025-01-30,P02,Gran Santo Domingo,Calidad,Media,Resuelto,7,5
+R0108,V01796,2025-09-14,P06,Sur,Calidad,Baja,Resuelto,2,2
+R0109,V02573,2025-10-21,P05,Cibao,Atencion,Baja,En proceso,,
+R0110,V00166,2025-10-30,P01,Sur,Empaque,Alta,Resuelto,2,5
+R0111,V02142,2025-07-08,P01,Sur,Atencion,Media,Resuelto,14,2
+R0112,V02460,2025-10-28,P06,Este,Entrega,Baja,En proceso,,
+R0113,V02156,2025-09-15,P03,Este,Empaque,Baja,Resuelto,11,1
+R0114,V00410,2025-08-02,P05,Sur,Entrega,Alta,Resuelto,5,1
+R0115,V00604,2025-09-26,P04,Este,Facturacion,Media,En proceso,,
+R0116,V01678,2025-07-23,P05,Este,Atencion,Alta,Abierto,,
+R0117,V00427,2025-11-01,P02,Este,Entrega,Media,Resuelto,4,1
+R0118,V00247,2025-07-07,P05,Este,Entrega,Baja,Resuelto,12,4
+R0119,V02286,2025-09-02,P05,Gran Santo Domingo,Atencion,Baja,Resuelto,11,5
+R0120,V00286,2025-04-01,P05,Sur,Entrega,Alta,Resuelto,10,5
+R0121,V01798,2025-07-21,P01,Sur,Entrega,Alta,Abierto,,
+R0122,V01109,2025-02-23,P01,Cibao,Entrega,Baja,En proceso,,
+R0123,V00221,2025-01-17,P01,Gran Santo Domingo,Atencion,Media,Abierto,,
+R0124,V01341,2025-11-25,P03,Cibao,Atencion,Alta,Resuelto,7,3
+R0125,V01845,2025-02-26,P05,Cibao,Atencion,Media,Abierto,,
+R0126,V01061,2025-08-29,P06,Cibao,Facturacion,Baja,En proceso,,
+R0127,V00201,2025-02-14,P03,Sur,Entrega,Baja,Resuelto,12,3
+R0128,V02521,2025-02-21,P04,Gran Santo Domingo,Calidad,Baja,Resuelto,10,5
+R0129,V00367,2025-03-01,P02,Este,Facturacion,Alta,Resuelto,14,3
+R0130,V02737,2025-12-21,P01,Este,Empaque,Alta,Resuelto,2,4
+R0131,V00175,2025-09-14,P06,Este,Empaque,Alta,Resuelto,13,1
+R0132,V00123,2026-01-09,P03,Gran Santo Domingo,Atencion,Alta,Resuelto,10,5
+R0133,V02171,2025-11-18,P06,Cibao,Entrega,Alta,Resuelto,15,3
+R0134,V02547,2025-09-29,P01,Este,Empaque,Alta,Resuelto,8,5
+R0135,V00006,2025-06-04,P02,Cibao,Empaque,Alta,Resuelto,9,4
+R0136,V02714,2025-08-14,P05,Este,Facturacion,Baja,Resuelto,9,4
+R0137,V01794,2026-01-23,P04,Sur,Entrega,Media,Resuelto,5,1
+R0138,V02897,2025-11-24,P06,Gran Santo Domingo,Empaque,Media,Resuelto,2,3
+R0139,V00978,2025-11-08,P02,Cibao,Calidad,Alta,Resuelto,11,5
+R0140,V01748,2026-01-22,P04,Gran Santo Domingo,Entrega,Baja,Resuelto,8,1
+R0141,V00133,2025-04-16,P01,Sur,Entrega,Media,En proceso,,
+R0142,V00396,2025-09-27,P06,Cibao,Empaque,Baja,Resuelto,9,2
+R0143,V00095,2025-12-03,P06,Sur,Atencion,Media,Abierto,,
+R0144,V00650,2025-04-10,P06,Este,Calidad,Media,Resuelto,6,4
+R0145,V02384,2025-04-26,P03,Cibao,Empaque,Media,En proceso,,
+R0146,V00763,2025-04-09,P01,Sur,Calidad,Alta,Resuelto,16,5
+R0147,V00092,2025-09-29,P02,Este,Empaque,Baja,Resuelto,14,3
+R0148,V02706,2025-03-06,P05,Sur,Empaque,Alta,Resuelto,12,5
+R0149,V02957,2025-11-01,P02,Este,Facturacion,Baja,En proceso,,
+R0150,V00717,2025-08-15,P06,Este,Empaque,Baja,Resuelto,10,4
+R0151,V00037,2025-04-25,P01,Este,Empaque,Alta,Resuelto,13,2
+R0152,V01771,2025-12-26,P03,Cibao,Entrega,Alta,Resuelto,14,2
+R0153,V02937,2025-09-04,P06,Este,Facturacion,Alta,Abierto,,
+R0154,V02601,2025-08-27,P06,Sur,Entrega,Alta,Resuelto,3,2
+R0155,V00721,2025-10-24,P01,Este,Empaque,Media,Abierto,,
+R0156,V01337,2025-08-07,P01,Gran Santo Domingo,Atencion,Media,Resuelto,1,2
+R0157,V01341,2025-11-22,P03,Cibao,Facturacion,Baja,Abierto,,
+R0158,V01023,2025-10-20,P06,Este,Facturacion,Baja,Resuelto,6,5
+R0159,V02094,2025-07-21,P02,Sur,Calidad,Baja,Abierto,,
+R0160,V00941,2025-11-23,P04,Gran Santo Domingo,Atencion,Media,Resuelto,13,3
+R0161,V01365,2025-02-22,P03,Cibao,Empaque,Alta,Resuelto,4,4
+R0162,V01236,2025-09-21,P06,Cibao,Facturacion,Media,Resuelto,5,1
+R0163,V01637,2025-08-09,P02,Gran Santo Domingo,Atencion,Media,Resuelto,13,4
+R0164,V01646,2025-11-08,P06,Cibao,Empaque,Baja,Resuelto,11,1
+R0165,V02069,2026-01-04,P04,Este,Facturacion,Media,En proceso,,
+R0166,V00781,2025-10-15,P02,Gran Santo Domingo,Facturacion,Media,Resuelto,3,3
+R0167,V02708,2025-04-11,P02,Cibao,Atencion,Baja,Resuelto,2,5
+R0168,V02751,2025-11-30,P01,Gran Santo Domingo,Empaque,Alta,Resuelto,4,5
+R0169,V00697,2025-07-03,P05,Gran Santo Domingo,Empaque,Media,Abierto,,
+R0170,V02471,2025-10-08,P02,Este,Empaque,Media,En proceso,,
+R0171,V00684,2025-07-02,P04,Gran Santo Domingo,Empaque,Alta,En proceso,,
+R0172,V01300,2025-02-18,P06,Gran Santo Domingo,Entrega,Alta,Resuelto,10,5
+R0173,V02163,2025-05-03,P01,Sur,Empaque,Baja,Resuelto,12,3
+R0174,V02525,2025-04-19,P04,Gran Santo Domingo,Calidad,Baja,En proceso,,
+R0175,V02539,2025-09-27,P06,Sur,Entrega,Media,Resuelto,15,3
+R0176,V02466,2025-05-05,P06,Cibao,Atencion,Baja,En proceso,,
+R0177,V00534,2025-05-06,P02,Este,Empaque,Baja,Resuelto,16,3
+R0178,V00467,2025-05-26,P01,Cibao,Calidad,Baja,En proceso,,
+R0179,V01680,2025-06-25,P05,Sur,Entrega,Media,Resuelto,14,5
+R0180,V00178,2025-08-20,P06,Cibao,Atencion,Alta,Resuelto,5,3
+R0181,V00090,2025-05-20,P03,Sur,Facturacion,Baja,Resuelto,16,3
+R0182,V00126,2025-07-18,P06,Sur,Atencion,Alta,En proceso,,
+R0183,V02786,2025-03-11,P05,Gran Santo Domingo,Empaque,Baja,Resuelto,1,5
+R0184,V01327,2025-06-07,P04,Cibao,Atencion,Alta,Resuelto,6,3
+R0185,V01516,2025-12-12,P01,Este,Atencion,Baja,Resuelto,4,1
+R0186,V02583,2025-11-13,P01,Gran Santo Domingo,Facturacion,Baja,Resuelto,13,2
+R0187,V00050,2025-08-20,P06,Sur,Empaque,Media,Resuelto,14,4
+R0188,V01232,2026-01-14,P06,Cibao,Facturacion,Alta,Resuelto,2,4
+R0189,V01941,2025-10-03,P01,Cibao,Atencion,Baja,En proceso,,
+R0190,V02496,2025-12-18,P04,Sur,Entrega,Baja,Resuelto,7,5
+R0191,V02350,2026-01-04,P01,Cibao,Facturacion,Alta,Resuelto,14,5
+R0192,V02915,2025-02-15,P05,Este,Calidad,Media,Resuelto,15,3
+R0193,V00179,2025-06-21,P02,Gran Santo Domingo,Calidad,Media,Abierto,,
+R0194,V01614,2025-02-19,P05,Cibao,Facturacion,Baja,Resuelto,7,2
+R0195,V01442,2025-02-17,P02,Gran Santo Domingo,Facturacion,Media,Resuelto,9,4
+R0196,V00845,2025-08-24,P01,Sur,Empaque,Baja,Abierto,,
+R0197,V00642,2025-06-27,P04,Este,Calidad,Media,Resuelto,6,1
+R0198,V00472,2025-03-03,P04,Cibao,Calidad,Media,Resuelto,8,4
+R0199,V00718,2025-02-07,P01,Cibao,Facturacion,Baja,Resuelto,1,5
+R0200,V02980,2025-10-26,P06,Sur,Entrega,Media,Abierto,,
+R0201,V01067,2025-06-27,P06,Cibao,Entrega,Alta,Resuelto,2,3
+R0202,V00723,2025-07-12,P02,Cibao,Entrega,Baja,Resuelto,12,5
+R0203,V00046,2025-05-11,P02,Este,Entrega,Alta,Resuelto,12,4
+R0204,V01507,2025-04-08,P05,Este,Empaque,Baja,Resuelto,7,5
+R0205,V00541,2026-01-28,P04,Este,Empaque,Media,Resuelto,7,5
+R0206,V00075,2025-02-12,P05,Este,Atencion,Alta,Resuelto,12,3
+R0207,V00047,2025-07-09,P05,Este,Empaque,Media,Resuelto,14,1
+R0208,V00908,2025-02-04,P01,Gran Santo Domingo,Facturacion,Media,Resuelto,13,2
+R0209,V01145,2025-10-23,P02,Gran Santo Domingo,Empaque,Media,Resuelto,11,2
+R0210,V01047,2025-05-15,P03,Cibao,Facturacion,Media,Resuelto,4,2
+R0211,V02308,2025-04-30,P02,Este,Entrega,Alta,Resuelto,13,2
+R0212,V02630,2025-10-03,P06,Sur,Empaque,Media,En proceso,,
+R0213,V01084,2026-01-22,P03,Gran Santo Domingo,Entrega,Baja,Resuelto,16,4
+R0214,V00305,2025-05-06,P03,Este,Atencion,Baja,Resuelto,7,1
+R0215,V00737,2025-06-26,P02,Este,Facturacion,Baja,Resuelto,15,2
+R0216,V02820,2025-09-13,P05,Este,Empaque,Alta,En proceso,,
+R0217,V02250,2025-04-28,P02,Sur,Calidad,Baja,Resuelto,10,2
+R0218,V01732,2025-04-02,P06,Cibao,Atencion,Baja,Resuelto,3,4
+R0219,V01760,2025-05-16,P01,Este,Calidad,Alta,Resuelto,10,2
+R0220,V00538,2025-09-13,P04,Este,Entrega,Baja,Abierto,,
+R0221,V01507,2025-03-30,P05,Este,Atencion,Media,Abierto,,
+R0222,V01220,2025-09-30,P05,Sur,Facturacion,Media,Resuelto,10,1
+R0223,V02413,2025-03-19,P01,Gran Santo Domingo,Atencion,Baja,Resuelto,4,1
+R0224,V02946,2025-04-13,P05,Este,Atencion,Media,En proceso,,
+R0225,V02928,2025-12-13,P03,Cibao,Entrega,Baja,Resuelto,5,5
+R0226,V02366,2025-05-09,P03,Cibao,Empaque,Baja,Resuelto,3,2
+R0227,V00311,2026-01-12,P03,Gran Santo Domingo,Calidad,Alta,Resuelto,5,3
+R0228,V02857,2025-07-12,P05,Gran Santo Domingo,Entrega,Media,En proceso,,
+R0229,V00643,2025-05-29,P02,Este,Calidad,Baja,Resuelto,9,2
+R0230,V01170,2025-09-17,P06,Este,Atencion,Media,Resuelto,15,1
+R0231,V01080,2025-07-27,P03,Gran Santo Domingo,Entrega,Media,Resuelto,13,4
+R0232,V02152,2025-06-01,P06,Gran Santo Domingo,Entrega,Media,Abierto,,
+R0233,V01854,2025-09-03,P06,Sur,Entrega,Media,Resuelto,5,5
+R0234,V01208,2025-09-13,P02,Este,Atencion,Alta,Resuelto,15,2
+R0235,V01944,2025-11-10,P01,Gran Santo Domingo,Atencion,Media,Abierto,,
+R0236,V02360,2025-05-25,P06,Gran Santo Domingo,Entrega,Baja,En proceso,,
+R0237,V01209,2025-10-06,P01,Cibao,Empaque,Media,Resuelto,12,3
+R0238,V00944,2025-11-18,P05,Gran Santo Domingo,Atencion,Alta,Resuelto,2,4
+R0239,V01232,2026-01-06,P06,Cibao,Calidad,Alta,Resuelto,6,4
+R0240,V02828,2025-08-19,P05,Cibao,Calidad,Baja,En proceso,,
+R0241,V00893,2026-01-05,P02,Cibao,Calidad,Media,En proceso,,
+R0242,V00939,2025-06-04,P06,Este,Facturacion,Baja,Resuelto,14,3
+R0243,V02713,2025-09-17,P01,Este,Facturacion,Baja,Resuelto,15,3
+R0244,V00401,2025-02-19,P05,Cibao,Facturacion,Media,Resuelto,13,5
+R0245,V01329,2025-01-13,P03,Gran Santo Domingo,Calidad,Media,Resuelto,10,4
+R0246,V01796,2025-09-17,P06,Sur,Entrega,Media,Resuelto,10,2
+R0247,V00623,2025-06-19,P03,Este,Calidad,Alta,En proceso,,
+R0248,V02730,2025-07-23,P05,Este,Entrega,Media,Resuelto,10,3
+R0249,V00920,2025-09-18,P06,Cibao,Calidad,Alta,En proceso,,
+R0250,V00904,2025-08-26,P03,Sur,Facturacion,Baja,Resuelto,11,3
+R0251,V01450,2025-09-21,P01,Este,Empaque,Alta,Resuelto,14,1
+R0252,V00634,2025-01-11,P04,Gran Santo Domingo,Facturacion,Baja,Resuelto,9,4
+R0253,V01563,2025-11-20,P04,Gran Santo Domingo,Calidad,Media,Resuelto,10,3
+R0254,V01261,2025-04-16,P04,Gran Santo Domingo,Entrega,Media,Resuelto,9,1
+R0255,V02556,2025-08-02,P03,Este,Atencion,Media,Resuelto,6,4
+R0256,V02701,2025-12-29,P06,Gran Santo Domingo,Calidad,Alta,Resuelto,9,3
+R0257,V00446,2025-01-29,P06,Cibao,Atencion,Alta,En proceso,,
+R0258,V02388,2025-11-26,P05,Cibao,Calidad,Baja,Resuelto,12,2
+R0259,V01166,2025-11-07,P05,Gran Santo Domingo,Atencion,Baja,En proceso,,
+R0260,V02290,2025-02-08,P01,Gran Santo Domingo,Entrega,Alta,Resuelto,14,5
+R0261,V02764,2025-09-25,P06,Este,Calidad,Media,Resuelto,11,5
+R0262,V01862,2025-03-19,P01,Cibao,Calidad,Alta,Resuelto,15,3
+R0263,V02946,2025-05-02,P05,Este,Facturacion,Media,Abierto,,
+R0264,V02353,2025-05-18,P01,Cibao,Facturacion,Alta,Resuelto,15,3
+R0265,V00302,2025-03-01,P04,Gran Santo Domingo,Calidad,Baja,Resuelto,5,1
+R0266,V02864,2025-09-29,P04,Gran Santo Domingo,Empaque,Alta,En proceso,,
+R0267,V02295,2025-03-30,P06,Gran Santo Domingo,Empaque,Media,Resuelto,12,1
+R0268,V01286,2025-10-21,P03,Sur,Entrega,Alta,Resuelto,4,4
+R0269,V02532,2025-10-27,P02,Este,Calidad,Baja,Resuelto,6,3
+R0270,V00145,2025-11-25,P05,Este,Calidad,Alta,Abierto,,
+R0271,V01640,2026-01-01,P06,Cibao,Empaque,Alta,Abierto,,
+R0272,V00424,2025-06-18,P01,Sur,Entrega,Alta,Resuelto,16,5
+R0273,V01356,2025-05-25,P03,Gran Santo Domingo,Facturacion,Media,Resuelto,6,5
+R0274,V00960,2026-01-08,P04,Gran Santo Domingo,Empaque,Media,En proceso,,
+R0275,V01826,2025-04-05,P03,Cibao,Calidad,Alta,En proceso,,
+R0276,V00295,2025-03-07,P01,Gran Santo Domingo,Atencion,Baja,Resuelto,4,5
+R0277,V00806,2025-07-16,P05,Sur,Atencion,Media,Resuelto,11,1
+R0278,V00365,2025-11-19,P05,Sur,Entrega,Baja,Abierto,,
+R0279,V01121,2025-03-22,P05,Gran Santo Domingo,Atencion,Baja,Resuelto,8,1
+R0280,V01492,2025-06-16,P05,Gran Santo Domingo,Facturacion,Media,Resuelto,5,2
+R0281,V00341,2025-10-21,P04,Sur,Facturacion,Alta,Resuelto,2,1
+R0282,V02604,2025-11-15,P05,Gran Santo Domingo,Atencion,Alta,Resuelto,2,3
+R0283,V00198,2025-12-19,P06,Cibao,Entrega,Media,Resuelto,3,5
+R0284,V02715,2025-04-17,P06,Sur,Calidad,Alta,Abierto,,
+R0285,V01497,2025-10-21,P04,Cibao,Empaque,Baja,Resuelto,9,4
+R0286,V01464,2026-01-01,P04,Cibao,Calidad,Alta,En proceso,,
+R0287,V00596,2025-11-16,P01,Gran Santo Domingo,Atencion,Media,En proceso,,
+R0288,V01614,2025-03-02,P05,Cibao,Facturacion,Alta,En proceso,,
+R0289,V01611,2025-04-06,P06,Este,Facturacion,Alta,Abierto,,
+R0290,V02505,2025-09-10,P06,Sur,Calidad,Alta,Resuelto,10,5
+R0291,V02875,2025-11-20,P03,Sur,Empaque,Baja,Resuelto,9,2
+R0292,V00917,2025-01-23,P06,Este,Facturacion,Media,Abierto,,
+R0293,V02853,2025-02-28,P02,Sur,Calidad,Media,Resuelto,3,5
+R0294,V00557,2025-04-27,P03,Sur,Calidad,Alta,Resuelto,9,1
+R0295,V01621,2025-04-10,P03,Sur,Atencion,Alta,Resuelto,3,3
+R0296,V02068,2025-09-24,P03,Gran Santo Domingo,Atencion,Alta,Resuelto,16,1
+R0297,V02775,2025-08-12,P02,Cibao,Entrega,Baja,Resuelto,15,5
+R0298,V01312,2025-04-04,P04,Sur,Facturacion,Baja,Abierto,,
+R0299,V01827,2025-04-02,P02,Gran Santo Domingo,Facturacion,Baja,Resuelto,1,3
+R0300,V01034,2026-01-18,P02,Cibao,Empaque,Media,En proceso,,
+R0301,V00846,2025-11-08,P01,Sur,Entrega,Media,Resuelto,3,1
+R0302,V01237,2025-10-23,P02,Este,Atencion,Media,Abierto,,
+R0303,V00742,2025-12-30,P03,Sur,Empaque,Alta,Resuelto,3,4
+R0304,V02167,2025-01-02,P02,Este,Atencion,Baja,Resuelto,13,3
+R0305,V01162,2025-09-17,P05,Cibao,Calidad,Media,Resuelto,11,3
+R0306,V01487,2025-12-31,P03,Cibao,Empaque,Media,Resuelto,2,1
+R0307,V00171,2026-01-15,P04,Cibao,Facturacion,Alta,En proceso,,
+R0308,V02164,2025-02-12,P01,Este,Entrega,Media,En proceso,,
+R0309,V00341,2025-10-29,P04,Sur,Empaque,Baja,Resuelto,11,4
+R0310,V00709,2025-01-12,P06,Este,Atencion,Media,En proceso,,
+R0311,V01284,2025-04-26,P05,Gran Santo Domingo,Empaque,Alta,Resuelto,14,5
+R0312,V01157,2025-09-12,P05,Gran Santo Domingo,Atencion,Media,En proceso,,
+R0313,V00251,2025-10-17,P01,Este,Atencion,Baja,Resuelto,14,4
+R0314,V02817,2025-12-27,P02,Este,Atencion,Media,Resuelto,10,5
+R0315,V02487,2026-01-13,P06,Gran Santo Domingo,Facturacion,Media,Resuelto,12,3
+R0316,V01578,2025-04-16,P06,Gran Santo Domingo,Facturacion,Alta,Resuelto,4,4
+R0317,V00412,2025-03-06,P04,Sur,Calidad,Media,Resuelto,5,1
+R0318,V02625,2025-06-10,P01,Gran Santo Domingo,Atencion,Media,Resuelto,1,1
+R0319,V02156,2025-09-24,P03,Este,Empaque,Media,Resuelto,11,1
+R0320,V01623,2025-12-06,P06,Cibao,Facturacion,Media,En proceso,,
+R0321,V01608,2025-12-03,P06,Cibao,Calidad,Baja,Resuelto,15,2
+R0322,V00577,2025-07-12,P02,Gran Santo Domingo,Entrega,Alta,Abierto,,
+R0323,V00144,2025-06-30,P03,Sur,Empaque,Alta,En proceso,,
+R0324,V02581,2025-05-15,P05,Gran Santo Domingo,Facturacion,Baja,Resuelto,6,5
+R0325,V02031,2025-06-12,P06,Gran Santo Domingo,Entrega,Media,En proceso,,
+R0326,V01184,2025-07-09,P03,Este,Calidad,Alta,Resuelto,3,4
+R0327,V00819,2025-12-23,P02,Cibao,Empaque,Media,En proceso,,
+R0328,V00827,2025-02-03,P05,Gran Santo Domingo,Facturacion,Media,En proceso,,
+R0329,V02928,2025-12-19,P03,Cibao,Atencion,Media,Resuelto,11,1
+R0330,V01463,2025-11-24,P02,Gran Santo Domingo,Calidad,Alta,Abierto,,
+R0331,V02874,2025-04-26,P01,Este,Calidad,Media,En proceso,,
+R0332,V02530,2025-12-17,P04,Sur,Atencion,Media,Abierto,,
+R0333,V01544,2025-03-24,P02,Gran Santo Domingo,Facturacion,Baja,Abierto,,
+R0334,V01430,2025-02-10,P03,Sur,Atencion,Baja,Resuelto,3,1
+R0335,V02835,2025-12-17,P04,Gran Santo Domingo,Empaque,Alta,Resuelto,10,4
+R0336,V01741,2025-06-20,P04,Sur,Facturacion,Media,Resuelto,12,5
+R0337,V01743,2025-10-16,P03,Cibao,Facturacion,Media,Resuelto,13,3
+R0338,V00732,2025-11-28,P02,Sur,Calidad,Media,Resuelto,3,1
+R0339,V00032,2025-04-04,P02,Sur,Atencion,Alta,Resuelto,2,2
+R0340,V00184,2025-04-25,P05,Sur,Entrega,Media,Resuelto,10,1
+R0341,V00949,2025-07-08,P06,Este,Calidad,Alta,Resuelto,10,2
+R0342,V02662,2025-10-07,P02,Gran Santo Domingo,Empaque,Media,En proceso,,
+R0343,V02193,2025-11-23,P06,Este,Calidad,Baja,En proceso,,
+R0344,V02679,2025-09-11,P06,Este,Atencion,Media,En proceso,,
+R0345,V01182,2025-09-14,P04,Gran Santo Domingo,Facturacion,Baja,Resuelto,8,2
+R0346,V02255,2025-07-02,P02,Sur,Calidad,Alta,Resuelto,12,2
+R0347,V01062,2025-02-04,P06,Sur,Empaque,Alta,En proceso,,
+R0348,V00493,2025-09-29,P04,Gran Santo Domingo,Empaque,Media,Resuelto,9,3
+R0349,V01687,2025-11-20,P05,Este,Entrega,Baja,Resuelto,9,1
+R0350,V02590,2025-08-31,P06,Este,Atencion,Baja,Resuelto,16,5
+R0351,V00260,2025-12-15,P05,Este,Atencion,Baja,Resuelto,5,2
+R0352,V01258,2025-10-17,P01,Este,Empaque,Media,Resuelto,1,2
+R0353,V00143,2025-07-31,P03,Sur,Entrega,Media,En proceso,,
+R0354,V02603,2026-01-23,P06,Gran Santo Domingo,Empaque,Baja,Resuelto,9,5
+R0355,V01951,2025-01-28,P06,Gran Santo Domingo,Facturacion,Media,Resuelto,12,2
+R0356,V01803,2025-09-07,P06,Sur,Atencion,Alta,En proceso,,
+R0357,V02715,2025-05-12,P06,Sur,Calidad,Baja,Resuelto,4,3
+R0358,V02664,2025-06-01,P05,Este,Atencion,Baja,Resuelto,13,1
+R0359,V00680,2025-10-30,P03,Sur,Atencion,Alta,En proceso,,
+R0360,V01535,2025-09-05,P03,Cibao,Calidad,Media,Resuelto,9,3
+R0361,V00004,2025-06-24,P06,Este,Atencion,Media,Resuelto,3,5
+R0362,V01514,2025-12-13,P04,Cibao,Calidad,Baja,Resuelto,4,5
+R0363,V00109,2025-12-01,P05,Este,Atencion,Baja,Resuelto,11,2
+R0364,V01326,2025-02-26,P04,Sur,Atencion,Alta,Resuelto,13,2
+R0365,V01278,2025-07-09,P01,Gran Santo Domingo,Empaque,Media,Abierto,,
+R0366,V02498,2025-05-01,P06,Gran Santo Domingo,Atencion,Alta,Abierto,,
+R0367,V01152,2025-11-10,P01,Cibao,Atencion,Media,Resuelto,3,2
+R0368,V01885,2025-10-18,P04,Gran Santo Domingo,Empaque,Baja,Resuelto,15,5
+R0369,V01287,2025-09-24,P05,Gran Santo Domingo,Facturacion,Alta,Resuelto,8,4
+R0370,V00444,2025-12-08,P06,Sur,Empaque,Baja,Resuelto,7,1
+R0371,V01667,2025-12-03,P06,Gran Santo Domingo,Facturacion,Baja,Resuelto,14,4
+R0372,V00975,2025-02-10,P05,Este,Calidad,Media,Abierto,,
+R0373,V02350,2026-01-14,P01,Cibao,Facturacion,Baja,Resuelto,16,5
+R0374,V01655,2025-04-10,P02,Este,Atencion,Media,Resuelto,9,5
+R0375,V02020,2025-05-16,P06,Cibao,Facturacion,Alta,Resuelto,6,1
+R0376,V02426,2025-02-19,P05,Este,Atencion,Media,Resuelto,5,4
+R0377,V00069,2025-06-13,P05,Gran Santo Domingo,Facturacion,Media,Abierto,,
+R0378,V00724,2025-06-13,P05,Gran Santo Domingo,Empaque,Media,Resuelto,2,2
+R0379,V02287,2025-06-04,P05,Este,Facturacion,Alta,Resuelto,15,4
+R0380,V01064,2025-10-23,P06,Gran Santo Domingo,Empaque,Baja,Abierto,,
+R0381,V00498,2025-06-11,P02,Este,Empaque,Alta,Resuelto,2,4
+R0382,V01885,2025-11-06,P04,Gran Santo Domingo,Empaque,Baja,Resuelto,5,5
+R0383,V01215,2025-05-01,P06,Gran Santo Domingo,Atencion,Media,Abierto,,
+R0384,V02495,2025-06-26,P02,Cibao,Entrega,Media,Resuelto,7,5
+R0385,V02615,2025-12-16,P01,Este,Calidad,Media,Abierto,,
+R0386,V00849,2025-12-21,P01,Este,Empaque,Alta,En proceso,,
+R0387,V00585,2025-02-09,P05,Sur,Calidad,Media,Resuelto,14,5
+R0388,V02712,2025-04-10,P04,Gran Santo Domingo,Facturacion,Media,Resuelto,15,4
+R0389,V02584,2025-02-17,P05,Gran Santo Domingo,Entrega,Alta,Resuelto,14,1
+R0390,V02059,2025-08-05,P04,Cibao,Empaque,Baja,Abierto,,
+R0391,V01056,2025-04-20,P01,Este,Entrega,Baja,Resuelto,5,3
+R0392,V01372,2025-06-25,P06,Este,Empaque,Alta,Resuelto,7,2
+R0393,V00154,2025-09-29,P03,Sur,Facturacion,Baja,Resuelto,9,2
+R0394,V02019,2025-11-13,P03,Cibao,Empaque,Baja,Resuelto,11,3
+R0395,V00247,2025-07-15,P05,Este,Calidad,Media,Resuelto,9,5
+R0396,V01785,2025-11-16,P02,Gran Santo Domingo,Calidad,Media,Abierto,,
+R0397,V02065,2025-11-09,P06,Este,Facturacion,Baja,Resuelto,11,1
+R0398,V01212,2025-06-16,P05,Sur,Atencion,Media,Resuelto,3,2
+R0399,V00183,2025-02-01,P04,Sur,Facturacion,Alta,Resuelto,16,4
+R0400,V00861,2025-07-12,P03,Gran Santo Domingo,Facturacion,Alta,En proceso,,
+R0401,V02943,2025-09-17,P03,Cibao,Calidad,Baja,Resuelto,12,2
+R0402,V02115,2025-06-24,P01,Este,Calidad,Alta,Resuelto,13,4
+R0403,V00632,2025-08-30,P04,Este,Atencion,Alta,En proceso,,
+R0404,V01543,2025-11-08,P03,Este,Facturacion,Alta,Resuelto,8,5
+R0405,V02192,2025-11-19,P04,Sur,Calidad,Baja,Resuelto,16,3
+R0406,V02777,2025-04-07,P01,Cibao,Entrega,Media,Resuelto,11,3
+R0407,V00841,2025-04-10,P06,Gran Santo Domingo,Calidad,Baja,En proceso,,
+R0408,V02846,2025-02-23,P05,Cibao,Atencion,Baja,Resuelto,5,2
+R0409,V00737,2025-06-17,P02,Este,Calidad,Baja,Resuelto,8,4
+R0410,V01382,2026-01-20,P02,Cibao,Atencion,Media,Resuelto,12,4
+R0411,V02698,2025-06-12,P06,Gran Santo Domingo,Entrega,Alta,Abierto,,
+R0412,V00306,2025-05-16,P05,Gran Santo Domingo,Empaque,Baja,Abierto,,
+R0413,V00373,2026-01-08,P01,Sur,Empaque,Baja,Resuelto,13,4
+R0414,V01174,2025-03-01,P06,Sur,Atencion,Baja,Resuelto,11,4
+R0415,V01388,2025-05-03,P05,Gran Santo Domingo,Atencion,Baja,Resuelto,2,4
+R0416,V02125,2025-03-09,P05,Gran Santo Domingo,Atencion,Media,Resuelto,4,1
+R0417,V00542,2025-12-17,P05,Sur,Empaque,Baja,En proceso,,
+R0418,V01624,2025-04-08,P05,Este,Empaque,Media,Resuelto,6,4
+R0419,V01346,2025-07-31,P01,Este,Calidad,Media,Resuelto,4,2
+R0420,V01651,2025-04-06,P03,Sur,Facturacion,Alta,Resuelto,10,3
+R0421,V02666,2025-07-19,P05,Sur,Empaque,Media,En proceso,,
+R0422,V02842,2025-10-23,P02,Sur,Atencion,Media,Resuelto,7,5
+R0423,V01987,2025-09-19,P05,Sur,Empaque,Alta,Resuelto,14,2
+R0424,V02257,2025-10-25,P03,Este,Entrega,Media,Resuelto,5,2
+R0425,V00685,2025-02-26,P05,Cibao,Facturacion,Alta,Resuelto,10,1
+R0426,V01154,2025-03-07,P05,Este,Empaque,Baja,Resuelto,7,5
+R0427,V00980,2025-07-26,P04,Este,Atencion,Alta,Abierto,,
+R0428,V02205,2025-10-08,P01,Gran Santo Domingo,Entrega,Media,Resuelto,5,3
+R0429,V01721,2025-05-03,P04,Cibao,Facturacion,Media,Abierto,,
+R0430,V02346,2025-04-02,P02,Gran Santo Domingo,Calidad,Alta,Resuelto,13,2
+R0431,V00201,2025-02-09,P03,Sur,Facturacion,Baja,Resuelto,7,4
+R0432,V00314,2025-12-06,P05,Este,Facturacion,Media,Resuelto,16,1
+R0433,V02959,2025-12-22,P03,Gran Santo Domingo,Calidad,Alta,Abierto,,
+R0434,V00086,2025-02-10,P03,Este,Facturacion,Media,Resuelto,14,1
+R0435,V00393,2026-01-01,P02,Gran Santo Domingo,Facturacion,Baja,Resuelto,9,4
+R0436,V01737,2025-12-09,P06,Este,Empaque,Baja,Resuelto,10,2
+R0437,V02819,2025-09-29,P05,Este,Facturacion,Alta,En proceso,,
+R0438,V01010,2025-07-17,P05,Sur,Facturacion,Alta,Resuelto,1,3
+R0439,V00932,2025-03-09,P05,Cibao,Facturacion,Media,En proceso,,
+R0440,V00692,2025-11-25,P04,Gran Santo Domingo,Facturacion,Media,Resuelto,15,3
+R0441,V01815,2025-11-08,P05,Gran Santo Domingo,Entrega,Baja,Resuelto,3,5
+R0442,V02814,2025-01-15,P03,Sur,Facturacion,Alta,Resuelto,9,2
+R0443,V01351,2025-07-01,P03,Sur,Empaque,Alta,Abierto,,
+R0444,V02142,2025-06-15,P01,Sur,Entrega,Alta,Resuelto,4,3
+R0445,V02271,2025-05-27,P01,Sur,Facturacion,Alta,Resuelto,12,4
+R0446,V00484,2025-09-13,P06,Cibao,Atencion,Baja,Resuelto,4,4
+R0447,V00484,2025-09-03,P06,Cibao,Entrega,Alta,Resuelto,12,3
+R0448,V00863,2025-07-24,P05,Gran Santo Domingo,Atencion,Alta,Resuelto,5,5
+R0449,V00642,2025-07-21,P04,Este,Entrega,Media,Resuelto,11,3
+R0450,V01209,2025-10-10,P01,Cibao,Entrega,Alta,Resuelto,15,3

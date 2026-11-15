@@ -13,3 +13,7 @@ Esta carpeta corresponde a la nueva materia Visualización de Datos I.
 ## Unidad II
 
 - [Práctica 2: Industrias Caribe S.A.](Unidad%20II/Practica%202/README.md): dashboards de reclamos y producción, tablas dinámicas, segmentadores y análisis.
+
+## Unidad III
+
+- [Práctica 3: Power BI, Tableau y Python](Unidad%20III/Practica%203/README.md): dashboards en Python de reclamos y producción e informe ejecutivo de dos páginas.

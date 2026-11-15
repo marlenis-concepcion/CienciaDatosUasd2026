@@ -1,0 +1,7 @@
+services:
+  dashboard:
+    build: .
+    image: industrias-caribe-dashboard
+    container_name: industrias-caribe-dashboard
+    ports:
+      - "8501:8501"
