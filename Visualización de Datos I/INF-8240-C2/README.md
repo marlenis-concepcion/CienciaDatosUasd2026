@@ -17,3 +17,7 @@ Esta carpeta corresponde a la nueva materia Visualización de Datos I.
 ## Unidad III
 
 - [Práctica 3: Power BI, Tableau y Python](Unidad%20III/Practica%203/README.md): dashboards en Python de reclamos y producción e informe ejecutivo de dos páginas.
+
+## Prácticas adicionales
+
+- [Práctica del domingo 15 de noviembre](Practica%20domingo%2015%20de%20noviembre/README.md): storytelling de ventas y unidades producidas.

@@ -5,7 +5,9 @@ from pathlib import Path
 import openpyxl
 
 BASE = Path(__file__).resolve().parent
-wb = openpyxl.load_workbook(BASE.parent / "IndustriasCaribe_Tablas.xlsx", data_only=True)
+EXCEL = next(d / "IndustriasCaribe_Tablas.xlsx" for d in (BASE.parent, BASE.parent.parent, BASE.parent.parent.parent)
+             if (d / "IndustriasCaribe_Tablas.xlsx").exists())
+wb = openpyxl.load_workbook(EXCEL, data_only=True)
 
 def rows(name):
     it = wb[name].iter_rows(values_only=True)

@@ -4,7 +4,9 @@ from pathlib import Path
 import openpyxl
 
 BASE = Path(__file__).resolve().parent
-wb = openpyxl.load_workbook(BASE.parent / "IndustriasCaribe_Tablas.xlsx", data_only=True)
+EXCEL = next(d / "IndustriasCaribe_Tablas.xlsx" for d in (BASE.parent, BASE.parent.parent, BASE.parent.parent.parent)
+             if (d / "IndustriasCaribe_Tablas.xlsx").exists())
+wb = openpyxl.load_workbook(EXCEL, data_only=True)
 for hoja, cols in {
     "Ventas": ["VentaID", "Fecha", "Producto", "Region", "Canal", "Unidades", "PrecioUnitario_DOP", "DescuentoPct", "IngresoNeto_DOP"],
     "Produccion": ["LoteID", "Fecha", "Producto", "Planta", "Turno", "UnidadesPlanificadas", "UnidadesProducidas", "UnidadesDefectuosas", "CostoProduccion_DOP"],
