@@ -21,7 +21,7 @@ Las conexiones y el contenido OOXML se verificaron estructuralmente y las fórmu
 
 ## Datos originales
 
-Se leen, con rutas relativas, los tres CSV ubicados en la carpeta de la materia, dos niveles por encima de esta práctica:
+Se leen, con rutas relativas, los tres CSV ubicados en la carpeta `Unidad II`, un nivel por encima de esta práctica:
 
 - `IndustriasCaribe_Reclamos.csv`: 450 filas.
 - `IndustriasCaribe_Produccion.csv`: 1,200 filas.

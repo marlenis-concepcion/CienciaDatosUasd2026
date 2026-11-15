@@ -1,0 +1,449 @@
+<meta name="dash-one-writer">
+<style>
+.ic{max-width:1080px;margin:0 auto;font-family:var(--font-anthropic-sans);color:var(--color-fg)}
+.ic-kicker{margin:0;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);text-transform:uppercase;letter-spacing:.06em}
+.ic-title{font-family:var(--font-anthropic-serif);font-weight:400;font-size:clamp(28px,4.4vw,44px);line-height:1.12;margin:var(--cds-gap-xs) 0 var(--cds-gap-sm)}
+.ic-lede{font-size:var(--cds-font-size-heading);line-height:1.45;max-width:60ch;margin:0 0 var(--cds-gap-lg)}
+.ic-lede b,.ic-step b{font-variant-numeric:tabular-nums}
+.ic-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--cds-gap-md);margin-bottom:var(--cds-gap-xl)}
+.ic-kpi{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg)}
+.ic-kpi-l{margin:0;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.ic-kpi-v{margin:var(--cds-gap-xs) 0;font-family:var(--font-anthropic-serif);font-weight:400;font-size:32px;font-variant-numeric:tabular-nums}
+.ic-kpi-s{margin:0;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.ic-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:var(--cds-gap-xl);align-items:start}
+.ic-steps{padding:10vh 0 30vh}
+.ic-step{min-height:72vh;display:flex;flex-direction:column;justify-content:center;opacity:.35;transition:opacity .3s}
+.ic-step.is-active{opacity:1}
+.ic-step h2{font-size:var(--cds-font-size-title);font-weight:var(--cds-font-weight-medium);margin:0 0 var(--cds-gap-sm);line-height:1.25}
+.ic-step p{line-height:1.6;margin:0 0 var(--cds-gap-sm);max-width:52ch}
+.ic-num{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:0 0 var(--cds-gap-xs)}
+.ic-graphic{position:sticky;top:var(--cds-gap-lg);order:2}
+.ic-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg)}
+.ic-ct{margin:0 0 var(--cds-gap-xs);font-weight:var(--cds-font-weight-medium)}
+.ic-leg{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);margin:0 0 var(--cds-gap-sm);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.ic-leg span{display:inline-flex;align-items:center;gap:6px}
+.ic-sw{display:inline-block;width:12px;height:12px;border-radius:2px}
+.ic-sw.ic-line{height:3px;border-radius:0}
+.ic-chart{position:relative;min-height:300px}
+.ic-chart svg{display:block;overflow:visible}
+.ic-chart .tick text{fill:var(--cds-text-secondary);font-size:var(--cds-font-size-caption)}
+.ic-chart .domain{stroke:var(--cds-chart-axis)}
+.ic-chart .tick line{stroke:var(--cds-chart-grid)}
+.ic-vl{fill:var(--color-fg);font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.ic-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);box-shadow:var(--cds-shadow-popover);border-radius:var(--cds-radius);padding:8px 10px;font-size:var(--cds-font-size-caption);line-height:1.5;white-space:nowrap;font-variant-numeric:tabular-nums;z-index:3}
+.ic-tip-h{font-weight:var(--cds-font-weight-medium)}
+.ic-tip-s{color:var(--cds-text-secondary)}
+.ic-sec{margin-top:var(--cds-gap-xl)}
+.ic-sec h2{font-size:var(--cds-font-size-title);font-weight:var(--cds-font-weight-medium);margin:0 0 var(--cds-gap-xs)}
+.ic-sec>p{color:var(--color-fg-muted);margin:0 0 var(--cds-gap-md);max-width:70ch;line-height:1.5}
+.ic-tw{overflow-x:auto}
+.ic-table{border-collapse:collapse;width:100%;font-size:var(--cds-font-size-body);font-variant-numeric:tabular-nums}
+.ic-table th,.ic-table td{padding:8px 10px;border-bottom:1px solid var(--color-border-line);text-align:right;white-space:nowrap}
+.ic-table th:first-child,.ic-table td:first-child{text-align:left}
+.ic-table th{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
+.ic details{margin-top:var(--cds-gap-xl);border-top:1px solid var(--color-border-line);padding-top:var(--cds-gap-md)}
+.ic summary{cursor:pointer;font-weight:var(--cds-font-weight-medium)}
+.ic details li{margin:6px 0;line-height:1.5}
+[data-dash-source-state=refreshing]{opacity:.5}
+@media (max-width:760px){
+ .ic-story{display:block}
+ .ic-graphic{position:sticky;top:0;z-index:2;background:var(--color-bg);padding:var(--cds-gap-xs) 0}
+ .ic-chart{min-height:220px}
+ .ic-steps{padding:4vh 0 20vh}
+ .ic-step{min-height:60vh}
+ .ic-step>div{background:var(--color-bg);padding:var(--cds-pad-md);border-radius:var(--cds-radius)}
+}
+</style>
+
+<div class="ic" data-read lang="es">
+ <header id="inicio">
+  <p class="ic-kicker">Industrias Caribe · enero–diciembre 2025</p>
+  <h1 class="ic-title">Ventas y unidades producidas: la historia de 2025</h1>
+  <p class="ic-lede">Las plantas fabricaron <b data-draw="num" data-source="totales" data-field="producidas" data-row="0" data-fmt="int">—</b> unidades y las ventas registradas suman <b data-draw="num" data-source="totales" data-field="vendidas" data-row="0" data-fmt="int">—</b>: por cada 100 unidades producidas se registraron <b data-draw="num" data-source="totales" data-field="vendidas_por_100" data-row="0" data-fmt="num1">—</b> vendidas.</p>
+ </header>
+
+ <div class="ic-kpis" id="kpis">
+  <div class="ic-kpi"><p class="ic-kpi-l">Ingreso neto</p><p class="ic-kpi-v" data-draw="num" data-source="totales" data-field="ingreso" data-row="0" data-fmt="money">—</p><p class="ic-kpi-s"><span data-draw="num" data-source="totales" data-field="transacciones" data-row="0" data-fmt="int">—</span> transacciones · 2025</p></div>
+  <div class="ic-kpi"><p class="ic-kpi-l">Unidades vendidas</p><p class="ic-kpi-v" data-draw="num" data-source="totales" data-field="vendidas" data-row="0" data-fmt="int">—</p><p class="ic-kpi-s">Precio neto promedio <span data-draw="num" data-source="totales" data-field="precio_prom" data-row="0" data-fmt="rd2">—</span></p></div>
+  <div class="ic-kpi"><p class="ic-kpi-l">Unidades producidas</p><p class="ic-kpi-v" data-draw="num" data-source="totales" data-field="producidas" data-row="0" data-fmt="int">—</p><p class="ic-kpi-s"><span data-draw="num" data-source="totales" data-field="lotes" data-row="0" data-fmt="int">—</span> lotes · 2 plantas</p></div>
+  <div class="ic-kpi"><p class="ic-kpi-l">Cumplimiento del plan</p><p class="ic-kpi-v" data-draw="num" data-source="totales" data-field="cumplimiento" data-row="0" data-fmt="pct">—</p><p class="ic-kpi-s">Defectuosas: <span data-draw="num" data-source="totales" data-field="pct_defect" data-row="0" data-fmt="pct">—</span> de lo producido</p></div>
+ </div>
+
+ <section class="ic-story" id="historia">
+  <div class="ic-graphic">
+   <div class="ic-card" id="grafico">
+    <div class="ic-cap" data-step="1"><p class="ic-ct">Ingreso neto por mes (RD$)</p><p class="ic-leg"><span><i class="ic-sw" data-c="0"></i>Ingreso neto</span></p></div>
+    <div class="ic-cap" data-step="2" hidden><p class="ic-ct">Unidades planificadas y producidas por mes</p><p class="ic-leg"><span><i class="ic-sw ic-line" data-c="muted"></i>Planificadas</span><span><i class="ic-sw ic-line" data-c="0"></i>Producidas</span></p></div>
+    <div class="ic-cap" data-step="3" hidden><p class="ic-ct">Unidades producidas vs. vendidas por mes</p><p class="ic-leg"><span><i class="ic-sw" data-c="0"></i>Producidas</span><span><i class="ic-sw" data-c="1"></i>Vendidas</span></p></div>
+    <div class="ic-cap" data-step="4" hidden><p class="ic-ct">Índice mensual (100 = promedio del año)</p><p class="ic-leg"><span><i class="ic-sw ic-line" data-c="0"></i>Producidas</span><span><i class="ic-sw ic-line" data-c="1"></i>Vendidas</span></p></div>
+    <div class="ic-cap" data-step="5" hidden><p class="ic-ct">Unidades vendidas por cada 100 producidas, por producto</p><p class="ic-leg"><span><i class="ic-sw" data-c="0"></i>Vendidas / producidas × 100</span></p></div>
+    <div class="ic-cap" data-step="6" hidden><p class="ic-ct">Ingreso neto vs. costo de producción por producto (RD$)</p><p class="ic-leg"><span><i class="ic-sw" data-c="1"></i>Ingreso neto</span><span><i class="ic-sw" data-c="0"></i>Costo de producción</span></p></div>
+    <div class="ic-chart" data-draw="story" data-source="mensual producto"></div>
+   </div>
+  </div>
+
+  <div class="ic-steps">
+   <div class="ic-step is-active" data-step="1" id="c1"><div>
+    <p class="ic-num">Capítulo 1 · El año en ventas</p>
+    <h2>Un año de <span data-draw="num" data-source="totales" data-field="ingreso" data-row="0" data-fmt="money">—</span> en ventas</h2>
+    <p>En 2025 Industrias Caribe registró <b data-draw="num" data-source="totales" data-field="transacciones" data-row="0" data-fmt="int">—</b> ventas por un ingreso neto de <b data-draw="num" data-source="totales" data-field="ingreso" data-row="0" data-fmt="money">—</b>.</p>
+    <p>El mes más fuerte fue <b data-draw="num" data-source="picos" data-field="mes_max_ingreso" data-row="0" data-fmt="mes">—</b>, con <b data-draw="num" data-source="picos" data-field="ingreso_max" data-row="0" data-fmt="money">—</b>; el más débil, <b data-draw="num" data-source="picos" data-field="mes_min_ingreso" data-row="0" data-fmt="mes">—</b>, con <b data-draw="num" data-source="picos" data-field="ingreso_min" data-row="0" data-fmt="money">—</b>.</p>
+   </div></div>
+
+   <div class="ic-step" data-step="2" id="c2"><div>
+    <p class="ic-num">Capítulo 2 · Las plantas</p>
+    <h2>Las plantas casi cumplen el plan</h2>
+    <p>Las plantas de Santo Domingo y Santiago produjeron <b data-draw="num" data-source="totales" data-field="producidas" data-row="0" data-fmt="int">—</b> unidades de <b data-draw="num" data-source="totales" data-field="planificadas" data-row="0" data-fmt="int">—</b> planificadas: un cumplimiento de <b data-draw="num" data-source="totales" data-field="cumplimiento" data-row="0" data-fmt="pct">—</b>.</p>
+    <p>El mes de mayor producción fue <b data-draw="num" data-source="picos" data-field="mes_max_prod" data-row="0" data-fmt="mes">—</b>, con <b data-draw="num" data-source="picos" data-field="prod_max" data-row="0" data-fmt="int">—</b> unidades. De todo lo producido, <b data-draw="num" data-source="totales" data-field="pct_defect" data-row="0" data-fmt="pct">—</b> salió defectuoso.</p>
+   </div></div>
+
+   <div class="ic-step" data-step="3" id="c3"><div>
+    <p class="ic-num">Capítulo 3 · La brecha</p>
+    <h2>Se produce mucho más de lo que se vende</h2>
+    <p>Puestas en la misma escala, las ventas casi desaparecen al lado de la producción: por cada 100 unidades fabricadas se registraron <b data-draw="num" data-source="totales" data-field="vendidas_por_100" data-row="0" data-fmt="num1">—</b> vendidas.</p>
+    <p>Quedan <b data-draw="num" data-source="totales" data-field="brecha" data-row="0" data-fmt="int">—</b> unidades producidas sin una venta registrada. O hay inventario acumulándose, o la tabla de ventas recoge solo una parte de las ventas reales.</p>
+   </div></div>
+
+   <div class="ic-step" data-step="4" id="c4"><div>
+    <p class="ic-num">Capítulo 4 · El ritmo</p>
+    <h2>Producción y ventas no llevan el mismo paso</h2>
+    <p>La producción sube en junio y julio, cuando las ventas apenas superan su promedio; las ventas llegan a su punto alto en <b data-draw="num" data-source="picos" data-field="mes_max_vend" data-row="0" data-fmt="mes">—</b> (índice <b data-draw="num" data-source="picos" data-field="idx_max_vend" data-row="0" data-fmt="int">—</b>), cuando la producción ya bajó.</p>
+    <p>La correlación entre ambas series mensuales es <b data-draw="num" data-source="picos" data-field="correlacion" data-row="0" data-fmt="dec2">—</b>: se mueven juntas solo de forma moderada.</p>
+   </div></div>
+
+   <div class="ic-step" data-step="5" id="c5"><div>
+    <p class="ic-num">Capítulo 5 · Por producto</p>
+    <h2>La brecha no es igual para todos</h2>
+    <p><b data-draw="num" data-source="picos" data-field="prod_mejor" data-row="0" data-fmt="txt">—</b> es el producto que más vende respecto a lo que se fabrica: <b data-draw="num" data-source="picos" data-field="r_mejor" data-row="0" data-fmt="num1">—</b> vendidas por cada 100.</p>
+    <p>En el otro extremo está <b data-draw="num" data-source="picos" data-field="prod_peor" data-row="0" data-fmt="txt">—</b>, con <b data-draw="num" data-source="picos" data-field="r_peor" data-row="0" data-fmt="num1">—</b> por cada 100: es donde conviene revisar primero el plan de producción.</p>
+   </div></div>
+
+   <div class="ic-step" data-step="6" id="c6"><div>
+    <p class="ic-num">Capítulo 6 · El valor</p>
+    <h2>Volumen no es lo mismo que valor</h2>
+    <p><b data-draw="num" data-source="picos" data-field="prod_top_ing" data-row="0" data-fmt="txt">—</b> lidera los ingresos con <b data-draw="num" data-source="picos" data-field="ing_top" data-row="0" data-fmt="money">—</b>, a un precio neto promedio de <b data-draw="num" data-source="picos" data-field="precio_top" data-row="0" data-fmt="rd2">—</b> por unidad.</p>
+    <p><b data-draw="num" data-source="picos" data-field="prod_low_ing" data-row="0" data-fmt="txt">—</b> genera el menor ingreso, <b data-draw="num" data-source="picos" data-field="ing_low" data-row="0" data-fmt="money">—</b>, y su costo de producción fue <b data-draw="num" data-source="picos" data-field="costo_low" data-row="0" data-fmt="money">—</b>. Fabricar de más un producto barato es lo que más pesa.</p>
+   </div></div>
+  </div>
+ </section>
+
+ <style>
+ .ic-turnos{border-top:1px solid var(--color-border-line);padding-top:var(--cds-gap-xl)}
+ .ic-sec>p.ic-body{color:var(--color-fg);font-size:var(--cds-font-size-body)}
+ .ic-grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--cds-gap-md);margin:0 0 var(--cds-gap-lg)}
+ .ic-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--cds-gap-sm);margin-bottom:var(--cds-gap-xs)}
+ .ic-row .ic-ct{margin:0}
+ .ic-chart.ic-small{min-height:200px}
+ .ic-note{color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);margin:var(--cds-gap-sm) 0 0;line-height:1.5}
+ .ic-turnos .ic-kpi-v{font-size:28px}
+ </style>
+ <section class="ic-sec ic-turnos" id="turnos">
+  <p class="ic-num">Sección especial · Producción por turno</p>
+  <h2>Turnos con mejor desempeño de unidades producidas</h2>
+  <p>Comparamos los turnos de mañana, tarde y noche de las dos plantas en volumen producido, cumplimiento del plan, calidad y unidades por lote.</p>
+  <div class="ic-kpis" id="turnos-lideres">
+   <div class="ic-kpi"><p class="ic-kpi-l">Mayor volumen producido</p><p class="ic-kpi-v" data-draw="tnum" data-source="turno_dest" data-field="mayor_vol" data-row="0" data-fmt="turno">—</p><p class="ic-kpi-s"><span data-draw="tnum" data-source="turno_dest" data-field="vol" data-row="0" data-fmt="int">—</span> unidades · <span data-draw="tnum" data-source="turno_dest" data-field="share_vol" data-row="0" data-fmt="pct">—</span> del total</p></div>
+   <div class="ic-kpi"><p class="ic-kpi-l">Mejor cumplimiento del plan</p><p class="ic-kpi-v" data-draw="tnum" data-source="turno_dest" data-field="mejor_cump" data-row="0" data-fmt="turno">—</p><p class="ic-kpi-s"><span data-draw="tnum" data-source="turno_dest" data-field="cump_mejor" data-row="0" data-fmt="pct">—</span> de lo planificado</p></div>
+   <div class="ic-kpi"><p class="ic-kpi-l">Menor % de defectuosas</p><p class="ic-kpi-v" data-draw="tnum" data-source="turno_dest" data-field="menor_def" data-row="0" data-fmt="turno">—</p><p class="ic-kpi-s"><span data-draw="tnum" data-source="turno_dest" data-field="def_menor" data-row="0" data-fmt="pct2">—</span> de lo producido</p></div>
+   <div class="ic-kpi"><p class="ic-kpi-l">Más unidades por lote</p><p class="ic-kpi-v" data-draw="tnum" data-source="turno_dest" data-field="mejor_lote" data-row="0" data-fmt="turno">—</p><p class="ic-kpi-s"><span data-draw="tnum" data-source="turno_dest" data-field="lote_mejor" data-row="0" data-fmt="num1">—</span> unidades por lote</p></div>
+  </div>
+  <p class="ic-body">Entre el mejor y el peor cumplimiento por turno hay apenas <b data-draw="tnum" data-source="turno_dest" data-field="dif_cump_pp" data-row="0" data-fmt="dec2">—</b> puntos porcentuales: los tres turnos rinden parecido. El turno de mayor volumen corrió <b data-draw="tnum" data-source="turno_dest" data-field="lotes_vol" data-row="0" data-fmt="int">—</b> lotes, frente a un promedio de <b data-draw="tnum" data-source="turno_dest" data-field="lotes_prom" data-row="0" data-fmt="num1">—</b> por turno, así que su ventaja viene sobre todo de correr más lotes.</p>
+  <div class="ic-grid2">
+   <div class="ic-card" id="turnos-volumen">
+    <p class="ic-ct">Unidades producidas vs. planificadas por turno</p>
+    <p class="ic-leg"><span><i class="ic-sw" data-c="muted"></i>Planificadas</span><span><i class="ic-sw" data-c="0"></i>Producidas</span></p>
+    <div class="ic-chart ic-small" data-draw="tvol" data-source="turno"></div>
+   </div>
+   <div class="ic-card" id="turnos-planta">
+    <div class="ic-row"><p class="ic-ct">Por planta y turno</p><select class="dash-select" id="tp-metric" aria-label="Métrica"><option value="cumplimiento">Cumplimiento del plan</option><option value="pct_defect">% defectuosas</option><option value="por_lote">Unidades por lote</option><option value="producidas">Unidades producidas</option></select></div>
+    <p class="ic-leg"><span><i class="ic-sw" data-c="0"></i>Planta Santiago</span><span><i class="ic-sw" data-c="1"></i>Planta Santo Domingo</span></p>
+    <div class="ic-chart ic-small" data-draw="tplanta" data-source="turno_planta"></div>
+    <p class="ic-note">En cumplimiento, la mejor combinación fue <b data-draw="tnum" data-source="turno_dest" data-field="combo_mejor" data-row="0" data-fmt="combo">—</b> (<b data-draw="tnum" data-source="turno_dest" data-field="combo_cump" data-row="0" data-fmt="pct">—</b>) y la más baja <b data-draw="tnum" data-source="turno_dest" data-field="combo_peor" data-row="0" data-fmt="combo">—</b> (<b data-draw="tnum" data-source="turno_dest" data-field="combo_peor_cump" data-row="0" data-fmt="pct">—</b>).</p>
+   </div>
+  </div>
+  <div class="ic-tw">
+   <table class="ic-table" data-source="turno" data-row-key="Turno">
+    <thead><tr><th data-field="Turno">Turno</th><th data-field="lotes">Lotes</th><th data-field="producidas">Producidas</th><th data-field="share">% del total</th><th data-field="planificadas">Planificadas</th><th data-field="cumplimiento">Cumplimiento</th><th data-field="pct_defect">% defectuosas</th><th data-field="buenas">Unidades buenas</th><th data-field="por_lote">Producidas por lote</th><th data-field="pct_lotes_ok">Lotes que cumplieron el plan</th></tr></thead>
+    <tbody data-draw="ttabla"></tbody>
+   </table>
+  </div>
+  <p class="ic-note">Unidades buenas = producidas − defectuosas. Cumplimiento = producidas ÷ planificadas. Un lote cumplió el plan si produjo al menos lo planificado.</p>
+  <script src="turnos.js"></script>
+ </section>
+
+ <section class="ic-sec ic-extra" id="mas-graficos">
+  <style>
+  .ic-extra{border-top:1px solid var(--color-border-line);padding-top:var(--cds-gap-xl)}
+  .ic-wide{grid-column:1/-1}
+  </style>
+  <p class="ic-num">Más gráficos</p>
+  <h2>Ventas y producción desde otros ángulos</h2>
+  <p>Región, canal, descuentos, productos mes a mes, turnos, plantas, calidad y costos: ocho vistas más de los datos de 2025. Pasa el cursor sobre cada gráfico para ver los valores.</p>
+  <div class="ic-grid2">
+   <div class="ic-card" id="g-region"><p class="ic-ct">Ingreso neto por región</p><div class="ic-chart ic-small" data-draw="ex_region" data-source="ex_region"></div></div>
+   <div class="ic-card" id="g-canal"><p class="ic-ct">Ingreso neto por canal de venta</p><div class="ic-chart ic-small" data-draw="ex_canal" data-source="ex_canal"></div></div>
+   <div class="ic-card" id="g-descuento"><p class="ic-ct">Ingreso neto por nivel de descuento</p><div class="ic-chart ic-small" data-draw="ex_desc" data-source="ex_desc"></div></div>
+   <div class="ic-card" id="g-defectos"><p class="ic-ct">% de unidades defectuosas por producto</p><div class="ic-chart ic-small" data-draw="ex_defect" data-source="producto"></div></div>
+   <div class="ic-card ic-wide" id="g-calor"><p class="ic-ct">Unidades vendidas por producto y mes</p><p class="ic-leg"><span>Más oscuro = más unidades vendidas</span></p><div class="ic-chart ic-small" data-draw="ex_heat" data-source="ex_prod_mes"></div></div>
+   <div class="ic-card" id="g-turno-mes"><p class="ic-ct">Unidades producidas por mes y turno</p><p class="ic-leg"><span><i class="ic-sw ic-line" data-c="0"></i>Mañana</span><span><i class="ic-sw ic-line" data-c="1"></i>Tarde</span><span><i class="ic-sw ic-line" data-c="2"></i>Noche</span></p><div class="ic-chart ic-small" data-draw="ex_turno_mes" data-source="ex_turno_mes"></div></div>
+   <div class="ic-card" id="g-planta-mes"><p class="ic-ct">Cumplimiento del plan por mes y planta</p><p class="ic-leg"><span><i class="ic-sw ic-line" data-c="0"></i>Planta Santiago</span><span><i class="ic-sw ic-line" data-c="1"></i>Planta Santo Domingo</span></p><div class="ic-chart ic-small" data-draw="ex_planta_mes" data-source="ex_planta_mes"></div></div>
+   <div class="ic-card ic-wide" id="g-ingreso-costo"><p class="ic-ct">Ingreso neto vs. costo de producción por mes (RD$)</p><p class="ic-leg"><span><i class="ic-sw ic-line" data-c="1"></i>Ingreso neto</span><span><i class="ic-sw ic-line" data-c="0"></i>Costo de producción</span></p><div class="ic-chart ic-small" data-draw="ex_ing_costo" data-source="mensual"></div><p class="ic-note">Si la hoja Ventas es una muestra y no el total de ventas, la distancia entre ingreso y costo sale exagerada (ver "Definiciones y advertencias").</p></div>
+  </div>
+  <script src="extra.js"></script>
+ </section>
+
+ <section class="ic-sec" id="tabla-productos">
+  <h2>Resumen por producto</h2>
+  <p>Unidades, ingreso y costo de 2025 para cada producto, ordenados por unidades vendidas por cada 100 producidas.</p>
+  <div class="ic-tw">
+   <table class="ic-table" data-source="producto" data-row-key="Producto">
+    <thead><tr><th data-field="Producto">Producto</th><th data-field="producidas">Producidas</th><th data-field="vendidas">Vendidas</th><th data-field="vend_por_100">Vendidas por 100</th><th data-field="ingreso">Ingreso neto (RD$)</th><th data-field="costo">Costo producción (RD$)</th><th data-field="precio_prom">Precio neto/u (RD$)</th><th data-field="costo_unit">Costo/u producida (RD$)</th><th data-field="pct_defect">% defectuosas</th></tr></thead>
+    <tbody data-draw="tabla"></tbody>
+   </table>
+  </div>
+ </section>
+
+ <details>
+  <summary>Definiciones y advertencias</summary>
+  <ul>
+   <li><b>Ingreso neto</b>: suma de IngresoNeto_DOP de la hoja Ventas (unidades × precio unitario × (1 − descuento)).</li>
+   <li><b>Unidades producidas</b>: suma de UnidadesProducidas de la hoja Produccion; <b>cumplimiento</b> = producidas ÷ planificadas.</li>
+   <li><b>Vendidas por cada 100 producidas</b>: unidades vendidas ÷ unidades producidas × 100, en el mismo período.</li>
+   <li><b>Índice mensual</b>: valor del mes ÷ promedio mensual del año × 100.</li>
+   <li>La hoja Ventas tiene 3,000 transacciones y la de Produccion 1,200 lotes. Si Ventas es una muestra y no el total de ventas, la brecha y la comparación entre ingreso y costo exageran el problema: léanse como proporciones relativas entre productos y meses.</li>
+   <li>Fuente: IndustriasCaribe_Tablas.xlsx (hojas Ventas y Produccion), datos fijos de 2025.</li>
+  </ul>
+ </details>
+</div>
+
+<script>
+(function(){
+ const L = d3.formatLocale({decimal:'.',thousands:',',grouping:[3],currency:['RD$','']});
+ const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+ const MESL = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+ const f0 = L.format(',.0f'), f1 = L.format(',.1f'), f2 = L.format(',.2f');
+ window.icF = {
+  int: v => f0(v), num1: v => f1(v), dec2: v => f2(v), rd2: v => 'RD$' + f2(v),
+  money: v => 'RD$' + f2(v / 1e6) + ' M', mill: v => f2(v / 1e6),
+  pct: v => L.format('.1%')(v), txt: v => String(v),
+  mes: s => MESL[+String(s).slice(5, 7) - 1] || String(s),
+  mesc: s => MES[+String(s).slice(5, 7) - 1] || String(s),
+  short: v => Math.abs(v) >= 1e6 ? f1(v / 1e6) + ' M' : Math.abs(v) >= 1e3 ? f0(v / 1e3) + ' mil' : f0(v)
+ };
+ const n = v => +v || 0;
+
+ dash.calc('mensual', {inputs: ['ventas', 'produccion'], title: 'Ventas y producción por mes', description: 'Suma por mes de ingreso, unidades vendidas, producidas y planificadas, con índice respecto al promedio mensual.',
+  fn: (ventas, produccion) => {
+   const m = {};
+   const g = k => m[k] || (m[k] = {mes: k, ingreso: 0, vendidas: 0, transacciones: 0, producidas: 0, planificadas: 0, defectuosas: 0, costo: 0});
+   ventas.forEach(r => { const o = g(String(r.Fecha).slice(0, 7)); o.ingreso += +r.IngresoNeto_DOP || 0; o.vendidas += +r.Unidades || 0; o.transacciones += 1; });
+   produccion.forEach(r => { const o = g(String(r.Fecha).slice(0, 7)); o.producidas += +r.UnidadesProducidas || 0; o.planificadas += +r.UnidadesPlanificadas || 0; o.defectuosas += +r.UnidadesDefectuosas || 0; o.costo += +r.CostoProduccion_DOP || 0; });
+   const rows = Object.values(m).sort((a, b) => a.mes < b.mes ? -1 : 1);
+   const av = rows.reduce((s, r) => s + r.vendidas, 0) / rows.length, ap = rows.reduce((s, r) => s + r.producidas, 0) / rows.length;
+   rows.forEach(r => { r.idx_vend = Math.round(r.vendidas / av * 1000) / 10; r.idx_prod = Math.round(r.producidas / ap * 1000) / 10; r.ingreso = Math.round(r.ingreso * 100) / 100; r.costo = Math.round(r.costo * 100) / 100; });
+   return rows;
+  }});
+
+ dash.calc('totales', {inputs: ['ventas', 'produccion'], title: 'Totales 2025', description: 'Totales del año de ventas y producción y las proporciones entre ellos.',
+  fn: (ventas, produccion) => {
+   const s = (a, k) => a.reduce((t, r) => t + (+r[k] || 0), 0);
+   const ingreso = s(ventas, 'IngresoNeto_DOP'), vendidas = s(ventas, 'Unidades');
+   const producidas = s(produccion, 'UnidadesProducidas'), planificadas = s(produccion, 'UnidadesPlanificadas');
+   const defectuosas = s(produccion, 'UnidadesDefectuosas'), costo = s(produccion, 'CostoProduccion_DOP');
+   return [{ingreso: Math.round(ingreso * 100) / 100, vendidas, transacciones: ventas.length, lotes: produccion.length, producidas, planificadas, defectuosas, costo: Math.round(costo * 100) / 100,
+    cumplimiento: producidas / planificadas, pct_defect: defectuosas / producidas, vendidas_por_100: vendidas / producidas * 100,
+    brecha: producidas - vendidas, precio_prom: ingreso / vendidas}];
+  }});
+
+ dash.calc('producto', {inputs: ['ventas', 'produccion'], title: 'Ventas y producción por producto', description: 'Por producto: unidades producidas y vendidas, ingreso, costo y proporciones.',
+  fn: (ventas, produccion) => {
+   const m = {};
+   const g = k => m[k] || (m[k] = {Producto: k, producidas: 0, vendidas: 0, ingreso: 0, costo: 0, defectuosas: 0});
+   ventas.forEach(r => { const o = g(r.Producto); o.vendidas += +r.Unidades || 0; o.ingreso += +r.IngresoNeto_DOP || 0; });
+   produccion.forEach(r => { const o = g(r.Producto); o.producidas += +r.UnidadesProducidas || 0; o.costo += +r.CostoProduccion_DOP || 0; o.defectuosas += +r.UnidadesDefectuosas || 0; });
+   return Object.values(m).map(o => ({...o, ingreso: Math.round(o.ingreso * 100) / 100, costo: Math.round(o.costo * 100) / 100,
+    vend_por_100: o.producidas ? o.vendidas / o.producidas * 100 : null, precio_prom: o.vendidas ? o.ingreso / o.vendidas : null,
+    costo_unit: o.producidas ? o.costo / o.producidas : null, pct_defect: o.producidas ? o.defectuosas / o.producidas : null}))
+    .sort((a, b) => b.vend_por_100 - a.vend_por_100);
+  }});
+
+ dash.calc('picos', {inputs: ['mensual', 'producto'], title: 'Meses y productos destacados', description: 'Meses de máximo y mínimo, correlación mensual y productos en los extremos.',
+  fn: (mensual, producto) => {
+   if (!mensual || !mensual.length || !producto || !producto.length) return [];
+   const by = (a, k, dir) => a.reduce((b, r) => (dir * (r[k] - b[k]) > 0 ? r : b));
+   const mi = by(mensual, 'ingreso', 1), mn = by(mensual, 'ingreso', -1), mp = by(mensual, 'producidas', 1), mv = by(mensual, 'vendidas', 1);
+   const x = mensual.map(r => r.vendidas), y = mensual.map(r => r.producidas);
+   const mx = d3.mean(x), my = d3.mean(y);
+   const r = d3.sum(x, (v, i) => (v - mx) * (y[i] - my)) / Math.sqrt(d3.sum(x, v => (v - mx) ** 2) * d3.sum(y, v => (v - my) ** 2));
+   const best = by(producto, 'vend_por_100', 1), worst = by(producto, 'vend_por_100', -1), top = by(producto, 'ingreso', 1), low = by(producto, 'ingreso', -1);
+   return [{mes_max_ingreso: mi.mes, ingreso_max: mi.ingreso, mes_min_ingreso: mn.mes, ingreso_min: mn.ingreso, mes_max_prod: mp.mes, prod_max: mp.producidas,
+    mes_max_vend: mv.mes, idx_max_vend: mv.idx_vend, correlacion: r, prod_mejor: best.Producto, r_mejor: best.vend_por_100, prod_peor: worst.Producto, r_peor: worst.vend_por_100,
+    prod_top_ing: top.Producto, ing_top: top.ingreso, precio_top: top.precio_prom, prod_low_ing: low.Producto, ing_low: low.ingreso, costo_low: low.costo}];
+  }});
+
+ dash.draw('num', el => {
+  const d = dash.data(el.dataset.source);
+  const row = d.status === 'ok' && Array.isArray(d.data) ? d.data[+el.dataset.row || 0] : null;
+  const v = row ? row[el.dataset.field] : null;
+  el.classList.toggle('dash-skeleton', d.status === 'loading');
+  el.textContent = v == null || v === '' ? '—' : (window.icF[el.dataset.fmt] || String)(v);
+ });
+
+ dash.draw('tabla', tb => {
+  const d = dash.data('producto');
+  const rows = d.status === 'ok' && Array.isArray(d.data) ? d.data : [];
+  const F = window.icF;
+  const cols = [['Producto', String], ['producidas', F.int], ['vendidas', F.int], ['vend_por_100', F.num1], ['ingreso', v => f2(v)], ['costo', v => f2(v)], ['precio_prom', v => f2(v)], ['costo_unit', v => f2(v)], ['pct_defect', F.pct]];
+  tb.replaceChildren(...rows.map(r => { const tr = document.createElement('tr'); cols.forEach(([k, f]) => { const td = document.createElement('td'); td.textContent = r[k] == null ? '—' : f(r[k]); tr.appendChild(td); }); return tr; }));
+ });
+})();
+</script>
+
+<script>
+(function(){
+ window.icStep = window.icStep || 1;
+ function setActive(){
+  document.querySelectorAll('.ic-step').forEach(s => s.classList.toggle('is-active', +s.dataset.step === window.icStep));
+  document.querySelectorAll('.ic-cap').forEach(c => { c.hidden = +c.dataset.step !== window.icStep; });
+ }
+ function paintLegend(){
+  const C = dash.colors || [];
+  document.querySelectorAll('.ic-sw').forEach(s => { s.style.background = s.dataset.c === 'muted' ? 'var(--cds-chart-muted)' : (C[+s.dataset.c] || C[0]); });
+ }
+ paintLegend();
+ dash.onData(paintLegend);
+ const steps = document.querySelectorAll('.ic-step');
+ if (!steps.length || !('IntersectionObserver' in window)) return;
+ const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (!e.isIntersecting) return; const s = +e.target.dataset.step; if (s && s !== window.icStep) { window.icStep = s; setActive(); dash.draw('story'); } });
+ }, {root: document, rootMargin: '-45% 0px -45% 0px', threshold: 0});
+ steps.forEach(s => io.observe(s));
+})();
+</script>
+
+<script>
+(function(){
+ const F = () => window.icF;
+ const C = i => (dash.colors || [])[i] || (dash.colors || [])[0];
+ const NS = 'http://www.w3.org/2000/svg';
+
+ function yAxisWidth(svg, scale, fmt, ticks){
+  const g = svg.append('g').attr('class', 'ic-measure').call(d3.axisLeft(scale).ticks(ticks).tickFormat(fmt));
+  let w = 0; g.selectAll('text').each(function(){ w = Math.max(w, this.getComputedTextLength()); });
+  g.remove(); return w;
+ }
+ function leftWidth(svg, labels){
+  const g = svg.append('g').attr('class', 'ic-measure tick');
+  let w = 0; labels.forEach(l => { const t = g.append('text').attr('class', 'ic-vl').text(l); w = Math.max(w, t.node().getComputedTextLength()); });
+  g.remove(); return w;
+ }
+ function showTip(made, html, x, y){
+  const t = made.tip, W = made.box.clientWidth;
+  t.replaceChildren(...html); t.hidden = false;
+  const tw = t.offsetWidth, th = t.offsetHeight;
+  t.style.left = Math.max(0, Math.min(W - tw, x - tw / 2)) + 'px';
+  t.style.top = Math.max(0, y - th - 12) + 'px';
+ }
+ function tipRows(head, items){
+  const h = document.createElement('div'); h.className = 'ic-tip-h'; h.textContent = head;
+  return [h, ...items.map(([lab, val]) => { const d = document.createElement('div'); const s = document.createElement('span'); s.className = 'ic-tip-s'; s.textContent = lab + ': '; d.append(s, document.createTextNode(val)); return d; })];
+ }
+
+ function monthly(made, rows, series, opt){
+  const svg = made.svg, W = made.box.clientWidth || 600, H = Math.max(220, Math.min(380, Math.round(W * 0.6)));
+  svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+  const vals = rows.flatMap(r => series.map(s => r[s.key]));
+  let lo = opt.zero ? 0 : d3.min(vals), hi = d3.max(vals);
+  if (!opt.zero) { const pad = (hi - lo) * 0.15; lo -= pad; hi += pad; }
+  const y0 = d3.scaleLinear().domain([lo, hi]).nice();
+  const ticks = H < 260 ? 4 : 5;
+  const mL = Math.ceil(yAxisWidth(svg, y0, opt.yfmt, ticks)) + 10, mR = 8, mT = 18, mB = 26;
+  const x = d3.scaleBand().domain(rows.map(r => r.mes)).range([mL, W - mR]).padding(0.18);
+  const y = y0.range([H - mB, mT]);
+  svg.append('g').attr('transform', `translate(${mL},0)`).call(d3.axisLeft(y).ticks(ticks).tickFormat(opt.yfmt).tickSize(-(W - mL - mR))).call(g => g.select('.domain').remove()).call(g => g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-grid)'));
+  const step = W < 420 ? 2 : 1;
+  svg.append('g').attr('transform', `translate(0,${H - mB})`).call(d3.axisBottom(x).tickSizeOuter(0).tickFormat((d, i) => i % step ? '' : F().mesc(d)));
+  if (opt.ref != null) svg.append('line').attr('x1', mL).attr('x2', W - mR).attr('y1', y(opt.ref)).attr('y2', y(opt.ref)).style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const bars = series.filter(s => s.type === 'bar');
+  const xs = d3.scaleBand().domain(bars.map(s => s.key)).range([0, x.bandwidth()]).padding(bars.length > 1 ? 0.08 : 0);
+  bars.forEach(s => {
+   svg.append('g').selectAll('rect').data(rows).join('rect')
+    .attr('x', r => x(r.mes) + xs(s.key)).attr('width', xs.bandwidth())
+    .attr('y', r => y(Math.max(0, r[s.key]))).attr('height', r => Math.abs(y(0) - y(r[s.key])))
+    .attr('rx', 2).style('fill', s.color);
+  });
+  series.filter(s => s.type === 'line').forEach(s => {
+   const ln = d3.line().x(r => x(r.mes) + x.bandwidth() / 2).y(r => y(r[s.key]));
+   svg.append('path').datum(rows).attr('d', ln).attr('fill', 'none').style('stroke', s.color).attr('stroke-width', 2.5).attr('stroke-dasharray', s.dash || null);
+   svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', r => x(r.mes) + x.bandwidth() / 2).attr('cy', r => y(r[s.key])).attr('r', 3.5).style('fill', s.color);
+  });
+  if (opt.label) {
+   const k = opt.label, mx = rows.reduce((b, r) => r[k] > b[k] ? r : b);
+   svg.append('text').attr('class', 'ic-vl').attr('text-anchor', 'middle').attr('x', x(mx.mes) + x.bandwidth() / 2).attr('y', y(mx[k]) - 6).text(opt.tfmt(mx[k]));
+  }
+  const hl = svg.append('rect').attr('y', mT).attr('height', H - mB - mT).attr('width', x.step()).style('fill', 'var(--cds-chart-grid)').attr('opacity', 0).attr('pointer-events', 'none');
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', r => x(r.mes) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', mT).attr('height', H - mB - mT).attr('fill', 'transparent')
+   .on('pointerenter pointermove', function(ev, r){
+    hl.attr('x', x(r.mes) - x.step() * x.paddingInner() / 2).attr('opacity', 0.35);
+    const [px] = d3.pointer(ev, made.box);
+    showTip(made, tipRows(F().mes(r.mes) + ' 2025', series.map(s => [s.label, opt.tfmt(r[s.key])])), px, y(d3.max(series, s => r[s.key])));
+   })
+   .on('pointerleave', () => { hl.attr('opacity', 0); made.tip.hidden = true; });
+ }
+
+ function products(made, rows, series, opt){
+  const svg = made.svg, W = made.box.clientWidth || 600;
+  const rowH = series.length > 1 ? 44 : 34, mT = 8, mB = 26;
+  const H = mT + mB + rows.length * rowH;
+  svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+  const mL = Math.ceil(leftWidth(svg, rows.map(r => r.Producto))) + 12;
+  const endW = Math.ceil(leftWidth(svg, rows.flatMap(r => series.map(s => opt.vfmt(r[s.key]))))) + 10;
+  const x = d3.scaleLinear().domain([0, d3.max(rows, r => d3.max(series, s => r[s.key]))]).nice().range([mL, W - endW]);
+  const yb = d3.scaleBand().domain(rows.map(r => r.Producto)).range([mT, H - mB]).padding(0.22);
+  const ys = d3.scaleBand().domain(series.map(s => s.key)).range([0, yb.bandwidth()]).padding(series.length > 1 ? 0.1 : 0);
+  svg.append('g').attr('transform', `translate(0,${H - mB})`).call(d3.axisBottom(x).ticks(W < 420 ? 3 : 5).tickFormat(opt.xfmt).tickSize(-(H - mB - mT))).call(g => g.select('.domain').remove()).call(g => g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-grid)'));
+  svg.append('g').selectAll('text').data(rows).join('text').attr('class', 'ic-vl').attr('x', mL - 8).attr('y', r => yb(r.Producto) + yb.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text(r => r.Producto);
+  series.forEach(s => {
+   const g = svg.append('g');
+   g.selectAll('rect').data(rows).join('rect').attr('x', mL).attr('y', r => yb(r.Producto) + ys(s.key)).attr('height', ys.bandwidth()).attr('width', r => Math.max(0, x(r[s.key]) - mL)).attr('rx', 2).style('fill', s.color);
+   g.selectAll('text').data(rows).join('text').attr('class', 'ic-vl').attr('x', r => x(r[s.key]) + 4).attr('y', r => yb(r.Producto) + ys(s.key) + ys.bandwidth() / 2).attr('dy', '0.35em').text(r => opt.vfmt(r[s.key]));
+  });
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', 0).attr('width', W).attr('y', r => yb(r.Producto) - yb.step() * yb.paddingInner() / 2).attr('height', yb.step()).attr('fill', 'transparent')
+   .on('pointerenter pointermove', function(ev, r){
+    const [px, py] = d3.pointer(ev, made.box);
+    showTip(made, tipRows(r.Producto, opt.tip(r)), px, py);
+   })
+   .on('pointerleave', () => { made.tip.hidden = true; });
+ }
+
+ dash.draw('story', {
+  mount(el){
+   const box = document.createElement('div'); box.style.position = 'relative';
+   const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('width', '100%'); svg.setAttribute('role', 'img');
+   const tip = document.createElement('div'); tip.className = 'ic-tip'; tip.hidden = true;
+   box.append(svg, tip); el.appendChild(box);
+   return {box, svg: d3.select(svg), tip};
+  },
+  update(el, made){
+   const step = window.icStep || 1, f = F();
+   const src = step <= 4 ? 'mensual' : 'producto';
+   const d = dash.data(src);
+   made.svg.selectAll('*').remove(); made.tip.hidden = true;
+   if (d.status !== 'ok' || !Array.isArray(d.data) || !d.data.length) {
+    made.svg.attr('viewBox', '0 0 300 60').attr('height', 60);
+    made.svg.append('text').attr('class', 'ic-vl').attr('x', 0).attr('y', 30).text(d.status === 'error' ? 'No se pudo cargar' : '—');
+    return;
+   }
+   const rows = d.data;
+   const labels = {1: 'Ingreso neto por mes en 2025', 2: 'Unidades planificadas y producidas por mes', 3: 'Unidades producidas frente a vendidas por mes', 4: 'Índice mensual de producción y ventas', 5: 'Unidades vendidas por cada 100 producidas, por producto', 6: 'Ingreso neto frente a costo de producción por producto'};
+   made.svg.attr('aria-label', labels[step]);
+   if (step === 1) monthly(made, rows, [{key: 'ingreso', label: 'Ingreso neto', type: 'bar', color: C(0)}], {zero: true, yfmt: f.short, tfmt: f.money, label: 'ingreso'});
+   if (step === 2) monthly(made, rows, [{key: 'planificadas', label: 'Planificadas', type: 'line', color: 'var(--cds-chart-muted)', dash: '5 4'}, {key: 'producidas', label: 'Producidas', type: 'line', color: C(0)}], {zero: false, yfmt: f.short, tfmt: f.int});
+   if (step === 3) monthly(made, rows, [{key: 'producidas', label: 'Producidas', type: 'bar', color: C(0)}, {key: 'vendidas', label: 'Vendidas', type: 'bar', color: C(1)}], {zero: true, yfmt: f.short, tfmt: f.int});
+   if (step === 4) monthly(made, rows, [{key: 'idx_prod', label: 'Producidas', type: 'line', color: C(0)}, {key: 'idx_vend', label: 'Vendidas', type: 'line', color: C(1)}], {zero: false, yfmt: f.int, tfmt: v => f.num1(v), ref: 100});
+   if (step === 5) products(made, rows.slice().sort((a, b) => b.vend_por_100 - a.vend_por_100), [{key: 'vend_por_100', color: C(0)}], {xfmt: f.int, vfmt: f.num1, tip: r => [['Producidas', f.int(r.producidas)], ['Vendidas', f.int(r.vendidas)], ['Vendidas por 100', f.num1(r.vend_por_100)]]});
+   if (step === 6) products(made, rows.slice().sort((a, b) => b.ingreso - a.ingreso), [{key: 'ingreso', color: C(1)}, {key: 'costo', color: C(0)}], {xfmt: f.short, vfmt: v => f.short(v), tip: r => [['Ingreso neto', f.money(r.ingreso)], ['Costo de producción', f.money(r.costo)], ['Precio neto/u', f.rd2(r.precio_prom)], ['Costo/u producida', f.rd2(r.costo_unit)]]});
+  }
+ });
+})();
+</script>
